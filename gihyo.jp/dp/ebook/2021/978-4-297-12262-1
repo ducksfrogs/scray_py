@@ -1,0 +1,563 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>最短突破 データサイエンティスト検定（リテラシーレベル）公式リファレンスブック | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="「データサイエンティスト検定　リテラシーレベル」の公式リファレンスブックが登場。試験で問われる計147個のスキル項目について，要点と学習のポイントを基本から一つひとつ解説。第一線で活躍する執筆陣が具体的なシーンにまで踏み込んで説明しているため，データサイエンティストとしての確かな力が身につきます。さらに巻末の模擬問題では，実際の試験のイメージをつかむことができます。「データサイエンティスト検定　リテラシーレベル」とは？「データサイエンティスト検定　リテラシーレベル」（略称：DS検定）は，一般社団法人データサイエンティスト協会によって，2021年9月に第1回が開催される検定試験です。「リテラシーレベル」では，協会が定めたスキルレベルのうち最も基礎的な内容（見習いレベル）を問われるため，すでにデータサイエンティストとして活躍している方はもちろんのこと，データサイエンスに興味を持つ学生，ビジネスパーソンの方も挑戦することができます。データサイエンティスト協会HP：https://www.datascientist.or.jp/検定概要：https://www.datascientist.or.jp/dskentei/"/>
+  <meta name="keywords" content="電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="最短突破 データサイエンティスト検定（リテラシーレベル）公式リファレンスブック | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="「データサイエンティスト検定　リテラシーレベル」の公式リファレンスブックが登場。試験で問われる計147個のスキル項目について，要点と学習のポイントを基本から一つひとつ解説。第一線で活躍する執筆陣が具体的なシーンにまで踏み込んで説明しているため，データサイエンティストとしての確かな力が身につきます。さらに巻末の模擬問題では，実際の試験のイメージをつかむことができます。「データサイエンティスト検定　リテラシーレベル」とは？「データサイエンティスト検定　リテラシーレベル」（略称：DS検定）は，一般社団法人データサイエンティスト協会によって，2021年9月に第1回が開催される検定試験です。「リテラシーレベル」では，協会が定めたスキルレベルのうち最も基礎的な内容（見習いレベル）を問われるため，すでにデータサイエンティストとして活躍している方はもちろんのこと，データサイエンスに興味を持つ学生，ビジネスパーソンの方も挑戦することができます。データサイエンティスト協会HP：https://www.datascientist.or.jp/検定概要：https://www.datascientist.or.jp/dskentei/"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-12262-1"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-12262-1.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E8%B3%87%E6%A0%BC%E8%A9%A6%E9%A8%93%EF%BC%88IT%EF%BC%89" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4">最短突破</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">最短突破<br>データサイエンティスト検定<wbr>（リテラシーレベル）<wbr>公式リファレンスブック</h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-12262-1.jpg" alt="最短突破 データサイエンティスト検定（リテラシーレベル）公式リファレンスブック"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">菅由紀子，<wbr/>佐伯諭，<wbr/>高橋範光，<wbr/>田中貴博，<wbr/>大川遥平，<wbr/>大黒健一，<wbr/>參木裕之，<wbr/>北川淳一郎，<wbr/>守谷昌久，<wbr/>山之下拓仁，<wbr/>苅部直知，<wbr/>原野朱加，<wbr/>孝忠大輔　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-09-01">2021年9月1日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-09-01">2021年9月1日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2021/978-4-297-12261-4" target="_blank">2021年9月4日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,360円 <a id="pid403320" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">264</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-12262-1" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-12262-1" data-text="最短突破 データサイエンティスト検定（リテラシーレベル）公式リファレンスブック #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-12262-1" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-12262-1" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>「データサイエンティスト検定　リテラシーレベル」の公式リファレンスブックが登場。<br />
+試験で問われる計147個のスキル項目について，<wbr/>要点と学習のポイントを基本から一つひとつ解説。<br />
+第一線で活躍する執筆陣が具体的なシーンにまで踏み込んで説明しているため，<wbr/>データサイエンティストとしての確かな力が身につきます。<br />
+さらに巻末の模擬問題では，<wbr/>実際の試験のイメージをつかむことができます。</p>
+<!-- omitted below -->
+
+<h4>「データサイエンティスト検定　リテラシーレベル」とは？</h4>
+<p>「データサイエンティスト検定　リテラシーレベル」（略称：DS検定）は，<wbr/>一般社団法人データサイエンティスト協会によって，<wbr/>2021年9月に第1回が開催される検定試験です。「リテラシーレベル」では，<wbr/>協会が定めたスキルレベルのうち最も基礎的な内容（見習いレベル）を問われるため，<wbr/>すでにデータサイエンティストとして活躍している方はもちろんのこと，<wbr/>データサイエンスに興味を持つ学生，<wbr/>ビジネスパーソンの方も挑戦することができます。<br />
+データサイエンティスト協会HP：<a href="https://www.datascientist.or.jp/">https://www.datascientist.or.jp/</a><br />
+検定概要：<a href="https://www.datascientist.or.jp/dskentei/">https://www.datascientist.or.jp/dskentei/</a></p><h3>こんな方におすすめ</h3>
+<ul><li>データサイエンティスト検定（リテラシーレベル）に合格したい方</li><li>データサイエンスの基礎素養を身につけたい大学生やビジネスパーソンの方</li></ul>
+<h3>著者から一言</h3>
+<h4>「最短突破 データサイエンティスト検定（リテラシーレベル）公式リファレンスブック」の刊行に寄せて</h4>
+<p>「『データサイエンティスト』という新しい職業を，<wbr/>正しくこの国に根付かせよう」<br />
+有志のそんなシンプルな思いから，<wbr/>一般社団法人データサイエンティスト協会は始まりました。<br />
+当時，<wbr/>ビッグデータ・<wbr/>ブームとともに日本に上陸したこの新しい職業は，<wbr/>「ビッグデータを使いこなす人」という程度の漠然とした認識で受け止められ，<wbr/>その仕事内容や求められるナレッジやスキルは，<wbr/>曖昧模糊としたまま，<wbr/>メディアに言葉だけが踊っていました。<br />
+新しい時代の到来を告げ，<wbr/>危機感を煽る記事のためだけであれば，<wbr/>それでもよかったのかもしれません。しかし，<wbr/>絶対的な不足が騒がれるこの新しい職業を目指す人を増やし，<wbr/>その学習の指針となるためには明確な定義が必要，<wbr/>という思いから，<wbr/>本協会は始まり，<wbr/>現在では100を超える法人が，<wbr/>求められるナレッジやスキルを定める活動を筆頭に始まりました。現在では，<wbr/>各種勉強会や研修の企画，<wbr/>実態の調査や組織間の課題の共有といった各種の啓発・<wbr/>普及活動を展開しております。<br />
+そんな協会員の尽力もあり，<wbr/>当協会の定めた各種定義は，<wbr/>我が国のスタンダードとなり，<wbr/>データサイエンティストという仕事もバズワードに終わらず，<wbr/>一つの職業としてこの国に定着しつつあります。そんな中で，<wbr/>協会発足以来の唯一にして最大の懸案事項が「検定（資格）事業」でした。協会発足当時から多数の要望を受けつつも，<wbr/>日進月歩で進み変化する技術や業界状況を鑑みると，<wbr/>認定した資格に対して責任をもった運営ができるのか？という思いが先にたち，<wbr/>理事会で何度も議論をしては見送りを繰り返してきました。<br />
+しかし，<wbr/>技術の変化の激しさは依然として続くものの，<wbr/>社会の要請がブームを乗り越えて一定の安定を得つつあることに加え，<wbr/>大学でのデータサイエンス教育の必修化が実現した事で，<wbr/>その必要性が一層の高まりを見せていることから，<wbr/>スタンダードを定めた責任から，<wbr/>検定事業の開始の決断に至りました。<br />
+この度，<wbr/>その検定のための初の参考書を協会のメンバーが執筆したので，<wbr/>前書きを記しました。本書が，<wbr/>これからの新しい日本を支える職業を目指す皆様のよき一歩目となることを願ってやみません。</p>
+
+<div align="right"><p>2021年6月吉日<br />
+一般社団法人データサイエンティスト協会<br />
+代表理事 草野隆史</p></div><dl class="profile sectionBlock02">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</dl><aside class="author"><h3>菅由紀子（かんゆきこ）</h3><p>株式会社Rejoui（リジョウイ）　代表取締役<br />
+一般社団法人データサイエンティスト協会　スキル定義委員<br />
+関西学院大学大学院　非常勤講師<br />
+2004年に株式会社サイバーエージェントに入社し，<wbr/>ネットリサーチ事業の立ち上げに携わる。2006年より株式会社ALBERTに転じ，<wbr/>データサイエンティストとして多数のプロジェクトに従事。2016年9月に株式会社Rejouiを創立し，<wbr/>企業や自治体におけるデータ利活用，<wbr/>データサイエンティスト育成事業を展開しているほか，<wbr/>ジェンダーを問わずデータサイエンティストの活躍支援を行う世界的活動WiDS(Women in Data Science）アンバサダーとして日本における中心的役割を果たしている。</p>
+</aside><aside class="author"><h3>佐伯諭（さえきさとし）</h3><p>ニューホライズンコレクティブ合同会社　プロフェッショナル・<wbr/>パートナー<br />
+一般社団法人データサイエンティスト協会　スキル定義委員会副委員長<br />
+SIerでのエンジニア，<wbr/>外資系金融でモデリング業務などの経験を経て，<wbr/>2005年に電通入社。デジタルマーケティングの黎明期からデータ・<wbr/>テクノロジー領域をリード。電通デジタル創業期には執行役員CDOとして組織開発やデータ人材の採用，<wbr/>育成などを担務。データサイエンティスト協会創立メンバーとして理事を7年間務めた後，<wbr/>現在は独立し，<wbr/>DXコンサルタントや協会事務局メンバーとして活動中。</p></aside><aside class="author"><h3>高橋範光（たかはしのりみつ）</h3><p>株式会社ディジタルグロースアカデミア　代表取締役社長<br />
+株式会社チェンジ　執行役員<br />
+一般社団法人データサイエンティスト協会スキル定義委員<br />
+アクセンチュアのマネージャーを経て，<wbr/>2005年に株式会社チェンジに入社。2013年，<wbr/>データサイエンティスト育成事業を開始するとともに，<wbr/>自身も製造業，<wbr/>社会インフラ，<wbr/>公共，<wbr/>保険，<wbr/>販売会社などのデータサイエンス案件を担当。現在は，<wbr/>ディジタルグロースアカデミアの代表取締役社長として，<wbr/>デジタル人財育成事業のさらなる拡大を目指す。著書に『道具としてのビッグデータ』（日本実業出版社）がある。</p></aside><aside class="author"><h3>田中貴博（たなかたかひろ）</h3><p>株式会社日立アカデミー　研修開発本部L＆D第一部　部長<br />
+一般社団法人データサイエンティスト協会　スキル定義委員<br />
+独立系SIerでのシステムエンジニア，<wbr/>教育ベンチャーでのコンサルタントなどを経て，<wbr/>2010年，<wbr/>株式会社日立アカデミー入社。日立グループの社内認定制度に連動したデータサイエンティスト認定講座，<wbr/>デジタル事業・<wbr/>サービスの事業化検討ワークショップの企画・<wbr/>運営などを担当。現在は，<wbr/>DX関連の研修・<wbr/>サービス事業の統括責任者として，<wbr/>DX事業へのコーポレート・<wbr/>トランスフォーメーションをめざし，<wbr/>本社施策と連動した人財育成に取り組んでいる。</p>
+</aside><aside class="author"><h3>大川遥平（おおかわようへい）</h3><p>株式会社AVILEN　取締役<br />
+一般社団法人データサイエンティスト協会　スキル定義委員<br />
+大学時代にAI/統計学のメディア「全人類がわかる統計学（現 AVILEN AI Trend）」を開設したのち，<wbr/>大学院在学中に株式会社AVILENを創業。AI人材育成事業とAI開発事業の立ち上げを行い，<wbr/>現在も取締役としてAVILENのプロダクトの質の向上に尽力している。</p>
+</aside><aside class="author"><h3>大黒健一（だいこくけんいち）</h3><p>株式会社日立アカデミー　事業戦略本部戦略企画部　GL主任技師<br />
+一般社団法人データサイエンティスト協会　学生部会副部会長<br />
+博士（農学）<br />
+日立グループのデジタルトランスフォーメーション推進のための人財育成の推進を担当。総務省統計局「社会人のためのデータサイエンス演習」Day3講師。著書に『ビジネス現場の担当者が読むべき，<wbr/>IoTプロジェクトを成功に導くための本』（秀和システム）がある。</p></aside><aside class="author"><h3>參木裕之（みつぎひろゆき）</h3><p>株式会社大和総研　フロンティア研究開発センター　データドリブンサイエンス部<br />
+上席課長代理／<wbr/>主任データサイエンティスト<br />
+一般社団法人データサイエンティスト協会　スキル定義委員<br />
+大和総研に2013年に入社。システム開発部門にて，<wbr/>データモデリングやアプリケーション開発などの業務に従事した後，<wbr/>2017年より現職。主に，<wbr/>証券会社，<wbr/>官公庁向けの機械学習や自然言語処理を用いたデータサイエンス案件，<wbr/>分析コンサルティングを担当。2020年より東京工業大学大学院非常勤講師を兼務。</p>
+</aside><aside class="author"><h3>北川淳一郎（きたがわじゅんいちろう）</h3><p>ヤフー株式会社<br />
+一般社団法人データサイエンティスト協会　スキル定義委員<br />
+株式会社ミクロスソフトウェアでエンジニア経験を積んだ後に，<wbr/>2011年にヤフー株式会社に入社。インターネット広告システムのエンジニアをしつつ，<wbr/>データサイエンスという分野に出会う。その後，<wbr/>ヤフオク！の検索精度向上，<wbr/>ディスプレイ広告の配信精度向上案件を担当。現在は，<wbr/>ヤフーのローカル検索の精度向上案件を担当している。</p>
+</aside><aside class="author"><h3>守谷昌久（もりやまさひさ）</h3><p>日本アイ・<wbr/>ビー・<wbr/>エム株式会社　シニアアーキテクト<br />
+一般社団法人データサイエンティスト協会　スキル定義委員<br />
+ソフトウェア開発会社でデータ解析ソフトウェア開発に従事後，<wbr/>2008年に日本アイ・<wbr/>ビー・<wbr/>エム株式会社に入社。大学生時代よりIBM製品の統計解析ソフトウェアSPSSによるデータ分析（主に多変量量解析）に携わりSPSS使用歴は20年以上。実業務では製造業を中心としたお客様にビッグデータやIoTを活用したITシステムの構築やWatson，<wbr/>SPSS，<wbr/>CognosなどのIBMのData and AI製品の導入コンサルティングを行う。</p></aside><aside class="author"><h3>山之下拓仁（やまのしたたくひと）</h3><p>一般社団法人データサイエンティスト協会　スキル定義委員<br />
+教育業界での，<wbr/>生徒一人一人に合わせた教育指導をサポートするAIエンジンの研究開発，<wbr/>金融業界の金融データ分析や金融工学に基づく数理モデル構築業務，<wbr/>ソーシャルゲーム業界のビックデータを解析する為の組織作り，<wbr/>人材業界のマッチングにおけるデータ解析，<wbr/>分析基盤構築，<wbr/>機械学習手法の大学との研究開発など，<wbr/>様々な業界におけるデータ活用やAI開発などに従事。</p></aside><aside class="author"><h3>苅部直知（かりべなおと）</h3><p>一般社団法人データサイエンティスト協会　スキル定義委員<br />
+ヤフー株式会社<br />
+リクルートテクノロジーズなどIT系企業を中心に勤務し，<wbr/>Webアクセス解析・<wbr/>BIツール(Tableau，<wbr/>Adobe Analytics，<wbr/>Google Analytics)などの導入・<wbr/>ツールを利用した分析業務に携わる。その経験を元にデータ分析基盤支援エンジニアとして2017年にヤフー株式会社に入社。2020年にデータサイエンティスト協会スキル定義委員に志願し参画。</p></aside><aside class="author"><h3>原野朱加（はらのあやか）</h3><p>株式会社野村総合研究所　コンサルティング事業本部マーケティングサイエンスコンサルティング部<br />
+主任コンサルタント／<wbr/> NRI認定データサイエンティスト<br />
+一般社団法人データサイエンティスト協会　スキル定義委員<br />
+2014年インターネット・<wbr/>リサーチ会社入社。消費者行動パネルデータの調査・<wbr/>分析，<wbr/>及び，<wbr/>新規事業立ち上げに従事。野村総合研究所へ転じてからは，<wbr/>マーケティングコンサルタントとして，<wbr/>ブランド戦略立案や広告効果測定，<wbr/>市場調査，<wbr/>事業予測など，<wbr/>一貫してデータを活用したマーケティング活動支援を行う。</p>
+</aside><aside class="author"><h3>孝忠大輔（こうちゅうだいすけ）</h3><p>日本電気株式会社　AI・<wbr/>アナリティクス事業部　事業部長代理<br />
+数理・<wbr/>データサイエンス教育強化拠点コンソーシアムモデルカリキュラムの全国展開に関する特別委員会　委員
+数理・<wbr/>データサイエンス・<wbr/>AI教育プログラム認定制度検討会議　構成員<br />
+流通・<wbr/>サービス業を中心に分析コンサルティングを提供し，<wbr/>2016年，<wbr/>NECプロフェッショナル認定制度「シニアデータアナリスト」の初代認定者となる。2018年，<wbr/>NECグループのAI人材育成を統括するAI人材育成センターのセンター長に就任し，<wbr/>AI人材の育成に取り組む。著書に『AI人材の育て方』（翔泳社），<wbr/>『教養としてのデータサイエンス』（講談社・<wbr/>共著）がある。</p></aside>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="42720">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>第1章　DS検定とは</h3>
+<ul class="toc">
+<li>データサイエンティスト検定TMリテラシーレベルとは</li>
+<li>データサイエンティスト協会とデータサイエンティストスキルチェックリストとは</li>
+<li>データサイエンティスト検定TMリテラシーレベル試験概要</li>
+<li>出題範囲①　スキルチェックリスト</li>
+<li>出題範囲②　数理・データサイエンス・AI（リテラシーレベル）モデルカリキュラム</li>
+<li>本検定と，全てのビジネスパーソンが持つべきデジタル時代の共通リテラシー「Di-Lite」</li>
+<li>本書の構成</li>
+
+</ul>
+<h3>第2章　データサイエンス力</h3>
+<ul class="toc">
+<li>DS1 順列や組合せを式nPr, nCrを用いて計算できる</li>
+<li>DS2 条件付き確率の意味を説明できる</li>
+<li>DS3 平均（相加平均），中央値，最頻値の算出方法の違いを説明できる</li>
+<li>DS4 与えられたデータにおける分散と標準偏差が計算できる</li>
+<li>DS5 母（集団）平均と標本平均，不偏分散と標本分散がそれぞれ異なることを説明できる</li>
+<li>DS6 標準正規分布の分散と平均の値を知っている</li>
+<li>DS7 相関関係と因果関係の違いを説明できる</li>
+<li>DS8 名義尺度，順序尺度，間隔尺度，比例尺度の違いを説明できる</li>
+<li>DS9 一般的な相関係数（ピアソン）の分母と分子を説明できる</li>
+<li>DS10 5つ以上の代表的な確率分布を説明できる</li>
+<li>DS11 二項分布の事象もサンプル数が増えていくとどのような分布に近似されるかを知っている</li>
+<li>DS12 変数が量的，質的どちらの場合でも関係の強さを算出できる</li>
+<li>DS13 ベイズの定理を説明できる</li>
+<li>DS18 ベクトルの内積に関する計算方法を理解し線形式をベクトルの内積で表現できる</li>
+<li>DS19 行列同士，および行列とベクトルの計算方法を正しく理解し，複数の線形式を行列の積で表現できる</li>
+<li>DS20 逆行列の定義，および逆行列を求めることにより行列表記された連立方程式を解くことができることを理解している</li>
+<li>DS21 固有ベクトルおよび固有値の意味を理解している</li>
+<li>DS22 微分により計算する導関数が傾きを求めるための式であることを理解している</li>
+<li>DS23 2変数以上の関数における偏微分の計算方法を理解している</li>
+<li>DS24 積分と面積の関係を理解し，確率密度関数を定積分することで確率が得られることを説明できる</li>
+<li>DS25 単回帰分析について最小二乗法，回帰係数，標準誤差の説明ができる</li>
+<li>DS26 重回帰分析において偏回帰係数と標準偏回帰係数，重相関係数について説明できる</li>
+<li>DS37 ROC曲線，AUC（Area under the curve），を用いてモデルの精度を評価できる</li>
+<li>DS38 混同行列（正誤分布のクロス表），Accuracy，Precision，Recall，F値といった評価尺度を理解し，精度を評価できる</li>
+<li>DS39 MSE（Mean Square Error），MAE（Mean Absolute Error）といった評価尺度を理解し，精度を評価できる</li>
+<li>DS40 ホールドアウト法，交差検証（クロスバリデーション）法の仕組みを理解し，学習データ，パラメータチューニング用の検証データ，テストデータを作成できる</li>
+<li>DS41 時間の経過とともに構造が変わっていくデータの場合は，学習データを過去のデータとし，テストデータを未来のデータとすることを理解している</li>
+<li>DS48 点推定と区間推定の違いを説明できる</li>
+<li>DS49 帰無仮説と対立仮説の違いを説明できる</li>
+<li>DS50 第1種の過誤，第2種の過誤，p値，有意水準の意味を説明できる</li>
+<li>DS51 片側検定と両側検定の違いを説明できる</li>
+<li>DS52 検定する対象となるデータの対応の有無を考慮した上で適切な検定手法を選択し，適用できる</li>
+<li>DS55 教師あり学習の分類（判別）モデルと教師なし学習のグループ化（クラスタリング）の違いを説明できる</li>
+<li>DS56 階層クラスター分析と非階層クラスター分析の違いを説明できる</li>
+<li>DS57 階層クラスター分析において，デンドログラムの見方を理解し，適切に解釈できる</li>
+<li>DS67 適切なデータ区間設定でヒストグラムを作成し，データのバラつき方を把握できる</li>
+<li>DS68 適切な軸設定でクロス集計表を作成し，属性間のデータの偏りを把握できる</li>
+<li>DS69 量的変数の散布図を描き，2変数の関係性を把握できる</li>
+<li>DS82 標本誤差とは何かを説明できる</li>
+<li>DS83 実験計画法の概要を説明できる</li>
+<li>DS87 名義尺度の変数をダミー変数に変換できる</li>
+<li>DS88 標準化とは何かを知っていて，適切に標準化が行える</li>
+<li>DS89 外れ値・異常値・欠損値とは何かそれぞれ知っていて，指示のもと適切に検出と除去・変換などの対応ができる</li>
+<li>DS93 分析要件や各変数の分布などをふまえて，必要に応じて量的変数のカテゴライズやビン化を設計・実行できる</li>
+<li>DS102 可視化における目的の広がりについて概略を説明できる（単に現場の作業支援する場合から，ビッグデータ中の要素間の関連性をダイナミックに表示する場合など）</li>
+<li>DS105 散布図などの軸だしにおいて，縦軸・横軸の候補を適切に洗い出せる</li>
+<li>DS106 積み上げ縦棒グラフでの属性の選択など，適切な層化（比較軸）の候補を出せる</li>
+<li>DS110 サンプリングやアンサンブル平均によって適量にデータ量を減らすことができる</li>
+<li>DS118 適切な情報濃度を判断できる（データインク比など）</li>
+<li>DS119 不必要な誇張をしないための軸表現の基礎を理解できている（コラムチャートのY軸の基準点は「0」からを原則とし軸を切らないなど）</li>
+<li>DS120 強調表現がもたらす効果と，明らかに不適切な強調表現を理解している（計量データに対しては位置やサイズ表現が色表現よりも効果的など）</li>
+<li>DS121 1～3次元の比較において目的（比較，構成，分布，変化など）に応じ，BIツール，スプレッドシートなどを用いて図表化できる</li>
+<li>DS122 端的に図表の変化をアニメーションで可視化できる（人口動態のヒストグラムが経年変化する様子を表現するなど）</li>
+<li>DS123 データ解析部門以外の方に，データの意味を伝えるサインとしての可視化ができる</li>
+<li>DS124 ボロノイ図の概念と活用方法を説明できる</li>
+<li>DS125 1～3次元の図表を拡張した多変量の比較を適切に可視化できる（平行座標，散布図行列，テーブルレンズ，ヒートマップなど）</li>
+<li>DS133 データの性質を理解するために，データを可視化し眺めて考えることの重要性を理解している</li>
+<li>DS134 外れ値を見出すための適切な表現手法を選択できる</li>
+<li>DS135 データの可視化における基本的な視点を挙げることができる（特異点，相違性，傾向性，関連性を見出すなど）</li>
+<li>DS140 スコープ，検討範囲・内容が明快に設定されていれば，必要なデータ，分析手法，可視化などを適切に選択できる</li>
+<li>DS144 ニュース記事などで統計情報に接したときに，数字やグラフの持つメッセージを理解できる</li>
+<li>DS147 単独のグラフに対して，集計ミスなどがないかチェックできる</li>
+<li>DS148 データ項目やデータの量・質について，指示のもと正しく検証し，結果を説明できる</li>
+<li>DS153 データが生み出された背景を考え，鵜呑みにはしないことの重要性を理解している</li>
+<li>DS156 データから事実を正しく浮き彫りにするために，集計の切り口や比較対象の設定が重要であることを理解している</li>
+<li>DS157 普段業務で扱っているデータの発生トリガー・タイミング・頻度などを説明でき，また基本統計量を把握している</li>
+<li>DS158 何のために集計しているか，どのような知見を得たいのか，目的に即して集計できる</li>
+<li>DS167 分析，図表から直接的な意味合いを抽出できる（バラツキ，有意性，分布傾向，特異性，関連性，変曲点，関連度の高低など）</li>
+<li>DS168 想定に影響されず，分析結果の数値を客観的に解釈できる</li>
+<li>DS171 機械学習にあたる解析手法の名称を3つ以上知っており，手法の概要を説明できる</li>
+<li>DS172 指示を受けて機械学習のモデルを使用したことがあり，どのような問題を解決することができるか理解している</li>
+<li>DS173 「教師あり学習」「教師なし学習」の違いを理解している</li>
+<li>DS174 過学習とは何か，それがもたらす問題について説明できる</li>
+<li>DS175 次元の呪いとは何か，その問題について説明できる</li>
+<li>DS176 教師あり学習におけるアノテーションの必要性を説明できる</li>
+<li>DS177 観測されたデータにバイアスが含まれる場合や，学習した予測モデルが少数派のデータをノイズと認識してしまった場合などに，モデルの出力が差別的な振る舞いをしてしまうリスクを理解している</li>
+<li>DS178 機械学習における大域的（global）な説明（モデル単位の各変数の寄与度など）と局所的（local）な説明（予測するレコード単位の各変数の寄与度など）の違いを理解している</li>
+<li>DS210 時系列データとは何か，その基礎的な扱いについて説明できる（時系列グラフ，周期性，移動平均など）</li>
+<li>DS219 テキストデータに対する代表的なクリーニング処理（小文字化，数値置換，半角変換，記号除去，ステミングなど）をタスクに応じて適切に実施できる</li>
+<li>DS220 形態素解析や係り受け解析の概念を説明できる</li>
+<li>DS235 画像のデジタル表現の仕組みと代表的な画像フォーマットを知っている</li>
+<li>DS236 画像に対して，目的に応じて適切な色変換や簡単なフィルタ処理などを行うことができる</li>
+<li>DS237 画像データに対する代表的なクリーニング処理（リサイズ，パディング，標準化など）をタスクに応じて適切に実施できる</li>
+<li>DS243 動画のデジタル表現の仕組みと代表的な動画フォーマットを理解しており，動画から画像を抽出する既存方法を使うことができる</li>
+<li>DS245 WAVやMP3などの代表的な音声フォーマットを知っている</li>
+<li>DS251 条件Xと事象Yの関係性をリフト値を用いて評価できる</li>
+
+</ul>
+<h3>第3章　データエンジニアリング力</h3>
+<ul class="toc">
+<li>DE1 サーバー1～10台規模のシステム構築，システム運用を指示書があれば実行できる</li>
+<li>DE2 数十万レコードを持つデータベースのバックアップ・アーカイブ作成など定常運用ができる</li>
+<li>DE8 データベースから何らかのデータ抽出方法を活用し，小規模なExcelのデータセットを作成できる</li>
+<li>DE9 オープンデータを収集して活用する分析システムの要件を整理できる</li>
+<li>DE29 対象プラットフォームが提供する機能（SDKやAPIなど）の概要を説明できる</li>
+<li>DE30 Webクローラー・スクレイピングツールを用いてWebサイト上の静的コンテンツを分析用として収集できる</li>
+<li>DE35 対象プラットフォームに用意された機能（HTTP，FTP，SSHなど）を用い，データを収集先に格納するための機能を実装できる</li>
+<li>DE47 扱うデータが，構造化データ（顧客データ，商品データ，在庫データなど）か非構造化データ（雑多なテキスト，音声，画像，動画など）なのかを判断できる</li>
+<li>DE48 ER図を読んでテーブル間のリレーションシップを理解できる</li>
+<li>DE51 正規化手法（第一正規化～第三正規化）を用いてテーブルを正規化できる</li>
+<li>DE58 DWHアプライアンス（Oracle Exadata，IBM Integrated Analytics System，Teradataなど）に接続し，複数テーブルを結合したデータを抽出できる</li>
+<li>DE60 Hadoop・Sparkの分散技術の基本的な仕組みと構成を理解している</li>
+<li>DE61 NoSQLデータストア（HBase，Cassandra，Mongo DB，CouchDB，Redis，Amazon DynamoDB，Cloudant，Azure Cosmos DBなど）にAPIを介してアクセスし，新規データを登録できる</li>
+<li>DE67 クラウド上のストレージサービス（Amazon S3，Google Cloud Storage，IBM Cloud Object Storageなど）に接続しデータを格納できる</li>
+<li>DE76 数十万レコードのデータに対して，条件を指定してフィルタリングできる（特定値に合致する・もしくは合致しないデータの抽出，特定範囲のデータの抽出，部分文字列の抽出など）</li>
+<li>DE77 正規表現を活用して条件に合致するデータを抽出できる（メールアドレスの書式を満たしているか判定をするなど）</li>
+<li>DE78 数十万レコードのデータに対して，レコード間で特定カラムでのソートができ，数千レコードのデータに対して，カラム間でソートできる</li>
+<li>DE79 数十万レコードのデータに対して，単一条件による内部結合，外部結合，自己結合ができ，UNION処理ができる</li>
+<li>DE80 数十万レコードのデータに対して，NULL値や想定外・範囲外のデータを持つレコードを取り除く，または既定値に変換できる</li>
+<li>DE83 数十万レコードのデータに対して，規定されたリストと照合して変換する，都道府県名からジオコードに変換するなど，ある値を規定の別の値で表現できる</li>
+<li>DE85 数十万レコードのデータに対して，ランダムまたは一定間隔にデータを抽出できる</li>
+<li>DE86 数十万レコードのデータを集計して，合計や最大値，最小値，レコード数を算出できる</li>
+<li>DE87 数十万レコードのデータに対する四則演算ができ，数値データを日時データに変換するなど別のデータ型に変換できる</li>
+<li>DE90 加工・分析処理結果をCSV，XML，JSON，Excelなどの指定フォーマット形式に変換してエクスポートできる</li>
+<li>DE91 加工・分析処理結果を，接続先DBのテーブル仕様に合わせてレコード挿入できる</li><li>DE92 データ取得用のWeb API（REST）やWebサービス（SOAP）などを用いて，必要なデータを取得できる</li>
+<li>DE99 FTPサーバー，ファイル共有サーバーなどから必要なデータファイルをダウンロードして，Excelなどの表計算ソフトに取り込み活用できる</li>
+<li>DE100 BIツールのレポート編集機能を用いて新規レポートを公開できる</li>
+<li>DE101 BIツールの自由検索機能を活用し，必要なデータを抽出して，グラフを作成できる</li>
+<li>DE105 小規模な構造化データ（CSV，RDBなど）を扱うデータ処理（抽出・加工・分析など）を，設計書に基づき，プログラム実装できる</li>
+<li>DE106 JSON，XMLなど標準的なフォーマットのデータを受け渡すために，APIを使用したプログラムを設計・実装できる</li>
+<li>DE117 Jupyter NotebookやRStudioなどの対話型の開発環境を用いて，データの分析やレポートの作成ができる</li>
+<li>DE121 SQLの構文を一通り知っていて，記述・実行できる（DML・DDLの理解，各種JOINの使い分け，集計関数とGROUP BY，CASE文を使用した縦横変換，副問合せやEXISTSの活用など）</li>
+<li>DE129 セキュリティの3要素（機密性，可用性，完全性）について具体的な事例を用いて説明できる</li>
+<li>DE131 マルウェアなどによる深刻なリスクの種類（消失・漏洩・サービスの停止など）を常に意識している</li>
+<li>DE132 OS，ネットワーク，アプリケーション，データに対するユーザーごとのアクセスレベルを手順に従い設定できる</li>
+<li>DE139 暗号化されていないデータは，不正取得された際に容易に不正利用される恐れがあることを理解し，データの機密度合いに応じてソフトウェアを使用した暗号化と復号ができる</li>
+<li>DE140 なりすましや偽造された文書でないことを証明するために電子署名と公開鍵認証基盤（PKI：public key infrastructure）が必要であることを理解している</li>
+<li>DE141 ハッシュ関数を用いて，データの改ざんを検出できる</li>
+
+</ul>
+<h3>第4章　ビジネス力</h3>
+<ul class="toc">
+<li>BIZ1 ビジネスにおける論理とデータの重要性を認識し，分析的でデータドリブンな考え方に基づき行動できる</li>
+<li>BIZ2 「目的やゴールの設定がないままデータを分析しても，意味合いが出ない」ことを理解している</li>
+<li>BIZ3 課題や仮説を言語化することの重要性を理解している</li>
+<li>BIZ4 現場に出向いてヒアリングするなど，一次情報に接することの重要性を理解している</li>
+<li>BIZ9 データを取り扱う人間として相応しい倫理を身に付けている（データのねつ造，改ざん，盗用を行わないなど）</li>
+<li>BIZ12 個人情報に関する法令（個人情報保護法，EU一般データ保護規則：GDPRなど）や，匿名加工情報の概要を理解し，守るべきポイントを説明できる</li>
+<li>BIZ16 請負契約と準委任契約の違いを説明できる</li>
+<li>BIZ25 データや事象の重複に気づくことができる</li>
+<li>BIZ29 通常見受けられる現象の場合において，分析結果の意味合いを正しく言語化できる</li>
+<li>BIZ32 一般的な論文構成について理解している（序論⇒アプローチ⇒検討結果⇒考察や，序論⇒本論⇒結論など）</li>
+<li>BIZ35 1つの図表〜数枚程度のドキュメントを論理立ててまとめることができる（課題背景，アプローチ，検討結果，意味合い，ネクストステップ）</li>
+<li>BIZ38 報告に対する論拠不足や論理破綻を指摘された際に，相手の主張をすみやかに理解できる</li>
+<li>BIZ48 一般的な収益方程式に加え，自らが担当する業務の主要な変数（KPI）を理解している</li>
+<li>BIZ51 担当する事業領域について，市場規模，主要なプレーヤー，支配的なビジネスモデル課題と機会について説明できる</li>
+<li>BIZ52 主に担当する事業領域であれば，取り扱う課題領域に対して基本的な課題の枠組みが理解できる（調達活動の5フォースでの整理，CRM課題のRFMでの整理など）</li>
+<li>BIZ65 仮説や既知の問題が与えられた中で，必要なデータにあたりをつけ，アクセスを確保できる</li>
+<li>BIZ68 ビジネス観点で仮説を持ってデータをみることの重要性と，仮に仮説と異なる結果となった場合にも，それが重大な知見である可能性を理解している</li>
+<li>BIZ71 分析結果を元に，起きている事象の背景や意味合い（真実）を見ぬくことができる</li>
+<li>BIZ81 結果，改善の度合いをモニタリングする重要性を理解している</li>
+<li>BIZ84 ウォーターフォール開発とアジャイル開発の違いを説明できる</li>
+<li>BIZ93 指示に従ってスケジュールを守り，チームリーダーに頼まれた自分の仕事を完遂できる</li>
+<li>BIZ101 担当するタスクの遅延や障害などを発見した場合，迅速かつ適切に報告ができる</li>
+
+</ul>
+<h3>第5章　数理・データサイエンス・AI（リテラシーレベル）モデルカリキュラム</h3>
+<ul class="toc">
+<li>5-1. 数理・データサイエンス・A（I リテラシーレベル）モデルカリキュラム</li>
+<li>5-2-1. 社会におけるデータ・AI利活用（導入）で学ぶこと</li>
+<li>5-2-2. 社会におけるデータ・AI利活用（導入）で学ぶスキル／知識</li>
+<li>5-2-3. 社会におけるデータ・AI利活用（導入）の重要キーワード解説</li>
+<li>5-3-1. データリテラシー（基礎）で学ぶこと</li>
+<li>5-3-2. データリテラシー（基礎）で学ぶスキル／知識</li>
+<li>5-3-3. データリテラシー（基礎）の重要キーワード解説</li>
+<li>5-4-1. データ・AI利活用における留意事項（心得）で学ぶこと</li>
+<li>5-4-2. データ・AI利活用における留意事項（心得）で学ぶスキル／知識</li>
+<li>5-4-3. データ・AI利活用における留意事項（心得）の重要キーワード解説</li>
+<li>5-5. 数理・データサイエンス・AI（リテラシーレベル）を詳しく学ぶ</li>
+</ul>
+
+<ul class="toc">
+<li>データサイエンティスト検定　リテラシーレベル模擬試験　問題</li>
+<li>データサイエンティスト検定　リテラシーレベル模擬試験　解答例</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="errata">正誤表</h3>
+<p>本書の掲載内容に誤りがございました。ご迷惑をおかけしましたことをお詫び申し上げます。</p>
+
+
+<div align="right"><p>（2021年9月22日最終更新）</p></div>
+
+
+<!--
+※古い更新分はこの下に，<wbr/>追加分は上にもっていくようにする
+<div class="partition-block"><p>（以下2020年1月16日更新）</p></div>
+-->
+
+<h4>第3刷訂正情報（第4刷で修正予定）<br />
+P.95　下の図2点のタイトル</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><tr><th>正</th><td>
+左の図のタイトル：<strong>ヒストグラムと外れ値の例</strong><br />
+右の図のタイトル：<strong>箱ひげ図と外れ値の例</strong>
+</td></tr></tbody></table>
+
+
+
+<h4>P.136　真ん中あたり</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+カーディナリティは、例えばEQ図の代表的な記法の１つであるIE記法だと……
+</td></tr><tr><th>正</th><td>
+カーディナリティは、例えば<strong>ER図</strong>の代表的な記法の１つであるIE記法だと……
+</td></tr></tbody></table>
+
+
+
+<h4>P.145　「代表的な正規表現」の表</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+<span style="font-family: Arial;">\</span>d	任意の数字以外……
+</td></tr><tr><th>正</th><td>
+<span style="font-family: Arial;">\</span><strong>D</strong>	任意の数字以外……
+</td></tr></tbody></table>
+
+
+
+<h4>P.192　1段落目</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+また、自社の競争優位性を探るために、「業界内での競争」「新規参入者」「代替品」「売り手の競争力」「買い手の競争力」という5つの競争要因から業界構造を分析する、5フォース分析を行うこともあります。
+</td></tr><tr><th>正</th><td>
+また、自社の競争優位性を探るために、「業界内での競争」<strong>「新規参入者の脅威」「代替品の脅威」「売り手の交渉力」「買い手の交渉力」</strong>という5つの競争要因から業界構造を分析する、5フォース分析を行うこともあります。
+</td></tr></tbody></table>
+
+
+
+<h4>P.192　1つ目の図中（4か所）</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+新規参入者
+</td></tr><tr><th>正</th><td>
+新規参入者<strong>の脅威</strong>
+</td></tr></tbody></table>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+代替品
+</td></tr><tr><th>正</th><td>
+代替品<strong>の脅威</strong>
+</td></tr></tbody></table>
+
+
+
+
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+売り手の競争力
+</td></tr><tr><th>正</th><td>
+売り手の<strong>交渉力</strong>
+</td></tr></tbody></table>
+
+
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+買い手の競争力
+</td></tr><tr><th>正</th><td>
+買い手の<strong>交渉力</strong>
+</td></tr></tbody></table>
+
+
+
+
+<h4>第1・<wbr/>2刷訂正情報（第3刷では修正済み）<br />
+P.39　上から2つ目の式の注釈</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+P(<span style="text-decoration:overline;">B</span>）：事象Bが起こる確率
+</td></tr><tr><th>正</th><td>
+P(<span style="text-decoration:overline;">B</span>）：事象Bが<strong>起こらない</strong>確率
+</td></tr></tbody></table>
+
+
+
+
+<h4>P.56　真ん中の囲み内</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+TPR（True Positive Rate：真陽性率）＝①／<wbr/>(①＋③)<br />
+FPR（False Positive Rate：偽陽性率）＝②／<wbr/>(②＋④)
+</td></tr><tr><th>正</th><td>
+TPR（True Positive Rate：真陽性率）＝<strong>TP／<wbr/>(TP＋FN)</strong><br />
+FPR（False Positive Rate：偽陽性率）＝<strong>FP／<wbr/>(FP＋TN)</strong>
+</td></tr></tbody></table>
+
+
+<h4>P.249　Q42の解答</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+b
+</td></tr><tr><th>正</th><td>
+<strong>c</strong>
+</td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-12262-1","path":"\/dp\/ebook\/2021\/978-4-297-12262-1","targetId":"978-4-297-12262-1","parent":"\/dp\/genre\/%E8%B3%87%E6%A0%BC%E8%A9%A6%E9%A8%93%EF%BC%88IT%EF%BC%89","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

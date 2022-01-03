@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>小さなお店＆会社のWordPress超入門 ～初めてでも安心！思いどおりのホームページを作ろう！ 改訂2版 | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="あの大好評を博した「小さなお店＆会社のWordPress超入門」が最新の内容になって登場です！2018年12月に行われたアップデートによって，WordPressは投稿画面や管理画面に大きな変更がありました。その変更に対応した最新の画面で，WordPressでホームページを作る方法を優しく解説。パソコンに詳しくない，専門知識がない，という初心者の方でも大丈夫！本書オリジナルのテンプレートを使って，本の通りに進めていけば，素敵なホームページを作れます。ぜひこの1冊を読んで，あなたもホームページを作ってみませんか？"/>
+  <meta name="keywords" content="星野邦敏,吉田裕介,羽野めぐみ,大胡由紀,清水由規,清水久美子,山田里江,リブロワークス電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="小さなお店＆会社のWordPress超入門 ～初めてでも安心！思いどおりのホームページを作ろう！ 改訂2版 | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="あの大好評を博した「小さなお店＆会社のWordPress超入門」が最新の内容になって登場です！2018年12月に行われたアップデートによって，WordPressは投稿画面や管理画面に大きな変更がありました。その変更に対応した最新の画面で，WordPressでホームページを作る方法を優しく解説。パソコンに詳しくない，専門知識がない，という初心者の方でも大丈夫！本書オリジナルのテンプレートを使って，本の通りに進めていけば，素敵なホームページを作れます。ぜひこの1冊を読んで，あなたもホームページを作ってみませんか？"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2019/978-4-297-10556-3"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2019/978-4-297-10556-3.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">小さなお店＆<wbr>会社の<wbr>WordPress<wbr>超入門<br><span class="sub">～初めてでも安心！思いどおりのホームページを作ろう！ 改訂<wbr>2<wbr>版</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2019/978-4-297-10556-3.jpg" alt="小さなお店＆会社のWordPress超入門 ～初めてでも安心！思いどおりのホームページを作ろう！ 改訂2版"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">星野邦敏，<wbr/>吉田裕介，<wbr/>羽野めぐみ，<wbr/>大胡由紀，<wbr/>清水由規，<wbr/>清水久美子，<wbr/>山田里江，<wbr/>リブロワークス　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2019-06-22">2019年6月22日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2019-06-22">2019年6月22日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2019/978-4-297-10555-6" target="_blank">2019年6月22日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">1,980円 <a id="pid402540" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">240</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2019/978-4-297-10556-3" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2019/978-4-297-10556-3" data-text="小さなお店＆会社のWordPress超入門 ～初めてでも安心！思いどおりのホームページを作ろう！ 改訂2版 #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2019/978-4-297-10556-3" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2019/978-4-297-10556-3" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>あの大好評を博した「小さなお店＆会社のWordPress超入門」が最新の内容になって登場です！2018年12月に行われたアップデートによって，<wbr/>WordPressは投稿画面や管理画面に大きな変更がありました。その変更に対応した最新の画面で，<wbr/>WordPressでホームページを作る方法を優しく解説。パソコンに詳しくない，<wbr/>専門知識がない，<wbr/>という初心者の方でも大丈夫！本書オリジナルのテンプレートを使って，<wbr/>本の通りに進めていけば，<wbr/>素敵なホームページを作れます。ぜひこの1冊を読んで，<wbr/>あなたもホームページを作ってみませんか？</p><h3>こんな方におすすめ</h3>
+<ul><li>これからWordPressでホームページを作ってみたいと思っている人</li></ul>
+<aside class="author"><h3>星野邦敏（ほしのくにとし）</h3><p>WordPress のテーマやプラグインを開発している株式会社コミュニティコム代表取締役。大宮経済新聞を始めとするWeb メディアも自社で運営。コワーキングスベース・<wbr/>貸会議室・<wbr/>シェアオフィスの経営も手がけるほか，<wbr/>一般社団法人コワーキングスペース協会の代表理事，<wbr/>NPO 法人クッキープロジェクトの理事などを務める。<br />
+ホームページ：<a href="https://www.communitycom.jp/">株式会社コミュニティコム</a>
+</p>
+</aside><aside class="author"><h3>吉田裕介（よしだゆうすけ）</h3><p>株式会社コミュニティコムのプログラマー。Saitama WordPress Meetup やWordCamp Tokyo など，<wbr/>WordPress イベントヘの登壇や実行委員を務める。公式テーマ「saitama」や「dekiru」，<wbr/>プラグインを公開している。</p>
+</aside><aside class="author"><h3>羽野めぐみ（はのめぐみ）</h3><p>学生の頃から Web やデザインに興味を持ち，<wbr/>独学で勉強を始める。現在は株式会社キッチハイクで，<wbr/>デザイナーとしてプロダクトデザインを担当。業務の傍ら，<wbr/>GitHub 上にオープンソースのプロダクトを公開。デザイン・<wbr/>エンジニアリングに関わらずイベントでの登壇も行う。<br />
+ホームページ：<a href="https://note.mu/featherplain">https://note.mu/featherplain</a>
+</p>
+</aside><aside class="author"><h3>大胡由紀（おおごゆき）</h3><p>株式会社コミュニティコムのライター。同社のWordPress を使ったオウンドメディアの企画・<wbr/>運営に携わるほか，<wbr/>大宮経済新聞副編集長・<wbr/>埼玉新聞タウン記者として，<wbr/>年間100 本以上の地域に密着した取材· 執筆活動を行う。</p>
+</aside><aside class="author"><h3>清水由規（しみずゆき）</h3><p>株式会社コミュニティコムのデザイナー・<wbr/>プランナー。2011 年よりウェブ業界に従事し，<wbr/>グローバル企業から中小企業・<wbr/>個人商店まで，<wbr/>大小さまざまなウェブサイトの企画・<wbr/>制作・<wbr/>運用プロジェクトに携わる。現在は普及活動にも力を入れており，<wbr/>セミナーイベントへの登壇やレッスン講師，<wbr/>イベントスタッフとしても活動している。</p>
+</aside><aside class="author"><h3>清水久美子（しみずくみこ）</h3><p>株式会社コミュニティコムのデザイナー・<wbr/>マークアップエンジニア。2001 年よりウェブサイト制作に携わり，<wbr/>フリーランスを経て現職。静岡県でフルリモート勤務のかたわら，<wbr/>勉強会の自主開催や静岡 WordPressMeetup などへの登壇，<wbr/>地元コミュニティ活動などにも力を入れる。好物は写真と猫，<wbr/>A11y。</p>
+</aside><aside class="author"><h3>山田里江（やまだりえ）</h3><p>株式会社コミュニティコムのライター・<wbr/>ディレクター。モバイルサイトのディレクター，<wbr/>企業のオウンドメディア担当，<wbr/>フリーランスのプロジェクトマネージャーなどを経て，<wbr/>現職ではWordPress を利用したメディア運営に携わっている。</p>
+</aside><aside class="author"><h3>リブロワークス</h3><p>書籍の企画，<wbr/>編集，<wbr/>デザインを手がけるプロダクション。扱うジャンルはIT 系を中心に幅広い。最近の著書は，<wbr/>『今すぐ使えるかんたん Outlook 2019』（技術評論社），<wbr/>『スラスラ読める Ruby ふりがなプログラミング』（インプレス）など。</p></aside>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="39441">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>Chapter 1　ホームページを作る前に知っておきたいこと</h3>
+<ul class="toc">
+<li>01　ホームページってどんなことができるの？</li>
+<li>02　ホームページを作るために必要なもの</li>
+<li>03　WordPress でホームページを作るメリット</li>
+<li>04　どのような構成のページにしたいか考えよう</li>
+<li>05　ホームページ作成の流れを確認しよう</li>
+
+</ul>
+<h3>Chapter 2　ホームページを作る準備をしよう</h3>
+<ul class="toc">
+<li>01　レンタルサーバーを選ぼう</li>
+<li>02　独自ドメインを取得しよう</li>
+<li>03　サーバーをレンタルしよう</li>
+<li>04　WordPress をインストールしよう</li>
+<li>05　WordPress の管理画面にログインしよう</li>
+<li>06まずはURL に関する設定を行おう</li>
+<li>07記事を書くユーザーの名前を設定しよう</li>
+
+</ul>
+<h3>Chapter 3　テーマを設定して外観を整えよう</h3>
+<ul class="toc">
+<li>01　WordPress のテーマとは</li>
+<li>02　Saitama テーマの特徴</li>
+<li>03　テーマをインストールしよう</li>
+<li>04　トップの画像を設定しよう</li>
+<li>05　サイトロゴとキャッチフレーズを設定しよう</li>
+<li>06　トップ画像をスライドショー形式にしよう</li>
+
+</ul>
+<h3>Chapter 4　文章と写真を投稿しよう</h3>
+<ul class="toc">
+<li>01　「投稿」と「固定ページ」の違いを理解しよう</li>
+<li>02　ブロックエディターの画面を確認しよう</li>
+<li>03　「投稿」を書いてみよう</li>
+<li>04　記事に画像を挿入しよう</li>
+<li>05　文字を装飾しよう</li>
+<li>06　文字と画像を並べて配置する</li>
+<li>07　記事にカテゴリーを設定しよう</li>
+<li>08　アイキャッチ画像を設定しよう</li>
+<li>09　ページの表示を確認しよう</li>
+
+</ul>
+<h3>Chapter 5　商品ページを作ろう</h3>
+<ul class="toc">
+<li>01　ギャラリー機能を使って商品紹介をしよう</li>
+<li>02　画像や動画に文字を重ねてみよう</li>
+<li>03　段組みと余白を使おう</li>
+<li>04　ボタンを追加しよう</li>
+<li>05　記事を複数のページに分割しよう</li>
+
+</ul>
+<h3>Chapter 6　会社概要やアクセスページを作ろう</h3>
+<ul class="toc">
+<li>01　新しい固定ページを作成しよう</li>
+<li>02　表を使った会社概要ページを作ろう</li>
+<li>03　地図が載っているアクセスページを作ろう</li>
+
+</ul>
+<h3>Chapter 7　お問い合わせフォームを作ろう</h3>
+<ul class="toc">
+<li>01　プラグインを使用する</li>
+<li>02　Contact Form 7 を導入しよう</li>
+<li>03　お問い合わせフォームを作ろう</li>
+<li>04　固定ページにフォームを設定しよう</li>
+<li>05　フォームに項目を追加しよう</li>
+
+</ul>
+<h3>Chapter 8　メニューやサイドバーをカスタマイズしよう</h3>
+<ul class="toc">
+<li>01　メニューを設定しよう</li>
+<li>02　サイドバーのウィジェットを変更しよう</li>
+<li>03　Saitema Addon Pack をインストールしよう</li>
+<li>04　トップページに注目してほしい情報を載せよう</li>
+<li>05　フッターに連絡先情報や新着情報などを載せよう</li>
+<li>06　SNS と連携するパーツを表示しよう</li>
+<li>07　各ページにソーシャルボタンを設置しよう</li>
+<li>08　サイドバーにリンクを表示しよう</li>
+
+</ul>
+<h3>Chapter 9　ホームページの運営に役立つテクニック</h3>
+<ul class="toc">
+<li>01　メンテナンス中のお知らせを表示しよう</li>
+<li>02　プラグインを使ってセキュリティ対策をしよう</li>
+<li>03　手軽にSEO をしよう</li>
+<li>04　WordPress のデータをバックアップしよう</li>
+</ul>
+
+<h3>付録</h3>
+<ul class="toc">
+<li>01　イメージどおりの写真素材を探すには？</li>
+<li>02　ネットショップを設置するには？</li>
+<li>03　ページをパスワード制にするには？</li>
+<li>04　ファビコンを設定するには？</li>
+<li>05　アイキャッチ画像に初期画像を設定するには？</li>
+<li>06　コメント欄を閉じるには？</li>
+<li>07　スパムコメントを防ぐには？</li>
+<li>08　SNS 向けのOG タグを設定するには？</li>
+<li>09　Google アナリティクスでアクセス解析するには？</li>
+<li>10　定型の文章や画像を複数のページで使うには？</li>
+<li>11　SNS の投稿を記事に追加するには？</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="download">ダウンロード</h3>
+<h4>画像のダウンロード</h4>
+
+<p>本書で使用しているサンプル画像のファイルをダウンロードできます。</p>
+
+<p>容量が大きいため，<wbr/>お使いの回線によっては時間がかかる場合があります。ダウンロード後は圧縮ファイル（ZIPファイル）の状態なので，<wbr/>展開してから使用してください。</p>
+
+
+<dl>
+<dt>ダウンロード</dt>
+<dd><a href="http://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10555-6/download/WP_kaitei2_sample.zip">WP_kaitei2_sample.zip</a></dd>
+</dl>
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2019\/978-4-297-10556-3","path":"\/dp\/ebook\/2019\/978-4-297-10556-3","targetId":"978-4-297-10556-3","parent":"\/dp\/genre\/Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

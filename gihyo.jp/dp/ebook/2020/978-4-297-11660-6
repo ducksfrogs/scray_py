@@ -1,0 +1,623 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>基本がわかるSQL入門 ――データベース＆設計の基礎から楽しく学ぶ | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="「基本がわかる」をテーマに，SQL＆データベースの基礎から，やさしくスタート！そして，「SQLでどんなことができるのか」「どんなときに便利なのか」「なぜそんなしくみになっているのか」について，一つ一つステップアップしながら解説します。本書の特徴は，文法の背景にある「設計」を丁寧に扱っている点です。SQL学習時の頻出ケースである，思ったように操作できない…… この書き方のどこが便利なのか実感が湧かない……，そんなとき，設計について少しでも知ってることが大きな力になります。想定環境はMySQLを主軸にMariaDB，PostgreSQLとメジャーなOSS（オープンソース）製品に対応し，サポートサイトのサンプルを活用して試しながら学ぶことも可能。広くデータベース利用者の方々に向けて，長く役立つ技術知識を凝縮してお届けします。"/>
+  <meta name="keywords" content="西村めぐみ電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="基本がわかるSQL入門 ――データベース＆設計の基礎から楽しく学ぶ | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="「基本がわかる」をテーマに，SQL＆データベースの基礎から，やさしくスタート！そして，「SQLでどんなことができるのか」「どんなときに便利なのか」「なぜそんなしくみになっているのか」について，一つ一つステップアップしながら解説します。本書の特徴は，文法の背景にある「設計」を丁寧に扱っている点です。SQL学習時の頻出ケースである，思ったように操作できない…… この書き方のどこが便利なのか実感が湧かない……，そんなとき，設計について少しでも知ってることが大きな力になります。想定環境はMySQLを主軸にMariaDB，PostgreSQLとメジャーなOSS（オープンソース）製品に対応し，サポートサイトのサンプルを活用して試しながら学ぶことも可能。広くデータベース利用者の方々に向けて，長く役立つ技術知識を凝縮してお届けします。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2020/978-4-297-11660-6"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2020/978-4-297-11660-6.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">基本がわかる<wbr>SQL<wbr>入門<br><span class="sub">――データベース＆<wbr>設計の基礎から楽しく学ぶ</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2020/978-4-297-11660-6.jpg" alt="基本がわかるSQL入門 ――データベース＆設計の基礎から楽しく学ぶ"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">西村めぐみ　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2020-10-08">2020年10月8日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2020-10-08">2020年10月8日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2020/978-4-297-11659-0" target="_blank">2020年10月8日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,480円 <a id="pid403005" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">320</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2020/978-4-297-11660-6" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2020/978-4-297-11660-6" data-text="基本がわかるSQL入門 ――データベース＆設計の基礎から楽しく学ぶ #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2020/978-4-297-11660-6" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2020/978-4-297-11660-6" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>「基本がわかる」をテーマに，<br />
+SQL＆データベースの基礎から，<wbr/>やさしくスタート！</p>
+
+<p>そして，<wbr/>「SQLでどんなことができるのか」「どんなときに便利なのか」「なぜそんなしくみになっているのか」について，<wbr/>一つ一つステップアップしながら解説します。</p>
+
+<p>本書の特徴は，<wbr/>文法の背景にある「設計」を丁寧に扱っている点です。SQL学習時の頻出ケースである，<wbr/>思ったように操作できない…… この書き方のどこが便利なのか実感が湧かない……，<wbr/>そんなとき，<wbr/>設計について少しでも知ってることが大きな力になります。</p>
+
+<p>想定環境はMySQLを主軸にMariaDB，<wbr/>PostgreSQLとメジャーなOSS（オープンソース）製品に対応し，<wbr/>サポートサイトのサンプルを活用して試しながら学ぶことも可能。広くデータベース利用者の方々に向けて，<wbr/>長く役立つ技術知識を凝縮してお届けします。</p><h3>こんな方におすすめ</h3>
+<ul><li>これからSQL＆データベースについて学ぶ方々</li><li>データベース利用者の方々</li></ul>
+<h3> 本書の動作確認環境について</h3>
+
+<p>本書掲載のSQL文は，<wbr/>以下のデータベース管理システム（ソフトウェア）を使用して動作確認を行いました。サンプルデータによる実行結果は，<wbr/>MySQLによるものを掲載しています。</p>
+
+<ul>
+<li>MySQL 8.0.21（一部の例を除き，<wbr/>5.7でも実行可能）</li>
+<li>MariaDB 10.4</li>
+<li>PostgreSQL 12.4</li>
+</ul>
+
+<p>上記はいずれも無償で入手できます。それぞれ，<wbr/>ビジネスの現場でも広く利用されており，<wbr/>Linux，<wbr/>Windows，<wbr/>macOSにも対応しています（本書のサポートページから辿れるURLにて，<wbr/>Linux/Windows/macOSにおける環境構築について補足解説を参照できます）。</p><aside class="author"><h3>西村めぐみ（にしむらめぐみ）</h3><p>1990年代，<wbr/>生産管理ソフトウェアの開発およびサポート業務/セミナー講師を担当。その後，<wbr/>書籍および雑誌での執筆，<wbr/>PCおよびMicrosoft Officeのeラーニング教材作成/指導，<wbr/>新人教育にも携わる。おもな著書は『図解でわかるLinuxのすべて』（日本実業出版社），<wbr/>『シェルの基本テクニック』（IDGジャパン），<wbr/>『［新版 zsh&bash対応］macOS×コマンド入門 ──ターミナルとコマンドライン，<wbr/>基本の力』（技術評論社）など。</p></aside><section id="sample"><h2>サンプル</h2><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/9784297116590-01.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/thumb/TH400_9784297116590-01.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/9784297116590-01.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/9784297116590-02.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/thumb/TH400_9784297116590-02.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/9784297116590-02.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/9784297116590-03.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/thumb/TH400_9784297116590-03.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/9784297116590-03.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/9784297116590-04.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/thumb/TH400_9784297116590-04.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/9784297116590-04.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/9784297116590-05.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/thumb/TH400_9784297116590-05.png,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11659-0/9784297116590-05.png" width="400" height="533" alt="sample"/></a></section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="41587">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h4>本書について　……SQLって何だろう？ どのように学ぶ？</h4>
+
+<h4>本書の構成</h4>
+
+<h4>本書の動作確認環境</h4>
+
+<h4>本書の補足情報について</h4>
+
+<h3>第1章　SQL＆DBの基礎知識　……SQLって何だろう？</h3>
+
+<h4>1.1　データベース用の言語「SQL」　……まずはどんな姿か見てみよう</h4>
+<ul class="toc">
+<li>データを管理する「テーブル」</li>
+<li>SELECT文の構造</li>
+<li>複数のテーブルからデータを取得する</li>
+<li>新しい列を作って表示する</li>
+<li>なぜ複数のテーブルに分かれているのか</li>
+
+</ul>
+<h4>1.2　DBMSの基本機能　……データベース管理システムの役割って何？</h4>
+<ul class="toc">
+<li>データ操作機能</li>
+<li>同時実行制御</li>
+<li>トランザクション管理</li>
+<li>機密保護</li>
+<li>障害回復</li>
+
+</ul>
+<h4>1.3　RDBの特徴　……リレーショナルデータベースってどんなDB？</h4>
+<ul class="toc">
+<li>常に「表」で考える</li>
+<li>一意性制約と参照制約</li>
+<li>RDBと3層スキーマ</li>
+
+
+
+</ul>
+<h3>第2章　SQL初級編　……実際に書いて試してみよう</h3>
+
+<h4>2.1　SQLの種類と基本的な書式　……書き方のルールを確認しよう</h4>
+<ul class="toc">
+<li>標準SQLとSQLの方言</li>
+<li>SQLの5つの記述ルール</li>
+<li>❶各単語は半角スペースまたは改行で区切り，文末には「;」を付ける</li>
+<li>❷キーワードは大文字でも小文字でもよい</li>
+<li>❸テーブル名や列名には（原則として）半角英数字と「_」を使う</li>
+<li>❹文字列や日付は「'〜'」で囲む</li>
+<li>❺コメントは「--」の後ろか，「/*」と「*/」の間に書く</li>
+
+</ul>
+<h4>2.2　テーブルの作成と削除　……CREATE TABLE，DROP TABLE</h4>
+<ul class="toc">
+<li>テーブルの作成　CREATE TABLE</li>
+<li>テーブルの削除　DROP TABLE</li>
+
+</ul>
+<h4>2.3　参照制約（外部キー）の設定　……FOREIGN KEY，REFERENCES</h4>
+<ul class="toc">
+<li>外部キーがあるテーブルにデータを登録する</li>
+
+</ul>
+<h4>2.4　データの追加　……INSERT INTO</h4>
+
+<h4>2.5　データの変更　……UPDATE</h4>
+<ul class="toc">
+<li>更新できないデータが含まれていた場合</li>
+
+</ul>
+<h4>2.6　データの削除　……DELETE</h4>
+<ul class="toc">
+<li>参照されているデータの削除</li>
+
+</ul>
+<h4>2.7　データの問い合わせ　……SELECT</h4>
+<ul class="toc">
+<li>テーブルを表示する　問い合わせ❶</li>
+<li>データを並べ替える　問い合わせ❷</li>
+<li>データを集計する　問い合わせ❸</li>
+<li>集計結果で並べ替える　集計補足❶</li>
+<li>別の列名で表示する　集計補足❷</li>
+<li>テーブルを結合する　問い合わせ❹</li>
+<li>結合した結果を絞り込む，並べ替える　結合補足❶</li>
+<li>結合した結果を集計する　結合補足❷</li>
+
+</ul>
+<h4>2.8　ビューの作成と削除　……CREATE VIEW/DROP VIEW</h4>
+<ul class="toc">
+<li>ビューの作成</li>
+<li>ビューの削除</li>
+
+</ul>
+<h4>2.9　バッカス記法（BNF）　……読めると便利！ マニュアルの書式</h4>
+<ul class="toc">
+
+</ul>
+<h3>第3章　CREATE TABLE詳細　……テーブルではどんなことを定義できるのか</h3>
+
+<h4>3.1　実表と導出表　……SELECTできる2つの「表」</h4>
+<ul class="toc">
+<li>テーブルとビューの定義</li>
+
+</ul>
+<h4>3.2　「列」（カラム）の設定　……どんなデータを保存したいか考えよう</h4>
+<ul class="toc">
+<li>データの「型」とは何か</li>
+<li>列の初期値　DEFAULT句</li>
+<li>登録できる値の制限　CHECK制約</li>
+<li>文字列/数値/日付時刻以外のデータ型</li>
+<li>ドメイン（定義域）とは何か</li>
+
+</ul>
+<h4>3.3　特別な値「NULL」　……わからない値だって保存したい</h4>
+<ul class="toc">
+<li>NULLの禁止</li>
+
+</ul>
+<h4>3.4　キー（識別子）　……PRIMARY KEY，UNIQUE，NOT NULL</h4>
+<ul class="toc">
+<li>主キーと候補キー</li>
+<li>主キーとそのほかの候補キーの宣言</li>
+<li>複合キーの宣言</li>
+
+</ul>
+<h4>3.5　参照制約（外部キー）　……FOREIGN KEY，REFERENCES</h4>
+<ul class="toc">
+<li>参照制約（外部キー）の宣言</li>
+<li>キーの値を変更したらどうなるか</li>
+
+</ul>
+<h4>3.6　テーブル定義の変更　……ALTER TABLE</h4>
+<ul class="toc">
+<li>列と制約の追加</li>
+<li>列と制約の変更/削除</li>
+<li>参照制約（外部キー制約）の追加と削除</li>
+
+</ul>
+<h4>3.7　インデックスの作成と削除　……CREATE INDEX，DROP INDEX</h4>
+<ul class="toc">
+<li>インデックスの作成</li>
+<li>インデックスの削除</li>
+<li>インデックスと更新速度</li>
+
+
+
+
+</ul>
+<h3>第4章　正規化　……RDBにとっての「正しい形」とは</h3>
+
+<h4>4.1　正規化の目的　……すべては正しいデータを保つため</h4>
+<ul class="toc">
+<li>正規化で防ぎたい「更新不整合」とは</li>
+<li>スタートは第1正規形，最初のゴールは第3正規形</li>
+
+</ul>
+<h4>4.2　テーブルの構造は列×行のみ　……第1正規形と繰り返し項目の排除</h4>
+<ul class="toc">
+<li>導出項目の排除</li>
+<li>繰り返し項目の排除</li>
+
+</ul>
+<h4>4.3　テーブルの列は主キーと主キーで決定する項目のみ　……第2正規形，第3正規形，ボイスコッド正規形</h4>
+<ul class="toc">
+<li>無損失分解</li>
+<li>部分関数従属を取り除く　第2正規形</li>
+<li>推移的関数従属を取り除く　第3正規形</li>
+<li>ボイスコッド正規形　BCNF</li>
+<li>ボイスコッド正規形までのまとめ</li>
+
+</ul>
+<h4>4.4　多値従属性と結合従属性　……第4正規形，第5正規形</h4>
+<ul class="toc">
+<li>多値従属性</li>
+<li>結合従属性</li>
+
+</ul>
+<h4>4.5　このほかの正規形　……ドメインキー正規形，第6正規形</h4>
+<ul class="toc">
+<li>ドメイン制約に着目する「ドメインキー正規形」</li>
+<li>識別子から決定できる値を1つまでにする「第6正規形」</li>
+
+
+
+</ul>
+<h3>第5章　ER図　……「モノ」と「関係」を図にしてみよう</h3>
+
+<h4>5.1　データモデリング技法「ERモデル」　……データベース設計でどう使う？</h4>
+<ul class="toc">
+<li>ERモデルと関係モデル</li>
+<li>データベースへの「写像」</li>
+<li>エンティティは「テーブル」になる</li>
+<li>リレーションシップは「参照制約」になる</li>
+<li>参照される側は「1」にする</li>
+
+
+</ul>
+<h4>5.2　ER図　……箱と箱を結ぶ線のルール</h4>
+<ul class="toc">
+<li>さまざまな図法</li>
+<li>ER図を読み解く3つのポイント<ul class="toc">
+
+	<li>❶エンティティと属性の表記</li>
+	<li>❷主キーと外部キーの表記</li>
+	<li>❸ カーディナリティの表記</li></ul></li>
+<li>モデリングツール</li>
+
+</ul>
+<h4>5.3　カーディナリティの検討　……参照できる形に整えよう</h4>
+<ul class="toc">
+<li>1対多の場合</li>
+<li>1対多は「親子関係」か「参照関係」を表している</li>
+<li>多対多の場合</li>
+<li>多対1の場合</li>
+<li>1対1の場合</li>
+<li>1対1の意味を考える</li>
+<li>1対1の外部キー</li>
+
+</ul>
+<h4>5.4　識別子（キー）の検討　……本当にその識別子で大丈夫？</h4>
+<ul class="toc">
+<li>使われていない識別子は存在しないか</li>
+<li>識別子に複合キーが潜んでいないか</li>
+<li>存在しない識別子を使っていないか</li>
+
+</ul>
+<h4>5.5　スーパータイプとサブタイプ　……区分コードを見つけたら考えよう</h4>
+<ul class="toc">
+<li>is-aの関係になっているか</li>
+<li>orの関係になっているか</li>
+<li>どちらでテーブルを作るか</li>
+
+
+
+</ul>
+<h3>第6章　データ操作　……データを自在にSELECTしよう</h3>
+
+<h4>6.1　SELECTの基礎構文　……必要なデータを取り出す，重複を取り除く</h4>
+<ul class="toc">
+<li>列の指定，列の連結と計算，別名　SELECT句，AS，CONCAT，||</li>
+<li>重複の除去　DISTINCT</li>
+<li>行の指定（絞り込み）　WHERE句</li>
+<li>条件を組み合わせる　AND，OR，NOT</li>
+<li>並び順を変える　ORDER BY</li>
+<li>行数の指定　LIMIT（MySQL/MariaDB/PostgreSQL）</li>
+
+</ul>
+<h4>6.2　関数と演算子　……値の比較，計算，パターンマッチング</h4>
+<ul class="toc">
+<li>大小の比較と数値の計算　=　&lt; &gt;　 &gt;　&lt;　 &gt;=　&lt;=　+　-　*　/</li>
+<li>NULLの判定　IS NULL，IS NOT NULL</li>
+<li>範囲の指定　BETWEEN</li>
+<li>いずれかの値に当てはまるか　IN</li>
+<li>あいまい検索　LIKE</li>
+<li>正規表現による検索　SIMILAR TO，REGEXP，~演算子</li>
+<li>文字列の演算子とおもな関数</li>
+<li>日付時刻の演算子とおもな関数</li>
+<li>NULLの変換　NULLIF，COALESCE</li>
+
+</ul>
+<h4>6.3　結合（JOIN）　……複数のテーブルを組み合わせる</h4>
+<ul class="toc">
+<li>クロス結合　CROSS JOIN</li>
+<li>内部結合　INNER JOIN（JOIN）</li>
+<li>外部結合　LEFT OUTER JOIN，RIGHT OUTER JOIN，FULL OUTER JOIN</li>
+<li>自己結合　同じテーブルでの結合</li>
+<li>等価結合時の列指定　USING()</li>
+<li>自然結合　NATURAL JOIN</li>
+<li>2つより多いテーブルの結合</li>
+<li>複数の列によるJOIN</li>
+
+
+</ul>
+<h4>6.4　NULLとUNKNOWN　……わからない値をどう扱う？</h4>
+<ul class="toc">
+<li>TRUE/FALSE/UNKNOWNによる論理演算</li>
+<li>TRUEとFALSEのみで判定する　IS演算子</li>
+
+</ul>
+<h4>6.5　集約関数　……データのグループ化と集計</h4>
+<ul class="toc">
+<li>集約関数　COUNT，AVG，SUM，MAX，MIN</li>
+<li>複数の列でグループ化する　GROUP BY</li>
+<li>小計と合計を付ける　ROLLUP</li>
+<li>GROUP BY使用時のSELECT句　GROUP BY</li>
+<li>集約結果で絞り込む　HAVING，WHERE</li>
+<li>列の一部の値で集計する　GROUP BY，SUBSTRING()</li>
+<li>列ごとに異なる条件で集計する　CASE，GROUP BY</li>
+
+</ul>
+<h4>6.6　テーブルの連結（UNION）　……データを「縦」につなげたい</h4>
+<ul class="toc">
+<li>SELECT結果の連結　UNION，UNION ALL</li>
+<li>列の数や型を調整するには</li>
+
+</ul>
+<h4>6.7　CASE式　……SELECT文で場所分け（条件分岐）</h4>
+<ul class="toc">
+<li>値を置き換える　単純CASE式</li>
+<li>値ごとに式を書く　検索CASE式</li>
+<li>WHERE句で使用する列の優先順位を決める　検索CASE式（WHERE句）</li>
+<li>任意の値で区切ってカウントする　検索CASE式（SELECT句）</li>
+
+</ul>
+<h4>6.8　サブクエリー　……SELECT文とSELECT文を組み合わせる</h4>
+<ul class="toc">
+<li>SELECT文の結果を使って絞り込む　サブクエリー（WHERE句）</li>
+<li>各行に対してSELECT文を実行する　相関サブクエリー</li>
+<li>列の値をSELECT文で作る　SELECT句のサブクエリー</li>
+<li>複数の値で絞り込む　IN，NOT IN</li>
+<li>複数の値と比較する　ALL，SOME，ANY</li>
+<li>サブクエリーとNULL</li>
+<li>存在しているかどうかを調べる　EXISTS，NOT EXISTS</li>
+
+
+</ul>
+<h4>6.9　ウィンドウ関数　……データを区切って集計，順位付けする</h4>
+<ul class="toc">
+<li>ウィンドウ関数の基本　無名ウィンドウ，名前付きウィンドウ</li>
+<li>どう区切るのかを決める，連番を付ける　PARTITION BY，ORDER BY，ROW_NUMBER()</li>
+<li>全体の集計を行う　PARTITION BYを使わないウィンドウ関数</li>
+<li>区画別の集計とランキング　RANK，DENSE_RANK，ORDER BY</li>
+<li>区画内の行の位置を指定する　LAG，LEAD，FIRST_VALUE，LAST_VALUE，NTH_VALUE</li>
+<li>直前の値と同じだったらスペースにする　LAG，CASE，名前付きウィンドウ</li>
+
+</ul>
+<h4>6.10　データの更新　……クエリーを使って更新しよう</h4>
+<ul class="toc">
+<li>INSERTとSELECTによる一括登録</li>
+<li>ほかのテーブルの値を使って更新対象を指定する</li>
+<li>ほかのテーブルの値を使って更新する</li>
+
+</ul>
+<h4>6.11　［補講］関係演算　……集合論から見たSQL</h4>
+<ul class="toc">
+<li>和　UNION，UNION ALL</li>
+<li>差　EXCEPT，EXCEPT ALL，NOT EXISTS，OUTER JOIN</li>
+<li>共通　INTERSECT，INTERSECT ALL，INNER JOIN</li>
+<li>直積　CROSS JOIN</li>
+<li>関係演算で追加された演算</li>
+<li>選択　WHERE</li>
+<li>射影　SELECT</li>
+<li>結合　JOIN</li>
+<li>商　サブクエリー</li>
+
+
+
+</ul>
+<h3>第7章　ケーススタディー　……データベース設計＆SELECT文の組み立て方</h3>
+
+<h4>7.1　フクロウ塾のデータベース設計　……ER図，フィールド＆書式，DBに持たせるルール</h4>
+<ul class="toc">
+<li>氏名フィールドの検討と文字列の書式</li>
+<li>氏名に常にスペースを入れたい場合のCHECK制約</li>
+<li>マスターを追加すべきか検討する　コースの再検討❶</li>
+<li>複合キーで選択可能なコースを制限する　コースの再検討❷</li>
+<li>データベースでルールを管理するかを検討する　コースの再検討❸</li>
+<li>データベースで管理する場合　コースの再検討❸-［A］</li>
+<li>データベースでは管理しない場合　コースの再検討❸-［B］</li>
+
+</ul>
+<h4>7.2　データ抽出のバリエーション　……サブクエリーとウィンドウ関数の活用</h4>
+<ul class="toc">
+<li>最高得点者のリスト　サブクエリーの場合</li>
+<li>最高得点者のリスト　ウィンドウ関数の場合</li>
+<li>内部結合と外部結合の検討　難易度別コースの最高得点❶</li>
+<li>最高得点の確認　難易度別コースの最高得点❷</li>
+<li>氏名の取得　難易度別コースの最高得点❸</li>
+<li>最高得点者のリスト完成　難易度別コースの最高得点❹</li>
+<li>前回の記録との比較　前回よりも10点以上点数が下がった</li>
+<li>同じ中学校に通っている生徒</li>
+<li>複数の子が通っている中学校のリスト</li>
+<li>同じ中学校で別の校舎に通っている生徒のリスト</li>
+
+
+</ul>
+<h4>索引</h4>
+
+<h4>構文索引</h4>
+
+<h3>Column</h3>
+<ul class="toc">
+<li>クラウドで利用できるおもなデータベース</li>
+
+<li>識別子に使用可能な文字</li>
+
+<li>DBMSのキーワード　……予約語</li>
+
+<li>トランザクションの活用　……START TRANSACTION，ROLLBACK，COMMIT</li>
+
+<li>SQLによる「権限」の設定　……GRANT，REVOKE</li>
+
+<li>更新可能なビュー</li>
+
+<li>NULLとCHECK制約</li>
+
+<li>データベースはSQLだけじゃない?!　……NoSQLの基礎知識</li>
+
+<li>SQLの「実行計画」とは</li>
+
+<li>関係モデルの基礎用語　リレーションとリレーションシップ</li>
+
+<li>2種類のエンティティ　イベント，リソース</li>
+
+<li>新しいエンティティの意味</li>
+
+<li>正規形とER図</li>
+
+<li>新しい識別子</li>
+
+<li>SELECT文の評価順序</li>
+
+<li>JOIN，WHERE，ORDER BYとインデックスの処理速度</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="supplement">補足情報</h3>
+<p>著者の西村めぐみ氏によるサポートページは，<wbr/>次のとおりです。</p>
+<div align="right"><p>（2020年10月5日更新）</p></div>
+<ul>
+<li><a href="https://nisim-m.github.io/sqlbook/">https://nisim-m.github.io/sqlbook/</a></li>
+</ul>
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2020\/978-4-297-11660-6","path":"\/dp\/ebook\/2020\/978-4-297-11660-6","targetId":"978-4-297-11660-6","parent":"\/dp\/genre\/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

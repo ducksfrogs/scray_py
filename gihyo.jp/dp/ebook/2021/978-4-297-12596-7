@@ -1,0 +1,796 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>『プロになるためのWeb技術入門』――なぜ，あなたはWebシステムを開発できないのか | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="2010年に発売された『プロになるためのWeb技術入門』が電子版になりました。『なぜあなたはJavaでオブジェクト指向開発できないのか』の著者である小森祐介氏の新刊です。Webアプリケーションの開発方法を，インターネットの仕組みの根本原理から，じっくり解説します。Webアプリケーションとは何か？――という根本的な問いかけから始まり，基礎の基礎をかためつつ，本物の実力を養成することを目標に内容を構成しています。これにより一貫した流れでWebアプリケーション開発の真髄を学ぶことができます。図解をたくさん用意しましたので，これで直感的に楽しく理解も進むようになっています。"/>
+  <meta name="keywords" content="小森裕介電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="『プロになるためのWeb技術入門』――なぜ，あなたはWebシステムを開発できないのか | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="2010年に発売された『プロになるためのWeb技術入門』が電子版になりました。『なぜあなたはJavaでオブジェクト指向開発できないのか』の著者である小森祐介氏の新刊です。Webアプリケーションの開発方法を，インターネットの仕組みの根本原理から，じっくり解説します。Webアプリケーションとは何か？――という根本的な問いかけから始まり，基礎の基礎をかためつつ，本物の実力を養成することを目標に内容を構成しています。これにより一貫した流れでWebアプリケーション開発の真髄を学ぶことができます。図解をたくさん用意しましたので，これで直感的に楽しく理解も進むようになっています。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-12596-7"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-12596-7.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/%E3%83%97%E3%83%AD%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE">プロになるための</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">『プロになるための<wbr>Web<wbr>技術入門』<br><span class="sub">――なぜ，<wbr>あなたは<wbr>Web<wbr>システムを開発できないのか</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-12596-7.jpg" alt="『プロになるためのWeb技術入門』――なぜ，あなたはWebシステムを開発できないのか"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">小森裕介　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-12-10">2021年12月10日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-12-10">2021年12月10日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2010/978-4-7741-4235-7" target="_blank">2010年4月10日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,280円 <a id="pid403411" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">288</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-12596-7" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-12596-7" data-text="『プロになるためのWeb技術入門』――なぜ，あなたはWebシステムを開発できないのか #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-12596-7" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-12596-7" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>2010年に発売された『プロになるためのWeb技術入門』が電子版になりました。</p>
+<p>『なぜあなたはJavaでオブジェクト指向開発できないのか』の著者である小森祐介氏の新刊です。Webアプリケーションの開発方法を，<wbr/>インターネットの仕組みの根本原理から，<wbr/>じっくり解説します。Webアプリケーションとは何か？――という根本的な問いかけから始まり，<wbr/>基礎の基礎をかためつつ，<wbr/>本物の実力を養成することを目標に内容を構成しています。これにより一貫した流れでWebアプリケーション開発の真髄を学ぶことができます。図解をたくさん用意しましたので，<wbr/>これで直感的に楽しく理解も進むようになっています。</p><h3>こんな方におすすめ</h3>
+<ul><li>Webアプリケーションの基礎の基礎を学びたい方</li><li>Webのしくみを根本的に知りたい方</li></ul>
+<aside class="author"><h3>小森裕介（こもりゆうすけ）</h3><p><a href="http://www.ulsystems.co.jp">ウルシステムズ株式会社 </a>シニアコンサルタント</p>
+<p>2000年，<wbr/>東京工業大学工学部情報工学科卒業。進学か就職かで悩むが「研究よりも実際に役に立つソフトウェアを創りたい」という思いから，<wbr/>就職を決意。独立系システム開発会社でのSE・<wbr/>技術コンサルタント経験を経て，<wbr/>現職にて技術支援やPM支援，<wbr/>ビジネス企画支援などを幅広くこなすが，<wbr/>「世界中の人々に使ってもらえるプロダクトを開発する」という夢への道のりはまだ遠い。</p>
+<p>2005年からオープンソースソフトウェア開発活動に興味を持ち，<a href="http://www.seasar.org/">Seasarプロジェクト</a> にてコミッタやカンファレンス講演者として活動中。同プロジェクト配下でリッチクライアントフレームワーク，<a href="http://uruma.sandbox.seasar.org/ja/">Uruma</a> を立ち上げ開発を進めるが，<wbr/>時間が取れず思うように開発が進まないのが目下の悩み。</p>
+<p>最近の趣味は，<wbr/>スポーツでは体力の続かないバドミントンと下手くそなゴルフ。マイ・<wbr/>ブームは高速道路を使わない長距離ドライブ。まとまった休みには，<wbr/>行き当たりばったりで日本の原風景を楽しみながら，<wbr/>ときには2,000km以上も走る。ソーラーカーレースへの参戦をやめてしまったのを惜しみつつも，<wbr/>第2の故郷・<wbr/>大潟村にもふらりと足を伸ばす。</p></aside><section id="sample"><h2>サンプル</h2><ul class="pdf"><li><a href="https://image.gihyo.co.jp/assets/files/book/2010/978-4-7741-4235-7/9784774142357-01.pdf" target="_blank">サンプルPDFファイル1</a>（660KB）</li></ul>
+</section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="17228">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>LESSON 0　はじめに</h3>
+<ul class="toc">
+<li>市民権を得た「Webアプリケーション」</li>
+<li>「Webアプリケーション」開発の難しさ</li>
+<li>「Webアプリケーション」の開発技術はどこで学べる？</li>
+<li>なぜ，あなたはWebアプリケーション開発技術を学べないのか</li>
+<li>本書の対象読者</li>
+<li>本書を読む上での想定知識</li>
+<li>最も効率よく「技術」を学ぶ方法</li>
+</ul>
+<h3>LESSON 1　「Webアプリケーション」とは何か</h3>
+<ul class="toc">
+<li>1.1　デスクトップアプリケーション</li>
+<li>1.2　Webアプリケーション</li>
+<li>1.3　まとめ</li>
+</ul>
+<h3>LESSON 2　Webはどのように発展したか</h3>
+<h4>2.1　WWWの誕生と普及</h4>
+<ul class="toc">
+<li>世界中のコンピュータを結ぶインターネット</li>
+<li>インターネット普及の立役者・World-Wide WebとMosaic</li>
+<li>WWWの誕生</li>
+<li>現代Webブラウザの祖先・NCSA Mosaic</li>
+</ul>
+<h4>2.2　Webを支える技術の発明</h4>
+<ul class="toc">
+<li>WebサーバとWebクライアント</li>
+<li>なぜ，クライアントとサーバに分けるのか</li>
+<li>コラム　「クライアント」と「サーバ」偉いのはどっち？
+<li>「そのリソースはどこにある？」- URL</li>
+<li>HTTP</li>
+<li>コラム　インターネットに公開された技術仕様・RFC</li>
+</ul>
+<h4>2.3　CGIの誕生</h4>
+<ul class="toc">
+<li>動的なコンテンツへの要求</li>
+<li>CGIの誕生</li>
+<li>Webの爆発的な普及</li>
+</ul>
+<h4>2.4　サーブレットの登場</h4>
+<ul class="toc">
+<li>CGIにまつわる問題点</li>
+<li>Java／サーブレットの誕生</li>
+<li>Javaでアプリケーションを開発することの利点</li>
+<li>コラム　早すぎた技術，Javaアプレット</li>
+</ul>
+<h4>2.5　JSPの誕生</h4>
+<ul class="toc">
+<li>サーブレットの問題点</li>
+<li>発想の逆転！JSPの誕生</li>
+</ul>
+<h4>2.6　Webアプリケーションフレームワークの時代</h4>
+<ul class="toc">
+<li>サーブレットやJSPの問題点</li>
+<li>Webアプリケーションフレームワークの誕生</li>
+</ul>
+<h4>2.7　まとめ</h4>
+<h3>LESSON 3　HTTPを知る</h3>
+<h4>3.1　HTTPの知識はなぜ必要か</h4>
+<ul class="toc">
+<li>コラム　ハードウェアさえも信じられない事態！？</li>
+</ul>
+<h4>3.2　WebブラウザとWebサーバの通信をのぞいてみよう</h4>
+<ul class="toc">
+<li>横取り丸とInetSpyのインストール</li>
+<li>HTTP通信をのぞいてみよう</li>
+<li>HTTPリクエストをのぞく</li>
+<li>コラム　URL とURI は何が違うのか？</li>
+<li>HTTPレスポンスをのぞく</li>
+<li>HTTPでは1回で1つのリソースを取得</li>
+<li>ファイル名を省略した場合のリクエスト</li>
+</ul>
+<h4>3.3　情報はどうやってインターネットの大海原を越えるのか</h4>
+<ul class="toc">
+<li>インターネット上の住所・IPアドレス</li>
+<li>IPアドレスを頼りに情報を届けるTCP/IP</li>
+<li>IPアドレスは誰が決めるのか</li>
+<li>グローバルIPアドレスとプライベートIPアドレス</li>
+<li>コラム　IPアドレスと個人情報</li>
+<li>ホスト名をIPアドレスに変換するDNS</li>
+<li>DNSはどのようにして実現されるのか</li>
+<li>ホスト内の宛先を決定するポート番号</li>
+</ul>
+<h4>3.4　Webサーバへの要求をどのように伝えるか</h4>
+<ul class="toc">
+<li>GETメソッドによるパラメータ渡し</li>
+<li>アプリケーション側でのパラメータの受け取り</li>
+<li>POSTメソッドによるパラメータ渡し</li>
+<li>GETとPOSTどちらを使えばよい？</li>
+<li>日本語はどのようにして渡せばよいか</li>
+</ul>
+<h4>3.5　まとめ</h4>
+<h3>LESSON 4　CGIからWebアプリケーションへ</h3>
+<h4>4.1　宅配ピザ注文サイトを作ろう</h4>
+<h4>4.2　画面構成を考える</h4>
+<ul class="toc">
+<li>コラム　実際のWebシステム開発の流れ</li>
+<h4>4.3　画面モックを作ろう</h4>
+<h4>4.4　ログイン認証機能を作成する</h4>
+</ul>
+<ul class="toc">
+<li>PHPで認証機能を作ろう</li>
+<li>認証機能の動作を確認しよう</li>
+<li>リダイレクト動作のHTTP通信を確認しよう</li>
+<li>コラム　PHPはどのように実行されるのか?CGIとモジュールの違い?</li>
+</ul>
+<h4>4.5　ログイン状態をどのようにして記憶するのか</h4>
+<ul class="toc">
+<li>ステートフルなプロトコルとステートレスなプロトコル</li>
+<li>ステートレスなHTTP上で状態をどのように表現するか</li>
+<li>Cookieを利用して状態を保持する</li>
+<li>Cookie利用の実際を確認する</li>
+</ul>
+<h4>4.6　安全に状態を保存するための技術 ?セッション?</h4>
+<ul class="toc">
+<li>Cookieにまつわる問題点</li>
+<li>コラム　Cookieはどこに保存されている？</li>
+<li>銀行の窓口業務でセッションを理解しよう</li>
+<li>口座開設業務の進行状況をどのように管理するか</li>
+<li>セッションで処理の進行状況を管理する</li>
+<li>セッションの状態をどこで保持するか</li>
+<li>HTTPにおけるセッションIDの受け渡し方法</li>
+<li>セッションID利用の実際を確認する</li>
+<li>セッションIDによるユーザの識別</li>
+</ul>
+<h4>4.7　ピザ・ペントミノの完成</h4>
+<ul class="toc">
+<li>コラム　Webサーバによる認証機能 ?Basic認証?</li>
+</ul>
+<h4>4.8　まとめ</h4>
+<h3>LESSON 5　Webアプリケーションの構成要素</h3>
+<ul class="toc">
+<li>なぜWebアプリケーションの構成を理解しなければならないのか</li>
+<li>コラム　コンピュータは「節」？</li>
+</ul>
+<h4>5.1　WebサーバとWebクライアントの時代</h4>
+<ul class="toc">
+<li>WWWの黎明期</li>
+<li>CGIの時代</li>
+<li>コラム　ソフトウェア？　プログラム？　アプリケーション？　サーバ？</li>
+</ul>
+<h4>5.2　データベースサーバの登場</h4>
+<ul class="toc">
+<li>大量の情報をどのようにして管理するか</li>
+<li>データベース管理システムの登場</li>
+<li>コラム　DB? 　DBMS?　RDBMS?</li>
+<li>データベースに対する操作</li>
+<li>データベースによる情報の管理</li>
+<li>コラム　データベース設計はITシステムの要</li>
+<li>データベースから情報を抽出する</li>
+<li>必要な情報をSQLでデータベースへ伝える</li>
+<li>コラム　データベースに対するCRUD操作とSQL文の関係</li>
+<li>データベースとクライアントの関係</li>
+<li>データベースサーバの分離</li>
+<li>Webアプリケーションとデータベースの通信</li>
+<li>コラム　代表的なデータベース製品</li>
+</ul>
+<h4>5.3　アプリケーションサーバの登場</h4>
+<ul class="toc">
+<li>ServletやJSPはどこで動いているのか</li>
+<li>Servlet / JSPを動かすためのアプリケーションサーバ</li>
+<li>Webサーバとアプリケーションサーバの連携</li>
+<li>Webサーバとアプリケーションサーバの分担</li>
+<li>Webサーバとアプリケーションサーバ連携のメリット</li>
+<li>複数のTomcatへの転送</li>
+<li>Webサーバの機能を持ったアプリケーションサーバ</li>
+<li>コラム　アプリケーションサーバの提供する機能</li>
+</ul>
+<h4>5.4　Webシステムの三層構成</h4>
+<ul class="toc">
+<li>最小構成のWebシステム</li>
+<li>一般的な構成</li>
+<li>Webシステムの三層構成</li>
+<li>コラム　現代のWebシステムを支えるオープンソース</li>
+</ul>
+<h4>5.5　まとめ</h4>
+<h3>LESSON 6　Webアプリケーションを効率よく開発するための仕組み</h3>
+<h4>6.1　サーブレット／JSPだけではいけないのか</h4>
+<ul class="toc">
+<li>Webアプリケーション開発のスタンダード・Java</li>
+<li>サーブレットとJSPの連携</li>
+</ul>
+<h4>6.2　サーブレット／JSPで「ピザ・ペントミノ」のログイン処理を実現する</h4>
+<ul class="toc">
+<li>JSPによるログイン画面の表示</li>
+<li>サーブレットの呼び出し</li>
+<li>ログインサーブレットの処理</li>
+<li>フォワードとリダイレクトの違い</li>
+<li>リクエストスコープにおける情報の受け渡し</li>
+<li>JSPにおけるリクエストスコープからの情報の取り出し</li>
+<li>なぜリクエストスコープが必要なのか</li>
+<li>セッションスコープとリクエストスコープの違い</li>
+<li>コラム　さまざまなセッションの実現方法</li>
+</ul>
+<h4>6.3　Webアプリケーションのアーキテクチャ</h4>
+<ul class="toc">
+<li>ロジックとデザインの分離</li>
+<li>ソフトウェアの建築様式</li>
+<li>コラム　カスタムタグとJSTL</li>
+<li>「ピザ・ペントミノ」の構造を俯瞰しよう</li>
+<li>MVCモデルによるWebアプリケーションのアーキテクチャ</li>
+<li>MVCモデルによる処理の流れ</li>
+</ul>
+<h4>6.4　フレームワークによるアーキテクチャの実現</h4>
+<ul class="toc">
+<li>フレームワークとは何か</li>
+<li>StrutsによるMVCモデルの実現</li>
+<li>Strutsによる「ピザ・ペントミノ」のログイン処理</li>
+<li>JSPからのログイン処理アクションの呼び出し</li>
+<li>コラム　Javaを部品化するための仕組み - Java Beans -</li>
+<li>ログイン処理アクションでのログインチェック処理</li>
+<li>商品一覧画面への遷移</li>
+</ul>
+<h4>6.5　レイヤパターンによるデータアクセス層の分離</h4>
+<ul class="toc">
+<li>モデルをどのように実現するか</li>
+<li>JDBCによるデータベースからの情報の取得</li>
+<li>レイヤパターンによるデータアクセス層の分離</li>
+<li>DAOパターンによるデータアクセス層の実現</li>
+</ul>
+<h4>6.6　O/Rマッピングフレームワークによるデータアクセス層の実現</h4>
+<ul class="toc">
+<li>O/Rマッピングフレームワークの必要性</li>
+<li>RDBとオブジェクトのインピーダンス・ミスマッチ</li>
+<li>iBATISによるO/Rマッピングの実際</li>
+<li>Data MapperとSQLマップファイルによるO/Rマッピング処理</li>
+<li>Dao Frameworkを利用したDAOの作成</li>
+</ul>
+<h4>6.7　フレームワーク利用におけるメリットとデメリット</h4>
+<ul class="toc">
+<li>フレームワーク利用のメリット</li>
+<li>フレームワーク利用のデメリット</li>
+</ul>
+<h4>6.8　まとめ</h4>
+<h3>LESSON 7　セキュリティを確保するための仕組み</h3>
+<h4>7.1　なぜセキュリティを確保しなければならないのか</h4>
+<ul class="toc">
+<li>Webアプリケーションが守るべきセキュリティ</li>
+</ul>
+<h4>7.2　代表的なWebアプリケーションの攻撃手法とその対策</h4>
+<ul class="toc">
+<li>SQLインジェクション</li>
+<li>クロスサイトスクリプティング（XSS）</li>
+<li>セッションハイジャック</li>
+<li>コラム　SSLによる通信路の暗号化</li>
+<li>クロスサイトリクエストフォージェリ</li>
+<li>コラム　セキュリティの陰の立役者・ハッシュ関数</li>
+<li>強制ブラウズ</li>
+<li>ディレクトリトラバーサル</li>
+<li>コラム　より安全な認証方式?Digest認証?</li>
+</ul>
+<h4>7.3　設計・実装ミスに起因する誤動作やセキュリティ問題を防ぐための対策</h4>
+<ul class="toc">
+<li>「戻る」ボタン対策</li>
+<li>ダブルサブミット対策</li>
+<li>hiddenタグに重要な情報を持たせない</li>
+<li>デバッグ情報を出力させない</li>
+<li>グローバル変数に情報を持たせない</li>
+</ul>
+<h4>7.4　まとめ</h4>
+<ul class="toc">
+<li>謝辞</li>
+</ul>
+<h3>LESSON 8　おわりに</h3>
+<h3>LESSON 9　付録</h3>
+<h4>9.1　 参考書籍・サイト</h4>
+<ul class="toc">
+<li>Lesson 0</li>
+<li>Lesson 2</li>
+<li>Lesson 3</li>
+<li>Lesson 4</li>
+<li>Lesson 5</li>
+<li>Lesson 6</li>
+<li>Lesson 7</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="download">ダウンロード</h3>
+<p><strong>※</strong> 本サンプルソースコードは，<wbr/>あくまでも本書の理解をすすめるためのものです。本アーカイブに含まれるプログラムの使用により生じたいかなる損害に対しても，<wbr/>技術評論社および著者はいっさいの責任および損害に対する責務は負いません。あくまでも自己責任のもとでのご使用をお願いいたします。あらかじめご承知おきください。</p>
+<p>ダウンロード後，<wbr/>ファイル解凍ツールで適宜解凍しご利用ください。なお，<wbr/>商用利用は一切禁止します。</p>
+<p>また，<a href="http://www.littleforest.jp/webtext/">執筆者のWebページ</a>でも，<wbr/>同じサンプルソースコードを提供していますので，<wbr/>そちらも参照ください。</p>
+
+
+<ul>
+<li><strong>ダウンロードはこちら　→　<a href="http://image.gihyo.co.jp/assets/files/book/2010/978-4-7741-4235-7/webtext-sample.zip">サンプルソースコード</a></strong></li>
+</ul><h3 id="errata">正誤表</h3>
+<p>本書掲載の記述に誤りがありました。訂正するとともに，<wbr/>読者の皆様および関係者の方々に深くお詫び申し上げます。</p>
+
+<h4>P.21　下から4行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>「レスポンス(responce)」</td></tr>
+<tr><th>正</th>
+<td>「レスポンス(respon<strong>s</strong>e)」</td></tr>
+</tbody></table>
+
+<h4>P.78　「GET とPOST どちらを使えばよい？」内の3～4行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>しかし，<wbr/>GET リクエストによるパラメータ渡しにも，<wbr/>ちゃんとメリットはあるのです。</td></tr>
+<tr><th>正</th>
+<td>しかし，<wbr/>GET リクエスト<strong>とPOSTリクエストには大きな違いがあります。</strong></strong></td></tr>
+</tbody></table>
+
+<h4>P.79　表3-5の次の文</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>たいていの場合は～中略～ということになります。</td></tr>
+<tr><th>正</th>
+<td><strong>GETリクエストとPOSTリクエストの使い分けをまとめましょう。ログイン処理のようにユーザ名やパスワードといった機密情報を送信する場合や、決済処理などの副作用を伴う処理、クエリ文字列に収まりきらない大量の情報を送信する必要がある場合は、POSTメソッドを使用すべきです。前述の条件にあてはまらず、副作用がない処理ではGETリクエストを利用した方がパラメータごと保存できるというメリットを活かすことができます。
+</strong></td></tr>
+</tbody></table>
+
+<h4>P.79　1行目～3行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>このように～中略～使い方はできません。</td></tr>
+<tr><th>正</th>
+<td>このように、<strong>GETメソッドではURLにパラメータが含まれるため、パラメータごと記憶したり、人に伝えたりするのに便利です。また、そのようなことを可能にするためには、GETリクエストの結果がシステムの状態に影響を与えないようになっていることが重要です。たとえば、ある一時点でgoogleに何度同じ検索キーワードを入力しても結果は変わらないはずです。このように同じ要求をを何度繰り返しても同じ結果が得られることを「副作用がない」といいます。HTTPについて規定したRFC2616（28ページコラム参照）でも、GETリクエストには副作用が無いことが期待される旨、記述されています。</strong></td></tr>
+</tbody></table>
+
+<h4>P.79　4行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>ここまでお話ししてきた～後略～</td></tr>
+<tr><th>正</th>
+<td><strong>一方POSTメソッドでは、メッセージ・<wbr/>ボディにパラメータが含まれているために、ブックマークを使ったパラメータの保存はできません。</strong>ここまでお話ししてきた～後略～</td></tr>
+</tbody></table>
+
+<h4>P.115　図4-30</h4>
+<p>図中矢印の上から2番目</p>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>「セクションID」</td></tr>
+<tr><th>正</th>
+<td>「<strong>セッション</strong>ID」</td></tr>
+</tbody></table>
+
+<h4>P.120　2行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>いままでのCookieが無効となり</td></tr>
+<tr><th>正</th>
+<td><strong>※削除してください</strong></td></tr>
+</tbody></table>
+
+<h4>P.140</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>SQLとは「Structured Query Language」の略で～</td></tr>
+<tr><th>正</th>
+<td>SQLとは、もともと「Structured Query Language」の略で、<strong>直訳するならば「問い合わせのための構造化言語」となります（ただし、SQLはその標準化の過程でなんらかの略称とは見なされなくなっています）。</strong></td></tr>
+</tbody></table>
+
+<h4>P.140</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>SELECT 商品ID, 商品名, .............</td></tr>
+<tr><th>正</th>
+<td>SELECT <strong>商品 .</strong> 商品ID, 商品名, .............</td></tr>
+</tbody></table>
+
+
+<h4>P.140　脚注※10</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>「OracleのPL/SQLやPL/pgSQL</td></tr>
+<tr><th>正</th>
+<td>OracleのPL/SQLや<strong>PostgreSQLのPL/pgSQL</strong></td></tr>
+</tbody></table>
+
+<h4>P.148　コラム9行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>Oracle Database 11g Express Edition</td></tr>
+<tr><th>正</th>
+<td>Oracle Database<strong> 10g</strong> Express Edition</td></tr>
+</tbody></table>
+
+<h4>P.148　コラム 最後から2行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>しかし、いずれにせよ非営利団体、教育機関、個人で利用する範囲においては、無償で利用することができます。</td></tr>
+<tr><th>正</th>
+<td>しかし、<strong>GPLの条件に従って利用する範囲においては、</strong>無償で利用することができます。</td></tr>
+</tbody></table>
+
+<h4>P.173　リスト6-3 2行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>responce</td></tr>
+<tr><th>正</th>
+<td>respon<strong>s</strong>e</td></tr>
+</tbody></table>
+
+<h4>P.173　リスト6-3 23行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>responce</td></tr>
+<tr><th>正</th>
+<td>respon<strong>s</strong>e</td></tr>
+</tbody></table>
+
+<h4>P.219　脚注49</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>追加</th>
+<td><strong>なお、2010年6月にiBATISプロジェクトは活動を中止し、mybatisプロジェクト(http://www.mybatis.org/)に引き継がれました。</strong></td></tr>
+</tbody></table>
+
+<h4>P.247　2行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>暗号鍵が第三者に盗まれてしまえば、</td></tr>
+<tr><th>正</th>
+<td>暗号鍵が第三者に盗まれてしま<strong>うと</strong>、</td></tr>
+</tbody></table>
+
+<h4>P.247　図7-8 の下2行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>公開鍵は盗まれても構わないので、メールで送っても問題ありません。</td></tr>
+<tr><th>正</th>
+<td>公開鍵は<strong>、それが確かにBobが生成したものであるということが保証される限り、第三者に見られても構いません。たとえ盗んでも復号化には利用できないためです。ここで、「保証される限り」という条件をつけましたが、それについてはあとで説明します。</strong></td></tr>
+</tbody></table>
+
+
+<h4>P.248　1行目から11行目</h4>
+<p>補足説明追加</p>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<td>また、公開鍵暗号を使用するとメッセージの改ざんを防ぐことができます。さきほどの説明で、Bobが生成した公開鍵をAliceに送る際、第三者であるCarolが公開鍵を途中で盗み取って、その代わりに自分で作成した公開鍵をAliceに送ったとしたらどうなるでしょうか。Aliceにとっては受け取った公開鍵が本当にBobの生成したものかどうかを判別することができません。<br />
+このような改ざんを防ぐには、公開鍵と秘密鍵を逆に使い、<b>デジタル証明</b>を実現します。BobからAliceへメッセージを送信する際、そのメッセージを自分の秘密鍵で暗号化したものを同時に送信します（実際にはメッセージそのものを暗号化すると長くなってしまうため、251ページで説明するメッセージダイジェストを暗号化します）。Aliceは、すでに公開されているBobの公開鍵（ この公開鍵も、何らかの方法で確かにBobによるもであることが保証されなければなりません。このような保証を行う信頼できる第三者機関が認証局(Certification Authority、略してCA)です）を使って暗号化されたメッセージを復号化し、それが受け取ったメッセージと同じであるかどうかを確認します。Bobの公開鍵で正しく復号化できるメッセージを生成できるのは、その秘密鍵を持っているBob本人に他なりません。そのため、受け取ったメッセージはたしかにBobによるものだと信用できます。<br />
+この仕組みを利用すれば、Bobは暗号化用の公開鍵をCarolに改ざんされることなく、Aliceへ送ることができます。</td></tr>
+</tbody></table>
+
+<h4>P.250　図7-12右上吹き出し内</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>hiddenタグ</td></tr>
+<tr><th>正</th>
+<td>hidden<strong>パラメータ</strong></td></tr>
+</tbody></table>
+
+<h4>P.250　下から2行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>hiddenタグ</td></tr>
+<tr><th>正</th>
+<td>hidden<strong>パラメータ</strong></td></tr>
+</tbody></table>
+
+<h4>P.250　脚注1行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>hiddenタグ</td></tr>
+<tr><th>正</th>
+<td>hidden<strong>パラメータ</strong></td></tr>
+</tbody></table>
+
+<h4>P.250　脚注2行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>hiddenタグ</td></tr>
+<tr><th>正</th>
+<td>hidden<strong>パラメータ</strong></td></tr>
+</tbody></table>
+
+<h4>P.250　脚注</h4>
+<p>補足説明追加</p>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>追加</th>
+<td><strong>hiddenパラメータは正確には「type属性がhiddenであるinput要素」なのですが、開発現場では「hiddenタグ」と呼ばれてしまうことも多いです。</strong></td></tr>
+</tbody></table>
+
+<h4>P.251　脚注21</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>危険性が低いため～後略～</td></tr>
+<tr><th>正</th>
+<td>危険性が低い<strong>のですが、SHA-1よりもさらに衝突の危険性が低い「SHA-256」の利用が推奨されています。</strong></td></tr>
+</tbody></table>
+
+<h4>P.253　コラム上から4行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>そこで、パスワードの代わりに～後略～</td></tr>
+<tr><th>正</th>
+<td>そこで、パスワードの代わりに<strong>ユーザ名とパスワードを結合した文字列の</strong>メッセージダイジェストを保存するようにします</td></tr>
+</tbody></table>
+
+<h4>P.253　図7-16下の吹き出し</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>パスワードのメッセージダイジェストを保存しておけば、盗まれてもパスワードが推測できない</td></tr>
+<tr><th>正</th>
+<td><strong>メッセージダイジェスト</strong>を保存しておけば、盗まれてもパスワードが推測<strong>困難</strong></td></tr>
+</tbody></table>
+
+<h4>P.253　図7-16下の表のヘッダ</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>パスワード</td></tr>
+<tr><th>正</th>
+<td><strong>メッセージダイジェスト</strong></td></tr>
+</tbody></table>
+
+<h4>P.253　図7-16下の吹き出し</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>パスワードのメッセージダイジェストを保存しておけば</td></tr>
+<tr><th>正</th>
+<td><strong>メッセージダイジェスト</strong>を保存しておけば</td></tr>
+</tbody></table>
+
+<h4>P.253　コラム下から5行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>推測することは事実上不可能です。</td></tr>
+<tr><th>正</th>
+<td>推測すること<strong>が非常に困難になります。</strong></td></tr>
+</tbody></table>
+
+<h4>P.253　コラム下から4行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>ログイン画面で入力された～中略～計算し、</td></tr>
+<tr><th>正</th>
+<td>ログイン画面で入力された<strong>ユーザ名とパスワードを結合した文字列の</strong>メッセージダイジェストを計算し、</td></tr>
+</tbody></table>
+
+<h4>P.253　コラム最終行</h4>
+<p>補足説明追加</p>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>追加</th>
+<td>なお、近年では「レインボークラック（Rainbow Crack）」と呼ばれる手法が発達し、パスワードのように文字数と文字種が限られているような場合には、メッセージダイジェストから元の文字列を短時間で推測できるようになってきました。そのため、パスワードだけでなくユーザ名までメッセージダイジェストの対象とすることで、元の文字列を見かけ上長くし、レインボークラックに対する耐性を高めることが推奨されています。また、ユーザIDのように本来の変換対象に追加する文字列を「ソルト（salt）」と呼んでいます。（レインボークラックについては「体系的に学ぶ安全なWebアプリケーションの作り方 脆弱性が生まれる原理と対策の実践」 [43]に詳しく説明されています）</td></tr>
+</tbody></table>
+
+<h4>P.260　図7-19の左下吹き出し内</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>hiddenタグ</td></tr>
+<tr><th>正</th>
+<td>hidden<strong>パラメータ</strong></td></tr>
+</tbody></table>
+
+<h4>P.260　下から5行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>hiddenタグ</td></tr>
+<tr><th>正</th>
+<td>hidden<strong>パラメータ</strong></td></tr>
+</tbody></table>
+
+<h4>P.263　5行目(見出し)</h4>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>誤</th>
+<td>hiddenタグに重要な情報を持たせない</td></tr>
+<tr><th>正</th>
+<td>hidden<strong>パラメータ利用時の注意点</strong></td></tr>
+</tbody></table>
+
+<h4>P.263　「hiddenタグに重要な～」の項の3行目以降</h4>
+<p>補足説明追加</p>
+<table class="errataTable" cellspacing="0">
+<tbody><tr>
+<th>追加</th>
+<td>一方で、hiddenパラメータに格納された情報はWebブラウザからHTMLソースを表示させれば、簡単に覗くことができます。そのため、たとえばログイン中であるかどうかといったアプリケーション上の状態をhiddenパラメータに直接保持させると、利用者に容易に書き換えられてしまいます。このようなアプリケーション上の状態は、Lesson 4で紹介したセッションを利用してアプリケーションサーバ側で管理すべきです。<br />
+また、CSRF（248ページ参照）のような手段を使えば、第三者がhiddenパラメータの内容を好きなように書き換えてWebアプリケーションへ情報を送ることができるため、セキュリティホールになりがちです。<br />
+そのため、hiddenパラメータによって送信された情報を処理する場面では、そのリクエストが本当に利用者の意図したものであるかどうかを確認する必要があります。該当する場面としては決済処理、個人情報の更新処理、掲示板などへの書き込み処理といったものが挙げられます。<br />
+確認の方法としては、CSRFの対策で解説したワンタイムトークンを利用する方法が有効な方法の1つです。ワンタイムトークンは更新画面や決済画面を表示する際にサーバ側が発行するため、ワンタイムトークンがわからなければねつ造したhiddenパラメータを直接POSTしてアプリケーションに処理をさせることが困難になります。また、使い捨てで推測困難な文字列という特性上、仮に攻撃者がワンタイムトークンを盗んだとしても、連続した攻撃に利用することはできませんし、ワンタイムトークンをねつ造することも事実上困難です。</td></tr>
+</tbody></table>
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-12596-7","path":"\/dp\/ebook\/2021\/978-4-297-12596-7","targetId":"978-4-297-12596-7","parent":"\/dp\/genre\/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

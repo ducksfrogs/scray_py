@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>［改訂版］WordPress 仕事の現場でサッと使える！ デザイン教科書［WordPress 5.x対応版］ | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="Webデザイナー養成講座シリーズは，プロのデザイナーとして仕事をする上で必須のスキルを身につけるための解説書です。好評だった書籍『WordPress　仕事の現場でサッと使える！ デザイン教科書』が最新WordPress 5.x環境に対応しました！　WordPressを使って本格的なWebサイトを構築するために必要な基礎知識，独自テーマの作成手順，よりリッチなWebサイトにするためのカスタマイズやプラグイン活用，サイト運用テクニックまでわかりやすく解説します。もちろん，クライアントワークで必要とされるノウハウも満載。改訂版では，新しいブロックエディターの基本や活用テクニック，最新プラグインの使いこなし，スマートフォン・タブレットへの対応など，新たなトピックも取り上げています。WordPressを使うならぜひ手元に置いておきたい1冊です。"/>
+  <meta name="keywords" content="中島真洋電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="［改訂版］WordPress 仕事の現場でサッと使える！ デザイン教科書［WordPress 5.x対応版］ | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="Webデザイナー養成講座シリーズは，プロのデザイナーとして仕事をする上で必須のスキルを身につけるための解説書です。好評だった書籍『WordPress　仕事の現場でサッと使える！ デザイン教科書』が最新WordPress 5.x環境に対応しました！　WordPressを使って本格的なWebサイトを構築するために必要な基礎知識，独自テーマの作成手順，よりリッチなWebサイトにするためのカスタマイズやプラグイン活用，サイト運用テクニックまでわかりやすく解説します。もちろん，クライアントワークで必要とされるノウハウも満載。改訂版では，新しいブロックエディターの基本や活用テクニック，最新プラグインの使いこなし，スマートフォン・タブレットへの対応など，新たなトピックも取り上げています。WordPressを使うならぜひ手元に置いておきたい1冊です。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2020/978-4-297-11186-1"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2020/978-4-297-11186-1.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/Web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%8A%E3%83%BC%E9%A4%8A%E6%88%90%E8%AC%9B%E5%BA%A7">Web<wbr>デザイナー養成講座</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">［改訂版］<wbr>WordPress 仕事の現場でサッと使える！ デザイン教科書<br><span class="sub">［WordPress 5.x<wbr>対応版］</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2020/978-4-297-11186-1.jpg" alt="［改訂版］WordPress 仕事の現場でサッと使える！ デザイン教科書［WordPress 5.x対応版］"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">中島真洋　著，<wbr/>ロクナナワークショップ　監修</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2020-02-17">2020年2月17日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-07-28">2021年7月28日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2020/978-4-297-11185-4" target="_blank">2020年2月17日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,780円 <a id="pid402779" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">384</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2020/978-4-297-11186-1" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2020/978-4-297-11186-1" data-text="［改訂版］WordPress 仕事の現場でサッと使える！ デザイン教科書［WordPress 5.x対応版］ #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2020/978-4-297-11186-1" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2020/978-4-297-11186-1" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>Webデザイナー養成講座シリーズは，<wbr/>プロのデザイナーとして仕事をする上で必須のスキルを身につけるための解説書です。好評だった書籍『WordPress　仕事の現場でサッと使える！ デザイン教科書』が最新WordPress 5.x環境に対応しました！　WordPressを使って本格的なWebサイトを構築するために必要な基礎知識，<wbr/>独自テーマの作成手順，<wbr/>よりリッチなWebサイトにするためのカスタマイズやプラグイン活用，<wbr/>サイト運用テクニックまでわかりやすく解説します。もちろん，<wbr/>クライアントワークで必要とされるノウハウも満載。改訂版では，<wbr/>新しいブロックエディターの基本や活用テクニック，<wbr/>最新プラグインの使いこなし，<wbr/>スマートフォン・<wbr/>タブレットへの対応など，<wbr/>新たなトピックも取り上げています。WordPressを使うならぜひ手元に置いておきたい1冊です。</p><h3>こんな方におすすめ</h3>
+<ul><li>WordPressを使ったWebサイト構築スキルを身につけたい人</li><li>Webデザイナー</li></ul>
+<aside class="author"><h3>中島真洋（なかしままさひろ）</h3><p>Webデザイナーとして独立後，<wbr/>PHP，<wbr/>JavaScript，<wbr/>サーバー構築など，<wbr/>フロントエンドからサーバーサイドまでの技術を習得。クライアントワークでは，<wbr/>WordPressを中心としたWebサイト制作を行う。公開しているWordPressの公式プラグインは，<wbr/>「Check Copy Contents」「WP CSV　Exporter」など。株式会社 FlipClap代表取締役。</p></aside><section id="sample"><h2>サンプル</h2><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/9784297111854-01.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/thumb/TH400_9784297111854-01.jpg,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/9784297111854-01.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/9784297111854-02.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/thumb/TH400_9784297111854-02.jpg,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/9784297111854-02.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/9784297111854-03.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/thumb/TH400_9784297111854-03.jpg,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/9784297111854-03.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/9784297111854-04.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/thumb/TH400_9784297111854-04.jpg,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/9784297111854-04.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/9784297111854-05.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/thumb/TH400_9784297111854-05.jpg,https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11185-4/9784297111854-05.jpg" width="400" height="533" alt="sample"/></a></section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="40647">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>CHAPTER 1　WordPressの準備と基本設定</h3>
+<ul class="toc">
+<li>1-01　WordPressをインストールする</li>
+<li>1-02　管理画面の使い方と初期設定</li>
+<li>1-03　記事を投稿する</li>
+<li>1-04　新規ユーザーの登録とWordPressの権限</li>
+
+</ul>
+<h3>CHAPTER 2　基本的なテーマを作成する</h3>
+<ul class="toc">
+<li>2-01　WordPressのテーマ</li>
+<li>2-02　テンプレートファイルとテンプレート階層</li>
+<li>2-03　WordPressのテンプレートタグ</li>
+<li>2-04　テンプレートを分割する</li>
+<li>2-05　分割したテンプレートを作り込む</li>
+<li>2-06　WordPressループを作成する</li>
+<li>2-07　個別記事ページを作成する</li>
+<li>2-08　記事の一覧ページを作成する</li>
+<li>2-09　固定ページを作成する</li>
+<li>2-10　グローバルナビゲーションを作成する</li>
+<li>2-11　テーマを完成させる</li>
+
+</ul>
+<h3>CHAPTER 3　プラグインを利用する</h3>
+<ul class="toc">
+<li>3-01　プラグインで機能を拡張する</li>
+<li>3-02　パンくずリストを作成する</li>
+<li>3-03　メールフォームを作成する</li>
+<li>3-04　記事一覧のページナビゲーションを作成する</li>
+
+</ul>
+<h3>CHAPTER 4　Webサイトを拡張する</h3>
+<ul class="toc">
+<li>4-01　記事の詳細ページにコメント欄を追加する</li>
+<li>4-02　記事一覧をカスタマイズする</li>
+<li>4-03　固定ページ用に別テンプレートを作成する</li>
+<li>4-04　独自のHTMLを使った固定ページを作成する</li>
+
+</ul>
+<h3>CHAPTER 5　投稿タイプ・フィールド・タクソノミーをカスタマイズする</h3>
+<ul class="toc">
+<li>5-01　カスタム投稿タイプで投稿できる種類を増やす</li>
+<li>5-02　カスタムフィールドで記事の入力項目を増やす</li>
+<li>5-03　カスタムタクソノミーで独自のカテゴリーやタグを作成する</li>
+
+</ul>
+<h3>CHAPTER 6　ブロックエディターを使いこなす</h3>
+<ul class="toc">
+<li>6-01　ブロックエディターの基礎</li>
+<li>6-02　ブロックエディターのブロック一覧</li>
+<li>6-03　ブロックエディターの実践的な使い方</li>
+<li>6-04　ブロックエディターをプラグインで拡張する</li>
+<li>6-05　ブロックエディターをカスタマイズする</li>
+
+</ul>
+<h3>CHAPTER 7　管理画面をカスタマイズする</h3>
+<ul class="toc">
+<li>7-01　管理画面をカスタマイズする</li>
+<li>7-02　権限に応じて管理画面をカスタマイズする</li>
+
+</ul>
+<h3>CHAPTER 8　高度な機能を活用する</h3>
+<ul class="toc">
+<li>8-01　SEO対策をする</li>
+<li>8-02　スマートフォン・タブレットに対応する</li>
+<li>8-03　REST APIを利用する</li>
+<li>8-04　マルチサイト機能で複数のサイトを作成する</li>
+<li>8-05　子テーマを作成する</li>
+
+</ul>
+<h3>CHAPTER 9　ショートコード・関数・プラグインを作成する</h3>
+<ul class="toc">
+<li>9-01　ショートコードを作成する</li>
+<li>9-02　よく使うコードを関数にまとめる</li>
+<li>9-03　プラグインを作成する</li>
+
+</ul>
+<h3>CHAPTER 10　WordPressを効率的に運用する</h3>
+<ul class="toc">
+<li>10-01　WordPressを専用ディレクトリにインストールする</li>
+<li>10-02　公開サーバー上でWordPressを運用する</li>
+<li>10-03　プラグインを使って効率的に運用する</li>
+<li>10-04　Webサイトのセキュリティを高める</li>
+<li>10-05　Webサイトを高速化する</li>
+
+</ul>
+<h3>APPENDIX</h3>
+<ul class="toc">
+<li>APPENDIX 01　PHPの基礎</li>
+<li>APPENDIX 02　WP_Queryのパラメータ</li>
+<li>APPENDIX 03　日付と時刻の書式</li>
+<li>APPENDIX 04　テンプレート階層</li>
+<li>APPENDIX 05　主要なオブジェクト</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="download">ダウンロード</h3>
+<p>本書の学習に利用するサンプルファイルをダウンロードできます。詳しくは本書のP.10，<wbr/>および1章からの解説を参照してください。</p>
+
+<p><div align="right">（2020年2月6日更新）</div></p>
+
+
+
+<dl>
+<dt>ダウンロード</dt>
+<dd><a href="http://image.gihyo.co.jp/assets//files/book/2020/978-4-297-11185-4/download/Win/WP_sample.zip">サンプルファイル（Windows用）WP_sample.zip（約1.0GB）</a><br />
+※文字コード「UTF-8（BOMなし）」，<wbr/>改行コード「CR+LF」で作成</dd>
+<dd><a href="http://image.gihyo.co.jp/assets//files/book/2020/978-4-297-11185-4/download/Mac/WP_sample.zip">サンプルファイル（Mac用）WP_sample.zip（約1.0GB）</a><br />
+※文字コード「UTF-8（BOMなし）」，<wbr/>改行コード「LF」で作成</dd>
+</dl>
+
+<h3 id="supplement">補足情報</h3>
+<h4>front-page.php修正後に画面の表示が崩れてしまう場合</h4>
+<div align="right"><p>（2021年2月26日更新）</p></div>
+<p>CHAPTER 2のSECTION11「テーマを完成させる」内のP.120「カテゴリーページへのリンクを設定する」において，<wbr/>front-page.php修正後に画面の表示が崩れてしまう場合，<wbr/>スラッグの登録が正しく行われていない可能性があります。CHAPTER 1のSECTION03「記事を投稿する」内のP.024「「未分類」カテゴリーを変更する」，<wbr/>およびP.026「カテゴリーを新規登録する」の作業が正しく完了しているかどうかをご確認ください。</p><h3 id="errata">正誤表</h3>
+<p>本書の以下の部分に誤りがありました。ここに訂正するとともに，<wbr/>ご迷惑をおかけしたことを深くお詫び申し上げます。</p>
+<div align="right"><p>（2021年6月18日最終更新）</p></div>
+<!--
+※古い更新分はこの下に，<wbr/>追加分は上にもっていくようにする
+<div class="partition-block"><p>（以下2020年6月18日更新）</p></div>
+-->
+
+<h4>P.098　本文上から2行目</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td><div class="preWrap"><pre><code>
+「&lt;?php get_template_part( 'loop', 'main' ); ?&gt;」
+</code></pre></div></td></tr><tr><th>正</th><td><div class="preWrap"><pre><code>
+「&lt;?php get_template_part( 'loop', '<strong>news</strong>' ); ?&gt;」
+</code></pre></div></td></tr></tbody></table>
+
+
+
+
+
+
+<div class="partition-block"><p>（以下2021年2月26日更新）</p></div>
+<h4>P.029　本文の最後に文章を追加（補足説明）　……　第2刷にて修正済み</h4>
+<p>メインナビゲーションメニューが表示されない場合は，<wbr/>「フルスクリーンモード」の設定を確認してください。</p>
+
+<h4>P.068　本文1～2行目　……　第2刷にて修正済み</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+タブブウラザ
+</td></tr><tr><th>正</th><td>
+タブブ<strong>ラウ</strong>ザ
+</td></tr></tbody></table>
+
+
+
+
+<h4>P.095およびP.098のindex.phpの内容（9行目）　……　第4刷にて修正済み</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+（省略）wp_title(' '); ?&gt;&lt;/&lt;/h2&gt;
+</td></tr><tr><th>正</th><td>
+（省略）wp_title(' '); ?&gt;&lt;/<strong>h2&gt;</strong>
+</td></tr></tbody></table>
+
+
+
+<h4>P.217　下段の実行結果画面　……　第4刷にて修正済み</h4>
+<p>誌面では，<wbr/>上から「フード」「ドリンク」の順になっていますが，<wbr/>本書の解説手順に従うと「ドリンク」「フード」の順に表示されます。</p>
+
+<h4>P.242　本文1～2行目　……　第2刷にて修正済み</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+「文字の一部分だけの色を変える」といった細かな指定はできません。
+
+</td></tr><tr><th>正</th><td>
+（削除）
+</td></tr></tbody></table>
+<p>本書の刊行後に，<wbr/>ブロックエディターの機能が更新されたことが理由です。</p>
+
+<h4>P.248　セクションタイトル下の囲み文章内 2行目　……　第4刷にて修正済み</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+（省略）ブロックエディターをカスタマズする方法を解説します。
+</td></tr><tr><th>正</th><td>
+（省略）ブロックエディターをカスタ<strong>マイズ</strong>する方法を解説します。
+</td></tr></tbody></table>
+
+
+
+
+<h4>P.316　本文下から3行目の見出し　……　第2刷にて修正済み</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+管理するフォルダ名を決める
+</td></tr><tr><th>正</th><td>
+管理する<strong>ディレクトリ名</strong>を決める
+</td></tr></tbody></table>
+
+
+
+
+
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2020\/978-4-297-11186-1","path":"\/dp\/ebook\/2020\/978-4-297-11186-1","targetId":"978-4-297-11186-1","parent":"\/dp\/genre\/Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

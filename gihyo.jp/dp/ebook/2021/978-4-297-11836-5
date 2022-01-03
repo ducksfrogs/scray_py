@@ -1,0 +1,530 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>CISOハンドブック ――業務執行のための情報セキュリティ実践ガイド | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="企業はDX（デジタルトランスフォーメーション）によって変化しなければならない，しかしIT化すればするほど情報セキュリティの問題が発生！　業者に頼めばいいのか……，いや継続的に情報セキュリティの問題は起きてしまうだろう……。そう，企業がIT化を進めDXを促進すると，情報セキュリティが生命線になることは避けられないのが本当のところです。そこで欧米では技術職の視点をもった経営陣の一人としてCISO（Chief Information Security Officer）の役職が誕生しました。情報セキュリティ問題に悩むあらゆる企業の担当者の皆さんのために，本書はCISOがすべき情報セキュリティの問題解決方法を最新の情報をもとにまとめあげました。"/>
+  <meta name="keywords" content="電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="CISOハンドブック ――業務執行のための情報セキュリティ実践ガイド | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="企業はDX（デジタルトランスフォーメーション）によって変化しなければならない，しかしIT化すればするほど情報セキュリティの問題が発生！　業者に頼めばいいのか……，いや継続的に情報セキュリティの問題は起きてしまうだろう……。そう，企業がIT化を進めDXを促進すると，情報セキュリティが生命線になることは避けられないのが本当のところです。そこで欧米では技術職の視点をもった経営陣の一人としてCISO（Chief Information Security Officer）の役職が誕生しました。情報セキュリティ問題に悩むあらゆる企業の担当者の皆さんのために，本書はCISOがすべき情報セキュリティの問題解決方法を最新の情報をもとにまとめあげました。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-11836-5"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-11836-5.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">CISO<wbr>ハンドブック<br><span class="sub">――業務執行のための情報セキュリティ実践ガイド</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-11836-5.jpg" alt="CISOハンドブック ――業務執行のための情報セキュリティ実践ガイド"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">高橋正和，<wbr/>荒木粧子，<wbr/>池上美千代，<wbr/>岡田良太郎，<wbr/>唐沢勇輔，<wbr/>北澤麻理子，<wbr/>武田一城，<wbr/>橘喜胤，<wbr/>田中朗，<wbr/>西尾秀一，<wbr/>深谷貴宣，<wbr/>JNSA CISO支援ワーキンググループ　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-01-18">2021年1月18日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-12-09">2021年12月9日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2021/978-4-297-11835-8" target="_blank">2021年1月20日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">3,400円 <a id="pid403106" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">400</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-11836-5" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-11836-5" data-text="CISOハンドブック ――業務執行のための情報セキュリティ実践ガイド #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-11836-5" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-11836-5" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>企業はDX（デジタルトランスフォーメーション）によって変化しなければならない，<wbr/>しかしIT化すればするほど情報セキュリティの問題が発生！　業者に頼めばいいのか……，<wbr/>いや継続的に情報セキュリティの問題は起きてしまうだろう……。そう，<wbr/>企業がIT化を進めDXを促進すると，<wbr/>情報セキュリティが生命線になることは避けられないのが本当のところです。そこで欧米では技術職の視点をもった経営陣の一人としてCISO（Chief Information Security Officer）の役職が誕生しました。情報セキュリティ問題に悩むあらゆる企業の担当者の皆さんのために，<wbr/>本書はCISOがすべき情報セキュリティの問題解決方法を最新の情報をもとにまとめあげました。</p><h3>こんな方におすすめ</h3>
+<ul><li>情報セキュリティ担当者，<wbr/>セキュリティエンジニア，<wbr/>CTO，<wbr/>CIO，<wbr/>CISO，<wbr/>情報システム部担当者など</li></ul>
+<h3>著者から一言</h3>
+<p>情報セキュリティ事故が後を絶ちません。事故が報道されると，<wbr/>「担当者は何をやってるんだ」と思う方が多いと思います。経営者を始めとした方々には，<wbr/>情報セキュリティの何が難しいのかわからないかもしれません。しっかりとした国際標準やベストプラクティスがあり，<wbr/>完璧を謳うセキュリティ製品もたくさんあります。セキュリティ対策は簡単に見えるのではないでしょうか。<br />
+しかし，<wbr/>この本を手に取ってくれた方，<wbr/>特にCISO（Chief Information Security Officer）と呼ばれるセキュリティ責任者にとっては他人事ではないと思います。<br />
+情報セキュリティの難しさは2つの難題と向き合う点にあると考えます。言ってみれば「前門の攻撃者と後門の身内」です。前門の敵である攻撃者と戦うためには，<wbr/>国際標準やベストプラクティスがあり，<wbr/>数多くの情報セキュリティ製品があります。しかし，<wbr/>99％の攻撃を防いでも，<wbr/>たった一度の攻撃を見逃せば，<wbr/>大きな事故につながってしまいます。<br />
+一方で，<wbr/>後門の難題である身内はより難しい状況にあります。特に身内の親玉である経営陣と向き合うノウハウが，<wbr/>CISOには絶望的に不足しています。そもそも技術者は経営を学ぶ機会に恵まれません。一般的なマネジメント教育は，<wbr/>いわば庶務管理の教育で，<wbr/>経営という意味でのマネジメントは違います。プロジェクトマネジメントも経営とは違った特性があり，<wbr/>そのまま展開することはできません。<br />
+筆者自身，<wbr/>初めて「数字を持つ」事業責任者を経験したときは，<wbr/>経営がわからずに苦しい思いを本書は，<wbr/>情報セキュリティにかかわる方が，<wbr/>CISOとして経営陣に迎えられたときに，<wbr/>経営陣の言葉を理解すること，<wbr/>業務執行の手掛かりとなることを目指しています。難題に見える身内と一緒に，<wbr/>良いゲームを進めるための一歩と言っても良いかもしれません。<br />
+ゲームの大枠がわかれば，<wbr/>上手に対応できるのが技術にかかわる人間の特徴です。本書がCISO の方々へのヒントとなり，<wbr/>また，<wbr/>経営にかかわるセキュリティ技術者が増え，<wbr/>セキュリティがビジネスイネーブラーにつながれば幸いに思います。</p><h3>補足情報</h3>
+<p>日本ネットワークセキュリティ協会の<br />Webページ（<a href="https://www.jnsa.org/">https://www.jnsa.org/</a>）で最新の情報を発信しています。<br />
+JNSA（日本ネットワークセキュリティ協会）では，<wbr/>本書でも取り上げている，<wbr/>「情報セキュリティインシデントに関する調査報告書」，<wbr/>「情報セキュリティインシデントに関する調査報告書」をはじめとして，<wbr/>実践に即した数多くの資料を公開しています。また，<wbr/>イベントなどを通じて，<wbr/>情報セキュリティ対策が広く進展することに貢献に努めています。<br />
+ぜひ，<wbr/>資料をご参照いただき，<wbr/>JNSAの活動にも参加ください。</p><section id="sample"><h2>サンプル</h2><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/9784297118358-01.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/thumb/TH400_9784297118358-01.png,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/9784297118358-01.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/9784297118358-02.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/thumb/TH400_9784297118358-02.png,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/9784297118358-02.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/9784297118358-03.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/thumb/TH400_9784297118358-03.png,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/9784297118358-03.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/9784297118358-04.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/thumb/TH400_9784297118358-04.png,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/9784297118358-04.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/9784297118358-05.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/thumb/TH400_9784297118358-05.png,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11835-8/9784297118358-05.png" width="400" height="533" alt="sample"/></a></section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="41956">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>第1章　情報セキュリティの目的 1</h3>
+<ul class="toc">
+<li>1-1 CISOの役割とは何か</li>
+<li>1-2 ビジネスリスクと情報セキュリティ</li>
+<li>1-3 情報セキュリティリスクにかかわる3つの立場（3線モデル：Three Lines of Defense Model）</li>
+</ul>
+<h3>第2章　情報セキュリティマネジメントの基礎知識</h3>
+<ul class="toc">
+<li>2-1 情報セキュリティマネジメントの基礎知識<ul class="toc">
+	<li>2-1-1 リスクマネジメント</li>
+	<li>2-1-2 ISO31000リスクマネジメント</li>
+	<li>2-1-3 統計的手法に基づいたリスクの定量化</li>
+	<li>2-1-4 EDC によるリスクの定量化</li>
+	<li>2-1-5 リスクマネジメントを実施するにあたって</li></ul></li>
+<li>2-2 情報セキュリティ計画実施モデル<ul class="toc">
+	<li>2-2-1 情報セキュリティ計画策定のケーススタディ：CISコントロールズの実装</li>
+	<li>2-2-2 CIS コントロールズから始める情報セキュリティ対策</li>
+	<li>2-2-3 侵害を前提としたセキュリティ計画：サイバーセキュリティフレームワーク</li></ul></li>
+<li>2-3 経営サイクルと情報セキュリティマネジメントサイクル</li>
+<li>2-4 マネジメントサイクルに沿った報告<ul class="toc">
+	<li>2-4-1 年間計画に基づいたPDCA的な報告</li>
+	<li>2-4-2 緊急対応に関するOODA的な報告</li>
+	<li>2-4-3 情報セキュリティと法令順守</li>
+	<li>2-4-4 監査による執行状況の評価</li>
+	<li>2-4-5 情報セキュリティとコーポレートガバナンス</li></ul></li>
+
+</ul>
+<h3>第3章　基本となる経営指標</h3>
+<ul class="toc">
+<li>3-1 CISOのための財務諸表の読み方</li>
+<li>3-2 経営における「数字」の重要性</li>
+<li>3-3 財務会計49</li>
+<li>3-4 貸借対照表の見方</li>
+<li>3-5 短期的な支払い能力の評価</li>
+<li>3-6 長期的な支払い能力の評価</li>
+<li>3-7 財務の健全性の評価</li>
+<li>3-8 管理会計<ul class="toc">
+	<li>3-8-1 計画する：損益分岐点</li>
+	<li>3-8-2 分割する：セグメントへの分割と評価</li>
+	<li>3-8-3 評価する：規模や内容が異なる事業（セグメント）の評価</li></ul></li>
+<li>3-9 財務健全性と投資収益性を比較する</li>
+<li>3-10 経営指標を現場に展開する（オムロン株式会社の例）</li>
+<li>3-11 ファイナンス<ul class="toc">
+	<li>3-11-1 原価主義と時価主義</li></ul></li>
+<li>3-12 ファイナンスの基本的な考え方</li>
+<li>3-13 会社法と資本比率<ul class="toc">
+	<li>3-13-1 資本比率</li>
+	<li>3-13-2 セキュリティ事故と株価</li></ul></li>
+
+</ul>
+<h3>第4章　情報セキュリティの指標化</h3>
+<ul class="toc">
+<li>4-1 情報セキュリティの指標化</li>
+<li>4-2 コストとしての情報セキュリティ<ul class="toc">
+	<li>4-2-1 セキュリティ事故の推定損害額</li></ul></li>
+<li>4-3 情報セキュリティ指標を経営の数字に展開<ul class="toc">
+	<li>4-3-1 バランストスコアカードを使ったKPIの展開</li>
+	<li>4-3-2 ケーススタディ：テレワークを題材としたバランストスコアカードの利用例</li>
+	<li>4-3-3 経営における情報セキュリティの役割</li>
+	<li>4-3-4 情報セキュリティに対する役割と責任</li></ul></li>
+
+</ul>
+<h3>第5章　モニタリングと評価手法</h3>
+<ul class="toc">
+<li>5-1 モニタリングに基づいた施策の評価</li>
+<li>5-2 組織情報のセキュリティ成熟度評価<ul class="toc">
+	<li>5-2-1 Cybersecurity Capability Maturity Model（C2M2）</li>
+	<li>5-2-2 評価対象：機能（ファンクション）100</li>
+	<li>5-2-3 評価ドメイン</li>
+	<li>5-2-4 成熟度指標レベル</li>
+	<li>5-2-5 成熟度評価で参照される規準および標準</li></ul></li>
+<li>5-3 実装レベルのモニタリング<ul class="toc">
+	<li>5-3-1 インベントリの取得と維持</li>
+	<li>5-3-2 脆弱性の把握と不正アクセス検知</li></ul></li>
+<li>5-4 サイバー攻撃への対応能力評価<ul class="toc">
+	<li>5-4-1 攻撃者視点での評価：Red Teaming</li>
+	<li>5-4-2 TLPTフレームワーク</li></ul></li>
+
+</ul>
+<h3>第6章　情報セキュリティ監査</h3>
+<ul class="toc">
+<li>6-1 情報セキュリティ監査の目的<ul class="toc">
+	<li>6-1-1 Cから始めるPDCA</li></ul></li>
+<li>6-2 セキュリティ監査の分類と目的<ul class="toc">
+	<li>6-2-1 「助言型監査」と「保証型監査」</li>
+	<li>6-2-2 ISMS 適合性評価制度とセキュリティ監査</li>
+	<li>6-2-3 第三者によるセキュリティ監査結果の利用</li></ul></li>
+<li>6-3 内部監査人の選択方法</li>
+<li>6-4 外部監査人の選択方法</li>
+<li>6-5 CISOは監査報告書を受け取ったら何をすれば良いか<ul class="toc">
+	<li>6-5-1 監査結果の確認とCISO の心得</li>
+	<li>6-5-2 改善計画書の作成</li>
+	<li>6-5-3 フォローアップの必要性</li></ul></li>
+
+</ul>
+<h3>第7章　情報セキュリティアーキテクチャ</h3>
+<ul class="toc">
+<li>7-1 アーキテクチャの重要性</li>
+<li>7-2 情報セキュリティアーキテクチャの基本要素<ul class="toc">
+	<li>7-2-1 IAAAに基づいたアクセスコントロール</li>
+	<li>7-2-2 情報格付（データクラシフィケーション）</li>
+	<li>7-2-3 権限管理</li>
+	<li>7-2-4 物理的・ネットワーク的なアクセスコントロール</li>
+	<li>7-2-5 統制基盤</li>
+	<li>7-2-6 統合ログ管理</li></ul></li>
+<li>7-3 エンタープライズセキュリティアーキテクチャ（ESA）<ul class="toc">
+	<li>7-3-1 Sherwood Applied Business Security Architecture（SABSA）</li>
+	<li>7-3-2 SABSA を学ぶためのガイド</li>
+	<li>7-3-3 COBIT</li>
+	<li>7-3-4 The Open Group Architecture Framework（TOGAF）</li>
+	<li>7-3-5 TOGAF を学ぶためのガイド</li>
+	<li>7-3-6 Information Technology Infrastructure Library（ITIL）</li></ul></li>
+<li>7-4 ゼロトラスト</li>
+<li>7-5 「トラストがゼロ」の背景<ul class="toc">
+	<li>7-5-1 技術革新</li>
+	<li>7-5-2 利用形態の変化</li>
+	<li>7-5-3 攻撃手法の変化</li></ul></li>
+<li>7-6 ゼロトラストアーキテクチャ<ul class="toc">
+	<li>7-6-1 リソースのセグメント境界</li>
+	<li>7-6-2 システムリソース</li>
+	<li>7-6-3 アプリケーションリソース</li>
+	<li>7-6-4 リソースに対する最小権限の維持</li>
+	<li>7-6-5 アクセス要求元が使用するシステム</li>
+	<li>7-6-6 アクセス要求元が使用するアプリケーション</li>
+	<li>7-6-7 ゼロトラストの基本原則と前提</li></ul></li>
+<li>7-7 ゼロトラストアーキテクチャの論理的構成要素<ul class="toc">
+	<li>7-7-1 PE（ポリシーエンジン）：指定されたリソースへのアクセス許可の最終的な判断を行う</li>
+	<li>7-7-2 PA（ポリシーアドミニストレータ）：アクセス要求元とリソースの通信経路の確立・遮断を行う</li>
+	<li>7-7-3 PEP（ポリシー実施ポイント）：アクセス要求元とリソースの接続を有効化，監視，終了を行う</li>
+	<li>7-7-4 ゼロトラストアーキテクチャの要素</li></ul></li>
+<li>7-8 ゼロトラストアーキテクチャで防げない攻撃</li>
+<li>7-9 継続的な技術動向の把握</li>
+
+</ul>
+<h3>第8章　DXと情報セキュリティ</h3>
+<ul class="toc">
+<li>8-1 デジタルトランスフォーメーション（DX）の目的は事業変革</li>
+<li>8-2 DXとテクノロジー</li>
+<li>8-3 OODA，アジャイル，DevOpsのアプローチ<ul class="toc">
+	<li>8-3-1 OODA の適用</li>
+	<li>8-3-2 アジャイルの適用</li>
+	<li>8-3-3 DevOpsの適用</li></ul></li>
+<li>8-4 DX のセキュリティ実現において，PDCAをどう使うか</li>
+<li>8-5 CISOはDXプロジェクトにいかにして貢献するか<ul class="toc">
+	<li>8-5-1 DXのボトルネックにならない</li>
+	<li>8-5-2 DXの推進につながる働きかけをする</li>
+	<li>8-5-3 リスクプロファイルによりセキュリティもDXする</li></ul></li>
+
+</ul>
+<h3>第9章　クラウドファーストの情報セキュリティ</h3>
+<ul class="toc">
+<li>9-1 クラウドファーストへの転換</li>
+<li>9-2 クラウドサービスの主要なモデルと責任分界点</li>
+<li>9-3 クラウドサービス選定時の考慮点<ul class="toc">
+	<li>9-3-1 情報の格付けおよび取扱制限（クラシフィケーション）</li>
+	<li>9-3-2 法令・基準への対応状況を確認する</li>
+	<li>9-3-3 サービス契約と準拠法・裁判管轄</li>
+	<li>9-3-4 クラウドサービスの中断や終了時</li>
+	<li>9-3-5 情報流通経路全般のセキュリティ</li>
+	<li>9-3-6 外部認証，認定を利用した効率的な情報セキュリティ対策実施状況の把握</li>
+	<li>9-3-7 クラウドサービスプロバイダーのコンプライアンス対応：Microsoft社の例</li></ul></li>
+<li>9-4 実践的な情報セキュリティ評価<ul class="toc">
+	<li>9-4-1 European Union Agency for Network and Information Security（ENISA）Cloud Security</li>
+	<li>Guide for SMEs</li>
+	<li>9-4-2 クラウドサービスの評価：調査サービスの利用</li></ul></li>
+<li>9-5 セキュリティの主要な評価要素<ul class="toc">
+	<li>9-5-1 ガバナンスとリスクマネジメント</li>
+	<li>9-5-2 アーキテクチャ</li>
+	<li>9-5-3 データセンターセキュリティ</li>
+	<li>9-5-4 事業継続と可用性</li>
+	<li>9-5-5 サプライチェーンの管理，透明性，説明責任195</li>
+	<li>9-5-6 人的セキュリティ</li>
+	<li>9-5-7 アイデンティティとアクセス管理</li>
+	<li>9-5-8 顧客データの取り扱い</li>
+	<li>9-5-9 アプリケーションセキュリティ</li>
+	<li>9-5-10 暗号化</li>
+	<li>9-5-11 ロギング，モニタリング</li>
+	<li>9-5-12 データ連携</li>
+	<li>9-5-13 変更管理と構成管理</li>
+	<li>9-5-14 インシデント管理</li>
+	<li>9-5-15 脆弱性管理</li>
+	<li>9-5-16 モバイルセキュリティ</li></ul></li>
+<li>9-6 クラウドサービスをセキュアに利用するために<ul class="toc">
+	<li>9-6-1 管理機構の利用</li>
+	<li>9-6-2 クラウド間連携とAPI の課題</li></ul></li>
+
+</ul>
+<h3>第10章　情報セキュリティインシデント対応と報告</h3>
+<ul class="toc">
+<li>10-1 情報セキュリティインシデントとCSIRTの設置</li>
+<li>10-2 セキュリティインシデントの推移<ul class="toc">
+	<li>10-2-1 内部の過失による物理的な保護の破綻</li>
+	<li>10-2-2 内部の過失によるネットワーク的な保護の破綻</li>
+	<li>10-2-3 内部からの攻撃</li>
+	<li>10-2-4 外部からの持続的な攻撃（APT）</li>
+	<li>10-2-5 内部によるシステム的・ネットワーク的な保護の欠如：オンラインストレージ</li>
+	<li>10-2-6 内部によるシステム的な保護の欠如：Webサービスのプラットフォーム</li>
+	<li>10-2-7 外部からの攻撃：リスト型攻撃</li>
+	<li>10-2-8 外部からの攻撃：DDoS事件</li>
+	<li>10-2-9 外部からの攻撃：ランサムウェア</li>
+	<li>10-2-10 外部からの攻撃：ビジネスメール詐欺</li>
+	<li>10-2-11 外部からの攻撃：DNS の乗っ取り</li>
+	<li>10-2-12 サプライチェーンの問題：廃棄ハードディスクの転売事件</li></ul></li>
+<li>10-3 新しい領域のインシデント<ul class="toc">
+	<li>10-3-1 IoT セキュリティ</li>
+	<li>10-3-2 自動車のセキュリティ</li>
+	<li>10-3-3 WannaCry：攻撃者の変化（国家機関の関与）</li>
+	<li>10-3-4 キャッシュレス決済の不正な引き落とし</li>
+	<li>10-3-5 暗号資産に対する攻撃</li>
+	<li>10-3-6 AIセキュリティ</li>
+	<li>10-3-7 SNSを基点とした炎上255</li>
+	<li>10-3-8 SNSアカウントの乗っ取り</li></ul></li>
+<li>10-4 脆弱性評価<ul class="toc">
+	<li>10-4-1 脆弱性の深刻度評価（CVSS）</li>
+	<li>10-4-2 脅威ハンティング（Threat Hunting）</li>
+	<li>10-4-3 製品やサービスベンダーのセキュリティ対応能力</li>
+	<li>10-4-4 脅威インテリジェンスの利用</li>
+	<li>10-4-5 リスクの転移</li>
+	<li>10-4-6 地政学リスク</li>
+	<li>10-4-7 報告されない脆弱性</li></ul></li>
+<li>10-5 CTFとインシデント対応演習</li>
+<li>10-6 インシデントを想定したセキュリティ施策の評価</li>
+
+</ul>
+<h3>第11章　製品選定とベンダー選定</h3>
+<ul class="toc">
+<li>11-1 ベンダーとの対応方法</li>
+<li>11-2 セキュリティソリューション検討時の留意点</li>
+<li>11-3 ベンダー選定時の留意点<ul class="toc">
+	<li>11-3-1 製品・サービスの開発元</li>
+	<li>11-3-2 販売会社・販売代理店</li>
+	<li>11-3-3 システムインテグレータ</li></ul></li>
+<li>11-4 ライフサイクルにおけるベンダー評価</li>
+
+</ul>
+<h3>第12章　CISOの責務と仕事</h3>
+<ul class="toc">
+<li>12-1 CISOの役割</li>
+<li>12-2 サイバーセキュリティ経営ガイドライン</li>
+<li>12-3 米国におけるCISO 像：CISO COMPASSのCISO像<ul class="toc">
+	<li>12-3-1 CISO の歴史</li></ul></li>
+
+</ul>
+<h3>第13章　経営陣としてのCISOへの期待</h3>
+<ul class="toc">
+<li>13-1 CISOの役割と連携<ul class="toc">
+	<li>13-1-1 コミュニケーションにおける注意事項</li></ul></li>
+<li>13-2 経営会議での報告</li>
+<li>13-3 役職などの名称について</li>
+<li>13-4 財務会計部門との連携（CFO）</li>
+<li>13-5 業務部門との連携（COO）</li>
+<li>13-6 IT部門との連携（CIO）</li>
+<li>13-7 リスク管理部門との連携（CRO）</li>
+<li>13-8 総務・人事部門との連携</li>
+<li>13-9 法務部門との連携</li>
+<li>13-10 監査部門との連携</li>
+<li>13-11 広報部門との連携</li>
+<li>13-12 社外との連携</li>
+<li>13-13 執行責任者としてのCISO</li>
+
+</ul>
+<h3>Annex</h3>
+<ul class="toc">
+<li>Annex A 事業計画策定例<ul class="toc">
+	<li>A-1 事業計画の位置付け</li>
+	<li>A-2 資格制度を導入した場合の試算（サブスクリプション）</li>
+	<li>A-3 事業計画1-4の評価</li></ul></li>
+<li>Annex B CISOダッシュボード<ul class="toc">
+	<li>B-1 CISOダッシュボード</li>
+	<li>B-2 情報セキュリティ事故の説明責任</li></ul></li>
+<li>Annex C 情報セキュリティ対策の標準化と自動化の流れ</li>
+<li>Annex D EDC 手法を使ったセキュリティ対策効果の試算<ul class="toc">
+	<li>D-1 EDC 手法の導入</li>
+	<li>D-2 EDC 手法による対策案の最適解算出手順</li>
+	<li>D-3 対策リストの策定</li></ul></li>
+<li>Annex E Need to Know 再考<ul class="toc">
+	<li>E-1 すべての会話と知識を検索可能にする</li></ul></li>
+<li>Annex F 新型コロナウイルス後のセキュリティ<ul class="toc">
+	<li>F-1 業務形態の変化とCISO に求められる役割</li>
+	<li>F-2 セキュリティ対策</li>
+	<li>F-3 情報格付けと情報の取り扱い</li>
+	<li>F-4 規定とセキュリティポリシー</li>
+	<li>F-5 企業活動の基盤としてのコミュニケーション</li>
+	<li>F-6 成果の定義と評価</li>
+	<li>F-7 企業文化と教育</li></ul></li>
+<li>Annex G セキュリティインシデントの推移<ul class="toc">
+	<li>G-1 サイバー攻撃の変化と潮流</li>
+	<li>G-2 マルウェアの誕生（1990年代以前）</li>
+	<li>G-3 インターネットワーム（モリスワーム）</li>
+	<li>G-4 Mellisa とメール型ウイルス</li>
+	<li>G-5 現実化したDDoS攻撃（2000年前後）</li>
+	<li>G-6 日本における省庁Web改ざん（日本のネットワークセキュリティの起点）</li>
+	<li>G-7 CodeRedに始まるワーム事件</li>
+	<li>G-8 ボットネットとサイバー犯罪</li>
+	<li>G-9 標的型攻撃</li>
+	<li>G-10 ランサムウェア</li>
+	<li>G-11 ビジネスメール詐欺（BEC）</li>
+	<li>G-12 攻撃の背景にあるエコシステム（アンダーグラウンドフォーラム）</li>
+	<li>G-13 脆弱性報告に対する報償プログラム</li>
+	<li>G-14 情報セキュリティ早期警戒パートナーシップ</li>
+	<li>G-15 まとめ</li></ul></li>
+<li>Annex H 情報格付け<ul class="toc">
+	<li>H-1 情報格付け統一基準</li>
+	<li>H-2 日本政府における格付け</li>
+	<li>H-3 英国政府における格付け</li>
+	<li>H-4 日英の違いとそのポイント</li></ul></li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="errata">正誤表</h3>
+<p>本書の以下の部分に誤りがありました。ここに訂正するとともに，<wbr/>ご迷惑をおかけしたことを深くお詫び申し上げます。</p>
+
+
+<div align="right"><p>（2021年9月22日最終更新）</p></div>
+
+
+<!--
+※古い更新分はこの下に，<wbr/>追加分は上にもっていくようにする
+<div class="partition-block"><p>（以下2020年1月16日更新）</p></div>
+-->
+
+<h4>P.13，<wbr/>表2-1，<wbr/>内部状況の表の「主要な要因」列の2行目</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+方針、目的およびこれらをたち成するために
+</td></tr><tr><th>正</th><td>
+方針、目的およびこれらを<strong>達</strong>成するために
+</td></tr></tbody></table>
+
+
+
+
+
+
+
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-11836-5","path":"\/dp\/ebook\/2021\/978-4-297-11836-5","targetId":"978-4-297-11836-5","parent":"\/dp\/genre\/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

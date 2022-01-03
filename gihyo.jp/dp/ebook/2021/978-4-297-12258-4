@@ -1,0 +1,644 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>良いFAQの書き方 ──ユーザーの「わからない」を解決するための文章術 | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="良いFAQは，ユーザーに見つけやすく，そしてわからないことを的確に解決し，満足度を向上させます。また，それはコールセンターにおけるコストの削減につながります。コールセンター内でも，良いFAQを活用すれば短時間でユーザーの疑問を解決できるなど，ストレス軽減やコストダウンを助けます。本書はFAQの書き方を解説した書籍です。筆者の長年にわたるFAQ作成と運営の経験を活かし，「なぜそう表現すると見つけやすくユーザーの課題を解決しやすいのか」「なぜこれだとユーザーは離脱してしまうのか」などを理論的・具体的に解説しています。FAQの改善前・改善後の例を豊富に用意しているので，本書を読めば良いFAQの書き方が身に付くはずです。さらに，FAQシステムの有効活用についてや，ユーザーのアクセス履歴などを分析してFAQを改善する手法も解説します。"/>
+  <meta name="keywords" content="樋口恵一郎電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="良いFAQの書き方 ──ユーザーの「わからない」を解決するための文章術 | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="良いFAQは，ユーザーに見つけやすく，そしてわからないことを的確に解決し，満足度を向上させます。また，それはコールセンターにおけるコストの削減につながります。コールセンター内でも，良いFAQを活用すれば短時間でユーザーの疑問を解決できるなど，ストレス軽減やコストダウンを助けます。本書はFAQの書き方を解説した書籍です。筆者の長年にわたるFAQ作成と運営の経験を活かし，「なぜそう表現すると見つけやすくユーザーの課題を解決しやすいのか」「なぜこれだとユーザーは離脱してしまうのか」などを理論的・具体的に解説しています。FAQの改善前・改善後の例を豊富に用意しているので，本書を読めば良いFAQの書き方が身に付くはずです。さらに，FAQシステムの有効活用についてや，ユーザーのアクセス履歴などを分析してFAQを改善する手法も解説します。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-12258-4"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-12258-4.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/WEB%2BDB%20PRESS%20plus">WEB+DB PRESS plus</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">良い<wbr>FAQ<wbr>の書き方<br><span class="sub">──ユーザーの<wbr>「わからない」<wbr>を解決するための文章術</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-12258-4.jpg" alt="良いFAQの書き方 ──ユーザーの「わからない」を解決するための文章術"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">樋口恵一郎　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-08-24">2021年8月24日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-08-24">2021年8月24日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2021/978-4-297-12257-7" target="_blank">2021年8月27日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,700円 <a id="pid403316" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">272</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-12258-4" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-12258-4" data-text="良いFAQの書き方 ──ユーザーの「わからない」を解決するための文章術 #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-12258-4" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-12258-4" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>良いFAQは，<wbr/>ユーザーに見つけやすく，<wbr/>そしてわからないことを的確に解決し，<wbr/>満足度を向上させます。また，<wbr/>それはコールセンターにおけるコストの削減につながります。コールセンター内でも，<wbr/>良いFAQを活用すれば短時間でユーザーの疑問を解決できるなど，<wbr/>ストレス軽減やコストダウンを助けます。本書はFAQの書き方を解説した書籍です。筆者の長年にわたるFAQ作成と運営の経験を活かし，<wbr/>「なぜそう表現すると見つけやすくユーザーの課題を解決しやすいのか」「なぜこれだとユーザーは離脱してしまうのか」などを理論的・<wbr/>具体的に解説しています。FAQの改善前・<wbr/>改善後の例を豊富に用意しているので，<wbr/>本書を読めば良いFAQの書き方が身に付くはずです。さらに，<wbr/>FAQシステムの有効活用についてや，<wbr/>ユーザーのアクセス履歴などを分析してFAQを改善する手法も解説します。</p><h3>こんな方におすすめ</h3>
+<ul><li>FAQ（外部公開用，<wbr/>内部ヘルプデスク用）の企画・<wbr/>構築・<wbr/>利用・<wbr/>運営およびライティングに携わっている，<wbr/>事務，<wbr/>営業，<wbr/>エンジニア，<wbr/>カスタマーサポートおよび各マネージャーの方々</li></ul>
+<aside class="author"><h3>樋口恵一郎（ひぐちけいいちろう）</h3><p>ハイウエア株式会社代表。FAQコンサルタント。開発者，<wbr/>通信機器SEを経て2007年からはWebサービスやFAQを中心としたコールセンター周辺技術の業務改善コンサルを進めている。サービス導入，<wbr/>運用を通じてAI等の周辺技術（音声認識，<wbr/>自然語対話，<wbr/>チャットボット，<wbr/>FAQシステムなど）に精通するも，<wbr/>それらを活かすのはコンテンツの質であることを実証し多くのサポートや講習を提供している。</p></aside><section id="sample"><h2>サンプル</h2><ul class="pdf"><li><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/9784297122577-01.pdf" target="_blank">サンプルPDFファイル1</a>（1,214KB）</li></ul>
+<a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/9784297122577-01.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/thumb/TH400_9784297122577-01.png,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/9784297122577-01.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/9784297122577-02.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/thumb/TH400_9784297122577-02.png,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/9784297122577-02.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/9784297122577-03.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/thumb/TH400_9784297122577-03.png,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/9784297122577-03.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/9784297122577-04.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/thumb/TH400_9784297122577-04.png,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/9784297122577-04.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/9784297122577-05.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/thumb/TH400_9784297122577-05.png,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12257-7/9784297122577-05.png" width="400" height="533" alt="sample"/></a></section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="42825">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><ul class="toc">
+<li>はじめに</li>
+<li>謝辞</li>
+<li>本書の読み方</li>
+<li>目次</li>
+</ul>
+<h3>第1章：FAQはなぜ重要なのか</h3>
+<h4>1.1　FAQの存在意義</h4>
+<h5>お客さま向けFAQサイトとして</h5>
+<ul class="toc">
+<li>カスタマーサポートにかかるコストの課題を解決する／顧客満足度と企業評価を上げる／オペレーターのストレスを緩和する／ユーザーの負担を減らす</li>
+</ul>
+<h5>内部用FAQサイトとして</h5>
+<ul class="toc">
+<li>企業内での情報共有で生産性を上げる／社内業務での時間の使い方を改革する</li>
+</ul>
+<h4>1.2　現実のFAQは存在意義を出せているか</h4>
+<h5>FAQサイトに関する残念な統計</h5>
+<h5>FAQサイトの課題を解決する鍵</h5>
+<h4>1.3　FAQの質を高める</h4>
+<h5>質の高いFAQと，質の低いFAQ</h5>
+<h5>FAQの質を高める要素</h5>
+<ul class="toc">
+<li>文の書き方／検索されやすさ／カテゴリ／分析とメンテナンス／FAQシステムとの相互依存／FAQに携わる人たち</li>
+</ul>
+<h4>1.4　FAQサイトの改善に関わるコスト</h4>
+<h5>コストの簡単な計算方法と代表的な計算式</h5>
+<h5>FAQ改善にしっかり予算をとるべき理由</h5>
+<h4>1.5　FAQの失敗例と成功例</h4>
+<h5>失敗の実例</h5>
+<ul class="toc">
+<li>FAQが多すぎるサイト／わかりにくすぎるサイト／稚拙な日本語のサイト</li>
+</ul>
+<h5>成功の実例</h5>
+<ul class="toc">
+<li>FAQを見つけられる率が30％以上も向上した実例／チャットボットが活かされた実例／コールセンターのナレッジに活かされた実例</li>
+</ul>
+<h3>第2章：FAQを書くための基礎知識</h3>
+<h4>2.1　質の高いFAQの条件</h4>
+<h5>ユーザーが読んで理解できること</h5>
+<h5>ユーザーに信頼されること</h5>
+<h5>ユーザーが迷わず取捨選択できること</h5>
+<h4>2.2　質の高いQ</h4>
+<h5>質の高いQの具体的な目的</h5>
+<h5>質の高いQの基本</h5>
+<ul class="toc">
+<li>解決案を示すこと／「問題＋解決案」の文体になっていること／必ずQの基本文体で書くこと</li>
+</ul>
+<h5>質の高いFAQ一覧</h5>
+<ul class="toc">
+<li>視認性を意識すること／視認性の高いFAQ一覧にすること</li>
+</ul>
+<h4>2.3　質の高いA</h4>
+<h5>質の高いAの具体的な目的</h5>
+<h5>質の高いAの基本</h5>
+<ul class="toc">
+<li>ユーザーが最後まで読めること／ユーザーが理解できること／ユーザーの安心感を得ること</li>
+</ul>
+<h4>2.4　質の高いQとAに共通する文</h4>
+<h5>一問一答にする</h5>
+<h5>一意の文にする</h5>
+<h5>6W1Hにする</h5>
+<h5>文のかかり受けに気を遣う</h5>
+<h5>用語，言葉遣いを統一する</h5>
+<h5>略称を活用する</h5>
+<h5>短文化する</h5>
+<h4>2.5　FAQコンテンツの準備</h4>
+<h5>対象となる原稿</h5>
+<ul class="toc">
+<li>すでにあるFAQを推敲する／分析レポートをもとにFAQを書く／コールセンターでの対応履歴からFAQを書く／マニュアルをもとにFAQを書く</li>
+</ul>
+<h5>公開するFAQの選抜</h5>
+<ul class="toc">
+<li>ユーザーターゲットによる選抜／利用者の問い合わせ数による選抜</li>
+<li> [column]こんなFAQは掲載しなくてよい</li>
+<li>パレートの法則による選抜</li>
+</ul>
+<h4>2.6　FAQを書く前の基本的な心構え</h4>
+<h5>FAQを書く専任者と品質責任者を任命</h5>
+<h5>FAQのレビュー</h5>
+<h5>FAQの質を上げていく運営の継続</h5>
+<h5>FAQは商品やサービスと同じだという意識</h5>
+<h5>ユーザーへの思いやり</h5>
+<h5>FAQを育てる意識</h5>
+<h5>ガイドラインの制定</h5>
+<h5>FAQ運営関係者全員の協調</h5>
+<h4>2.7　FAQの存在意義を見える化しておく</h4>
+<h5>見える化＝数値化</h5>
+<h5>KPIの種類</h5>
+<ul class="toc">
+<li>回答到達率／問題解決率</li>
+</ul>
+<h5>KPIの数値目標</h5>
+<ul class="toc">
+<li>KPIの目標値とFAQ運営のサイクル</li>
+</ul>
+<h5>飽くなき高品質化の追及と継続</h5>
+<h3>第3章：Qの書き方</h3>
+<h4>3.1　Qで解決への道筋を作る</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前／改善後</li>
+</ul>
+<h4>3.2　Qの書き方でAを端的にする</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<ul class="toc">
+<li>ユーザーが知りたいことをQに盛り込む／6W1Hを意識する</li>
+</ul>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前1／改善後1／改善前2／改善後2</li>
+</ul>
+<h4>3.3　Qの文に誤解の余地を作らない</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前1／改善後1／改善前2／改善後2</li>
+</ul>
+<h4>3.4　QをYes/Noクエスチョンにしない</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<ul class="toc">
+<li>Qに解決案を明示する／ネガティブな回答の場合の記述方法</li>
+</ul>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前／改善後</li>
+</ul>
+<h4>3.5　Qを読む人の立場に配慮する</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前／改善後</li>
+</ul>
+<h4>3.6　Qのリストで視認性を高める</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<ul class="toc">
+<li>言葉遣いに一貫性を持たせる／一貫性があるので目立たせることができる</li>
+</ul>
+<h5>視認性の要素</h5>
+<ul class="toc">
+<li>言葉の統一／パターン化／インデックス化／異形化</li>
+</ul>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前／改善後</li>
+</ul>
+<h4>3.7　Qのリストで粒度をそろえる</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前／改善後</li>
+</ul>
+<h4>3.8　Qの文のさまざまなアイデア</h4>
+<h5>専門用語・技術用語を使う場合のアイデア</h5>
+<h5>ユーザーからのお叱りなどを減らすアイデア</h5>
+<h5>長くなったQの文をシェイプアップするアイデア</h5>
+<ul class="toc">
+<li>単語と構文での短縮／記号・シンボルの活用による短縮／質を上げつつ短文にしていく</li>
+</ul>
+<h3>第4章：Aの書き方</h3>
+<h4>4.1　Aの中で場合分け（条件分岐）をしない</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前／改善後</li>
+</ul>
+<h4>4.2　Aに情報を盛り込みすぎない</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前／改善後</li>
+</ul>
+<h4>4.3　AとQを一致させる</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前／改善後</li>
+</ul>
+<h4>4.4　Aには結論をまず示す</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前1／改善後1／改善前2／改善後2／改善前3／改善後3</li>
+</ul>
+<h4>4.5　Aで使うすべての言葉に配慮する</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>6W1Hの文を作り上げる前後のシミュレーション</h5>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前／改善後</li>
+</ul>
+<h4>4.6　Aは箇条書きにする</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>Before，After</h5>
+<h5>箇条書きにするテクニック</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前／改善後</li>
+</ul>
+<h4>4.7　Aでは装飾・記号は効果的に使う</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>Before，After</h5>
+<h5>まとめ</h5>
+<h5>改善してみる</h5>
+<ul class="toc">
+<li>改善前／改善後</li>
+</ul>
+<h4>4.8　Aではリンクを効果的に使う</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>まとめ</h5>
+<h4>4.9　Aでは目視でもユーザーの理解を助ける</h4>
+<h5>良くないFAQの例</h5>
+<h5>このケースでの問題点</h5>
+<h5>改善ポイント</h5>
+<h5>イラストを駆使するテクニック</h5>
+<h5>まとめ</h5>
+<h3>第5章：FAQのガイドラインの作り方</h3>
+<h4>5.1　基本事項</h4>
+<h5>目的と目標を示す</h5>
+<h5>ユーザーターゲットや利用デバイスを定める</h5>
+<h5>ルールにしたがっているかをチェックする</h5>
+<h5>作文ルール</h5>
+<h5>FAQサンプル</h5>
+<h4>5.2　FAQ（QとA）作文ルール</h4>
+<h5>最大文字数</h5>
+<ul class="toc">
+<li>Qの最大文字数／Aの最大文字数</li>
+</ul>
+<h5>漢字，ひらがな</h5>
+<h5>カタカナ，アルファベット</h5>
+<h5>全角，半角</h5>
+<h5>略語，通称</h5>
+<ul class="toc">
+<li>採用する略語を定める／新たに略語や通称を採用するときの採用基準を決める</li>
+</ul>
+<h5>文体・基本構文</h5>
+<ul class="toc">
+<li>Qの文体・基本構文のルール／Aの作文の基本的な作文ルールを決めておく</li>
+</ul>
+<h5>記号，特殊文字のルール</h5>
+<h5>専門用語・技術用語・商品用語・サービス用語のルール</h5>
+<h4>5.3　ガイドラインの管理</h4>
+<h5>更新の見極めとタイミング</h5>
+<h5>FAQ制作者と承認者</h5>
+<h3>第6章：FAQのカテゴリの作り方</h3>
+<h4>6.1　カテゴライズの重要なポイント</h4>
+<h5>カテゴライズの検討</h5>
+<h5>カテゴリタイトル</h5>
+<h5>カテゴリの粒度</h5>
+<h4>6.2　質の高いカテゴライズ</h4>
+<h5>シンプルなカテゴライズを心がける</h5>
+<ul class="toc">
+<li>シンプルなカテゴリのアイデア／シンプルなカテゴライズの管理面でのメリット</li>
+</ul>
+<h5>質の高いFAQを書いておくとカテゴライズが容易</h5>
+<h5>ユーザーが取捨選択しやすいカテゴリタイトルにする</h5>
+<ul class="toc">
+<li>ユーザー視点のカテゴリタイトルにする／カテゴリ配下のFAQの数／商品名やサービス名をカテゴリにするケース</li>
+</ul>
+<h5>取捨選択しやすいカテゴリの例</h5>
+<h4>6.3　さまざまなカテゴリ構成</h4>
+<h5>階層型カテゴリ構成</h5>
+
+<ul class="toc">
+<li>ユーザー目線の階層化／FAQにおけるユーザー目線／階層の深度は2階層まで</li>
+</ul>
+<h5>マルチカテゴリ構成</h5>
+<ul class="toc">
+<li>マルチカテゴリ構成とユーザー目線／階層型カテゴリ，マルチカテゴリ構成の組み合わせ</li>
+</ul>
+<h5>レコメンド型カテゴライズ</h5>
+<ul class="toc">
+<li>恣意的なレコメンドによるカテゴライズ／FAQを関連付けるにはFAQ分析が役に立つ</li>
+</ul>
+<h5>ソート型カテゴリ</h5>
+<ul class="toc">
+<li>ソート型カテゴリはQの文の構成が鍵</li>
+</ul>
+<h5>特別なカテゴリ</h5>
+<ul class="toc">
+<li>緊急カテゴリ／80％のユーザーが自己解決できるカテゴリ／カテゴリ不要なFAQ</li>
+</ul>
+<h3>第7章：FAQの分析とメンテナンス</h3>
+<h4>7.1　分析とメンテナンスの基本</h4>
+<h5>FAQを陳腐化させない</h5>
+<h5>完璧なFAQを目指さない</h5>
+<h5>FAQでユーザーの声を集める</h5>
+<h5>質の高い分析の大前提は，質の高いFAQ</h5>
+<h5>質が高いゆえに数が増えたFAQの課題</h5>
+<h5>メンテナンスしやすさのためのスモールスタート</h5>
+<h5>FAQのテーマをステップバイステップで増やす</h5>
+<h5>分析とメンテナンスを継続する</h5>
+<h4>7.2　分析値の種類と活用法</h4>
+<h5>KPI</h5>
+<ul class="toc">
+<li>PV（FAQサイトの訪問者数）と直帰率／回答到達率と問題解決率／コールセンターでの分析値</li>
+</ul>
+<h5>ランキング</h5>
+<ul class="toc">
+<li>FAQのアクセスランキング／回答未解決ランキング／検索キーワードランキングとゼロ件ヒット／カテゴリランキング</li>
+<li> [column]売り上げにつながりそうな問い合わせランキング</li>
+</ul>
+<h4>7.3　メンテナンスを継続しながらFAQを育てる</h4>
+<h5>FAQを追加する</h5>
+<h5>FAQを更新（推敲）する</h5>
+<ul class="toc">
+<li>標準単語を整理する／新しい言葉を取り入れる／ユーザーのリテラシーを標準単語にするときの注意／同義語辞書のメンテナンスもまめにする</li>
+</ul>
+<h5>FAQを削除する</h5>
+<ul class="toc">
+<li>ユーザーの時間を節約できる／FAQ制作者の時間を節約できる／運営コストを落とし利益に貢献できる</li>
+</ul>
+<h4>7.4　質の高いFAQはメンテナンスもしやすい</h4>
+<h5>定型文は書くのも推敲もしやすい</h5>
+<h5>6W1Hの文は，書くのも推敲も楽になる</h5>
+<h5>用語を統一するとメンテナンスが早い</h5>
+<h4>7.5　メンテナンスの次のステップ</h4>
+<h5>分析値を比較する方法</h5>
+<h5>利益を比較する方法</h5>
+<h4>7.6　分析とメンテナンスの効率化</h4>
+<h5>分析はシステムにやらせる</h5>
+<h5>判断は人が行う</h5>
+<h5>メンテナンスはシステムに手伝わせて人が行う</h5>
+<h3>第8章：FAQ制作者が知っておくべきFAQシステムのしくみ</h3>
+<h4>8.1　FAQシステムの導入目的とメリット</h4>
+<h5>ユーザー向けの基本機能</h5>
+<ul class="toc">
+<li>FAQの検索・絞り込み／FAQの閲覧／FAQの自動ランキング閲覧</li>
+</ul>
+<h5>FAQ制作者向けの基本機能</h5>
+<ul class="toc">
+<li>FAQの管理／FAQの分析／FAQサイトのUI設定／アカウント・操作管理機能</li>
+</ul>
+<h5>FAQシステムの基本機能以外の機能</h5>
+<ul class="toc">
+<li>Web検索からの導線とSEO対策機能／チャットボットなどのヒューマンライクなUI／CRMシステムとの連携</li>
+</ul>
+<h4>8.2　FAQシステムとFAQを活かす基礎知識</h4>
+<h5>キーワード検索機能を活かす</h5>
+<ul class="toc">
+<li>テキストマイニングを利用する／キーワード検索の対象をQにする</li>
+</ul>
+<h5>複数単語でのキーワード検索機能を活かす</h5>
+<ul class="toc">
+<li>and検索／or検索</li>
+</ul>
+<h5>自然文検索と形態素解析について知っておく</h5>
+<ul class="toc">
+<li>自然文検索機能とは／自然文検索のチャットボットでの応用</li>
+</ul>
+<h5>同義語検索を活かす</h5>
+<ul class="toc">
+<li>同義語検索のしくみ／同義語検索の便利な使い方</li>
+</ul>
+<h5>複合的な検索を活かす</h5>
+<h5>タグ付け機能を知っておく</h5>
+<ul class="toc">
+<li>タグ検索機能／SEOへの応用</li>
+</ul>
+<h5>カテゴライズ機能を知っておく</h5>
+<h5>FAQ分析機能</h5>
+<ul class="toc">
+<li>さまざまな分析値の提示／分析機能のカスタマイズ／できる分析とできない分析</li>
+</ul>
+<h4>8.3　FAQシステムの採用</h4>
+<h5>FAQシステム要件の整理</h5>
+<h5>AI要件の検討のしかた</h5>
+<ul class="toc">
+<li>チャットボット／未来のチャットボットの要件</li>
+</ul>
+<h5>FAQシステム設置環境</h5>
+
+<ul class="toc">
+<li>おわりに</li>
+<li>索引</li>
+<li>著者プロフィール</li>
+<li>奥付</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="errata">正誤表</h3>
+<p>本書の以下の部分に誤りがありました。ここに訂正するとともに，<wbr/>ご迷惑をおかけしたことを深くお詫び申し上げます。</p>
+<div align="right"><p>（2021年9月10日最終更新）</p></div>
+<!--
+※古い更新分はこの下に，<wbr/>追加分は上にもっていくようにする
+<div class="partition-block"><p>（以下2020年1月16日更新）</p></div>
+-->
+
+<h4>P.2　「カスタマーサポートにかかるコストの課題を解決する」の3段落2行目</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+人権費
+</td></tr><tr><th>正</th><td>
+人<strong>件</strong>費
+</td></tr></tbody></table>
+
+<h4>P.20　「ユーザーが迷わず取捨選択できること」の3段落2行目</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+それば良いことです。
+</td></tr><tr><th>正</th><td>
+それ<strong>は</strong>良いことです。
+</td></tr></tbody></table>
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-12258-4","path":"\/dp\/ebook\/2021\/978-4-297-12258-4","targetId":"978-4-297-12258-4","parent":"\/dp\/genre\/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

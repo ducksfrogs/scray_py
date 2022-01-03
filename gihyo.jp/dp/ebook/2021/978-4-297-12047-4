@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>第3版 毒物劇物取扱者 合格教本 | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="本書は毒物劇物取扱者試験を受験する方を対象としたテキストです。毒物及び劇物取締法，基礎化学にはじまり，筆記試験の「性質及び貯蔵その他取扱い方法」と実地試験で出題される毒物劇物の性状，貯蔵法，廃棄法，毒性，用途などに触れていきます。毒物劇物は数が多く，物質名や特徴を物質ごとに一つずつ覚えるのはかなり難しい作業です。本書では毒物劇物を出題されるキーワードや特徴で分類・整理しているので，他の毒物劇物と関連づけて，無駄なく記憶することができます。また，各章に章末問題があり，学習の確認ができます。2020年の法改正に対応。"/>
+  <meta name="keywords" content="竹尾文彦,花輪俊宏電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="第3版 毒物劇物取扱者 合格教本 | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="本書は毒物劇物取扱者試験を受験する方を対象としたテキストです。毒物及び劇物取締法，基礎化学にはじまり，筆記試験の「性質及び貯蔵その他取扱い方法」と実地試験で出題される毒物劇物の性状，貯蔵法，廃棄法，毒性，用途などに触れていきます。毒物劇物は数が多く，物質名や特徴を物質ごとに一つずつ覚えるのはかなり難しい作業です。本書では毒物劇物を出題されるキーワードや特徴で分類・整理しているので，他の毒物劇物と関連づけて，無駄なく記憶することができます。また，各章に章末問題があり，学習の確認ができます。2020年の法改正に対応。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-12047-4"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-12047-4.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E8%B3%87%E6%A0%BC%E8%A9%A6%E9%A8%93%EF%BC%88%E4%B8%80%E8%88%AC%EF%BC%89%E3%83%BB%E5%A4%A7%E5%AD%A6%E5%8F%97%E9%A8%93" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">第<wbr>3<wbr>版 毒物劇物取扱者 合格教本</h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-12047-4.jpg" alt="第3版 毒物劇物取扱者 合格教本"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">竹尾文彦，<wbr/>花輪俊宏　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-04-14">2021年4月14日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-04-14">2021年4月14日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2021/978-4-297-12046-7" target="_blank">2021年4月17日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">PDF</span><span class="buy">1,800円 <a id="pid403183" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">328</span>ページ相当</span><span class="pdf">PDF</span> </dd>
+<dd style="color:#de3434">※本書PDF版はテキストコピー機能がご利用いただけません</dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-12047-4" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-12047-4" data-text="第3版 毒物劇物取扱者 合格教本 #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-12047-4" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-12047-4" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>本書は毒物劇物取扱者試験を受験する方を対象としたテキストです。毒物及び劇物取締法，<wbr/>基礎化学にはじまり，<wbr/>筆記試験の「性質及び貯蔵その他取扱い方法」と実地試験で出題される毒物劇物の性状，<wbr/>貯蔵法，<wbr/>廃棄法，<wbr/>毒性，<wbr/>用途などに触れていきます。毒物劇物は数が多く，<wbr/>物質名や特徴を物質ごとに一つずつ覚えるのはかなり難しい作業です。本書では毒物劇物を出題されるキーワードや特徴で分類・<wbr/>整理しているので，<wbr/>他の毒物劇物と関連づけて，<wbr/>無駄なく記憶することができます。また，<wbr/>各章に章末問題があり，<wbr/>学習の確認ができます。2020年の法改正に対応。</p><h3>こんな方におすすめ</h3>
+<ul><li>毒物劇物取扱者試験を受験する人</li></ul>
+ダウンロードで学習資料を多数用意しています。ぜひ学習にご活用ください（要パスワード）。<aside class="author"><h3>竹尾文彦（たけおふみひこ）</h3><p>湘央生命科学技術専門学校専任教員<br />
+1章，<wbr/>2章担当。専門は毒物劇物取扱法，<wbr/>基礎化学，<wbr/>応用化学，<wbr/>バイオインフォマティクス<br />
+資格：公害防止管理者(水質)</p>
+</aside><aside class="author"><h3>花輪俊宏（はなわとしひろ）</h3><p>湘央生命科学技術専門学校専任教員<br />
+3章～9章担当。専門は薬物管理学，<wbr/>微生物学，<wbr/>遺伝子解析実習，<wbr/>実験動物学実習<br />
+資格： 毒物劇物取扱者(一般品目)，<wbr/>技術士補(生物工学部門)，<wbr/>実験動物1級技術者，<wbr/>認定動物看護師，<wbr/>公害防止管理者(大気・<wbr/>水質・<wbr/>ダイオキシン)など</p>
+</aside><section id="sample"><h2>サンプル</h2><ul class="pdf"><li><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/9784297120467-01.pdf" target="_blank">サンプルPDFファイル1</a>（485KB）</li></ul>
+<a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/9784297120467-01.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/thumb/TH400_9784297120467-01.jpg,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/9784297120467-01.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/9784297120467-02.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/thumb/TH400_9784297120467-02.jpg,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/9784297120467-02.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/9784297120467-03.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/thumb/TH400_9784297120467-03.jpg,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/9784297120467-03.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/9784297120467-04.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/thumb/TH400_9784297120467-04.jpg,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/9784297120467-04.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/9784297120467-05.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/thumb/TH400_9784297120467-05.jpg,https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12046-7/9784297120467-05.jpg" width="400" height="533" alt="sample"/></a></section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="42287">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>第1章　毒物及び劇物に関する法規</h3>
+<ul class="toc">
+<li>1-1 毒物及び劇物取締法の目的と定義</li>
+<li>1-2 毒物及び劇物取締法の禁止規定</li>
+<li>1-3 営業の登録・登録基準・登録事項</li>
+<li>1-4 毒物劇物取扱責任者</li>
+<li>1-5 登録の変更・届出</li>
+</ul>
+<h4>演習問題1-1</h4>
+<ul class="toc">
+<li>1-6 毒物劇物の取扱・表示方法</li>
+<li>1-7 毒物劇物の譲渡手続・交付の制限</li>
+<li>1-8 廃棄方法</li>
+<li>1-9 運搬・事故の際の措置</li>
+<li>1-10 立入検査等</li>
+<li>1-11 登録の失効</li>
+<li>1-12 業務上取扱者の届出</li>
+</ul>
+<h4>演習問題1-2</h4>
+
+<h4>章末問題</h4>
+
+<h3>第2章　基礎化学</h3>
+<ul class="toc">
+<li>2-1 物質の三態</li>
+<li>2-2 元素の周期表</li>
+<li>2-3 原子量と分子量</li>
+<li>2-4 原子の構造</li>
+<li>2-5 電子配置</li>
+<li>2-6 物質量</li>
+<li>2-7 溶液の濃度</li>
+<li>2-8 化学結合</li>
+<li>2-9 化学式と化学反応式</li>
+<li>2-10 熱化学方程式</li>
+</ul>
+<h4>演習問題2-1</h4>
+<ul class="toc">
+<li>2-11 酸と塩基</li>
+<li>2-12 酸と塩基の中和</li>
+<li>2-13 酸化と還元</li>
+<li>2-14 電池</li>
+<li>2-15 電気分解</li>
+<li>2-16 ボイル・シャルルの法則</li>
+<li>2-17 金属イオンの分離と確認</li>
+<li>2-18 炭化水素</li>
+<li>2-19 アルコールとエーテル</li>
+<li>2-20 アルデヒドとケトン</li>
+<li>2-21 カルボン酸とエステル</li>
+<li>2-22 芳香族炭化水素</li>
+<li>2-23 化学の基本法則と化学用語</li>
+</ul>
+<h4>演習問題2-2</h4>
+
+<h4>章末問題</h4>
+
+<h3>第3章　毒物劇物の性状</h3>
+<ul class="toc">
+<li>3-1 毒物劇物の性状について学ぶ前に</li>
+<li>3-2 毒物劇物の色</li>
+<li>3-3 ～して何色になる</li>
+<li>3-4 分解すると～，燃焼すると～</li>
+<li>3-5 毒物劇物の臭い（臭気）</li>
+<li>3-6 催涙性</li>
+<li>3-7 潮解性</li>
+<li>3-8 風解性（風化）</li>
+<li>3-9 引火性</li>
+<li>3-10 発火性</li>
+<li>3-11 爆発性</li>
+<li>3-12 不燃性</li>
+<li>3-13 金属</li>
+<li>3-14 酸化剤と還元剤</li>
+<li>3-15 その他の特徴的な性状</li>
+</ul>
+<h4>章末問題</h4>
+
+<h3>第4章　毒物劇物の貯蔵法</h3>
+<ul class="toc">
+<li>4-1 貯蔵法</li>
+</ul>
+<h4>章末問題</h4>
+
+<h3>第5章　毒物劇物の廃棄法</h3>
+<ul class="toc">
+<li>5-1 廃棄法</li>
+<li>5-2 希釈法と中和法</li>
+<li>5-3 燃焼法</li>
+<li>5-4 酸化法，還元法</li>
+<li>5-5 アルカリ法，分解法</li>
+<li>5-6 回収法，焙焼法</li>
+<li>5-7 隔離法</li>
+<li>5-8 沈殿法</li>
+<li>5-9 活性汚泥法</li>
+</ul>
+<h4>章末問題</h4>
+
+<h3>第6章　漏洩時の応急措置</h3>
+<ul class="toc">
+<li>6-1 漏洩時の応急措置</li>
+</ul>
+<h4>章末問題</h4>
+
+<h3>第7章　毒性・解毒剤</h3>
+<ul class="toc">
+<li>7-1 毒物劇物の毒性</li>
+<li>7-2 毒物劇物の解毒剤</li>
+</ul>
+<h4>章末問題</h4>
+
+<h3>第8章　鑑別法</h3>
+<ul class="toc">
+<li>8-1 鑑別法の基礎知識</li>
+<li>8-2 沈殿の色</li>
+<li>8-3 溶液の色</li>
+<li>8-4 発生する気体の色</li>
+<li>8-5 発生する臭気</li>
+<li>8-6 性状，反応生成物から推測</li>
+</ul>
+<h4>章末問題</h4>
+
+<h3>第9章　用途</h3>
+<ul class="toc">
+<li>9-1 用途</li>
+</ul>
+<h4>章末問題</h4>
+<ul class="toc">
+<li>毒物及び劇物取締法施行令　別表第2</li>
+</ul>
+
+<ul class="toc">
+<li>さくいん</li>
+<li>参考文献およびURL</li>
+<li>ダウンロードについて</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="supplement">補足情報</h3>
+<h4>ダウンロード教材について</h4>
+<div align="right"><p>（2021年4月8日更新）</p></div>
+
+
+<p>本書にはダウロード教材があります。</p>
+<p>以下のページに移動してください。ページに書かれた指示に従ってください。なお，<wbr/>ダウンロード教材を閲覧するには認証が必要です。</p>
+<ul>
+<li><a href="https://gihyo.jp/book/2021/978-4-297-12046-7/Declarationform">第3版 毒物劇物取扱者 合格教本　ダウロード教材入手先</a></li>
+</ul><h3 id="errata">正誤表</h3>
+本書掲載の記述に誤りがありました。訂正するとともに，<wbr/>読者の皆様および関係者の 方々に深くお詫び申し上げます。
+<div align="right"><p>（2021年11月30日最終更新）</p></div>
+ 
+
+
+
+
+<dl>
+<dt>第3版　第1刷をお買い上げの方への正誤表</dt>
+<dd><a href="/assets/files/book/2021/978-4-297-12046-7/download/毒劇v3第1刷_正誤表_20211130.pdf">第1刷_正誤表</a></dd>
+<dt>第3版　第2刷をお買い上げの方への正誤表</dt>
+<dd><a href="/assets/files/book/2021/978-4-297-12046-7/download/毒劇v3第2刷_正誤表_20211130.pdf">第2刷_正誤表</a></dd>
+</dl>
+
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-12047-4","path":"\/dp\/ebook\/2021\/978-4-297-12047-4","targetId":"978-4-297-12047-4","parent":"\/dp\/genre\/%E8%B3%87%E6%A0%BC%E8%A9%A6%E9%A8%93%EF%BC%88%E4%B8%80%E8%88%AC%EF%BC%89%E3%83%BB%E5%A4%A7%E5%AD%A6%E5%8F%97%E9%A8%93","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

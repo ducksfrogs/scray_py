@@ -1,0 +1,489 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>UiPath 実用入門 ～ロボットにまかせて業務を自動化！ 仕事がはかどるRPA使いこなし術 | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="近年，パソコン上の単純作業を自動化してくれるツールとしてRPAツールの利用が進んでいます。その中でも，個人から～企業の部署単位まで，幅広く利用されているのがUiPathです。本書は，そのようなUiPathの基本的なワークフロー開発の進め方を，Excelと連携したWebデータやメールの収集といったサンプルを作成しながら習得していきます。クラウド側（Orchestrator）からロボットを遠隔実行する方法についても簡単に触れ，UiPathを実用的に利用するための全体像をつかむことができます。"/>
+  <meta name="keywords" content="奥井康弘電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="UiPath 実用入門 ～ロボットにまかせて業務を自動化！ 仕事がはかどるRPA使いこなし術 | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="近年，パソコン上の単純作業を自動化してくれるツールとしてRPAツールの利用が進んでいます。その中でも，個人から～企業の部署単位まで，幅広く利用されているのがUiPathです。本書は，そのようなUiPathの基本的なワークフロー開発の進め方を，Excelと連携したWebデータやメールの収集といったサンプルを作成しながら習得していきます。クラウド側（Orchestrator）からロボットを遠隔実行する方法についても簡単に触れ，UiPathを実用的に利用するための全体像をつかむことができます。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-11840-2"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-11840-2.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">UiPath 実用入門<br><span class="sub">～ロボットにまかせて業務を自動化！ 仕事がはかどる<wbr>RPA<wbr>使いこなし術</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-11840-2.jpg" alt="UiPath 実用入門 ～ロボットにまかせて業務を自動化！ 仕事がはかどるRPA使いこなし術"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">奥井康弘　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-06-23">2021年6月23日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-06-23">2021年6月23日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2021/978-4-297-11839-6" target="_blank">2021年6月26日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,580円 <a id="pid403261" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">320</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-11840-2" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-11840-2" data-text="UiPath 実用入門 ～ロボットにまかせて業務を自動化！ 仕事がはかどるRPA使いこなし術 #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-11840-2" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-11840-2" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>近年，<wbr/>パソコン上の単純作業を自動化してくれるツールとしてRPAツールの利用が進んでいます。その中でも，<wbr/>個人から～企業の部署単位まで，<wbr/>幅広く利用されているのがUiPathです。本書は，<wbr/>そのようなUiPathの基本的なワークフロー開発の進め方を，<wbr/>Excelと連携したWebデータやメールの収集といったサンプルを作成しながら習得していきます。クラウド側（Orchestrator）からロボットを遠隔実行する方法についても簡単に触れ，<wbr/>UiPathを実用的に利用するための全体像をつかむことができます。</p><h3>こんな方におすすめ</h3>
+<ul><li>UiPathを初めて触る方</li><li>RPA ツールの導入を検討している方全般（特にUiPathを候補に考えている方）</li></ul>
+<aside class="author"><h3>奥井康弘（おくいやすひろ）</h3><p>株式会社ティージェイ総合研究所 代表取締役<br />
+1964年 東京生まれ<br />
+1986年 東京大学 工学部卒業</p>
+
+<p>大学時代はGIS（地理情報システム）を研究。卒業後，<wbr/>ソフトウェアベンダーで文書処理システム開発に携わり，<wbr/>文書記述言語SGMLを開発した国際標準化団体ISO/IECの委員会に参加。1997年には，<wbr/>W3CでのXML仕様開発のメーリングリスト・<wbr/>グループでの議論に加わる。<br />
+2020年3月，<wbr/>ティージェイ総合研究所を創立。データ構造定義，<wbr/>システム要件定義，<wbr/>RPAを含むDX関連コンサルティング業務の傍ら，<wbr/>金融分野でのメッセージ標準化を検討するISO/TC68国内委員会に所属し，<wbr/>国際の場でも，<wbr/>ISO 20022におけるセマンティック・<wbr/>ウェブの活用を検討するワーキンググループ（SC9/WG1）にエキスパートとして参加。</p>
+
+<p>株式会社ティージェイ総合研究所<br />
+URL：<a href="https://www.tj-research.com/">https://www.tj-research.com/</a><br />
+RPAコンサルティング事業部<br />
+E-mail：<a href="mailto:rpa@tj-research.com">rpa@tj-research.com</a></p></aside>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="41822">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>第1章　RPAとUiPath</h3>
+<h4>1.1　RPAとは</h4>
+<ul class="toc">
+<li>1.1.1　RPAによる業務負荷の軽減とその活用シナリオ</li>
+<li>1.1.2　RPAツール「UiPath」</li>
+</ul>
+<h4>1.2　UiPathの全体構成</h4>
+<ul class="toc">
+<li>1.2.1　UiPath Studio</li>
+<li>1.2.2　UiPath Assistant</li>
+<li>1.2.3　UiPath Orchestrator</li>
+</ul>
+<h4>1.3　本書の目的</h4>
+<ul class="toc">
+<li>1.3.1　UiPathのワークフロー</li>
+</ul>
+<h4>1.4　UiPathの用語</h4>
+
+
+<h3>第2章　UiPath Studioの基本操作</h3>
+<h4>2.1　UiPath Studioのインストール</h4>
+<ul class="toc">
+<li>2.1.1　UiPath Automation Cloudへの登録とUiPath Studioの入手</li>
+<li>2.1.2　UiPath Studioのインストール</li>
+<li>2.1.3　UiPath Studioの起動</li>
+</ul>
+<h4>2.2　簡単なプロジェクトの作成</h4>
+<ul class="toc">
+<li>2.2.1　プロジェクトの作成</li>
+<li>2.2.2　ワークフローを構成する各種アクティビティの配置</li>
+<li>2.2.3　ワークフローを実行してみる</li>
+<li>2.2.4　保存したワークフローを開く</li>
+
+</ul>
+<h4>2.3　作成したプロジェクトの格納先</h4>
+<ul class="toc">
+<li>2.3.1　Main.xamlファイル</li>
+<li>2.3.2　project.jsonファイル</li>
+</ul>
+<h4>2.4　UiPath Studioの画面構成</h4>
+<ul class="toc">
+<li>2.4.1　リボンタブおよびリボン</li>
+<li>2.4.2　デザイナーパネル</li>
+<li>2.4.3　左側に表示される主要なパネル</li>
+<li>2.4.4　右側に表示される主要なパネル</li>
+<li>2.4.5　デバッグに関連した情報表示パネル</li>
+</ul>
+<h4>2.5　Automation Cloud/Orchestratorとの接続</h4>
+<ul class="toc">
+<li>2.5.1　Automation Cloudへの接続</li>
+<li>2.5.2　UiPath StudioとOrchestratorの接続</li>
+</ul>
+
+<h3>第3章　ワークフローを作成するための基礎知識</h3>
+<h4>3.1　データ処理の基本要素</h4>
+
+<h4>3.2　UiPathと.NETフレームワーク</h4>
+<ul class="toc">
+<li>3.2.1　変数とデータ型</li>
+<li>3.2.2　UiPathのデータ型</li>
+<li>3.2.3　UiPathの演算子</li>
+<li>3.2.4　UiPathのメソッド<ul class="toc">
+	<li>【コラム】C#を用いたワークフロー開発</li></ul><li>
+</ul>
+<h4>3.3　変数の使い方</h4>
+<ul class="toc">
+<li>3.3.1　変数を定義する<ul class="toc">
+	<li>【コラム】プログラミング言語における代入</li></ul><li>
+<li>3.3.2　変数のスコープ（有効範囲）</li>
+<li>3.3.3　変数を使う<ul class="toc">
+	<li>【コラム】アクティビティの表示名を変える</li></ul><li>
+</ul>
+<h4>3.4　表構造（データテーブル）の使い方</h4>
+<ul class="toc">
+<li>3.4.1　テーブル内のデータへのアクセス</li>
+<li>3.4.2　データテーブルの作成</li>
+<li>3.4.3　DataTable型変数の便利な定義方法</li>
+</ul>
+<h4>3.5　ワークフローの主要パターン</h4>
+<ul class="toc">
+<li>3.5.1　シーケンスによるワークフロー</li>
+<li>3.5.2　フローチャートによるワークフロー</li>
+</ul>
+
+<h3>第4章　GUI操作の自動化とレコーディング</h3>
+<h4>4.1　GUIの基本操作の指定</h4>
+<ul class="toc">
+<li>4.1.1　使用するアプリを指定する操作</li>
+<li>4.1.2　文字の入力操作</li>
+<li>4.1.3　ファイルの保存操作</li>
+<li>4.1.4　ファイル名を指定する操作</li>
+<li>4.1.5　アプリの終了操作</li>
+<li>4.1.6　条件分岐でダイアログが出現した場合に対応</li>
+<li>4.1.7　タイムアウト設定による待機時間の制御</li>
+</ul>
+<h4>4.2　UiPathのレコーディング機能</h4>
+
+<h4>4.3　ベーシックレコーディング</h4>
+<ul class="toc">
+<li>4.3.1　ベーシックレコーディングを開始する</li>
+<li>4.3.2　アプリを開始する</li>
+<li>4.3.3　［記録］機能による一連のGUI操作のレコーディング</li>
+<li>4.3.4　個別操作のレコーディング</li>
+</ul>
+<h4>4.4　デスクトップレコーディング</h4>
+<ul class="toc">
+<li>4.4.1　デスクトップレコーディングを開始する</li>
+<li>4.4.2　アプリの呼び出しと［記録］機能による一連のGUI操作のレコーディング</li>
+<li>4.4.3　個別操作のレコーディング</li>
+</ul>
+<h4>4.5　ベーシックレコーディングとデスクトップレコーディングの違い</h4>
+
+
+<h3>第5章　Excelファイルへの入出力</h3>
+<h4>5.1　Excelのセルの読み込みと書き出し</h4>
+<ul class="toc">
+<li>5.1.1　Excelファイルを開く</li>
+<li>5.1.2　セルの読み込み</li>
+<li>5.1.3　セルへの書き出し</li>
+</ul>
+<h4>5.2　Excelの範囲の読み込みと書き出し</h4>
+<ul class="toc">
+<li>5.2.1　Excelファイルのオープンと範囲の読み込み</li>
+<li>5.2.2　データテーブルの処理 ～テーブル行の繰返し処理～</li>
+<li>5.3.3　Excelファイルへの範囲の書き出し</li>
+</ul>
+
+<h3>第6章　動作を確認しながらワークフローを作成する</h3>
+
+<h4>6.1　ブレークポイントを設定する</h4>
+<ul class="toc">
+<li>6.1.1　ブレークポイントの設定</li>
+<li>6.1.2　ブレークポイントの解除</li>
+</ul>
+<h4>6.2　デバッグ時のアクティビティの進め方</h4>
+
+
+<h3>第7章　Webページからデータを取得する</h3>
+<h4>7.1　UiPathが対応しているWebブラウザー</h4>
+<ul class="toc">
+<li>7.1.1　IE以外のブラウザーを利用するための設定</li>
+<li>7.1.2　Chromeでローカルファイルを開くための設定</li>
+</ul>
+<h4>7.2　UiPath StudioのWebレコーディング機能</h4>
+<ul class="toc">
+<li>7.2.1　WebレコーディングでWebページをたどる<ul class="toc">
+	<li>【コラム】［ブラウザーを開く］アクティビティでのブラウザー指定</li></ul><li>
+</ul>
+<h4>7.3　データスクレイピングによるWeb情報の取得</h4>
+<ul class="toc">
+<li>7.3.1　Webページからのデータの抽出</li>
+<li>7.3.2　抽出したデータのExcelへの出力</li>
+</ul>
+<h4>7.4　VB.NETによるデータ処理</h4>
+<ul class="toc">
+<li>7.4.1　「変数を作成」機能と入力支援機能を利用して作成する</li>
+<li>7.4.2　処理したデータのExcelへの出力</li>
+</ul>
+
+<h3>第8章　メール操作の自動化</h3>
+<h4>8.1　Outlookを利用したメールの送受信</h4>
+<ul class="toc">
+<li>8.1.1　メールを送信する</li>
+<li>8.1.2　送信メールへのファイル添付</li>
+<li>8.1.3　受信メールを保存する</li>
+<li>8.1.4　添付ファイルのダウンロード</li>
+</ul>
+<h4>8.2　送付先リストを使ったメールの一斉送信</h4>
+<ul class="toc">
+<li>8.2.1　添付ファイルの有無を判別する</li>
+</ul>
+<h4>8.3　受信メールのリスト作成</h4>
+
+<h4>8.4　ワークフローのテンプレート化</h4>
+<ul class="toc">
+<li>8.4.1　テンプレート化の下準備</li>
+<li>8.4.2　テンプレートをパブリッシュする</li>
+<li>8.4.3　テンプレートとして利用する</li>
+</ul>
+<h4>8.5　メールサーバーの操作の自動化</h4>
+<ul class="toc">
+<li>8.5.1　メールサーバーのしくみとプロトコル</li>
+<li>8.5.2　メールサーバーへのSMTP接続によるメール送信</li>
+<li>8.5.3　メールサーバーへのPOP3接続によるメール受信</li>
+<li>8.5.4　メールサーバーへのIMAP接続によるメール受信</li>
+</ul>
+
+<h3>第9章　PDFファイルを扱う</h3>
+<h4>9.1　PDF用のアクティビティパッケージのインストール</h4>
+
+<h4>9.2　PDFで表示される文字列をOCRで読み取る</h4>
+<ul class="toc">
+<li>9.2.1　PDFファイルの準備</li>
+<li>9.2.2　ワークフローの作成</li>
+</ul>
+<h4>9.3　PDFファイル内のテキストを抽出する</h4>
+
+<h4>9.4　PDFファイルの特定ページからテキストを抽出する</h4>
+<ul class="toc">
+<li>9.4.1　PDFファイルの準備</li>
+<li>9.4.2　複数ページを抽出するワークフローの作成<ul class="toc">
+	<li>【コラム】PDFからテキストを抽出するときのクセ</li></ul><li>
+</ul>
+
+<h3>第10章　セレクターとアンカーのしくみ</h3>
+<h4>10.1　セレクターとは</h4>
+<ul class="toc">
+<li>10.1.1　完全セレクター</li>
+<li>10.1.2　部分セレクター</li>
+<li>10.1.3　部分セレクターと完全セレクターの違い</li>
+</ul>
+<h4>10.2　セレクターの編集とアンカーの指定</h4>
+<ul class="toc">
+<li>10.2.1　セレクターで場所を特定するしくみ</li>
+<li>10.2.2　構造の変化に弱いセレクター</li>
+<li>10.2.3　UI Explorerによるアンカーの指定</li>
+</ul>
+<h4>10.3　動的セレクター</h4>
+<ul class="toc">
+<li>10.3.1　繰り返し処理のベースとなるワークフローの作成</li>
+<li>10.3.2　ワイルドカードを使った動的セレクター</li>
+<li>10.3.3　変数を使った動的セレクター</li>
+</ul>
+
+<h3>第11章　ワークフローのモジュール化と共有</h3>
+<h4>11.1　ワークフロー・モジュールの作成とその呼び出し</h4>
+<ul class="toc">
+<li>11.1.1　別プロジェクトで作成したワークフローを呼び出す</li>
+<li>11.1.2　ワークフローの一部分を切り出す</li>
+</ul>
+<h4>11.2　共用ワークフローのライブラリ化</h4>
+<ul class="toc">
+<li>11.2.1　ライブラリプロジェクトの作成</li>
+<li>11.2.2　ライブラリのパブリッシュ</li>
+<li>11.2.3　ライブラリのインストール</li>
+<li>11.2.4　ライブラリを使ったワークフロー作成</li>
+</ul>
+
+<h3>第12章　システム例外に対処する</h3>
+<h4>12.1　システム例外をキャッチして処理する</h4>
+<ul class="toc">
+<li>12.1.1　トライキャッチの使い方</li>
+</ul>
+<h4>12.2　システム例外を疑似的に発生させて処理する</h4>
+<ul class="toc">
+<li>12.2.1　［スロー］アクティビティの動作</li>
+</ul>
+
+<h3>13章　ロボットの実行とOrchestratorの活用</h3>
+<h4>13.1　パブリッシュとUiPath Assistantからの実行</h4>
+<ul class="toc">
+<li>13.1.1　パッケージのパブリッシュ</li>
+<li>13.1.2　UiPath Assistantの起動</li>
+<li>13.1.3　パッケージの実行</li>
+<li>13.1.4　UiPath Assistantの画面構成</li>
+<li>13.1.5　Orchestratorへのサインイン／サインアウト</li>
+</ul>
+<h4>13.2　接続状態ごとのパブリッシュ先とUiPath Assistantの表示</h4>
+<ul class="toc">
+<li>13.2.1　Orchestrator個人用ワークスペースフィードへのパブリッシュ</li>
+<li>13.2.2　Orchestratorテナントプロセスフィードへのパブリッシュ</li>
+<li>13.2.3　ローカルPCへのパブリッシュ</li>
+</ul>
+<h4>13.3　Orchestratorから遠隔でロボットを制御する</h4>
+<ul class="toc">
+<li>13.3.1　Orchestratorと接続するマシンとライセンスの登録</li>
+<li>13.3.2　ロボットの登録</li>
+<li>13.3.3　ロボットグループの登録</li>
+<li>13.3.4　ロボットで実行するプロセスの登録</li>
+<li>13.3.5　PCからOrchestratorへの接続</li>
+<li>13.3.6　Orchestratorからロボットを遠隔操作する</li>
+<li>13.3.7　プロセス／ロボット／ロボットグループ／マシンの削除<ul class="toc">
+	<li>【コラム】Unattendedタイプのロボットを動かすマシンでのUiPath Studioの制約</li></ul><li>
+</ul>
+<h4>13.4　ライブラリのOrchestratorへのパブリッシュ</h4>
+<ul class="toc">
+<li>13.4.1　ライブラリをOrchestratorにパブリッシュするための下準備</li>
+<li>13.4.2　ライブラリをOrchestratorにパブリッシュする</li>
+<li>13.4.3　Orchestratorにパブリッシュしたライブラリを利用する</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="download">ダウンロード</h3>
+<p><div align="right">（2021年6月17日更新）</div></p>
+<p>本書で作成するサンプルファイルをダウンロードできます。ダウンロードファイルはZIP形式の圧縮ファイルとなっています。展開してお使いください。<br />
+ZIP展開後のフォルダー構成やフォルダーのコピー先等につきましては，<wbr/>本書冒頭の「本書を読み進めるための準備」をご参照ください。</p>
+
+
+<dl>
+<dt>ダウンロード</dt>
+<dd><a href="http://image.gihyo.co.jp/assets/files/book/2021/978-4-297-11839-6/download/UiPathサンプル.zip">UiPathサンプル.zip</a></dd>
+</dl>
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-11840-2","path":"\/dp\/ebook\/2021\/978-4-297-11840-2","targetId":"978-4-297-11840-2","parent":"\/dp\/genre\/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

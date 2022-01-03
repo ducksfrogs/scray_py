@@ -1,0 +1,455 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>Googleアナリティクス プロフェッショナル ～分析・施策のアイデアを生む最強リファレンス | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="「Googleアナリティクスはどこへ向かうのか？　進化し続けるツールのポテンシャルを最大限に引き出したときに，新しい分析や施策のアイディアが生まれる」本書は，Googleアナリティクスの拡大し続ける機能を，体系的・網羅的に整理した「最強の」リファレンスです。ややもすれば無自覚になりがちなGoogleアナリティクスの活用方法を，取る（計測／取集），見る（集計／分析），使う（施策／アクション）というステップで明快に示し，プロフェッショナルを目指す初級者にも読みやすい内容にまとめました。ウェブ制作者から，マーケター，ウェブアナリストまで必携の1冊です。"/>
+  <meta name="keywords" content="山浦直宏電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="Googleアナリティクス プロフェッショナル ～分析・施策のアイデアを生む最強リファレンス | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="「Googleアナリティクスはどこへ向かうのか？　進化し続けるツールのポテンシャルを最大限に引き出したときに，新しい分析や施策のアイディアが生まれる」本書は，Googleアナリティクスの拡大し続ける機能を，体系的・網羅的に整理した「最強の」リファレンスです。ややもすれば無自覚になりがちなGoogleアナリティクスの活用方法を，取る（計測／取集），見る（集計／分析），使う（施策／アクション）というステップで明快に示し，プロフェッショナルを目指す初級者にも読みやすい内容にまとめました。ウェブ制作者から，マーケター，ウェブアナリストまで必携の1冊です。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2020/978-4-297-11262-2"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2020/978-4-297-11262-2.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">Google<wbr>アナリティクス プロフェッショナル<br><span class="sub">～分析・<wbr>施策のアイデアを生む最強リファレンス</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2020/978-4-297-11262-2.jpg" alt="Googleアナリティクス プロフェッショナル ～分析・施策のアイデアを生む最強リファレンス"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">山浦直宏　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2020-04-17">2020年4月17日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2020-04-17">2020年4月17日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2020/978-4-297-11261-5" target="_blank">2020年4月17日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,980円 <a id="pid402834" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">624</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2020/978-4-297-11262-2" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2020/978-4-297-11262-2" data-text="Googleアナリティクス プロフェッショナル ～分析・施策のアイデアを生む最強リファレンス #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2020/978-4-297-11262-2" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2020/978-4-297-11262-2" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>「Googleアナリティクスはどこへ向かうのか？　進化し続けるツールのポテンシャルを最大限に引き出したときに，<wbr/>新しい分析や施策のアイディアが生まれる」</p>
+
+<p>本書は，<wbr/>Googleアナリティクスの拡大し続ける機能を，<wbr/>体系的・<wbr/>網羅的に整理した「最強の」リファレンスです。<br />
+ややもすれば無自覚になりがちなGoogleアナリティクスの活用方法を，<wbr/>取る（計測／<wbr/>取集），<wbr/>見る（集計／<wbr/>分析），<wbr/>使う（施策／<wbr/>アクション）というステップで明快に示し，<wbr/>プロフェッショナルを目指す初級者にも読みやすい内容にまとめました。<br />
+ウェブ制作者から，<wbr/>マーケター，<wbr/>ウェブアナリストまで必携の1冊です。</p><h3>こんな方におすすめ</h3>
+<ul><li>Googleアナリティクスの基本～活用技を知りたいWeb担当者，<wbr/>マーケター，<wbr/>Webアナリスト</li><li>Googleアナリティクス初～中級者</li></ul>
+<aside class="author"><h3>山浦直宏（やまうらなおひろ）</h3><p>デジタルマーケティング<br />
+アドバイザリー&コンサルティング</p>
+
+<p>読売広告社，<wbr/>ユニクロ，<wbr/>トランスコスモスを経てアユダンテ（株）に在籍。Googleマーケティングプラットフォームのコンサルを行う傍ら，<wbr/>デジマ領域のコンサルや企業研修など，<wbr/>コンサル実務と組織/人材育成の両面からデジタルマーケティングを推進している。<br />
+Googleアナリティクス360のコンサルの実績は40社を超え，<wbr/>先進事例多数。<br />
+マーケティングコンサルティング会社の（株）シナプスでは研修講師として，<wbr/>マス&デジタルの経験からまとめた「デジタルマーケティング概論（基礎）」を展開。NTTデータ，<wbr/>日本ユニシス，<wbr/>凸版印刷，<wbr/>双日，<wbr/>テレビ東京など，<wbr/>デジタル化を推進する多くの企業研修に採用されている。2010年よりGA個人資格（GAIQ）講座を始め累計合格者1,000人以上を輩出し人気を博している。<br />
+主な著作として「Google Analyticsパーフェクトガイド」（SBクリエイティブ），<wbr/>「いちばんやさしいGoogleアナリティクスの教本」（インプレス），<wbr/>「GAIQ資格試験対策ガイド」（翔泳社）があり，<wbr/>これまでの累計部数2万部を超えるGA本ベストセラー著者でもある（著者調べ，<wbr/>電子版除く）。</p>
+
+
+<p>facebook：<a href="http://www.facebook.com/naohiro.yamaura">http://www.facebook.com/naohiro.yamaura</a></p>
+</aside>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="40904">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>1章　Googleアナリティクスの理解</h3>
+<ul class="toc">
+
+<li>1-1　Googleアナリティクスの機能と役割を理解する</li>
+<li>1-2　Googleアナリティクスの利用者の役割を理解する</li>
+<li>1-3　計測と収集によって得られるデータを理解する</li>
+<li>1-4　「集計」と「分析」の違いを理解する</li>
+<li>1-5　利用目的を理解する　①ウェブ改善</li>
+<li>1-6　利用目的を理解する　②集客最適化</li>
+<li>1-7　利用目的を理解する　③プラットフォーム活用</li>
+<li>1-8　Googleタグマネージャとの連携を理解する</li>
+<li>1-9　データポータルとの連携を理解する</li>
+<li>1-10　オプティマイズとの連携を理解する</li>
+<li>1-11　Google広告・Googleシグナルとの連携を理解する</li>
+<li>1-12　Googleアナリティクス360と広告サービスの連携を理解する</li>
+<li>1-13　Googleアナリティクス360とBig Queryの連携を理解する</li>
+<li>コラム　Googleマーケティングプラットフォームとは</li>
+
+
+</ul>
+<h3>2章　データ活用のステップと準備</h3>
+<ul class="toc">
+
+<li>2-1　データ活用のステップを理解する</li>
+<li>2-2　データ活用のステップ①「取る」を理解する</li>
+<li>2-3　データ活用のステップ②「見る」を理解する</li>
+<li>2-4　データ活用のステップ③「使う」を理解する</li>
+<li>2-5　トラッキングコードによる計測のしくみを理解する</li>
+<li>2-6　グローバルサイトタグによる計測のしくみを理解する</li>
+<li>2-7　GTMによる計測のしくみを理解する</li>
+<li>コラム　ファーストパーティCookieとサードパーティCookie</li>
+<li>2-8　Googleアカウントを取得する</li>
+<li>2-9　Googleアナリティクスアカウントを取得する</li>
+<li>2-10　デモアカウントを取得する（計測サイトを持っていない場合）</li>
+<li>2-11　アカウント構造を理解する</li>
+<li>2-12　ユーザー権限を理解する</li>
+<li>2-13　ユーザーを管理・登録する</li>
+
+
+</ul>
+<h3>3章　GTMによるウェブサイトのデータ計測</h3>
+<ul class="toc">
+
+<li>3-1　プロパティ設定の基本を理解する</li>
+<li>3-2　トラッキング情報で計測データを定義する　①Googleシグナル</li>
+<li>3-3　トラッキング情報で計測データを定義する　②データ保持</li>
+<li>3-4　GTMを準備・実装する</li>
+<li>3-5　Googleアナリティクスタグの配信設定をする</li>
+<li>3-6　クロスドメイン計測を理解する</li>
+<li>3-7　クロスドメイン計測を設定する</li>
+<li>3-8　eコマース計測を理解する</li>
+<li>3-9　標準のeコマース計測を設定する</li>
+<li>3-10　拡張eコマース計測の項目例を理解する</li>
+<li>3-11　拡張eコマース計測を設定する</li>
+<li>3-12　イベントトラッキングを理解する</li>
+<li>3-13　イベントトラッキングを設定する　①PDFファイルダウンロード</li>
+<li>3-14　イベントトラッキングを設定する　②ページスクロール</li>
+<li>コラム　非インタラクションヒットとは</li>
+<li>3-15　カスタムディメンションを理解する</li>
+<li>3-16　カスタムディメンションを設定する</li>
+<li>コラム　「範囲（スコープ）」の理解</li>
+<li>3-17　AMPページの計測を理解する</li>
+<li>3-18　AMPページを計測する</li>
+
+
+</ul>
+<h3>4章　アプリとウェブサイトの統合的なデータ計測</h3>
+<ul class="toc">
+
+<li>4-1　「アプリ＋ウェブ プロパティ」を理解する</li>
+<li>4-2　「アプリ＋ウェブ プロパティ」を導入する　①アプリストリームの追加</li>
+<li>4-3　「アプリ＋ウェブ プロパティ」を導入する　②ウェブストリームの追加</li>
+
+
+</ul>
+<h3>5章　オフラインデータの計測と収集</h3>
+<ul class="toc">
+
+<li>5-1　Measurement Protocolの基本を理解する</li>
+<li>5-2　Measurement Protocolの仕様を理解する</li>
+<li>5-3　Measurement Protocolを作成する</li>
+<li>5-4　データインポートを理解する</li>
+<li>5-5　ヒットデータをインポートする（払い戻しデータ）</li>
+<li>5-6　拡張データをインポートする　①ユーザーデータ</li>
+<li>5-7　拡張データをインポートする　②キャンペーンデータ</li>
+<li>5-8　拡張データをインポートする　③地域データ</li>
+<li>5-9　拡張データをインポートする　④コンテンツデータ</li>
+<li>5-10　拡張データをインポートする　⑤商品データ</li>
+<li>5-11　拡張データをインポートする　⑥カスタムデータ</li>
+<li>5-12　概要データをインポートする（費用データ）</li>
+<li>コラム　Measurement Protocolとデータインポートの違い</li>
+
+
+</ul>
+<h3>6章　広告・検索・来店データの収集</h3>
+<ul class="toc">
+
+<li>6-1　Google広告アカウントと連携する</li>
+<li>6-2　Google広告アカウントと連携する（MCCアカウントの利用）</li>
+<li>6-3　Google広告を計測する（自動タグの利用）</li>
+<li>6-4　Google広告以外のキャンペーンを計測する（カスタムURLの利用）</li>
+<li>6-5　Search Consoleデータと連携する</li>
+<li>6-6　来店データを計測する</li>
+
+
+</ul>
+<h3>7章　フィルタ・目標設定によるデータ集計</h3>
+<ul class="toc">
+
+<li>7-1　ビュー設定の基本を理解する</li>
+<li>7-2　フィルタの基本を理解する</li>
+<li>7-3　フィルタの基本設定を行う（新規フィルタと既存フィルタ）</li>
+<li>7-4　フィルタを新規作成する（定義済みフィルタとカスタムフィルタ）</li>
+<li>7-5　目標設定の基本を理解する</li>
+<li>7-6　目標を設定する</li>
+<li>7-7　目標到達プロセスを設定する</li>
+<li>7-8　スマートゴールを設定する</li>
+<li>コラム　目標設定とeコマース計測の違い</li>
+
+
+</ul>
+<h3>8章　流入・コンバージョン・コンテンツごとのデータ集計</h3>
+<ul class="toc">
+
+<li>8-1　チャネルグループの基本を理解する</li>
+<li>8-2　チャネルグループを設定する</li>
+<li>8-3　マルチチャネルの基本を理解する</li>
+<li>8-4　MCFチャネルをカスタマイズする</li>
+<li>コラム　「集客＞チャネル」と「コンバージョン＞マルチチャネル」の違い</li>
+<li>8-5　コンテンツグループの基本を理解する</li>
+<li>8-6　トラッキングコードでグルーピングを設定する</li>
+<li>8-7　「抽出」「ルール」でグルーピングを設定する</li>
+
+
+</ul>
+<h3>9章　ユーザー・流入・コンバージョン理解のための集計レポート</h3>
+<ul class="toc">
+
+<li>9-1　ユーザー理解のポイントをおさえる</li>
+<li>9-2　ユーザー属性を理解する　①デモグラフィック属性</li>
+<li>9-3　ユーザー属性を理解する　②デバイス属性とクロスデバイス</li>
+<li>9-4　「クロスデバイス」レポートを利用する</li>
+<li>9-5　「ライフタイムバリュー」レポートを利用する</li>
+<li>9-6　「セッションの品質」レポートを利用する</li>
+<li>9-7　「コンバージョン見込み」レポートを利用する</li>
+<li>9-8　「オーディエンス（ユーザーリスト）」レポートを利用する</li>
+<li>コラム　機械学習はヒットデータで学習する</li>
+<li>9-9　流入とCV（集客カテゴリ）理解のポイントをおさえる</li>
+<li>9-10　「チャネル」レポートを利用する</li>
+<li>9-11　「参照元/メディア」レポートを利用する</li>
+<li>9-12　「Google広告」レポートを利用する</li>
+<li>コラム　なぜ？　Googleアナリティクスの「ノーリファラー」仕様の理由</li>
+<li>9-13　コンバージョン分析のポイントをおさえる</li>
+<li>9-14　「目標」レポートを利用する</li>
+<li>9-15　「eコマース」レポートを利用する</li>
+<li>9-16　「拡張eコマース」レポートを利用する</li>
+<li>9-17　「ショッピング行動」「決済行動」レポートを利用する</li>
+<li>9-18　「サイト内プロモーション」レポートを利用する</li>
+<li>9-19　「来店」レポートを利用する</li>
+<li>9-20　「マルチチャネル」レポートを利用する</li>
+<li>9-21　「アシストコンバージョン」レポートを利用する</li>
+
+
+</ul>
+<h3>10章　カスタムレポート・セグメント・アトリビューションによるデータ分析</h3>
+<ul class="toc">
+
+<li>10-1　カスタムレポートの基本を理解する</li>
+<li>10-2　エクスプローラを作成する</li>
+<li>10-3　フラットテーブルを作成する</li>
+<li>10-4　カスタムファネルを作成する</li>
+<li>10-5　セグメントの基本を理解する</li>
+<li>10-6　「システム」（既定）のセグメントを理解・活用する</li>
+<li>10-7　カスタムセグメントを作成する　①新規作成</li>
+<li>10-8　カスタムセグメントを作成する　②集計結果からの作成</li>
+<li>コラム　「フィルタ」と「セグメント」の違い</li>
+<li>10-9　アトリビューション分析の基本を理解する</li>
+<li>10-10　モデル比較ツールを活用する</li>
+
+
+</ul>
+<h3>11章　ターゲティングのためのデータ活用</h3>
+<ul class="toc">
+
+<li>11-1　ユーザーリスト（オーディエンス）の基本を理解する</li>
+<li>11-2　ユーザーリストを作成する</li>
+<li>11-3　状態ベースのユーザーリストを作成する</li>
+<li>11-4　スマートリストを活用する</li>
+
+
+</ul>
+<h3>12章　ユーザーエクスペリエンス向上のためのデータ活用</h3>
+<ul class="toc">
+
+<li>12-1　オプティマイズのしくみを理解する</li>
+<li>12-2　「3種類のテスト」と「パーソナライズ配信」を理解する</li>
+<li>12-3　オプティマイズの導入を準備する</li>
+<li>12-4　オプティマイズを導入する</li>
+<li>12-5　エクスペリエンス（テスト）を理解する</li>
+<li>12-6　エクスペリエンス（テスト）を作成する</li>
+<li>12-7　エクスペリエンス（テスト）を開始する</li>
+<li>12-8　オプティマイズのレポートを理解する</li>
+
+
+</ul>
+<h3>13章　データビジュアライズのためのデータ活用</h3>
+<ul class="toc">
+
+<li>13-1　データポータルの全体像を理解する</li>
+<li>13-2　データポータルのデータソースを理解する</li>
+<li>13-3　データポータルのレポートを理解する</li>
+<li>13-4　データポータルのエクスプローラを理解する</li>
+<li>13-5　「共有」と「データソースへの認証情報」を理解する</li>
+<li>13-6　データソースを作成する</li>
+<li>13-7　データソースをもとにレポートを作成する</li>
+<li>13-8　統合データレポートを作成する（Data Blending）</li>
+<li>13-9　エクスプローラの活用例を理解する</li>
+
+
+</ul>
+<h3>14章　データ活用のケーススタディ（プラットフォーム活用）</h3>
+<ul class="toc">
+
+<li>14-1　プラットフォームとしての考え方を理解する</li>
+<li>14-2　データ活用の3つの領域（マーケティングファネル）を理解する</li>
+<li>14-3　プラットフォーム化に必要な機能と設定を理解する</li>
+<li>14-4　オフラインデータをGoogle広告のリマーケティングに活用する</li>
+<li>14-5　オフラインCVによるGoogle広告自動入札を実施する</li>
+<li>14-6　アトリビューションレポートで終点貢献分析を行う</li>
+<li>14-7　アトリビューションレポートでコンバージョンリフト分析を行う</li>
+<li>14-8　キャンペーンランディングページを最適化する</li>
+
+
+</ul>
+<h3>付録</h3>
+<ul class="toc">
+
+
+<li>付録1　GAIQ取得のための学習ガイド</li>
+<li>付録2　パートナー会社の見つけ方</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="errata">正誤表</h3>
+<p>本書の掲載内容に誤りがございました。ご迷惑をおかけしましたことをお詫び申し上げます。<br />
+正誤表を以下からダウンロードできます。ダウンロードしたPDFファイルを参照してください。</p>
+<div align="right"><p>（2020年4月24日最終更新）</p></div>
+
+
+<dl>
+<dt>第1刷訂正情報</dt>
+<dd><a href="/assets/files/book/2020/978-4-297-11261-5/download/GAProrev200424.pdf">GAProrev200424.pdf（2020年4月24日更新）</a></dd>
+</dl>
+
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2020\/978-4-297-11262-2","path":"\/dp\/ebook\/2020\/978-4-297-11262-2","targetId":"978-4-297-11262-2","parent":"\/dp\/genre\/Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

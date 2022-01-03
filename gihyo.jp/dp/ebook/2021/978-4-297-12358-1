@@ -1,0 +1,575 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>PowerPoint 「最強」資料のデザイン教科書 | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="確実に伝わり，確実に美しい。すべてのビジネスパーソンに読んでもらいたいNo.1の教本◆仕事で必要になる資料作成において，多くの人がPowerPointを使っています。自分が作る資料に情報を正確に，魅力的に伝えるためのデザインが重要であると頭ではわかっているにもかかわらず，センスがないからとか，はたまたPowerPointでは美しい資料は作れないからなどと，諦めてしまっていませんか?◆本書はこうした思い込みを解消しつつ，資料作成における2つの難関である「デザイン」と「PowerPointスキル」を同時に学習し，その本質的な知識を身につけることができる決定版です。◆外資系IT企業で資料作成に携わり，専門部署を立ち上げるまでに至った著者の資料作成ノウハウを1冊に凝縮。単なるPowerPointの機能説明ではなく，伝えたい情報を相手に確実に理解してもらうための資料デザインテクニックを全公開します。【本書の特徴】1.プロのノウハウを全公開PowerPointをビジネスシーンにおける「読む資料」を作るためのツールとして位置づけ，文字数が多くても読みやすい，デザイン性のある資料に仕上げるためのノウハウを480ページにわたって全公開2.原因と解決からのアプローチPowerPointの作業で，誰もが陥るシチュエーションを想定。「なぜそうなってしまうのか？」の原因分析と「どうすれば切り抜けられるのか？」の解決策の両面からアプローチ3.再現性を重視した丁寧解説読んだ人が本の内容を確実に再現できるように，資料作りの工程を細かく分解。ひとつひとつのアクションごとに，手順とポイントをスクリーンショット付きで丁寧に紹介4.マニアックな機能を豊富に紹介他のPowerPoint，資料作成の解説書やWebではほとんど触れられないマニアックな機能も詳しく解説。「こんなこともできるのか！」という驚異のテクニックを大量に収録【こんな人におすすめ】PowerPointを使って，日々大量の資料を作成しなければならない方せっかく作成した資料が，伝わらない，美しくない，と悩んでいる方自分には資料をデザインするセンスがないと，あきらめている方作りたい資料を実現するための，PowerPointの使い方がわからない方【本書の内容】＜テキスト＞2-01　「テキスト」と「オブジェクト」は一体と考える2-04　フォントサイズは「選択できる数値」を使う2-07　相性のよいフォントを組み合わせる2-09　日本語は「Meiryo UI」英数字は「Segoe UI」を使う2-11　文字の配置は「左揃え」で統一する2-12　箇条書きは「箇条書き」「段落番号」で作成する2-17　段組みは「表」を使って作成する＜図形＞3-01　図形は四角と正円だけで十分3-02　角丸四角は使わない方が無難3-03　影はノイズになるのでつけない3-04　オブジェクトの枠線は「なし」にする3-08　複数のオブジェクトは「配置」で揃える3-11　複雑な図形は「図形の結合」で作る3-12　吹き出しは「接合」でシャープに作る＜線＞4-01　2種類の線「コネクタ」「図形の枠線」を理解する4-02　線の書式設定を理解する4-03　線のサイズと位置は「数値で設定」する＜矢印＞5-01　矢印はむやみに使わない5-02　矢印は「線」で作る5-03　曲線を描く矢印は「円弧」で作る5-04　ホームベース矢印は「ブロック矢印」で作る5-05　「三角矢印」は必要以上に目立たせない5-06　線の矢印にテキストを挿入する＜画像＞6-01　画像の種類を理解する6-02　画像を安易に使うとノイズになる6-04　「画像のトリミング」で必要な部分のみ取り出す6-05　「図形の結合」で画像を思い通りの形に切り抜く6-06　「背景の削除」で画像をパーツ化する6-07　「図の修整」「色」「アート効果」で画像を編集する＜色＞7-01　色は難しい，でもルールを守れば怖くない7-02　色が持っている「本来の意味」を考慮する7-03　グレーを効果的に使う7-05　「色相」「彩度」「明度」で色を把握する7-06　「テーマの色」を設定する7-07　グラデーションで表現の幅を拡げる＜表＞8-01　表は「テキスト＋図形＋線」の合わせ技8-03　情報の構造に沿って表を組み立てる8-04　行の高さと列の幅は「数値で設定」する8-08　表を「箇条書きのフォーマット」として使う8-09　表を応用して立体的な箇条書きを作る〜リボンチャート8-10　表をStep図に応用する＜グラフ＞9-01　「グラフ機能」には頼らない9-02　グラフの要素を作り直す9-03　円グラフは「円弧」で作り直す9-04　円グラフで箇条書きを魅力的に装飾する〜円チャート9-05　円チャートを結合の図に応用する〜コンバイン＜スライドマスター＞10-01　スライドマスターの基本を理解する10-02　スライドマスターと「テーマ」の関係を理解する10-03　「マスター」と「レイアウト」のしくみを理解する10-04　「プレースホルダー」の特性を理解する10-05　「背景」の特性を理解する10-06　「スライドサイズ」を設定する10-07　「テーマのフォント」「テーマの色」「ガイド」を設定する10-08　「マスター」を設定する10-09「レイアウト」を設定する10-10　スライドマスターを保存する10-11　新しいスライドにスライドマスターを適用する10-12　既存のスライドにスライドマスターを適用する10-13　スライドマスターによって得られる3つのメリット本書紹介のテクニックを詰め込んだ特典テンプレートつきスライドマスターの設定がぜんぶ入ってます通常スライドのデザインがぜんぶ入ってます表による段組みデザインがぜんぶ入ってますリボンチャート，円チャート，コンバインがぜんぶ入ってます"/>
+  <meta name="keywords" content="福元雅之電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="PowerPoint 「最強」資料のデザイン教科書 | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="確実に伝わり，確実に美しい。すべてのビジネスパーソンに読んでもらいたいNo.1の教本◆仕事で必要になる資料作成において，多くの人がPowerPointを使っています。自分が作る資料に情報を正確に，魅力的に伝えるためのデザインが重要であると頭ではわかっているにもかかわらず，センスがないからとか，はたまたPowerPointでは美しい資料は作れないからなどと，諦めてしまっていませんか?◆本書はこうした思い込みを解消しつつ，資料作成における2つの難関である「デザイン」と「PowerPointスキル」を同時に学習し，その本質的な知識を身につけることができる決定版です。◆外資系IT企業で資料作成に携わり，専門部署を立ち上げるまでに至った著者の資料作成ノウハウを1冊に凝縮。単なるPowerPointの機能説明ではなく，伝えたい情報を相手に確実に理解してもらうための資料デザインテクニックを全公開します。【本書の特徴】1.プロのノウハウを全公開PowerPointをビジネスシーンにおける「読む資料」を作るためのツールとして位置づけ，文字数が多くても読みやすい，デザイン性のある資料に仕上げるためのノウハウを480ページにわたって全公開2.原因と解決からのアプローチPowerPointの作業で，誰もが陥るシチュエーションを想定。「なぜそうなってしまうのか？」の原因分析と「どうすれば切り抜けられるのか？」の解決策の両面からアプローチ3.再現性を重視した丁寧解説読んだ人が本の内容を確実に再現できるように，資料作りの工程を細かく分解。ひとつひとつのアクションごとに，手順とポイントをスクリーンショット付きで丁寧に紹介4.マニアックな機能を豊富に紹介他のPowerPoint，資料作成の解説書やWebではほとんど触れられないマニアックな機能も詳しく解説。「こんなこともできるのか！」という驚異のテクニックを大量に収録【こんな人におすすめ】PowerPointを使って，日々大量の資料を作成しなければならない方せっかく作成した資料が，伝わらない，美しくない，と悩んでいる方自分には資料をデザインするセンスがないと，あきらめている方作りたい資料を実現するための，PowerPointの使い方がわからない方【本書の内容】＜テキスト＞2-01　「テキスト」と「オブジェクト」は一体と考える2-04　フォントサイズは「選択できる数値」を使う2-07　相性のよいフォントを組み合わせる2-09　日本語は「Meiryo UI」英数字は「Segoe UI」を使う2-11　文字の配置は「左揃え」で統一する2-12　箇条書きは「箇条書き」「段落番号」で作成する2-17　段組みは「表」を使って作成する＜図形＞3-01　図形は四角と正円だけで十分3-02　角丸四角は使わない方が無難3-03　影はノイズになるのでつけない3-04　オブジェクトの枠線は「なし」にする3-08　複数のオブジェクトは「配置」で揃える3-11　複雑な図形は「図形の結合」で作る3-12　吹き出しは「接合」でシャープに作る＜線＞4-01　2種類の線「コネクタ」「図形の枠線」を理解する4-02　線の書式設定を理解する4-03　線のサイズと位置は「数値で設定」する＜矢印＞5-01　矢印はむやみに使わない5-02　矢印は「線」で作る5-03　曲線を描く矢印は「円弧」で作る5-04　ホームベース矢印は「ブロック矢印」で作る5-05　「三角矢印」は必要以上に目立たせない5-06　線の矢印にテキストを挿入する＜画像＞6-01　画像の種類を理解する6-02　画像を安易に使うとノイズになる6-04　「画像のトリミング」で必要な部分のみ取り出す6-05　「図形の結合」で画像を思い通りの形に切り抜く6-06　「背景の削除」で画像をパーツ化する6-07　「図の修整」「色」「アート効果」で画像を編集する＜色＞7-01　色は難しい，でもルールを守れば怖くない7-02　色が持っている「本来の意味」を考慮する7-03　グレーを効果的に使う7-05　「色相」「彩度」「明度」で色を把握する7-06　「テーマの色」を設定する7-07　グラデーションで表現の幅を拡げる＜表＞8-01　表は「テキスト＋図形＋線」の合わせ技8-03　情報の構造に沿って表を組み立てる8-04　行の高さと列の幅は「数値で設定」する8-08　表を「箇条書きのフォーマット」として使う8-09　表を応用して立体的な箇条書きを作る〜リボンチャート8-10　表をStep図に応用する＜グラフ＞9-01　「グラフ機能」には頼らない9-02　グラフの要素を作り直す9-03　円グラフは「円弧」で作り直す9-04　円グラフで箇条書きを魅力的に装飾する〜円チャート9-05　円チャートを結合の図に応用する〜コンバイン＜スライドマスター＞10-01　スライドマスターの基本を理解する10-02　スライドマスターと「テーマ」の関係を理解する10-03　「マスター」と「レイアウト」のしくみを理解する10-04　「プレースホルダー」の特性を理解する10-05　「背景」の特性を理解する10-06　「スライドサイズ」を設定する10-07　「テーマのフォント」「テーマの色」「ガイド」を設定する10-08　「マスター」を設定する10-09「レイアウト」を設定する10-10　スライドマスターを保存する10-11　新しいスライドにスライドマスターを適用する10-12　既存のスライドにスライドマスターを適用する10-13　スライドマスターによって得られる3つのメリット本書紹介のテクニックを詰め込んだ特典テンプレートつきスライドマスターの設定がぜんぶ入ってます通常スライドのデザインがぜんぶ入ってます表による段組みデザインがぜんぶ入ってますリボンチャート，円チャート，コンバインがぜんぶ入ってます"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-12358-1"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-12358-1.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">PowerPoint 「最強」<wbr>資料のデザイン教科書</h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-12358-1.jpg" alt="PowerPoint 「最強」資料のデザイン教科書"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">福元雅之　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-10-04">2021年10月4日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-10-04">2021年10月4日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2021/978-4-297-12357-4" target="_blank">2021年10月7日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,700円 <a id="pid403349" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">480</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-12358-1" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-12358-1" data-text="PowerPoint 「最強」資料のデザイン教科書 #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-12358-1" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-12358-1" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p><b>確実に伝わり，<br />
+確実に美しい。</b></p>
+
+<b>すべてのビジネスパーソンに読んでもらいたいNo.1の教本</b>
+
+
+<p>◆仕事で必要になる資料作成において，<wbr/>多くの人がPowerPointを使っています。自分が作る資料に<b>情報を正確に，<wbr/>魅力的に伝えるためのデザイン</b>が重要であると頭ではわかっているにもかかわらず，<wbr/>センスがないからとか，<wbr/>はたまたPowerPointでは美しい資料は作れないからなどと，<wbr/>諦めてしまっていませんか?</p>
+
+<p>◆本書はこうした思い込みを解消しつつ，<wbr/>資料作成における2つの難関である<b>「デザイン」と「PowerPointスキル」</b>を同時に学習し，<wbr/>その本質的な知識を身につけることができる決定版です。</p>
+
+<p>◆外資系IT企業で資料作成に携わり，<wbr/>専門部署を立ち上げるまでに至った<b>著者の資料作成ノウハウを1冊に凝縮</b>。単なるPowerPointの機能説明ではなく，<wbr/>伝えたい情報を相手に確実に理解してもらうための資料デザインテクニックを全公開します。</p>
+<!-- omitted below -->
+
+
+
+<h4>【本書の特徴】</h4>
+
+<b>1.プロのノウハウを全公開</b>
+<p>PowerPointをビジネスシーンにおける「読む資料」を作るためのツールとして位置づけ，<wbr/>文字数が多くても読みやすい，<wbr/>デザイン性のある資料に仕上げるためのノウハウを480ページにわたって全公開</p>
+
+<b>2.原因と解決からのアプローチ</b>
+<p>PowerPointの作業で，<wbr/>誰もが陥るシチュエーションを想定。「なぜそうなってしまうのか？」の原因分析と「どうすれば切り抜けられるのか？」の解決策の両面からアプローチ</p>
+
+<b>3.再現性を重視した丁寧解説</b>
+<p>読んだ人が本の内容を確実に再現できるように，<wbr/>資料作りの工程を細かく分解。ひとつひとつのアクションごとに，<wbr/>手順とポイントをスクリーンショット付きで丁寧に紹介</p>
+
+<b>4.マニアックな機能を豊富に紹介</b>
+<p>他のPowerPoint，<wbr/>資料作成の解説書やWebではほとんど触れられないマニアックな機能も詳しく解説。「こんなこともできるのか！」という驚異のテクニックを大量に収録</p>
+
+
+<h4>【こんな人におすすめ】</h4>
+<ul>
+<li>PowerPointを使って，<wbr/>日々大量の資料を作成しなければならない方</li>
+<li>せっかく作成した資料が，<wbr/>伝わらない，<wbr/>美しくない，<wbr/>と悩んでいる方</li>
+<li>自分には資料をデザインするセンスがないと，<wbr/>あきらめている方</li>
+<li>作りたい資料を実現するための，<wbr/>PowerPointの使い方がわからない方</li>
+</ul>
+
+<h4>【本書の内容】</h4>
+
+<p>＜テキスト＞<br />
+2-01　「テキスト」と「オブジェクト」は一体と考える<br />
+2-04　フォントサイズは「選択できる数値」を使う<br />
+2-07　相性のよいフォントを組み合わせる<br />
+2-09　日本語は「Meiryo UI」英数字は「Segoe UI」を使う<br />
+2-11　文字の配置は「左揃え」で統一する<br />
+2-12　箇条書きは「箇条書き」「段落番号」で作成する<br />
+2-17　段組みは「表」を使って作成する</p>
+
+<p>＜図形＞<br />
+3-01　図形は四角と正円だけで十分<br />
+3-02　角丸四角は使わない方が無難<br />
+3-03　影はノイズになるのでつけない<br />
+3-04　オブジェクトの枠線は「なし」にする<br />
+3-08　複数のオブジェクトは「配置」で揃える<br />
+3-11　複雑な図形は「図形の結合」で作る<br />
+3-12　吹き出しは「接合」でシャープに作る</p>
+
+<p>＜線＞<br />
+4-01　2種類の線「コネクタ」「図形の枠線」を理解する<br />
+4-02　線の書式設定を理解する<br />
+4-03　線のサイズと位置は「数値で設定」する</p>
+
+<p>＜矢印＞<br />
+5-01　矢印はむやみに使わない<br />
+5-02　矢印は「線」で作る<br />
+5-03　曲線を描く矢印は「円弧」で作る<br />
+5-04　ホームベース矢印は「ブロック矢印」で作る<br />
+5-05　「三角矢印」は必要以上に目立たせない<br />
+5-06　線の矢印にテキストを挿入する</p>
+
+<p>＜画像＞<br />
+6-01　画像の種類を理解する<br />
+6-02　画像を安易に使うとノイズになる<br />
+6-04　「画像のトリミング」で必要な部分のみ取り出す<br />
+6-05　「図形の結合」で画像を思い通りの形に切り抜く<br />
+6-06　「背景の削除」で画像をパーツ化する<br />
+6-07　「図の修整」「色」「アート効果」で画像を編集する</p>
+
+<p>＜色＞<br />
+7-01　色は難しい，<wbr/>でもルールを守れば怖くない<br />
+7-02　色が持っている「本来の意味」を考慮する<br />
+7-03　グレーを効果的に使う<br />
+7-05　「色相」「彩度」「明度」で色を把握する<br />
+7-06　「テーマの色」を設定する<br />
+7-07　グラデーションで表現の幅を拡げる</p>
+
+<p>＜表＞<br />
+8-01　表は「テキスト＋図形＋線」の合わせ技<br />
+8-03　情報の構造に沿って表を組み立てる<br />
+8-04　行の高さと列の幅は「数値で設定」する<br />
+8-08　表を「箇条書きのフォーマット」として使う<br />
+8-09　表を応用して立体的な箇条書きを作る〜リボンチャート<br />
+8-10　表をStep図に応用する</p>
+
+<p>＜グラフ＞<br />
+9-01　「グラフ機能」には頼らない<br />
+9-02　グラフの要素を作り直す<br />
+9-03　円グラフは「円弧」で作り直す<br />
+9-04　円グラフで箇条書きを魅力的に装飾する〜円チャート<br />
+9-05　円チャートを結合の図に応用する〜コンバイン</p>
+
+<p>＜スライドマスター＞<br />
+10-01　スライドマスターの基本を理解する<br />
+10-02　スライドマスターと「テーマ」の関係を理解する<br />
+10-03　「マスター」と「レイアウト」のしくみを理解する<br />
+10-04　「プレースホルダー」の特性を理解する<br />
+10-05　「背景」の特性を理解する<br />
+10-06　「スライドサイズ」を設定する<br />
+10-07　「テーマのフォント」「テーマの色」「ガイド」を設定する<br />
+10-08　「マスター」を設定する<br />
+10-09「レイアウト」を設定する<br />
+10-10　スライドマスターを保存する<br />
+10-11　新しいスライドにスライドマスターを適用する<br />
+10-12　既存のスライドにスライドマスターを適用する<br />
+10-13　スライドマスターによって得られる3つのメリット</p>
+
+<hr class="half-rule">
+<b>本書紹介のテクニックを詰め込んだ特典テンプレートつき</b>
+<ol>
+<li>スライドマスターの設定がぜんぶ入ってます</li>
+<li>通常スライドのデザインがぜんぶ入ってます</li>
+<li>表による段組みデザインがぜんぶ入ってます</li>
+<li>リボンチャート，<wbr/>円チャート，<wbr/>コンバインがぜんぶ入ってます</li>
+</ol>
+<hr class="half-rule"><h3>こんな方におすすめ</h3>
+<ul><li>読みやすい／<wbr/>魅力的なプレゼン資料を作りたいビジネスパーソン</li></ul>
+<aside class="author"><h3>福元雅之（ふくもとまさゆき）</h3><p>ビジネス・<wbr/>ドキュメント・<wbr/>デザイナー<br />
+1976年5月生まれ。<br />
+1999年，<wbr/>日本IBM入社。<br />
+2014年，<wbr/>提案書作成に特化した部署の立ち上げに関わる。同部署では，<wbr/>営業やコンサルの作成した資料のデザインを改善することで営業活動を支援する。年間約100冊前後の提案書の作成に関わり，<wbr/>現在では，<wbr/>その経験，<wbr/>ノウハウをもとに後進の指導，<wbr/>育成にも携わっている。多くの社内表彰の実績を有し，<wbr/>2019年には社内約1000チームが参画する業務の改善内容を競うトーナメントにおいて，<wbr/>「提案書の品質向上」のテーマで金賞を受賞する。同年，<wbr/>資料作成スキルのエキスパートとしてThe king of proposal賞も受賞し，<wbr/>近年ではエグゼクティブの外部講演資料のデザインにも携わっている。</p></aside>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="42923">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>INTRODUCTION</h3>
+<ul class="toc">
+<li>情報はそのままでこれだけ変わる! デザイン改善例①<br />
+文字量の多いテキストのみのスライドも段組みでスッキリ読みやすいデザインに</li>
+
+<li>情報はそのままでこれだけ変わる! デザイン改善例②<br />
+箇条書きも一目で読む人の興味を引くデザインに</li>
+
+<li>情報はそのままでこれだけ変わる! デザイン改善例③<br />
+将来構想などの時系列を表現する資料もクールなデザインで読みやすく</li>
+
+<li>情報はそのままでこれだけ変わる! デザイン改善例④<br />
+複雑な構造の情報も，思わず読みたくなってしまうデザインに</li>
+
+<li>情報はそのままでこれだけ変わる! デザイン改善例⑤<br />
+グラデーションを用いて，洗練された印象のデザインに</li>
+
+<li>情報はそのままでこれだけ変わる! デザイン改善例⑥<br />
+グラフもひと手間加えることでデザイン性のある魅力的なものに変身</li>
+
+<li>筆者の自己紹介</li>
+
+</ul>
+<h3>Chapter01　読まれる資料の基本ルール</h3>
+<ul class="toc">
+<li>01　読み手が思わず読みたくなる資料を作る</li>
+<li>02　良質なPowerPoint資料を作るための3つの条件</li>
+<li>COLUMN　アニメーションはあえて扱わない</li>
+<li>03　この本の前提</li>
+
+</ul>
+<h3>Chapter02　テキストのルール＆テクニック</h3>
+<ul class="toc">
+<li>01　「テキスト」と「オブジェクト」は一体と考える</li>
+<li>02　「グループ化」は使用しない</li>
+<li>03　テキストの位置は「文字のオプション」で調整する</li>
+<li>POINT　テキストのサイズや色は小ウィンドウで設定する</li>
+<li>POINT　テキストボックスと図形のどちらを使う？</li>
+<li>04　フォントサイズは「選択できる数値」を使う</li>
+<li>POINT　フォントサイズが小数点以下を含む値に自動変換されてしまう場合がある</li>
+<li>05　フォントはむやみに飾らない</li>
+<li>POINT　太字に対応しているフォント／していないフォント</li>
+<li>POINT　フォントの一覧に太字がないものもある</li>
+<li>06　「テーマのフォント」を設定する</li>
+<li>HINT　Mac では「テーマのフォント」に任意のフォントを設定できない</li>
+<li>POINT　「フォントの置換」で特定のフォントを置き換える</li>
+<li>POINT　「フォント」ダイアログボックスにある「文字飾り」の仕様</li>
+<li>07　相性のよいフォントを組み合わせる</li>
+<li>08　カーニングは諦める</li>
+<li>09　日本語は「Meiryo UI」英数字は「Segoe UI」を使う</li>
+<li>POINT　「Meiryo UI」で注意するべきこと</li>
+<li>POINT　「メイリオ」の特徴と弱点</li>
+<li>POINT　 括弧は全角と半角のどちらを使うのか？</li>
+<li>HINT　ドロップダウンリストになぜ10.5ptという半端な数値があるのか？</li>
+<li>POINT　設定の取捨選択の基準を持っておくことが重要</li>
+<li>HINT　プロポーショナルフォントについて</li>
+<li>10　テキストの貼り付けは「テキストのみ保持」を選ぶ</li>
+<li>11　文字の配置は「左揃え」で統一する</li>
+<li>POINT　垂直方向の文字の配置</li>
+<li>POINT　「垂直方向の配置」に注意</li>
+<li>POINT　「上中央」「中心」「下中央」のよくあるトラブル</li>
+<li>POINT　余白を応用してテキストを左揃えにする</li>
+<li>POINT　下揃えだけど上揃え？</li>
+<li>POINT　テキストが動き出すまで余白の数値を上げ続ける</li>
+<li>12　箇条書きは「箇条書き」「段落番号」で作成する</li>
+<li>13　「インデント」で文字の開始位置を調整する</li>
+<li>14　「タブ」で文字を整列する</li>
+<li>POINT　タブは「表」で代用できる</li>
+<li>COLUMN　インストールされていないフォントなのにドロップダウンリストに名前が表示される!?</li>
+<li>15　「行間」「段落前後間隔」で読みやすい行間を作る</li>
+<li>16　「禁則処理」で句読点や記号を正しく配置する</li>
+<li>17　段組みは「表」を使って作成する</li>
+<li>POINT　PowerPointの段組みの機能は使いにくい</li>
+
+</ul>
+<h3>Chapter03　オブジェクト（図形）のルール＆テクニック</h3>
+<ul class="toc">
+<li>01　図形は四角と正円だけで十分</li>
+<li>02　角丸四角は使わない方が無難</li>
+<li>03　影はノイズになるのでつけない</li>
+<li>POINT　各種効果の仕様</li>
+<li>POINT　フォントにも「塗りつぶし」と「線」がある</li>
+<li>POINT　3-D効果と回転を使って球体を作る</li>
+<li>POINT　3-D効果と回転を使って立方体を作る</li>
+<li>04　オブジェクトの枠線は「なし」にする</li>
+<li>05　オブジェクトを触ったらタブを確認する</li>
+<li>06　オブジェクトの「貼り付け」の種類を理解する</li>
+<li>POINT　「クリップボード」を使えばコピーの履歴を再利用できる</li>
+<li>POINT　「書式のコピー／貼り付け」で同じ書式をくり返し設定する</li>
+<li>POINT　同じ操作をくり返すショートカットキー</li>
+<li>07　オブジェクトの重なりを把握／操作する</li>
+<li>POINT　作業ウィンドウの「タブ」を活用する</li>
+<li>08　複数のオブジェクトは「配置」で揃える</li>
+<li>POINT　オブジェクトはグリッドにスナップする</li>
+<li>POINT　グリッドとスナップの設定を理解しておく</li>
+<li>09　オブジェクトのサイズと位置は「数値で設定」する</li>
+<li>HINT　設定上は0.01cm単位までだが…</li>
+<li>HINT　自動保存を設定しておく</li>
+<li>POINT　オブジェクトの回転ハンドルのしくみ</li>
+<li>POINT　回転は15度単位で設定する</li>
+<li>10　縦横比を変えずに拡大／縮小する</li>
+<li>11　複雑な図形は「図形の結合」で作る</li>
+<li>12　吹き出しは「接合」でシャープに作る</li>
+<li>HINT　「Alt」+「F10」キーのショートカット</li>
+<li>POINT　「図形の変更」で図形を一度に変換する</li>
+<li>POINT　「既定の図形に設定」で図形の設定を維持する</li>
+<li>POINT　「既定のテキストボックスに設定」は厄介</li>
+<li>POINT　「すべての書式をクリア」でテキストの設定を初期化する</li>
+<li>13　SmartArtは補助的に使う</li>
+<li>HINT　円柱は「円柱」を使う</li>
+
+</ul>
+<h3>Chapter04　線のルール＆テクニック</h3>
+<ul class="toc">
+<li>01　2種類の線「コネクタ」「図形の枠線」を理解する</li>
+<li>02　線の書式設定を理解する</li>
+<li>HINT　「スケッチスタイル」で手描き風の線にする</li>
+<li>03　線のサイズと位置は「数値で設定」する</li>
+<li>POINT　「曲線」「フリーフォーム」で複雑な線を描く</li>
+<li>POINT　「頂点の編集」 で完全任意の線／図形を描く</li>
+<li>POINT　「頂点の編集」 の個別の仕様</li>
+
+</ul>
+<h3>Chapter05　矢印のルール＆テクニック</h3>
+<ul class="toc">
+<li>01　矢印はむやみに使わない</li>
+<li>HINT　目の錯覚・錯視について</li>
+<li>02　矢印は「線」で作る</li>
+<li>POINT　「矢印スタイル」で矢印の始点と終点の種類を簡単に選ぶ</li>
+<li>03　曲線を描く矢印は「円弧」で作る</li>
+<li>04　ホームベース矢印は「ブロック矢印」で作る</li>
+<li>HINT　「Ctrl」キーと「Shift」キーを押しながらオブジェクトをドラッグしてコピーする</li>
+<li>05　「三角矢印」は必要以上に目立たせない</li>
+<li>06　「線の矢印」にテキストを挿入する</li>
+<li>HINT　「フリーフォーム」の矢印には塗りつぶしもできる</li>
+
+</ul>
+<h3>Chapter06　画像のルール＆テクニック</h3>
+<ul class="toc">
+<li>01　画像の種類を理解する</li>
+<li>02　画像を安易に使うとノイズになる</li>
+<li>03　画像は「図の形式」タブと「図の書式設定」で操作する</li>
+<li>04　「画像のトリミング」で必要な部分のみ取り出す</li>
+<li>05　「図形の結合」で画像を思い通りの形に切り抜く</li>
+<li>HINT　位置や大きさを保持したまま別の画像に置き換える</li>
+<li>06　「背景の削除」で画像をパーツ化する</li>
+<li>HINT　スライド上のオブジェクトを画像として保存する</li>
+<li>07　「図の修整」「色」「アート効果」で画像を編集する</li>
+<li>HINT　画像を透明にする</li>
+<li>POINT　「図の圧縮」でファイル容量を圧縮する</li>
+
+</ul>
+<h3>Chapter07　色のルール＆テクニック</h3>
+<ul class="toc">
+<li>01　色は難しい，でもルールを守れば怖くない</li>
+<li>02　色が持っている「本来の意味」を考慮する</li>
+<li>03　グレーを効果的に使う</li>
+<li>HINT　進出色と後退色</li>
+<li>04　画面の色と印刷した色は違う</li>
+<li>05　「色相」「彩度」「明度」で色を把握する</li>
+<li>HINT　多様な人に配慮したユニバーサルデザイン</li>
+<li>HINT　Webやスマートフォンのアプリで色の違いを確認する</li>
+<li>HINT　多様な色覚の人に配慮した色使い</li>
+<li>06　「テーマの色」を設定する</li>
+<li>HINT　「色の六角形」の使い方</li>
+<li>07　グラデーションで表現の幅を拡げる</li>
+<li>POINT　洗練グラデーションを使いこなす</li>
+<li>POINT　テクスチャとパターンの仕様</li>
+<li>COLUMN　図（画像）の「色の変更」は「テーマの色」と連動している</li>
+
+</ul>
+<h3>Chapter08　表のルール＆テクニック</h3>
+<ul class="toc">
+<li>01　表は「テキスト＋図形＋線」の合わせ技</li>
+<li>02　表のタブを理解する</li>
+<li>HINT　マウスカーソルの表示で表内の選択対象を見極める</li>
+<li>03　情報の構造に沿って表を組み立てる</li>
+<li>POINT　「表もどき」を見かけたら必ず「表」に直す</li>
+<li>04　行の高さと列の幅は「数値で設定」する</li>
+<li>POINT　表に入力するテキストの設定</li>
+<li>POINT　表の「位置」「揃え」「整列」「重なり」は他のオブジェクトと同じ</li>
+<li>POINT　表の弱点1　表はグループ化ができない</li>
+<li>POINT　表の弱点2　複数の表を一括で設定できない</li>
+<li>05　「表の罫線」「セルの色」を設定する</li>
+<li>POINT　罫線のペンの機能は使わない</li>
+<li>06　行や列を挿入／削除する</li>
+<li>07　セルを結合／分割する</li>
+<li>HINT　表以外にもグループ化できないものがある</li>
+<li>08　表を「箇条書きのテンプレート」として使う</li>
+<li>09　表を応用して立体的な箇条書きを作る〜リボンチャート</li>
+<li>10　表をStep図に応用する</li>
+
+</ul>
+<h3>Chapter09　グラフのルール＆テクニック</h3>
+<ul class="toc">
+<li>01　「グラフ機能」には頼らない</li>
+<li>02　グラフの要素を作り直す</li>
+<li>03　円グラフは「円弧」で作り直す</li>
+<li>HINT　グラフを選択した際に表示される残り2つのボタン</li>
+<li>04　円グラフで箇条書きを魅力的に装飾する〜円チャート</li>
+<li>05　円チャートを結合の図に応用する〜コンバイン</li>
+<li>POINT　「涙形」で「コンバイン」の派生形を作る</li>
+
+</ul>
+<h3>Chapter10　スライドマスターのルール＆テクニック</h3>
+<ul class="toc">
+<li>01　スライドマスターの基本を理解する</li>
+<li>02　スライドマスターと「テーマ」の関係を理解する</li>
+<li>03　「マスター」と「レイアウト」のしくみを理解する</li>
+<li>04　「プレースホルダー」の特性を理解する</li>
+<li>05　「背景」の特性を理解する</li>
+<li>06　「スライドサイズ」を設定する</li>
+<li>07　「テーマのフォント」「テーマの色」「ガイド」を設定する</li>
+<li>HINT　通常スライド上でもガイドは設定できる</li>
+<li>08　「マスター」を設定する</li>
+<li>POINT「日付」「フッター」「スライド番号」をプレースホルダーで設定する</li>
+<li>POINT　スライド番号を「0」からスタートさせる方法</li>
+<li>COLUMN　「テーマのフォント」「テーマの色」に加えて「テーマの効果」がある</li>
+<li>09「レイアウト」を設定する</li>
+<li>HINT　「背景」の日付，フッター，スライド番号は「レイアウト」でも設定できる</li>
+<li>POINT　サブタイトルは「テキスト」のプレースホルダーで設定する</li>
+<li>10　スライドマスターを保存する</li>
+<li>11　新しいスライドにスライドマスターを適用する</li>
+<li>12　既存のスライドにスライドマスターを適用する</li>
+<li>HINT　「リセット」を押してもリセットできないテキストは「メモ帳」を使う</li>
+<li>POINT　リード文の行数に合わせてプレースホルダーを個別に設定する</li>
+<li>POINT　「背景の書式設定」でスライドの地色を設定する</li>
+<li>POINT　スライドマスターでの「背景の書式設定」</li>
+<li>POINT　通常スライドでの「背景の書式設定」</li>
+<li>POINT　通常スライドでの「すべてに適用」は要注意</li>
+<li>POINT　「コンテンツ」と「図」のプレースホルダーでは画像の挙動が違う</li>
+<li>POINT「コンテンツ」と「図」では画像の「リセット」の挙動も異なる</li>
+<li>13　スライドマスターによって得られる3つのメリット</li>
+<li>HINT　オブジェクトを起点に表示倍率を拡大／縮小する</li>
+
+</ul>
+<h3>APPENDIX</h3>
+<ul class="toc">
+<li>01　アイコン（ピクトグラム）を使いこなす</li>
+<li>02　「セクション」でスライドを整理する</li>
+<li>03　オブジェクトをロックする新機能</li>
+<li>04　PowerPointのショートカットキーの一覧をダウンロードできるWebページ</li>
+<li>05　画像編集や特殊効果のノウハウを徹底的に学べるWebページ</li>
+<li>06　ワードアート</li>
+<li>07　文字の変形</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="download">ダウンロード</h3>
+<p><div align="right">（2021年9月29日更新）</div></p>
+
+<p> 本書のサンプルファイルは以下よりダウンロードできます。</p>
+
+<p> サンプルファイルのデータは圧縮ファイル形式(zip)となっているため，<wbr/>ファイルダウンロード後はデスクトップなどに展開してご利用ください。</p>
+<p>サンプルファイルに修正が入りましたので，<wbr/>2021年9月29日以前にダウンロードされた方は，<wbr/>お手数ですが，<wbr/>再度ダウンロードをお願いいたします。</p>
+
+<dl>
+<dt>ダウンロード</dt>
+<dd><a href="http://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12357-4/download/sample.zip">サンプルファイル</a></dd>
+</dl>
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-12358-1","path":"\/dp\/ebook\/2021\/978-4-297-12358-1","targetId":"978-4-297-12358-1","parent":"\/dp\/genre\/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

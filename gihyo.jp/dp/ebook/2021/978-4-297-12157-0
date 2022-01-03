@@ -1,0 +1,402 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>今すぐ使えるかんたんEx Excelマクロ＆VBA プロ技 BESTセレクション［2019/2016/2013/365対応版］ | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="本書は，Excel VBAの基本文法と自動化・効率化に役立つテクニックを，一冊でまとめてマスターしたい人のための解説書です。Excelの記録マクロの使い方と編集方法，プロシージャ・オブジェクト・プロパティ・メソッドといったVBAの基本をていねいに解説。そして，それらを実際のプログラムに活用するための具体的な操作方法・記述方法やデバッグ方法を，豊富なサンプルマクロとともに徹底紹介します。Excel VBAでプログラムを作るときに役立つ，プロも使っている秘伝のテクニックの数々が身につきます！"/>
+  <meta name="keywords" content="電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="今すぐ使えるかんたんEx Excelマクロ＆VBA プロ技 BESTセレクション［2019/2016/2013/365対応版］ | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="本書は，Excel VBAの基本文法と自動化・効率化に役立つテクニックを，一冊でまとめてマスターしたい人のための解説書です。Excelの記録マクロの使い方と編集方法，プロシージャ・オブジェクト・プロパティ・メソッドといったVBAの基本をていねいに解説。そして，それらを実際のプログラムに活用するための具体的な操作方法・記述方法やデバッグ方法を，豊富なサンプルマクロとともに徹底紹介します。Excel VBAでプログラムを作るときに役立つ，プロも使っている秘伝のテクニックの数々が身につきます！"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-12157-0"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-12157-0.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/%E4%BB%8A%E3%81%99%E3%81%90%E4%BD%BF%E3%81%88%E3%82%8B%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93Ex">今すぐ使えるかんたん<wbr>Ex</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">今すぐ使えるかんたんEx<br>Excel<wbr>マクロ＆<wbr>VBA プロ技 BEST<wbr>セレクション<br><span class="sub">［2019/<wbr>2016/<wbr>2013/<wbr>365<wbr>対応版］</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-12157-0.jpg" alt="今すぐ使えるかんたんEx Excelマクロ＆VBA プロ技 BESTセレクション［2019/2016/2013/365対応版］"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">土屋和人　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-06-03">2021年6月3日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-06-03">2021年6月3日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2021/978-4-297-12156-3" target="_blank">2021年6月9日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">PDF</span><span class="buy">1,580円 <a id="pid403247" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">352</span>ページ相当</span><span class="pdf">PDF</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-12157-0" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-12157-0" data-text="今すぐ使えるかんたんEx Excelマクロ＆VBA プロ技 BESTセレクション［2019/2016/2013/365対応版］ #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-12157-0" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-12157-0" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>本書は，<wbr/>Excel VBAの基本文法と自動化・<wbr/>効率化に役立つテクニックを，<wbr/>一冊でまとめてマスターしたい人のための解説書です。Excelの記録マクロの使い方と編集方法，<wbr/>プロシージャ・<wbr/>オブジェクト・<wbr/>プロパティ・<wbr/>メソッドといったVBAの基本をていねいに解説。そして，<wbr/>それらを実際のプログラムに活用するための具体的な操作方法・<wbr/>記述方法やデバッグ方法を，<wbr/>豊富なサンプルマクロとともに徹底紹介します。Excel VBAでプログラムを作るときに役立つ，<wbr/>プロも使っている秘伝のテクニックの数々が身につきます！</p><h3>こんな方におすすめ</h3>
+<ul><li>Excel VBAの基本と文法，<wbr/>実践的なテクニックを一冊でマスターしたい人</li></ul>
+<section id="sample"><h2>サンプル</h2><ul class="pdf"><li><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12156-3/9784297121563-01.pdf" target="_blank">サンプルPDFファイル1</a>（3,349KB）</li></ul>
+</section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="42487">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>第1章　マクロの基本を知ろう</h3>
+<ul class="toc">
+<li>001　マクロを利用するための準備を整える</li>
+<li>002　操作をマクロとして記録する</li>
+<li>003　マクロを実行する</li>
+<li>004　マクロを相対参照で記録する</li>
+<li>005　マクロを含むブックを保存する</li>
+<li>006　マクロを含むブックを開く</li>
+<li>007　Visual Basic Editorを開く</li>
+<li>008　マクロの中身を見る</li>
+<li>009　マクロを修正する</li>
+<li>010　VBEでマクロを実行する</li>
+
+</ul>
+<h3>第2章　VBAの基本を知ろう</h3>
+<ul class="toc">
+<li>011　VBAの書き方の鉄則</li>
+<li>012　モジュールとは？</li>
+<li>013　プロシージャとは？</li>
+<li>014　オブジェクトとは？</li>
+<li>015　オブジェクトの階層とは？</li>
+<li>016　プロパティとは？</li>
+<li>017　オブジェクトを返すプロパティ</li>
+<li>018　プロパティに値を代入する</li>
+<li>019　データの種類と演算子</li>
+<li>020　メソッドとは？</li>
+<li>021　メソッドの戻り値とは？</li>
+<li>022　プロパティやメソッドを調べるには？</li>
+<li>023　コレクションとは？</li>
+<li>024　キーワードとステートメント</li>
+<li>025　VBAの関数</li>
+<li>026　ワークシート関数を使うには？</li>
+<li>027　変数を利用する</li>
+<li>028　配列とは？</li>
+<li>029　配列を利用する</li>
+<li>030　VBAをスッキリ記述する</li>
+<li>031　複数のマクロを連携する</li>
+
+</ul>
+<h3>第3章　セルや行・列の指定方法を知ろう</h3>
+<ul class="toc">
+<li>032　選択中のセルを指定する</li>
+<li>033　特定のセルを指定する</li>
+<li>034　セルやセル範囲を選択する</li>
+<li>035　行・列を指定してセルを選択する</li>
+<li>036　行や列を選択する</li>
+<li>037　始点と終点を指定してセル範囲を選択する</li>
+<li>038　行数と列数を指定してセル範囲を選択する</li>
+<li>039　セルの上下左右のセルを選択する</li>
+<li>040　表の上端・下端・右端・左端のセルを選択する</li>
+<li>041　表の特定の行・列の範囲を選択する</li>
+<li>042　セルの行全体・列全体を選択する</li>
+<li>043　表全体を選択する</li>
+<li>044　作業済みの領域を選択する</li>
+<li>045　表の一部の範囲を選択する</li>
+<li>046　特定の種類のセルを選択する</li>
+<li>047　設定した範囲内のセルだけを選択する</li>
+<li>048　指定した範囲を追加選択する</li>
+<li>049　別のシートやブックのセルを指定する</li>
+<li>050　特定のセルへジャンプする</li>
+
+</ul>
+<h3>第4章　セルや行・列の操作方法を知ろう</h3>
+<ul class="toc">
+<li>051　セルにデータを入力する</li>
+<li>052　セル範囲に同じデータを入力する</li>
+<li>053　セル範囲にそれぞれ異なるデータを入力する</li>
+<li>054　セルの値を別のセルに代入する</li>
+<li>055　セルの数式を別のセルに代入する</li>
+<li>056　セル範囲の値を別のセル範囲に代入する</li>
+<li>057　セル範囲を書式ごと移動・複製する</li>
+<li>058　書式だけ・値だけを貼り付ける</li>
+<li>059　セルをコピー・切り取りして挿入する</li>
+<li>060　空白のセルを挿入する</li>
+<li>061　セル範囲に規則的なデータを入力する</li>
+<li>062　規則を指定して連続データを入力する</li>
+<li>063　セルの文字列を加工する</li>
+<li>064　塗りつぶしの色を設定する</li>
+<li>065　その他の書式を設定する</li>
+<li>066　セルをクリアする</li>
+<li>067　セルを削除する</li>
+<li>068　行・列のサイズを変更する</li>
+<li>069　行・列を非表示にする</li>
+
+</ul>
+<h3>第5章　シートやブックの指定・操作方法を知ろう</h3>
+<ul class="toc">
+<li>070　3種類のシートのコレクション</li>
+<li>071　2種類のシートの指定方法</li>
+<li>072　アクティブシートを指定する</li>
+<li>073　シートをアクティブにする</li>
+<li>074　シート名を変更する</li>
+<li>075　シートを移動・コピーする</li>
+<li>076　新しいシートを追加する</li>
+<li>077　シートを削除する</li>
+<li>078　特定のブックを指定する</li>
+<li>079　ブックを保存する</li>
+<li>080　ブックを閉じる</li>
+<li>081　ブックを開く</li>
+<li>082　特定の場所にあるブックを開く</li>
+<li>083　新しいブックを作成する</li>
+<li>084　ファイルを選択してブックを開く</li>
+<li>085　ファイル名を指定してブックを保存する</li>
+
+</ul>
+<h3>第6章　条件に応じて処理を分けよう</h3>
+<ul class="toc">
+<li>086　条件式と論理値</li>
+<li>087　条件が正しいときだけ処理を実行する</li>
+<li>088　条件に応じて異なる処理を実行する</li>
+<li>089　複数の条件を判定して処理を分ける</li>
+<li>090　値に応じて複数の条件分岐を行う</li>
+<li>091　文字列をパターンで判定する</li>
+<li>092　メッセージ画面を使って処理を分ける</li>
+<li>093　文字を入力させて処理を分ける</li>
+<li>094　入力画面に入力されたデータの種類を判定する</li>
+<li>095　データの種類を指定して入力画面を使用する</li>
+
+</ul>
+<h3>第7章　繰り返し処理を使いこなそう</h3>
+<ul class="toc">
+<li>096　繰り返し処理とは？</li>
+<li>097　条件を満たすまで無制限に繰り返す</li>
+<li>098　条件を指定して繰り返す</li>
+<li>099　カウンター変数を利用して繰り返す</li>
+<li>100　指定した回数だけ繰り返す</li>
+<li>101　増減値を指定して繰り返す</li>
+<li>102　コレクションの全オブジェクトに対して処理する</li>
+<li>103　特定のオブジェクトの有無を調べる</li>
+<li>104　すべてのシートの名前を変更する</li>
+<li>105　繰り返しを二重に使用する</li>
+<li>106　すべてのブックを保存して閉じる</li>
+
+</ul>
+<h3>第8章　データ処理を自動化・効率化しよう</h3>
+<ul class="toc">
+<li>107　表を昇順・降順に並べ替える</li>
+<li>108　表を複数の条件で並べ替える</li>
+<li>109　ワークシートを検索する</li>
+<li>110　データを検索して置換する</li>
+<li>111　フィルターでデータを抽出する</li>
+<li>112　複雑な条件でデータを抽出する</li>
+<li>113　表をテーブルに変換する</li>
+<li>114　テーブルの特定の範囲を操作する</li>
+<li>115　ピボットテーブルでクロス集計を行う</li>
+<li>116　データに基づいてグラフを作成する</li>
+<li>117　外部のプログラムを利用する</li>
+<li>118　ファイルを操作する</li>
+<li>119　Excel VBAでWordを操作する</li>
+
+</ul>
+<h3>第9章　さまざまな方法でマクロを実行しよう</h3>
+<ul class="toc">
+<li>120　マクロ実行用ボタンを作成する</li>
+<li>121　クイックアクセスツールバーからマクロを実行する</li>
+<li>122　リボンのタブからマクロを実行する</li>
+<li>123　ワークシート上で関数として使えるプログラムを作成する</li>
+<li>124　シートを操作するときにマクロを実行する</li>
+<li>125　ブックを操作するときにマクロを実行する</li>
+<li>126　右クリックのメニューからマクロを実行する</li>
+<li>127　ブックをアドインとして利用する</li>
+
+</ul>
+<h3>第10章　ユーザーフォームで作業を快適にしよう</h3>
+<ul class="toc">
+<li>128　ユーザーフォームとは？</li>
+<li>129　ユーザーフォームを作成する</li>
+<li>130　コントロールの種類を知る</li>
+<li>131　フォーム上の表示文字を変更する</li>
+<li>132　フォームの書式を変更する</li>
+<li>133　フォームにVBAのプログラムを記述する</li>
+<li>134　Excelの作業中にフォームを表示する</li>
+<li>135　キーの操作を設定する</li>
+<li>136　テキストボックスで文字を入力する</li>
+<li>137　チェックボックスでオン／オフを設定する</li>
+<li>138　フォーム上に画像を表示する</li>
+<li>139　オプションボタンで1つの項目を選ぶ</li>
+<li>140　コンボボックスで1つの項目を選ぶ</li>
+<li>141　文字入力欄にセル参照を指定する</li>
+<li>142　便利な「文字処理ツール」を作成する</li>
+
+</ul>
+<h3>第11章　バグやエラーに対処しよう</h3>
+<ul class="toc">
+<li>143　Excel VBAのエラーを理解する</li>
+<li>144　エラーが発生したときの処理を指定する</li>
+<li>145　1行ずつ処理を確認する</li>
+<li>146　変数やプロパティの値を確認する</li>
+<li>147　1行の実行結果を確認する</li>
+<li>148　VBEの作業環境を変更する</li>
+
+</ul>
+<h3>Appendix</h3>
+<ul class="toc">
+<li>001　ダイアログボックスに対応するVBAの機能</li>
+<li>002　Excel VBAで便利なショートカットキー</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="download">ダウンロード</h3>
+<p><div align="right">（2021年7月13日更新）</div></p>
+<p>本書で作成したサンプルファイルは，<wbr/>以下のリンクからダウンロードできます。ダウンロード後のファイルは圧縮ファイル形式ですので，<wbr/>展開してからご利用ください。<br />
+なお，<wbr/>練習用サンプルファイルには，<wbr/>中身が空のマクロが登録されています。本書の解説の通りにコードを入力することで，<wbr/>実際に動作するマクロを作ることができます。</p>
+
+
+<dl>
+<dt>ダウンロード</dt>
+<dd><a href="http://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12156-3/download/exvba_sample.zip">サンプルファイル（2021年7月13日更新）</a></dd>
+<dd><a href="http://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12156-3/download/exvba_sample練習用.zip">練習用サンプルファイル（2021年7月13日追加）</a></dd>
+</dl>
+
+
+
+
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-12157-0","path":"\/dp\/ebook\/2021\/978-4-297-12157-0","targetId":"978-4-297-12157-0","parent":"\/dp\/genre\/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>仕事で一生使える Illustratorトレーステクニック | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="ベジェ描画の基本の「き」から，応用的なトレース技術までを豊富な作例で練習しながら習得します。Illustratorの機能を使いこなして，デザインの現場で必要とされるベクトルデータを，自由にすばやく制作できるようになります。ロゴマーク・手描きのトレース・地図の作成・自由なイラストなどなど，知っておくと仕事で一生使えるイラレのワザを身につけましょう。"/>
+  <meta name="keywords" content="電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="仕事で一生使える Illustratorトレーステクニック | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="ベジェ描画の基本の「き」から，応用的なトレース技術までを豊富な作例で練習しながら習得します。Illustratorの機能を使いこなして，デザインの現場で必要とされるベクトルデータを，自由にすばやく制作できるようになります。ロゴマーク・手描きのトレース・地図の作成・自由なイラストなどなど，知っておくと仕事で一生使えるイラレのワザを身につけましょう。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-12103-7"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-12103-7.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%BB%E7%B4%A0%E6%9D%90%E9%9B%86" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">仕事で一生使える Illustrator<wbr>トレーステクニック</h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-12103-7.jpg" alt="仕事で一生使える Illustratorトレーステクニック"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">北村崇，<wbr/>渋谷瞳　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-04-26">2021年4月26日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-04-26">2021年4月26日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2021/978-4-297-12102-0" target="_blank">2021年5月1日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">PDF</span><span class="buy">1,980円 <a id="pid403207" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">208</span>ページ相当</span><span class="pdf">PDF</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-12103-7" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-12103-7" data-text="仕事で一生使える Illustratorトレーステクニック #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-12103-7" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-12103-7" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>ベジェ描画の基本の「き」から，<wbr/>応用的なトレース技術までを豊富な作例で練習しながら習得します。<br />
+Illustratorの機能を使いこなして，<wbr/>デザインの現場で必要とされるベクトルデータを，<wbr/>自由にすばやく制作できるようになります。ロゴマーク・<wbr/>手描きのトレース・<wbr/>地図の作成・<wbr/>自由なイラストなどなど，<wbr/>知っておくと仕事で一生使えるイラレのワザを身につけましょう。</p><h3>こんな方におすすめ</h3>
+<ul><li>イラレのベジェ曲線を上手に描けるようになりたい方</li><li>写真・<wbr/>手描きのトレース，<wbr/>ロゴやアイコンなどをすばやく作成したい方</li><li>ベクトルデータでイラスト・<wbr/>地図・<wbr/>グラフィックを描きたい方</li></ul>
+<h3>著者から一言</h3>
+<p>Adobe Illustratorに初めて触れたとき，<wbr/>まず最初の壁となるのが，<wbr/>ベジェ曲線といえるでしょう。なかでも，<wbr/>［ペン］ツールは初心者がもっともつまずきやすく，<wbr/>その特性を理解するまでには，<wbr/>多くの時間と労力を要するツールです。著者である私も，<wbr/>初めてIllustratorを使ったころは，<wbr/>どこをどう動かせば，<wbr/>思った通りの線が描けるのか，<wbr/>想像した通りの加工ができるのか，<wbr/>そこに多くの時間を費やしました。</p>
+
+<p>本書は，<wbr/>そんなAdobe Illustratorの初心者の方を対象としています。<br />
+クリック，<wbr/>ドラッグといった操作に，<wbr/>ショートカットキー（Macであれば［option］や［⌘］キーなど）を加えた，<wbr/>基本すぎるほど基本の動作を，<wbr/>Illustratorではどのように活用し，<wbr/>どのような効果が得られるのか。そして，<wbr/>Illustrator独自の機能を活用することで，<wbr/>どこまで表現が広げられるのか。各章にテーマを設けた形で，<wbr/>順番に解説をしています。</p>
+
+<p>Illustratorは，<wbr/>毎年新機能が追加され，<wbr/>常に進化をしています。5年も経てば，<wbr/>今はできない，<wbr/>新しいイラスト表現も可能になっているかもしれません。しかし，<wbr/>どんなにすごい機能が追加されたとしても，<wbr/>［ペン］ツールをはじめとするベジェ曲線の基本的な考え方や，<wbr/>加工の基礎はそう変わることはありません。ベジェ曲線の基礎は，<wbr/>覚えておけば今後も必ず役に立つでしょう。</p>
+
+<p>本書では，<wbr/>Illustratorの操作，<wbr/>技術の基礎を学び，<wbr/>その応用までを紹介していますが，<wbr/>求める形を表現する方法は人それぞれです。自分ならどう描くか，<wbr/>自分ならどう作るか，<wbr/>いろいろな方法を探しながら，<wbr/>Illustratorでの表現を楽しんでみてください。</p>
+
+<p>この本が，<wbr/>デザイナーやイラストレーターとして活動する，<wbr/>または活動を目指しているみなさまの，<wbr/>少しでもお役にたてれば幸いです。<br />
+（「はじめに」より）</p><section id="sample"><h2>サンプル</h2><ul class="pdf"><li><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12102-0/9784297121020-01.pdf" target="_blank">サンプルPDFファイル1</a>（4,332KB）</li></ul>
+</section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="42324">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>Lesson1　ベジェ曲線の基本</h3>
+<ul class="toc">
+
+<li>1-1　線を描く</li>
+
+<li>1-2　オープンパスとクローズパス</li>
+
+<li>1-3　オブジェクトの線と塗り</li>
+
+<li>1-4　折り返し線やコーナーポイント</li>
+
+<li>1-5　ベジェ曲線の編集</li>
+
+
+
+</ul>
+<h3>Lesson2　ベジェ曲線 徹底マスター</h3>
+<ul class="toc">
+
+<li>2-1　パスの整形</li>
+
+<li>2-2　パスを分割する</li>
+
+<li>2-3　パスを連結する</li>
+
+<li>2-4　複合パスと複合シェイプ</li>
+
+
+
+</ul>
+<h3>Lesson3　シェイプでラクするパス作成</h3>
+<ul class="toc">
+
+<li>3-1　長方形・楕円形・多角形などのシェイプツールの基本</li>
+
+<li>3-2　シェイプで描くホームアイコン</li>
+
+<li>3-3　ライブコーナーを使った電話アイコン</li>
+
+<li>3-4　シェイプを使った簡単アイコン作成</li>
+
+
+
+</ul>
+<h3>Lesson4　線を使った表現</h3>
+<ul class="toc">
+
+<li>4-1　Illustratorの線の基本</li>
+
+<li>4-2　ワッペン風アイコンを作る</li>
+
+<li>4-3　ポップなロゴ文字を作る</li>
+
+<li>4-4　和風のロゴを作る</li>
+
+<li>4-5　キャラクターのポーズを変える</li>
+
+<li>4-6　デジタル風数字を作る</li>
+
+<li>4-7　ブレンドで作る月桂冠ブラシ</li>
+
+<li>4-8　消印風のかすれたスタンプ</li>
+
+
+
+</ul>
+<h3>Lesson5　塗りを使った表現</h3>
+<ul class="toc">
+
+<li>5-1　Illustratorの塗りの基本</li>
+
+<li>5-2　波扇模様をパターンで作る</li>
+
+<li>5-3　あとから修正できるイラストの影</li>
+
+<li>5-4　写真からタイル状の背景を作る</li>
+
+<li>5-5　ビールの中ようなイメージ背景</li>
+
+<li>5-6　グラデーションを重ねたメタル表現</li>
+
+
+
+</ul>
+<h3>Lesson6　アピアランスを使いこなす</h3>
+<ul class="toc">
+
+<li>6-1　アピアランスの基本</li>
+
+<li>6-2　手描き風の文字</li>
+
+<li>6-3　ビスケット風の文字</li>
+
+<li>6-4　エアメール風の枠</li>
+
+<li>6-5　漫画風の集中線と立体文字</li>
+
+
+
+</ul>
+<h3>Lesson7　実践トレーステクニック</h3>
+<ul class="toc">
+
+<li>7-1　イラスト入りイベントチラシ</li>
+
+<li>7-2　メタル調の機器のトレース</li>
+
+<li>7-3　写真トレースで作るショップカード</li>
+
+<li>7-4　アナログ感のあるカフェのチラシ</li>
+
+</ul>
+
+
+<ul class="toc">
+
+<li>付録　効果一覧</li>
+
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="download">ダウンロード</h3>
+<p>本書に掲載しているサンプルファイルをこのページからダウンロードしてご利用いただけます。</p>
+
+<h4>サンプルファイルご利用の前に</h4>
+<p>本書P.7の「サンプルファイルのダウンロード」をお読みください。そこに記載してある「ID」と「パスワード」が必要になります。</p>
+
+<p>＊レッスンファイルについて，<wbr/>一般的な環境においては特に問題のないことを確認しておりますが，<wbr/>万一障害が発生し，<wbr/>その結果いかなる損害が生じたとしても，<wbr/>小社および著者はなんら責任を負うものではありません。また生じた損害に対する一切の補償をいたしかねます。必ずご自身の判断と責任においてご利用ください。</p>
+
+<p>＊レッスンファイルは，<wbr/>著作権法上の保護を受けています。収録されているファイルの一部，<wbr/>あるいは全部について，<wbr/>いかなる方法においても無断で複写，<wbr/>複製，<wbr/>再配布することは禁じられています。</p>
+
+<p>以上のことをご確認，<wbr/>ご了承のうえ，<wbr/>レッスンファイルをご利用お願いいたします。</p>
+<ol>
+<li>下の枠内に「ID」と「パスワード」を入力してください。本書7ページに記載されている「ID」を「ID」欄に，<wbr/>「パスワード」を「パスワード」欄にそれぞれ入力してください。</li>
+<li>「ダウンロード」をクリックしてください。</li>
+</ol>
+
+<style>p.error{color:red;font-weight:bold;position:absolute;margin-top:1em}.download-account{display:block;padding:1em;margin-top:1em;border:1px solid #E5E5E5;margin-bottom:1em}.download-account p{margin:5px 0}.download-account .filename{font-size:14px;color:#888;text-align:right;margin-bottom:-5px}.download-account label{display:block;text-indent:0;width:5em;float:left;margin-right:1em;vertical-align:middle}.download-account input{-webkit-appearance:none;border:1px solid #BBB;font-size:16px;padding:5px;border-radius:4px;width:10em}.download-account input[type="submit"]{display:block;width:10.5em;background:#08F;color:white;font-weight:bold;border:1px #04D solid;float:right;margin-top:-70px;line-height:53px;-webkit-box-sizing:border-box;box-sizing:border-box}.download-account input[type="submit"]:hover{background:#04D}.mobile .download-account label{float:none}.mobile .download-account input:not([type="submit"]){width:auto}.mobile .download-account input[type="submit"]{float:none;margin-top:15px}</style><form action="#support" method="post" class="download-account ukc18e5f1d16a20fe0cf714cb5a2c7eace"><p><label>ID</label><input type="text" name="u" required></p><p><label>パスワード</label><input type="password" name="p" required></p><p><input type="submit" value="ダウンロード"><input type="hidden" name="t" value="1641205905"></p><p class="filename">sample_files.zip（80MB）</p><input type="hidden" name="fn" value="sample_files.zip"></form><script defer>(function(){document.querySelector('.ukc18e5f1d16a20fe0cf714cb5a2c7eace input[type="submit"]').addEventListener('click',function(e){document.querySelector('.ukc18e5f1d16a20fe0cf714cb5a2c7eace').submit();});}());</script>
+<h3 id="errata">正誤表</h3>
+<p>本書の以下の部分に誤りがありました。ここに訂正するとともに，<wbr/>ご迷惑をおかけしたことを深くお詫び申し上げます。</p>
+<div align="right"><p>（2021年9月10日最終更新）</p></div>
+<!--
+※古い更新分はこの下に，<wbr/>追加分は上にもっていくようにする
+<div class="partition-block"><p>（以下2021年9月10日更新）</p></div>
+-->
+
+
+<h4>P.106　ブラシを使ってデジタル風数字を作る　手順8　［パスのオフセット］</h4>
+<p>この操作で間違いはありませんが，<wbr/>オフセットが正常に適用されないことがあるようです。Illustratorのバグと思われますが，<wbr/>その際は以下の操作を試してみてください。<br />
+［アピアランス］パネルで「線」にかけたオフセットをドラッグして，<wbr/>「線」や「塗り」の外，<wbr/>一番下に移動させてください。パス全体にオフセットが適用されます。その後，<wbr/>再びオフセットをドラッグして戻し「線」に適用すると，<wbr/>正常になる可能性があります。</p>
+
+<h4>P.117　スウォッチパネルの活用　手順5　3行目</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+数値を「C:50% M:50%」に
+</td></tr><tr><th>正</th><td>
+数値を「C:50% M:<strong>100%</strong>」に
+</td></tr></tbody></table>
+
+
+
+
+<div class="partition-block"><p>（以下2021年8月16日更新）</p></div>
+<h4>P.075　POINT 自由変形ツールの操作　図の右列下から2番目<br />
+「高さや幅など一部を維持したまま変形」のショートカットキー</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+＋option ＋Shift
+</td></tr><tr><th>正</th><td>
+＋<strong>command</strong> ＋Shift
+</td></tr></tbody></table>
+
+
+
+
+
+<div class="partition-block"><p>（以下2021年4月19日更新）</p></div>
+<h4>P.043　STEP 02 ナイフツール　手順3</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+破線の下絵に沿って，<wbr/>［長方形］ツールの上を，<wbr/>
+</td></tr><tr><th>正</th><td>
+破線の下絵に沿って，<strong>［長方形］</strong>の上を，<wbr/>
+</td></tr></tbody></table>
+<p>「ツール」が不要でした。</p>
+
+<h4>P.048　STEP 03 連結ツールその2　本文4行目</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+この他にも，<wbr/>多角形，<wbr/>星型星形などでも
+</td></tr><tr><th>正</th><td>
+この他にも，<wbr/>多角形，<strong>星型</strong>などでも
+</td></tr></tbody></table>
+<p>「星形」が不要でした。</p>
+
+
+<h4>P.131　アピアランスの変形効果で泡を表現する　手順2　2行目</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+［オブジェクト］メニューから［変形］を選択して［変形］ダイアログを表示し、
+</td></tr><tr><th>正</th><td>
+［オブジェクト］メニューから［変形］<strong>→［移動］を選択して［移動］</strong>ダイアログを表示し、
+</td></tr></tbody></table>
+
+
+
+
+<h4>P.131　アピアランスの変形効果で泡を表現する　手順4　2行目</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td>
+先ほどと同じように［オブジェクト］→［変形］で，<wbr/>
+</td></tr><tr><th>正</th><td>
+先ほどと同じように［オブジェクト］→［変形］<strong>→［移動］で，</strong>
+</td></tr></tbody></table>
+
+
+
+
+<h4>P.131　アピアランスの変形効果で泡を表現する　手順5</h4>
+<p>すべての円を選択し，<wbr/>［アピアランス］パネルから［新規効果を追加］→［パスの変形］→［変形］を選択します。［変形効果］ダイアログで，<wbr/>（以下略）</p>
+
+<p>この操作で間違いはありませんが，<wbr/>［変形効果］ダイアログが開いたときの［プレビュー］のチェック状態により，<wbr/>うまくランダムに変形されないことがあります。Illustratorのバグと思われますが，<wbr/>その際は以下の③もしくは④の方法で操作してください。</p>
+
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr>
+<td>　</td><td>状態</td><td>最初の操作</td><td>次の操作</td><td>結果</td></tr>
+<tr><td>①</td><td>チェックあり※</td><td>　</td><td>　</td><td>×</td></tr>
+<tr><td>②</td><td>チェックなし</td><td>［プレビュー］にチェック</td><td>設定を変更</td><td>×</td></tr>
+<tr><td>③</td><td>チェックなし</td><td>設定を変更</td><td>［プレビュー］にチェックまたは，<wbr/>なしのまま</td><td>○</td></tr>
+<tr><td>④</td><td>①②③の操作後</td><td>変形を取り消し（⌘＋Z）</td><td>［効果］メニューの［変形を適用］（⌘＋shift＋E）</td><td>○</td></tr>
+</tbody></table>
+<p>※初期設定で［プレビュー］はチェックありですが，<wbr/>一度チェックを外して［OK］すると，<wbr/>次はチェックが外れた状態でダイアログが開きます。</p>
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-12103-7","path":"\/dp\/ebook\/2021\/978-4-297-12103-7","targetId":"978-4-297-12103-7","parent":"\/dp\/genre\/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%BB%E7%B4%A0%E6%9D%90%E9%9B%86","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

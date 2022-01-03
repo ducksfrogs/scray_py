@@ -1,0 +1,494 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>図解即戦力 暗号と認証のしくみと理論がこれ1冊でしっかりわかる教科書 | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="テレビ会議やリモートワークが普及する中，情報を守る暗号や本人確認のための認証技術の重要性が増しています。本書は公開鍵暗号や署名などの理論を基礎から詳しく解説し，TLS1.3やHTTP/3，FIDOなどの新しい技術も紹介します。更にブロックチェーンで注目されている秘密計算，ゼロ知識証明，量子コンピュータなど最先端の話題も扱います。"/>
+  <meta name="keywords" content="光成 滋生電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="図解即戦力 暗号と認証のしくみと理論がこれ1冊でしっかりわかる教科書 | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="テレビ会議やリモートワークが普及する中，情報を守る暗号や本人確認のための認証技術の重要性が増しています。本書は公開鍵暗号や署名などの理論を基礎から詳しく解説し，TLS1.3やHTTP/3，FIDOなどの新しい技術も紹介します。更にブロックチェーンで注目されている秘密計算，ゼロ知識証明，量子コンピュータなど最先端の話題も扱います。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-12308-6"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-12308-6.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/%E5%9B%B3%E8%A7%A3%E5%8D%B3%E6%88%A6%E5%8A%9B">図解即戦力</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">図解即戦力<br>暗号と認証のしくみと理論がこれ<wbr>1<wbr>冊でしっかりわかる教科書</h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-12308-6.jpg" alt="図解即戦力 暗号と認証のしくみと理論がこれ1冊でしっかりわかる教科書"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">光成滋生　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-09-17">2021年9月17日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-10-06">2021年10月6日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2021/978-4-297-12307-9" target="_blank">2021年9月24日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,680円 <a id="pid403336" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">312</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-12308-6" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-12308-6" data-text="図解即戦力 暗号と認証のしくみと理論がこれ1冊でしっかりわかる教科書 #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-12308-6" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-12308-6" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>テレビ会議やリモートワークが普及する中，<wbr/>情報を守る暗号や本人確認のための認証技術の重要性が増しています。本書は公開鍵暗号や署名などの理論を基礎から詳しく解説し，<wbr/>TLS1.3やHTTP/3，<wbr/>FIDOなどの新しい技術も紹介します。更にブロックチェーンで注目されている秘密計算，<wbr/>ゼロ知識証明，<wbr/>量子コンピュータなど最先端の話題も扱います。</p><h3>こんな方におすすめ</h3>
+<ul><li>暗号と認証の基礎を学習したい人</li><li>Web担当者やセキュリティ担当者など</li></ul>
+<aside class="author"><h3>光成 滋生</h3><p>サイボウズ・<wbr/>ラボで暗号とセキュリティに関するR&amp;Dに従事。<br />
+ペアリング暗号やBLS署名ライブラリ，<wbr/>JITアセンブラXbyakを開発し，<wbr/>Ethereumなど多数のブロックチェーンプロジェクトやIntelの深層学習ライブラリに採用されている。<br />
+またスーパーコンピュータ富岳の深層学習ライブラリの開発にも関わる。<br />
+2004年IPA未踏スーパークリエータ，<wbr/>2005年情報化月間推進会議議長表彰，<wbr/>2010年電子情報通信学会論文賞，<wbr/>2015年CODE BLUE登壇，<wbr/>Microsoft MVP（2015～2021）など。<br />
+著書に『応用数理ハンドブック』 （朝倉書店：楕円曲線暗号とペアリング暗号の項目担当），<wbr/>『クラウドを支えるこれからの暗号技術』（秀和システム），<wbr/>『パターン認識と機械学習の学習普及版』（暗黒通信団）などがある。</p></aside><section id="sample"><h2>サンプル</h2><ul class="pdf"><li><a href="https://image.gihyo.co.jp/assets/files/book/2021/978-4-297-12307-9/9784297123079-01.pdf" target="_blank">サンプルPDFファイル1</a>（1,055KB）</li></ul>
+</section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="42808">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>1章　暗号の基礎知識</h3>
+<ul class="toc">
+<li>01	情報セキュリティ<ul class="toc">
+	<li>　情報セキュリティの三要素</li>
+	<li>　情報セキュリティと暗号技術</li>
+	<li>　利便性とコスト</li>
+	<li>　追加された要件</li></ul></li>
+<li>02	暗号<ul class="toc">
+	<li>　暗号とは</li>
+	<li>　よい暗号と使い方</li>
+	<li>　暗号の動向を知る</li></ul></li>
+<li>03	認証<ul class="toc">
+	<li>　パスワードによる認証</li>
+	<li>　パスワード攻撃者の能力</li>
+	<li>　パスワードの攻撃手法</li>
+	<li>　認証の分類</li>
+	<li>　認可</li>
+	<li>　OAuth</li></ul></li>
+<li>04	古典暗号<ul class="toc">
+	<li>　シフト暗号</li>
+	<li>　換字式暗号</li>
+	<li>　符号化</li></ul></li>
+
+</ul>
+<h3>2章　アルゴリズムと安全性</h3>
+<ul class="toc">
+<li>05	アルゴリズム<ul class="toc">
+	<li>　アルゴリズムとは</li>
+	<li>　アルゴリズムのステップ数</li>
+	<li>　効率のよい探索</li></ul></li>
+<li>06	安全性<ul class="toc">
+	<li>　O記法</li>
+	<li>　ビットと表現可能な範囲</li>
+	<li>　セキュリティパラメータ</li></ul></li>
+<li>07	暗号技術の危殆化<ul class="toc">
+	<li>　コンピュータの性能向上と暗号の安全性</li>
+	<li>　運用監視暗号リストと推奨暗号リスト</li>
+	<li>　危殆化の問題点</li></ul></li>
+
+
+</ul>
+<h3>3章　共通鍵暗号</h3>
+<ul class="toc">
+<li>08	共通鍵暗号<ul class="toc">
+	<li>　共通鍵暗号とは</li>
+	<li>　共通鍵暗号に求められる安全性</li>
+	<li>　共通鍵暗号の種類</li></ul></li>
+<li>09	ビットと排他的論理和<ul class="toc">
+	<li>　1ビットの基本変換</li>
+	<li>　論理積と論理和</li>
+	<li>　排他的論理和</li>
+	<li>　交換法則と結合法則</li>
+	<li>　排他的論理和の重要な性質</li></ul></li>
+<li>10	乱数<ul class="toc">
+	<li>　真の乱数</li>
+	<li>　コンピュータで扱う乱数</li>
+	<li>　擬似乱数</li>
+	<li>　擬似ランダム関数</li></ul></li>
+<li>11	ワンタイムパッド<ul class="toc">
+	<li>　排他的論理和とワンタイムパッド</li>
+	<li>　情報理論的安全性</li>
+	<li>　ワンタイムパッドの欠点</li></ul></li>
+<li>12	ストリーム暗号<ul class="toc">
+	<li>　ワンタイムパッドとストリーム暗号</li>
+	<li>　計算量的安全性</li>
+	<li>　ストリーム暗号の歴史</li>
+	<li>　ナンス</li>
+	<li>　ChaCha20</li></ul></li>
+<li>13	ブロック暗号<ul class="toc">
+	<li>　ブロック暗号</li>
+	<li>　ブロック暗号の歴史</li>
+	<li>　AESの概要</li>
+	<li>　AESの初期設定</li>
+	<li>　ラウンド関数</li>
+	<li>　AES-NI</li></ul></li>
+<li>14	確率的アルゴリズム<ul class="toc">
+	<li>　いつでも同じ暗号文は危険</li>
+	<li>　確率的アルゴリズム</li></ul></li>
+<li>15	暗号化モード<ul class="toc">
+	<li>　ECB（Electronic CodeBook）モード</li>
+	<li>　CBC（Cipher Block Chaining）モード</li>
+	<li>　CTR（CounTeR）モード</li>
+	<li>　CBCモードとCTRモードの比較</li>
+	<li>　CBCモードに対する攻撃</li></ul></li>
+<li>16	ディスクの暗号化<ul class="toc">
+	<li>　TPM</li>
+	<li>　ディスクの構造</li>
+	<li>　XTS-AESの概要</li>
+	<li>　XTS-AESの暗号化</li>
+	<li>　XTS-AESの安全性</li>
+	<li>　自己暗号化ドライブ</li></ul></li>
+<li>17	暗号文の改竄とリプレイ攻撃<ul class="toc">
+	<li>　暗号文の改竄</li>
+	<li>　リプレイ攻撃</li></ul></li>
+
+
+</ul>
+<h3>4章　公開鍵暗号</h3>
+<ul class="toc">
+<li>18	鍵共有<ul class="toc">
+	<li>　現代暗号の始まり</li>
+	<li>　ベキ乗</li>
+	<li>　DH鍵共有</li>
+	<li>　DH鍵共有の安全性</li>
+	<li>　DLPと一方向性関数</li>
+	<li>　ベキ乗の計算方法</li></ul></li>
+<li>19	有限体と拡大体<ul class="toc">
+	<li>　有限体</li>
+	<li>　拡大体</li></ul></li>
+<li>20	公開鍵暗号<ul class="toc">
+	<li>　公開鍵暗号の概念</li>
+	<li>　共通鍵暗号との違い</li>
+	<li>　強秘匿性と頑強性</li>
+	<li>　ハイブリッド暗号</li></ul></li>
+<li>21	RSA暗号<ul class="toc">
+	<li>　RSA暗号の具体例</li>
+	<li>　RSA暗号の作り方</li>
+	<li>　RSA暗号の安全性</li></ul></li>
+<li>22	OpenSSLによるRSA暗号の鍵の作り方<ul class="toc">
+	<li>　OpenSSL</li>
+	<li>　RSA暗号の秘密鍵と公開鍵の作成方法</li>
+	<li>　秘密鍵と公開鍵の確認方法</li>
+	<li>　Pythonによる鍵の設定方法</li>
+	<li>　PythonによるRSA暗号の動作確認</li></ul></li>
+<li>23	楕円曲線暗号<ul class="toc">
+	<li>　楕円曲線</li>
+	<li>　楕円曲線上の演算</li>
+	<li>　楕円曲線の加算公式</li>
+	<li>　ECDHPとECDLP</li>
+	<li>　ECDH鍵共有</li>
+	<li>　楕円曲線暗号の特長</li></ul></li>
+<li>24	中間者攻撃<ul class="toc">
+	<li>　ECDH鍵共有への中間者攻撃</li>
+	<li>　公開鍵暗号への中間者攻撃</li></ul></li>
+
+</ul>
+<h3>5章　認証</h3>
+<ul class="toc">
+<li>25	ハッシュ関数<ul class="toc">
+	<li>　指紋とハッシュ関数</li>
+	<li>　ハッシュ関数とは</li>
+	<li>　誕生日パラドックス</li>
+	<li>　ハッシュ関数の歴史</li>
+	<li>　パスワードとハッシュ関数</li>
+	<li>　パスワードの安全な保存方法</li>
+	<li>　ファイルのパスワード暗号化</li></ul></li>
+<li>26	SHA-2とSHA-3<ul class="toc">
+	<li>　SHA-2</li>
+	<li>　SHA-3</li>
+	<li>　安全性</li></ul></li>
+<li>27	SHA-1の衝突<ul class="toc">
+	<li>　SHA-1への攻撃の歴史</li>
+	<li>　衝突したPDFとSHA-1のアルゴリズム</li>
+	<li>　衝突困難性の破り方</li>
+	<li>　PDFに2個のJPEGを埋め込む方法</li></ul></li>
+<li>28	メッセージ認証符号<ul class="toc">
+	<li>　MACのアルゴリズム</li>
+	<li>　完全性と秘匿性</li>
+	<li>　MACの安全性</li>
+	<li>　MACの構成法</li></ul></li>
+<li>29	署名<ul class="toc">
+	<li>　紙の署名とデジタル署名</li>
+	<li>　署名のモデル</li>
+	<li>　署名の安全性</li>
+	<li>　MACと署名</li>
+	<li>　ECDSA</li>
+	<li>　公開鍵認証</li>
+	<li>　FIDO</li></ul></li>
+<li>30	サイドチャネル攻撃<ul class="toc">
+	<li>　電力解析攻撃</li>
+	<li>　コールド・ブート攻撃</li></ul></li>
+<li>31	タイムスタンプ<ul class="toc">
+	<li>　否認防止と署名の失効</li>
+	<li>　ハッシュ値の連鎖によるタイムスタンプ</li>
+	<li>　署名を用いたタイムスタンプ</li>
+	<li>　日本のタイムスタンプ</li></ul></li>
+<li>32	ブロックチェーンとビットコイン<ul class="toc">
+	<li>　ブロックチェーン</li>
+	<li>　ビットコイン</li>
+	<li>　トランザクション</li>
+	<li>　二重送金の防止とマイニング</li></ul></li>
+
+
+</ul>
+<h3>6章　公開鍵基盤</h3>
+<ul class="toc">
+<li>33	公開鍵基盤<ul class="toc">
+	<li>　互いに依存する暗号技術</li>
+	<li>　信用の輪</li>
+	<li>　公開鍵基盤と認証局</li>
+	<li>　フィンガープリント</li></ul></li>
+<li>34	公開鍵証明書の失効<ul class="toc">
+	<li>　証明書失効リスト</li>
+	<li>　CRLの問題点</li>
+	<li>　OCSP</li>
+	<li>　OCSPステープリング</li>
+	<li>　その他の方法</li></ul></li>
+<li>35	公開鍵証明書と電子証明書の発行方法<ul class="toc">
+	<li>　ドメイン名</li>
+	<li>　ドメイン認証</li>
+	<li>　ドメイン認証の問題点</li>
+	<li>　組織認証</li>
+	<li>　拡張認証</li>
+	<li>　署名の電子証明書</li></ul></li>
+<li>36	証明書の透明性<ul class="toc">
+	<li>　問題のある認証局や証明書</li>
+	<li>　証明書の透明性</li></ul></li>
+
+
+</ul>
+<h3>7章　TLS</h3>
+<ul class="toc">
+<li>37	TLS<ul class="toc">
+	<li>　HTTPとHTTPS</li>
+	<li>　SSL/TLSの歴史</li>
+	<li>　TLS 1.3の特長</li>
+	<li>　ハンドシェイクの効率化</li>
+	<li>　暗号化アルゴリズムの整備</li>
+	<li>　新しい鍵導出アルゴリズム</li>
+	<li>　形式手法による安全性検証</li></ul></li>
+<li>38	認証付き暗号<ul class="toc">
+	<li>　秘匿性と完全性</li>
+	<li>　AEADのアルゴリズム</li>
+	<li>　AES-GCM</li>
+	<li>　ChaCha20-Poly1305</li></ul></li>
+<li>39	前方秘匿性<ul class="toc">
+	<li>　盗聴と秘密鍵の漏洩</li>
+	<li>　前方秘匿性</li></ul></li>
+
+
+</ul>
+<h3>8章　ネットワークセキュリティ</h3>
+<ul class="toc">
+<li>40	DNS<ul class="toc">
+	<li>　権威DNSサーバとキャッシュDNSサーバ</li>
+	<li>　キャッシュ・ポイズニング</li>
+	<li>　DNSSEC</li>
+	<li>　パブリックDNSサーバ</li>
+	<li>　DoTとDoH</li>
+	<li>　ESNIとECH</li>
+	<li>　HPKE</li></ul></li>
+<li>41	メール<ul class="toc">
+	<li>　SMTPとPOP3</li>
+	<li>　S/MIME</li>
+	<li>　Webメール</li></ul></li>
+<li>42	VPN<ul class="toc">
+	<li>　インターネットプロトコルスイート</li>
+	<li>　データ構造</li>
+	<li>　LANからインターネットへ</li>
+	<li>　VPN</li>
+	<li>　VPNの種別</li>
+	<li>　IPsec</li></ul></li>
+<li>43	HTTP/3<ul class="toc">
+	<li>　HTTP/2</li>
+	<li>　QUIC</li>
+	<li>　HTTP/3</li></ul></li>
+<li>44	無線LAN<ul class="toc">
+	<li>　無線LANの概要</li>
+	<li>　スプーフィングと認証解除攻撃</li>
+	<li>　WEP</li>
+	<li>　WPA2</li>
+	<li>　KRACK</li>
+	<li>　WPA3</li></ul></li>
+
+
+</ul>
+<h3>9章　高機能な暗号技術</h3>
+<ul class="toc">
+<li>45	準同型暗号<ul class="toc">
+	<li>　準同型</li>
+	<li>　加法準同型暗号</li>
+	<li>　完全準同型暗号</li>
+	<li>　準同型暗号の種類と用途</li></ul></li>
+<li>46	秘密計算<ul class="toc">
+	<li>　MPC</li>
+	<li>　秘密分散</li>
+	<li>　VSSとDKGとBLS署名</li>
+	<li>　3PC</li>
+	<li>　3PCの詳細</li></ul></li>
+<li>47	ゼロ知識証明<ul class="toc">
+	<li>　動機</li>
+	<li>　ゼロ知識証明</li>
+	<li>　ゼロ知識証明の性質</li>
+	<li>　ゼロ知識証明とブロックチェーン</li></ul></li>
+<li>48	量子コンピュータ<ul class="toc">
+	<li>　量子ビットと観測</li>
+	<li>　量子ゲート</li>
+	<li>　CNOTゲートと量子もつれ</li>
+	<li>　量子コンピュータにおける計算</li>
+	<li>　量子超越性</li>
+	<li>　暗号技術に対する影響</li>
+	<li>　量子ゲート方式と量子アニーリング方式</li>
+	<li>　量子鍵配送</li>
+	<li>　耐量子計算機暗号</li></ul></li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="supplement">補足情報</h3>
+<p><div align="right">（2021年9月15日更新）</div></p>
+<h5>著者による本書のサポートページ</h5>
+<ul>
+<li><a href="https://herumi.github.io/anninbon/">https://herumi.github.io/anninbon/</a></li>
+</ul>
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-12308-6","path":"\/dp\/ebook\/2021\/978-4-297-12308-6","targetId":"978-4-297-12308-6","parent":"\/dp\/genre\/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

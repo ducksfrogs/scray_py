@@ -1,0 +1,1273 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>［改訂3版］Zabbix統合監視実践入門 ―障害通知、傾向分析、可視化による省力運用 | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="統合監視ツールZabbixの使い方を，基礎から実際の運用ノウハウまで解説した書籍です。よく使われる監視例はもちろん，大規模なシステム監視についても設定例を挙げながら解説しています。好評を受け改訂を重ねており，今回の改訂では，最新バージョンであるZabbix 4.0に対応しました。追加された新機能の解説はもちろんのこと，既存の記述も今の状況に合わせてブラッシュアップされています。これからZabbixを使いはじめたい方にも，Zabbixをさらに使いこなした方にもお勧めです。"/>
+  <meta name="keywords" content="寺島広大電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="［改訂3版］Zabbix統合監視実践入門 ―障害通知、傾向分析、可視化による省力運用 | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="統合監視ツールZabbixの使い方を，基礎から実際の運用ノウハウまで解説した書籍です。よく使われる監視例はもちろん，大規模なシステム監視についても設定例を挙げながら解説しています。好評を受け改訂を重ねており，今回の改訂では，最新バージョンであるZabbix 4.0に対応しました。追加された新機能の解説はもちろんのこと，既存の記述も今の状況に合わせてブラッシュアップされています。これからZabbixを使いはじめたい方にも，Zabbixをさらに使いこなした方にもお勧めです。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2019/978-4-297-10612-6"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2019/978-4-297-10612-6.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/Software%20Design%20plus">Software Design plus</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">［改訂<wbr>3<wbr>版］<wbr>Zabbix<wbr>統合監視実践入門<br><span class="sub">―障害通知、傾向分析、可視化による省力運用</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2019/978-4-297-10612-6.jpg" alt="［改訂3版］Zabbix統合監視実践入門 ―障害通知、傾向分析、可視化による省力運用"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">寺島広大　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2019-07-10">2019年7月10日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2019-07-10">2019年7月10日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2019/978-4-297-10611-9" target="_blank">2019年7月10日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">3,680円 <a id="pid402564" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">592</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2019/978-4-297-10612-6" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2019/978-4-297-10612-6" data-text="［改訂3版］Zabbix統合監視実践入門 ―障害通知、傾向分析、可視化による省力運用 #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2019/978-4-297-10612-6" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2019/978-4-297-10612-6" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>統合監視ツールZabbixの使い方を，<wbr/>基礎から実際の運用ノウハウまで解説した書籍です。よく使われる監視例はもちろん，<wbr/>大規模なシステム監視についても設定例を挙げながら解説しています。好評を受け改訂を重ねており，<wbr/>今回の改訂では，<wbr/>最新バージョンであるZabbix 4.0に対応しました。追加された新機能の解説はもちろんのこと，<wbr/>既存の記述も今の状況に合わせてブラッシュアップされています。これからZabbixを使いはじめたい方にも，<wbr/>Zabbixをさらに使いこなした方にもお勧めです。</p><h3>こんな方におすすめ</h3>
+<ul><li>インフラの管理を効率化したいインフラエンジニア</li></ul>
+<aside class="author"><h3>寺島広大（てらしまこうだい）</h3><p>Zabbix Japan代表。20歳の頃にLinuxに触れたのがきっかけでオープンソースに興味を持つ。2005年にZABBIX-JPのコミュニティサイトを作成し，<wbr/>2010年に書籍を出版，<wbr/>2011年にはZabbix本社へ転職し世界中のZabbixサポートを行いつつ，<wbr/>日本向けの公式トレーニングやパッケージ作成を担当する。2012年に日本支社であるZabbix Japanを設立し代表に就任。</p></aside><section id="sample"><h2>サンプル</h2><ul class="pdf"><li><a href="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/9784297106119-01.pdf" target="_blank">サンプルPDFファイル1</a>（208KB）</li></ul>
+<a href="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/9784297106119-01.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/thumb/TH400_9784297106119-01.png,https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/9784297106119-01.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/9784297106119-02.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/thumb/TH400_9784297106119-02.png,https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/9784297106119-02.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/9784297106119-03.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/thumb/TH400_9784297106119-03.png,https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/9784297106119-03.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/9784297106119-04.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/thumb/TH400_9784297106119-04.png,https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/9784297106119-04.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/9784297106119-05.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/thumb/TH400_9784297106119-05.png,https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10611-9/9784297106119-05.png" width="400" height="533" alt="sample"/></a></section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="39570">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><ul class="toc">
+<li>改訂版に寄せて</li>
+<li>本書に寄せて</li>
+<li>はじめに</li>
+</ul>
+<h3>第1章：統合監視ソフトウェアZabbixとは</h3>
+
+<h4>1.1　現代の企業活動とITシステム</h4>
+
+
+<h5>1.1.1　ITシステムの運用管理の重要性</h5>
+<h5>1.1.2　複雑化するITシステム</h5>
+
+<h4>1.2　システム監視とは</h4>
+
+<h5>1.2.1　稼働監視</h5>
+<h5>1.2.2　リソース監視</h5>
+<h5>1.2.3　アプリケーション監視</h5>
+
+<h4>1.3　統合監視ソフトウェアとは</h4>
+
+
+<h5>1.3.1　統合監視ソフトウェアの機能</h5>
+<h5>1.3.2　統合監視ソフトウェアを利用するメリット</h5>
+
+<h4>1.4　統合監視ソフトウェアZabbixとは</h4>
+
+
+<h5>1.4.1　海外／日本での実績と開発形態</h5>
+<h5>1.4.2　Zabbixの主な特徴と機能</h5>
+
+<h3>第2章：Zabbixのインストール</h3>
+
+<h4>2.1　インストールの準備</h4>
+
+
+<h5>2.1.1　Zabbixの動作環境</h5>
+<ul class="toc">
+<li>Zabbixサーバー</li>
+<li>Zabbixエージェント</li>
+<li>SNMP対応機器</li>
+<li>Zabbixエージェント未導入サーバー</li>
+<li>データベース</li>
+<li>Webインターフェース</li>
+</ul>
+<h5>2.1.2　Zabbixのバージョンと開発ポリシー</h5>
+<h5>2.1.3　システム要件</h5>
+<ul class="toc">
+<li>対応OS</li>
+<li>Zabbixサーバーのシステム要件</li>
+<li>Zabbixエージェントのシステム要件</li>
+<li>データベースのシステム要件</li>
+<li>Webインターフェースのシステム要件</li>
+<li>Webブラウザのシステム要件</li>
+</ul>
+<h5>2.1.4　解説に利用するインストール環境</h5>
+<ul class="toc">
+<li>OS</li>
+<li>データベース</li>
+<li>Webサーバー</li>
+<li>Zabbixサーバー／エージェント</li>
+</ul>
+<h4>2.2　Zabbixのインストール</h4>
+
+
+<h5>2.2.1　Zabbix社のyumリポジトリの登録方法</h5>
+<ul class="toc">
+<li>RPMパッケージをダウンロードしてインストールする場合</li>
+</ul>
+<h5>2.2.2　Zabbixサーバーのインストール</h5>
+<ul class="toc">
+<li>データベースのインストール</li>
+<li>時刻同期クライアントのインストールと設定</li>
+<li>ZabbixサーバーのRPMをインストール</li>
+<li>データベースへの初期データのインポート</li>
+<li>Zabbixサーバーの設定と起動</li>
+</ul>
+<h5>2.2.3　Webインターフェースのインストール</h5>
+<ul class="toc">
+<li>WebインターフェースのRPMをインストール</li>
+<li>Webインターフェースのインストーラを実行</li>
+</ul>
+<h5>2.2.4　Zabbixエージェントのインストール</h5>
+<ul class="toc">
+<li>Linuxへのインストール</li>
+<li>Windowsへのインストール</li><ul class="toc">
+	<li>[Column]ZabbixエージェントをインストールしたOSの時刻同期</li></ul></li>
+</ul>
+<h5>2.2.5　インストールされるバイナリと設定ファイル</h5>
+<ul class="toc">
+<li>Zabbixサーバー</li>
+<li>Webインターフェース</li>
+<li>Zabbixエージェント（Linux）</li>
+<li>Zabbixエージェント（Windows）</li>
+</ul>
+<h3>第3章：クイックスタートガイド</h3>
+
+<h4>3.1　Webインターフェースの操作</h4>
+
+
+<h5>3.1.1　Webインターフェースへのログイン</h5>
+<h5>3.1.2　メニューの日本語化</h5>
+<h5>3.1.3　基本的な操作方法</h5>
+<ul class="toc">
+<li>サブメニューの操作</li>
+<li>画面最上部のメニュー</li>
+</ul>
+<h4>3.2　Zabbixの監視設定の全体像と流れ</h4>
+
+
+<h5>3.2.1　Zabbixの監視設定の全体像</h5>
+<h5>3.2.2　Zabbixの監視設定の流れ</h5>
+<h5>3.2.3　ステータス情報収集，障害検知／通知の流れ</h5>
+<h4>3.3　Zabbixの基本的な監視設定と監視データの表示</h4>
+
+
+<h5>3.3.1　インストール直後のZabbixサーバーの状態</h5>
+<h5>3.3.2　登録されているZabbix serverホストの確認</h5>
+<h5>3.3.3　アイテムの収集データを表示</h5>
+<ul class="toc">
+<li>最新データ画面</li>
+<li>概要画面</li>
+</ul>
+<h5>3.3.4　障害の表示</h5>
+<ul class="toc">
+<li>障害画面</li>
+<li>概要画面</li>
+</ul>
+<h5>3.3.5　アクションの状態と設定</h5>
+<h5>3.3.6　メディアタイプの設定</h5>
+<h5>3.3.7　ユーザーの設定</h5>
+<h5>3.3.8　障害の発生と障害通知メールの確認</h5>
+<ul class="toc">
+<li>障害の発生</li>
+<li>アイテムで収集したデータの確認</li>
+<li>トリガーのステータスの変化と障害イベントの生成</li>
+<li>アクションの実行</li>
+</ul>
+<h5>3.3.9　グラフの表示</h5>
+<h5>3.3.10　マップの表示</h5>
+<h5>3.3.11　スクリーンの表示</h5>
+<h5>3.3.12　ダッシュボードの利用</h5>
+<h5>3.3.13　Webインターフェースのアラート表示</h5>
+
+<h4>3.4　監視設定</h4>
+
+
+<h5>3.4.1　監視設定の流れ</h5>
+<h5>3.4.2　監視設定画面の操作</h5>
+
+<h3>第4章：監視対象と監視項目の設定</h3>
+
+<h4>4.1　ホストの設定</h4>
+
+
+<h5>4.1.1　設定されているホストの一覧画面</h5>
+<h5>4.1.2　ホストの設定項目</h5>
+<ul class="toc">
+<li>ホストタブ</li>
+<li>テンプレートタブ</li>
+<li>IPMIタブ</li>
+<li>マクロタブ</li>
+<li>ホストインベントリタブ</li>
+<li>暗号化タブ</li>
+</ul>
+<h4>4.2　ホストグループの設定</h4>
+
+
+<h5>4.2.1　設定されているホストグループの一覧画面</h5>
+<h5>4.2.2　ホストグループの設定項目</h5>
+
+<h4>4.3　アイテムの設定</h4>
+
+
+<h5>4.3.1　設定されているアイテムの一覧画面</h5>
+<h5>4.3.2　タイプ共通のアイテムの設定項目</h5>
+<ul class="toc"><li><ul class="toc">
+	<li>[Column]アイテム名のマクロ</li></ul></li>
+</ul>
+<h5>4.3.3　監視間隔のカスタマイズ</h5>
+<ul class="toc">
+<li>例外設定</li>
+<li>定期設定</li><ul class="toc">
+	<li>例1</li>
+	<li>例2</li>
+	<li>例3</li></ul></li>
+<li>監視間隔のカスタマイズの注意点</li>
+</ul>
+<h5>4.3.4　保存前処理タブ</h5>
+<ul class="toc">
+<li>テキスト系の保存前処理</li>
+<li>構造化データ系の保存前処理</li>
+<li>計算</li>
+<li>変化</li>
+<li>数値変換</li>
+</ul>
+<h5>4.3.5　タイプ別のアイテム設定</h5>
+<ul class="toc">
+<li>Zabbixエージェント</li>
+<li>Zabbixエージェント（アクティブ）</li>
+<li>シンプルチェック</li>
+<li>SNMPv1/v2/v3エージェント</li><ul class="toc">
+	<li>SNMPの一括取得</li>
+	<li>一般的なMIB値の変換機能</li>
+	<li>ダイナミックインデックスの使用</li></ul></li>
+<li>Zabbixトラッパー</li><ul class="toc">
+	<li>zabbix_senderによるデータ受信</li></ul></li>
+<li>Zabbixインターナル</li>
+<li>Zabbixアグリゲート</li>
+<li>外部チェック</li><ul class="toc">
+	<li>外部チェックによるNTPサーバーの稼働監視</li></ul></li>
+<li>データベースモニタ</li><ul class="toc">
+	<li>ODBCの設定</li>
+	<li>データベース監視によるMy­SQLの稼働監視</li></ul></li>
+<li>IPMIエージェント</li><ul class="toc">
+	<li>IPMIによるサーバーのハードウェア監視</li>
+	<li>[Column]IPMI</li></ul></li>
+<li>SNMPトラップ</li><ul class="toc">
+	<li>[Column]SNMPトラップ整形ツール</li>
+	<li>zabbix_trap_receiver.plのインストール</li>
+	<li>snmptrapdの設定</li>
+	<li>SNMPトラップの受信確認</li>
+	<li>Zabbixサーバーの設定</li>
+	<li>SNMPトラップ監視のホストとアイテム設定</li>
+	<li>ホストの設定</li>
+	<li>アイテムの設定</li></ul></li>
+<li>SSHエージェント</li><ul class="toc">
+	<li>SSHエージェントを使用したエージェントレス監視例</li></ul></li>
+<li>TELNETエージェント</li>
+<li>JMXエージェント</li><ul class="toc">
+	<li>Zabbixを利用したJavaアプリケーションの監視</li>
+	<li>Zabbix Java Gatewayのインストールと設定</li>
+	<li>監視対象のJava VMの設定</li>
+	<li>Zabbixの監視設定</li>
+	<li>JMXで監視できる項目の調査</li></ul></li>
+<li>HTTPエージェント</li>
+<li>依存アイテム</li>
+</ul>
+<h4>4.4　ユーザーパラメータを使用した独自監視項目の追加</h4>
+
+
+<h5>4.4.1　ユーザーパラメータの設定</h5>
+<ul class="toc">
+<li>Zabbixエージェントの設定</li>
+<li>アイテムの設定</li>
+</ul>
+<h5>4.4.2　ユーザーパラメータの設定例</h5>
+<ul class="toc">
+<li>簡単なユーザーパラメータの設定例</li>
+<li>いくつかのコマンドを組み合わせたユーザーパラメータの設定例</li>
+<li>引数付きのユーザーパラメータの設定例</li>
+</ul>
+<h4>4.5　ローダブルモジュール</h4>
+
+
+<h5>4.5.1　ローダブルモジュールを利用した監視機能の拡張</h5>
+<h5>4.5.2　ローダブルモジュールを利用したヒストリデータの活用</h5>
+
+<h4>4.6　アプリケーションの設定</h4>
+
+
+<h5>4.6.1　アプリケーションの設定項目</h5>
+
+<h4>4.7　Web監視</h4>
+
+
+<h5>4.7.1　設定されているWeb監視の一覧画面</h5>
+<h5>4.7.2　Web監視の設定項目</h5>
+<ul class="toc">
+<li>シナリオタブの設定項目</li>
+<li>ステップタブの設定項目</li><ul class="toc">
+	<li>シナリオのステップの設定項目</li></ul></li>
+<li>認証タブの設定項目</li>
+</ul>
+<h5>4.7.3　Web監視データの表示</h5>
+<h5>4.7.4　Web監視で設定されるアイテム</h5>
+<h5>4.7.5　Web監視の障害検知</h5>
+<h5>4.7.6　Web監視のPOSTデータの調査方法</h5>
+
+<h4>4.8　ログ監視とイベントログ監視</h4>
+
+
+<h5>4.8.1　テキストログの監視設定</h5>
+<ul class="toc">
+<li>テキストログのアイテム設定</li>
+<li>テキストログのトリガー設定</li><ul class="toc">
+	<li>基本的なトリガーの設定例</li>
+	<li>復旧条件式を利用した正常判定</li>
+	<li>タグを利用した特定のアプリケーションの判定</li></ul></li>
+<li>outputパラメータを利用したログからの文字列抜き出し</li>
+</ul>
+<h5>4.8.2　Windowsイベントログの監視</h5>
+<ul class="toc">
+<li>Windowsイベントログのトリガー設定</li>
+</ul>
+<h5>4.8.3　正規表現の利用</h5>
+<ul class="toc">
+<li>一般的な正規表現</li><ul class="toc">
+	<li>[Column]Zabbixで利用できる正規表現</li>
+	<li>[Column]正規表現の「*」</li></ul></li>
+<li>ユーザー定義の正規表現設定</li>
+</ul>
+<h5>4.8.4　ログ監視の注意点</h5>
+<ul class="toc"><li><ul class="toc">
+	<li>[Column]ログ監視とnodataトリガー関数</li></ul></li>
+</ul>
+<h4>4.9　ホストインベントリの自動設定</h4>
+
+
+<h3>第5章：障害検知と障害通知の設定</h3>
+
+<h4>5.1　トリガーの設定</h4>
+
+
+<h5>5.1.1　設定されているトリガーの一覧画面</h5>
+<h5>5.1.2　トリガーの設定</h5>
+<ul class="toc">
+<li>トリガータブ</li>
+<li>依存関係タブ</li>
+</ul>
+<h5>5.1.3　トリガー条件式の設定例</h5>
+<ul class="toc">
+<li>死活監視の応答がなければ障害として検知する</li>
+<li>ポートの応答がなければ障害として検知する</li>
+<li>プロセスが稼働していなければ障害として検知する</li>
+<li>ファイルが更新された場合に障害として検知する</li>
+<li>Windowsサービスが稼働していなければ障害として検知する</li>
+<li>直近1時間以内に4回以上ロードアベレージが10を超えた場合に障害として検知する</li>
+<li>過去30分間のCPU使用率の平均が高い場合に障害として検知する</li>
+<li>二重化されているSMTPサーバーの双方が停止したら障害として検知する</li>
+</ul>
+<h5>5.1.4　トリガーの状態の変化とイベントの生成</h5>
+<h5>5.1.5　トリガーの判定動作とValueCacheのしくみ</h5>
+<h5>5.1.6　予測トリガー関数</h5>
+<h5>5.1.7　イベントの相関関係</h5>
+<ul class="toc">
+<li>相関関係タブ</li>
+<li>実行内容</li>
+</ul>
+<h4>5.2　アクションの設定</h4>
+<ul class="toc"><li><ul class="toc">
+	<li>[Column]日本で利用できるZabbixの通知機能</li></ul></li>
+</ul>
+<h5>5.2.1　設定されているアクションの一覧画面</h5>
+<h5>5.2.2　アクションの設定</h5>
+<ul class="toc">
+<li>アクションタブ</li><ul class="toc">
+	<li>[Column]アクション実行条件に設定できたトリガーのステータス条件</li></ul></li>
+<li>実行内容タブ</li><ul class="toc">
+	<li>[Column]メンテナンス中のアクション実行</li>
+	<li>［メッセージの送信］を選択した場合の設定項目</li>
+	<li>［リモートコマンド］を選択した場合の設定項目</li>
+	<li>[Column]プロキシ経由のリモートコマンド</li>
+	<li>[Column]Zabbixエージェント，サーバー，プロキシでコマンド実行する場合の注意点</li></ul></li>
+<li>復旧時の実行内容タブと更新時の実行内容タブ</li>
+</ul>
+<h5>5.2.3　エスカレーションを利用したアクションの設定例</h5>
+<ul class="toc">
+<li>アクションタブ</li>
+<li>実行内容タブ</li>
+</ul>
+<h5>5.2.4　内部イベントによるアクション</h5>
+
+<h3>第6章：グラフィカル表示の設定</h3>
+
+<h4>6.1　グラフの設定</h4>
+
+
+<h5>6.1.1　設定されているグラフの一覧</h5>
+<h5>6.1.2　グラフの設定</h5>
+<ul class="toc">
+<li>折線グラフと積算グラフ</li><ul class="toc">
+	<li>グラフに追加したアイテムの詳細設定</li></ul></li>
+<li>円グラフと分解円グラフ</li><ul class="toc">
+	<li>グラフに追加したアイテムの詳細設定</li></ul></li>
+</ul>
+<h4>6.2　マップの設定</h4>
+
+
+<h5>6.2.1　設定されているマップの一覧</h5>
+<h5>6.2.2　マップの設定</h5>
+<ul class="toc">
+<li>マップのプロパティ設定</li>
+<li>マップの詳細設定</li><ul class="toc">
+	<li>アイコンの設定</li>
+	<li>リンクの詳細設定</li></ul></li>
+</ul>
+<h5>6.2.3　アイコンの自動描画</h5>
+<h5>6.2.4　アイコンの自動選択</h5>
+<ul class="toc">
+<li>アイコンのマッピング設定</li>
+<li>マップの基本設定</li>
+<li>マップの詳細設定</li>
+</ul>
+<h5>6.2.5　マップのインポートとエクスポート</h5>
+
+<h4>6.3　スクリーンの設定</h4>
+
+
+<h5>6.3.1　設定されているスクリーンの一覧画面</h5>
+<h5>6.3.2　スクリーンの設定</h5>
+<ul class="toc">
+<li>スクリーンのプロパティ設定</li>
+<li>スクリーンの詳細設定</li>
+</ul>
+<h5>6.3.3　ダイナミックスクリーンの利用</h5>
+<h5>6.3.4　スクリーンのインポートとエクスポート</h5>
+<h5>6.3.5　スライドショーの利用</h5>
+<ul class="toc">
+<li>設定されているスライドショーの一覧画面</li>
+<li>スライドショーの設定</li>
+</ul>
+<h5>6.3.6　ホストスクリーンの利用</h5>
+
+<h4>6.4　ダッシュボード</h4>
+
+
+<h5>6.4.1　設定されているダッシュボードの一覧画面</h5>
+<h5>6.4.2　ダッシュボードの設定</h5>
+
+<h4>6.5　ダッシュボード／マップ／スクリーン／スライドショーの共有</h4>
+
+
+<h3>第7章：ローレベルディスカバリとVMware仮想環境の監視</h3>
+
+<h4>7.1　ローレベルディスカバリの利用</h4>
+
+
+<h5>7.1.1　ローレベルディスカバリの動作</h5>
+<h5>7.1.2　設定されているローレベルディスカバリの一覧画面</h5>
+<h5>7.1.3　ディスカバリルールの設定</h5>
+<ul class="toc"></li><ul class="toc">
+	<li>ディスカバリルールタブ</li>
+	<li>フィルタータブ</li></ul></li>
+</ul>
+<h5>7.1.4　プロトタイプの設定</h5>
+<h5>7.1.5　具体的なローレベルディスカバリの設定</h5>
+<ul class="toc">
+<li>Zabbixエージェントを利用したディスクパーティションの監視</li>
+<li>SNMPエージェントを利用したネットワークスイッチのインターフェース監視</li>
+<li>Zabbixエージェントを利用したWindowsサービスの監視</li>
+<li>データベースモニタを利用したデータベース内のステータス値の監視</li>
+</ul>
+<h5>7.1.6　ローレベルディスカバリの応用</h5>
+<ul class="toc">
+<li>/home以下の各ユーザーごとのディレクトリサイズを監視する</li><ul class="toc">
+	<li>ユーザーパラメータのスクリプト</li>
+	<li>zabbix_agentd.confの設定</li>
+	<li>ローレベルディスカバリルールの設定</li>
+	<li>アイテムとトリガーのプロトタイプ</li></ul></li>
+</ul>
+<h4>7.2　VMware仮想環境の監視</h4>
+
+
+<h5>7.2.1　VMware監視機能の概要</h5>
+<h5>7.2.2　VMware監視機能の設定</h5>
+<h5>7.2.3　VMware監視機能の動作</h5>
+<h5>7.2.4　VMware監視で自動登録されたホストの設定を変更する</h5>
+<h5>7.2.5　ホストのローレベルディスカバリ</h5>
+
+<h3>第8章：テンプレートの利用とエクスポート／インポート</h3>
+
+<h4>8.1　テンプレートの利用</h4>
+
+
+<h5>8.1.1　登録されているテンプレートの一覧</h5>
+<h5>8.1.2　テンプレートに含まれる各監視設定の確認</h5>
+<h5>8.1.3　テンプレートの利用方法</h5>
+<ul class="toc">
+<li>ホスト一覧画面</li>
+<li>ホスト設定画面</li>
+</ul>
+<h5>8.1.4　ホストとテンプレートをリンクさせる際の注意点</h5>
+<ul class="toc"><li><ul class="toc">
+	<li>[Column]Zabbix 2.0以前の制限</li></ul></li>
+</ul>
+<h5>8.1.5　テンプレートから継承された設定の確認</h5>
+<h5>8.1.6　継承先のホスト側で設定変更を行った場合の動作</h5>
+<h5>8.1.7　継承元のテンプレート側で設定変更を行った場合の動作</h5>
+
+<h4>8.2　テンプレートの作成</h4>
+
+
+<h5>8.2.1　テンプレートの作成方法</h5>
+<h5>8.2.2　テンプレートに含まれるアイテム／トリガー／グラフの設定</h5>
+
+<h4>8.3　ユーザー定義マクロ</h4>
+
+
+<h5>8.3.1　ユーザー定義マクロの作成</h5>
+<h5>8.3.2　ユーザー定義マクロのコンテキスト</h5>
+
+<h4>8.4　エクスポート／インポート</h4>
+
+
+<h5>8.4.1　エクスポート／インポートできる設定</h5>
+<h5>8.4.2　設定のエクスポート</h5>
+<h5>8.4.3　設定のインポート</h5>
+
+<h3>第9章：一般設定とユーザー設定</h3>
+
+<h4>9.1　一般設定</h4>
+
+
+<h5>9.1.1　表示設定</h5>
+<h5>9.1.2　データの保存期間</h5>
+<h5>9.1.3　イメージ</h5>
+<h5>9.1.4　アイコンのマッピング</h5>
+<ul class="toc">
+<li>設定されているアイコンマッピングの一覧</li>
+<li>アイコンのマッピングの設定項目</li>
+</ul>
+<h5>9.1.5　正規表現</h5>
+<ul class="toc">
+<li>設定されているユーザー定義の正規表現の一覧</li>
+<li>ユーザー定義の正規表現の設定項目</li><ul class="toc">
+	<li>条件式タブ</li>
+	<li>テストタブ</li>
+	<li>[Column]テスト機能で利用できる正規表現</li></ul></li>
+<li>ユーザー定義の正規表現の利用</li>
+</ul>
+<h5>9.1.6　マクロ</h5>
+<h5>9.1.7　値のマッピング</h5>
+<h5>9.1.8　ワーキングタイム</h5>
+<h5>9.1.9　トリガーの深刻度</h5>
+<h5>9.1.10　イベントのステータス</h5>
+<h5>9.1.11　その他の設定</h5>
+
+<h4>9.2　メディアタイプの設定</h4>
+
+
+<h5>9.2.1　設定されているメディアタイプの一覧</h5>
+<h5>9.2.2　メディアタイプの設定項目</h5>
+<ul class="toc">
+<li>メール送信サーバーの設定（タイプに［メール］を選択）</li>
+<li>Jabberによるチャットメッセージの設定（タイプに［Jabber］を選択）</li>
+<li>SMSメッセージ送信モデムの設定（タイプに［SMS］を選択）</li>
+<li>スクリプトの設定（タイプに［スクリプト］を選択）</li>
+</ul>
+<h5>9.2.3　メディアタイプのオプション設定</h5>
+
+<h4>9.3　ユーザーとユーザーグループの設定</h4>
+
+
+<h5>9.3.1　ユーザーの設定</h5>
+<ul class="toc">
+<li>登録されているユーザーの一覧画面</li>
+<li>ユーザーの設定項目</li><ul class="toc">
+	<li>ユーザータブ</li>
+	<li>メディアタブ</li>
+	<li>権限タブ</li></ul></li>
+</ul>
+<h5>9.3.2　ユーザーグループの設定</h5>
+<ul class="toc">
+<li>設定されているユーザーグループの一覧画面</li>
+<li>ユーザーグループの設定項目</li><ul class="toc">
+	<li>ユーザーグループタブ</li>
+	<li>権限タブ</li>
+	<li>タグフィルタータブ</li></ul></li>
+</ul>
+<h4>9.4　認証の設定</h4>
+<ul class="toc"><li><ul class="toc">
+	<li>認証タブ</li>
+	<li>HTTP認証の設定タブ</li>
+	<li>LDAP認証の設定タブ</li></ul></li>
+</ul>
+<h3>第10章：Zabbixによるシステム監視サーバー構築実践</h3>
+
+<h4>10.1　想定するシステム環境</h4>
+
+<h4>10.2　事前調査</h4>
+
+
+<h5>10.2.1　監視対象ホストのリストアップ</h5>
+<h5>10.2.2　利用するユーザーと権限，通知先のリストアップ</h5>
+<h5>10.2.3　監視間隔と監視項目数の決定</h5>
+<ul class="toc">
+<li>リソース監視の監視項目数</li>
+<li>アプリケーション監視の監視項目数</li>
+<li>SNMP機器の監視項目数</li>
+<li>監視項目数の合計</li>
+</ul>
+<h5>10.2.4　監視データの保存期間の決定</h5>
+<h5>10.2.5　独自に作成／追加する必要がある監視項目の決定</h5>
+<h5>10.2.6　決定しておくとよい事項</h5>
+
+<h4>10.3　Zabbixサーバーのハードウェアスペックの決定</h4>
+
+
+<h5>10.3.1　CPUのサイジングの考え方</h5>
+<h5>10.3.2　メモリのサイジングの考え方</h5>
+<ul class="toc">
+<li>Zabbixサーバーが利用するメモリ</li>
+<li>データベースが利用するメモリ</li>
+<li>Webインターフェースが利用するメモリ</li>
+<li>OSが利用するメモリ</li>
+<li>必要なメモリのサイジング</li>
+</ul>
+<h5>10.3.3　ディスクのパフォーマンスの考え方</h5>
+<h5>10.3.4　必要なディスク容量の計算方法</h5>
+<ul class="toc">
+<li>監視設定の容量</li>
+<li>ヒストリデータの容量</li>
+<li>トレンドデータの容量</li>
+<li>イベントデータの容量</li>
+<li>解説するシステムでZabbixサーバーに必要なデータベースの容量</li>
+</ul>
+<h4>10.4　サーバーの監視項目と閾値の調査</h4>
+
+
+<h5>10.4.1　Windowsサーバーでの調査方法</h5>
+<ul class="toc">
+<li>システム情報</li>
+<li>ディスクドライブ情報</li>
+<li>パフォーマンスカウンタ</li>
+<li>サービス</li>
+<li>プロセス</li>
+<li>ポート</li>
+</ul>
+<h5>10.4.2　Linuxサーバーでの調査方法</h5>
+<ul class="toc">
+<li>OSのホスト名／アーキテクチャ／バージョン</li>
+<li>CPU</li>
+<li>ネットワーク</li>
+<li>メモリとスワップ</li>
+<li>ディスク</li>
+<li>プロセス</li>
+<li>ポート</li>
+</ul>
+<h4>10.5　ネットワーク機器の監視項目の調査</h4>
+
+
+<h5>10.5.1　SNMPの概要</h5>
+<h5>10.5.2　SNMPコマンドの利用方法</h5>
+<ul class="toc">
+<li>snmpgetコマンド</li>
+<li>snmpwalkコマンド</li>
+<li>snmptranslateコマンド</li>
+</ul>
+<h5>10.5.3　MIBの調査方法</h5>
+<h5>10.5.4　プライベートMIBの調査方法</h5>
+
+<h4>10.6　Zabbixのセットアップと監視設定手順</h4>
+
+
+<h5>10.6.1　アクションとイベントの保存期間の設定</h5>
+<h5>10.6.2　メディアタイプの設定</h5>
+<h5>10.6.3　ホストグループとホストの作成</h5>
+<h5>10.6.4　ユーザーとユーザーグループの設定</h5>
+<h5>10.6.5　テンプレートの作成</h5>
+<h5>10.6.6　ユーザー定義マクロの作成</h5>
+<h5>10.6.7　テンプレートのリンクと個別のアイテムの設定</h5>
+<h5>10.6.8　アイテムとトリガーの状態の確認と調整</h5>
+<h5>10.6.9　アイテムが取得できない原因の調査方法</h5>
+<ul class="toc">
+<li>(1)アイテムの一覧画面のアイコンを確認</li>
+<li>(2)Zabbixサーバーから取得できるかを確認</li>
+<li>(3)Zabbixエージェントから取得できるかを確認</li>
+</ul>
+<h5>10.6.10　障害通知と通知先の設定</h5>
+<h5>10.6.11　グラフィカル表示の設定</h5>
+
+<h3>第11章：スクリプト実行機能による障害通知と監視機能の拡張</h3>
+
+<h4>11.1　ネットワーク警告灯を利用して障害を通知する</h4>
+
+
+<h5>11.1.1　ネットワーク警告灯を点灯させる</h5>
+<h5>11.1.2　ネットワーク警告灯制御スクリプトを設置する</h5>
+<h5>11.1.3　Zabbixの設定</h5>
+
+<h4>11.2　SNMPトラップを送信する</h4>
+
+
+<h5>11.2.1　SNMPトラップ送信スクリプトを設置する</h5>
+<h5>11.2.2　Zabbixの設定</h5>
+
+<h4>11.3　Apache Webサーバーの監視</h4>
+
+
+<h5>11.3.1　コンテンツが正常に表示できなければWebサービスを再起動する</h5>
+<ul class="toc">
+<li>Web監視の設定</li>
+<li>トリガーの設定</li>
+<li>アクションの設定</li>
+<li>リモートコマンドの許可とsudoの設定</li>
+</ul>
+<h5>11.3.2　Webサーバーのコネクション数の監視</h5>
+<ul class="toc">
+<li>Apacheのステータス取得の設定</li>
+</ul>
+<h4>11.4　MySQLデータベースサーバーの監視</h4>
+
+
+<h5>11.4.1　My­SQLデータベースにアクセスし，</h5>
+<h5>正常に値が取得できなければメールで通知する</h5>
+<ul class="toc">
+<li>ODBCの設定</li>
+<li>アイテムの設定</li>
+<li>トリガーの設定</li>
+</ul>
+<h5>11.4.2　MySQLデータベースの負荷状況を監視する</h5>
+<ul class="toc">
+<li>MySQLの内部ステータス監視のための手法</li>
+<li>MySQLデータベースサーバーの監視設定</li>
+</ul>
+<h4>11.5　センサーを利用して温度や湿度の監視を行う</h4>
+
+
+<h5>11.5.1　サーバー内に搭載されているセンサーを利用する</h5>
+<h5>11.5.2　ネットワーク機器に搭載されているセンサーを利用する</h5>
+<h5>11.5.3　専用の温湿度センサー製品を利用する</h5>
+
+<h4>11.6　Zabbix ShareとIntegrationsの利用</h4>
+
+
+<h5>11.6.1　Zabbix Shareの利用</h5>
+<h5>11.6.2　Integrationsの利用</h5>
+
+<h3>第12章：Zabbixサーバーの運用とメンテナンス</h3>
+
+<h4>12.1　障害発生時の対応</h4>
+
+
+<h5>12.1.1　障害画面による障害状況の確認</h5>
+<h5>12.1.2　障害確認機能と障害の手動クローズ</h5>
+<ul class="toc">
+<li>障害確認のメッセージ機能</li>
+<li>障害確認ステータスの利用</li>
+<li>障害の深刻度の変更</li>
+<li>障害の手動クローズの利用</li>
+</ul>
+<h5>12.1.3　トリガーの説明機能</h5>
+<h5>12.1.4　トリガーのURL機能</h5>
+<h5>12.1.5　インベントリ機能</h5>
+
+<h4>12.2　スクリプト機能によるWebインターフェースからのコマンド実行</h4>
+
+
+<h5>12.2.1　設定されているスクリプトの一覧画面</h5>
+<h5>12.2.2　スクリプトの設定項目</h5>
+
+<h4>12.3　監視対象機器のメンテナンス</h4>
+
+
+<h5>12.3.1　手動で監視を停止する</h5>
+<ul class="toc">
+<li>ホストを無効化した場合</li>
+<li>アイテムを無効化した場合</li>
+<li>トリガーを無効化した場合</li>
+<li>アクションを無効化した場合</li>
+</ul>
+<h5>12.3.2　メンテナンス期間の機能を利用する</h5>
+<ul class="toc">
+<li>設定されているメンテナンスの一覧画面</li>
+<li>メンテナンスの設定項目</li><ul class="toc">
+	<li>メンテナンスタブ</li>
+	<li>監視対象のメンテナンス期間タブ</li>
+	<li>ホストとホストグループタブ</li></ul></li>
+<li>メンテナンスを設定した場合の画面表示</li>
+</ul>
+<h5>12.3.3　メンテナンス中のアクション実行の挙動</h5>
+<ul class="toc">
+<li>Zabbix 3.0以前の挙動</li>
+<li>Zabbix 3.2以降の挙動</li>
+</ul>
+<h4>12.4　Zabbixサーバーのメンテナンス</h4>
+
+<h4>12.5　Zabbixデータベースのバックアップ</h4>
+
+
+<h5>12.5.1　ファイルベースでバックアップ／リストア</h5>
+<h5>12.5.2　mysqldumpを利用したバックアップ／リストア</h5>
+
+<h4>12.6　Zabbixのアップデート</h4>
+
+
+<h5>12.6.1　バージョン間の互換性</h5>
+<h5>12.6.2　マイナーバージョンのアップデート</h5>
+<h5>12.6.3　メジャーバージョンのアップデート</h5>
+<h5>12.6.4　Zabbixエージェントのアップデート</h5>
+
+<h4>12.7　パフォーマンスチューニング</h4>
+
+
+<h5>12.7.1　監視のパフォーマンスの確認</h5>
+<h5>12.7.2　監視データ収集が遅延しているアイテムの調査</h5>
+<h5>12.7.3　Zabbixサーバーの稼働状況の確認</h5>
+<ul class="toc">
+<li>プロセスのビジー率</li>
+<li>メモリキャッシュの使用率</li>
+<li>キューとZabbixサーバーのデータ処理数</li>
+<li>グラフとホストスクリーン</li>
+</ul>
+<h5>12.7.4　データベースの負荷が高い場合</h5>
+
+<h4>12.8　Zabbixプロセスのログレベルの動的変更</h4>
+
+
+<h5>12.8.1　指定したプロセスのみデバッグレベルを変更する</h5>
+
+<h4>12.9　監査履歴</h4>
+
+<h4>12.10　運用レポートの作成</h4>
+
+
+<h5>12.10.1　スクリーン機能を利用する</h5>
+<h5>12.10.2　各種レポート機能</h5>
+<ul class="toc">
+<li>稼働レポート画面</li>
+<li>障害発生数上位100項目画面</li>
+<li>アクション履歴画面</li>
+<li>通知レポート画面</li>
+</ul>
+<h3>第13章：大規模システムの監視</h3>
+
+<h4>13.1　ホストの自動登録</h4>
+
+
+<h5>13.1.1　自動登録用のアクション一覧</h5>
+<h5>13.1.2　自動登録用のアクション設定例</h5>
+<ul class="toc">
+<li>アクションタブ</li>
+<li>実行内容タブ</li>
+<li>Zabbixエージェントの設定</li>
+<li>自動登録されたホストの状態</li>
+</ul>
+<h4>13.2　ネットワークディスカバリ</h4>
+
+
+<h5>13.2.1　ネットワークディスカバリの動作</h5>
+<h5>13.2.2　設定されているネットワークディスカバリの表示</h5>
+<h5>13.2.3　ネットワークディスカバリの設定</h5>
+<h5>13.2.4　ネットワークディスカバリで発見されたホストの表示</h5>
+<h5>13.2.5　ネットワークディスカバリによってホストが発見された場合のアクションの設定</h5>
+<ul class="toc">
+<li>ネットワークディスカバリ用のアクションの一覧</li>
+<li>ネットワークディスカバリ用アクションの設定</li><ul class="toc">
+	<li>アクションタブ</li>
+	<li>実行内容タブ</li></ul></li>
+<li>ネットワークディスカバリのステータスとホストのステータスの確認</li>
+</ul>
+<h4>13.3　サービス</h4>
+
+
+<h5>13.3.1　サービスの設定</h5>
+<ul class="toc">
+<li>サービスタブ</li>
+<li>依存関係タブ</li>
+<li>時間タブ</li>
+</ul>
+<h5>13.3.2　Webサービスを登録する場合の設定例</h5>
+<h5>13.3.3　サービスの表示</h5>
+
+<h4>13.4　Zabbixプロキシを利用した分散監視</h4>
+
+
+<h5>13.4.1　Zabbixプロキシのデータフロー</h5>
+<ul class="toc">
+<li>アクティブプロキシ</li>
+<li>パッシブプロキシ</li>
+</ul>
+<h5>13.4.2　Zabbixプロキシサーバーのインストール</h5>
+<ul class="toc">
+<li>インストール前の準備</li>
+<li>ZabbixプロキシサーバーのRPMをインストール</li>
+<li>データベースへの初期データのインポート</li>
+<li>Zabbixプロキシサーバーの設定と起動</li>
+<li>Zabbixサーバーの設定</li>
+</ul>
+<h5>13.4.3　Zabbixプロキシサーバーの登録</h5>
+<ul class="toc">
+<li>設定されているZabbixプロキシサーバーの一覧画面</li>
+<li>Zabbixプロキシサーバーの設定項目</li>
+</ul>
+<h5>13.4.4　Zabbixプロキシサーバーを利用した監視設定</h5>
+<h5>13.4.5　Zabbixプロキシの監視</h5>
+<ul class="toc">
+<li>ZabbixプロキシサーバーとZabbixサーバー間の通信の監視</li>
+<li>Zabbixプロキシのパフォーマンス監視</li>
+</ul>
+<h5>13.4.6　Zabbixプロキシの運用時の注意点</h5>
+<ul class="toc">
+<li>Zabbixプロキシとの通信復帰後のパフォーマンスの検討</li>
+<li>Zabbixプロキシのメジャーバージョンアップ</li>
+</ul>
+<h4>13.5　暗号化通信</h4>
+
+
+<h5>13.5.1　Zabbixが利用する通信暗号化のライブラリ</h5>
+<h5>13.5.2　暗号化通信の設定</h5>
+<h5>13.5.3　PSKを利用した暗号化通信</h5>
+<h5>13.5.4　SSL証明書を利用した暗号化通信</h5>
+<h5>13.5.5　ZabbixサーバーまたはZabbixプロキシとZabbixエージェント間の暗号化通信の設定</h5>
+<ul class="toc">
+<li>Webインターフェースの設定</li>
+<li>Zabbixサーバーの設定</li>
+<li>Zabbixエージェントの設定</li>
+</ul>
+<h5>13.5.6　ZabbixサーバーとZabbixプロキシ間の暗号化通信の設定</h5>
+<ul class="toc">
+<li>Webインターフェースの設定</li>
+<li>Zabbixサーバーの設定</li>
+<li>Zabbixプロキシの設定</li>
+</ul>
+<h5>13.5.7　暗号化通信を利用した場合のパフォーマンス</h5>
+
+<h4>13.6　ヒストリとイベントのリアルタイムエクスポート</h4>
+
+
+<h5>13.6.1　リアルタイムエクスポートの有効化</h5>
+<h5>13.6.2　データがエクスポートされるファイル</h5>
+<h5>13.6.3　エクスポートされるデータの形式</h5>
+
+<h4>13.7　API</h4>
+
+
+<h5>13.7.1　jQZabbixのインストール</h5>
+<h5>13.7.2　jQZabbixデモアプリケーションの利用方法</h5>
+
+<h3>Appendix：キー，トリガー条件式，マクロ設定リファレンス</h3>
+<h4>A.1　アイテムのキー</h4>
+
+
+<h5>A.1.1　アイテムのキーとOSの対応一覧</h5>
+<h5>A.1.2　Zabbixエージェントのキー一覧</h5>
+<h5>A.1.3　Windows固有のZabbixエージェントのキー一覧</h5>
+<h5>A.1.4　シンプルチェックのキー一覧</h5>
+<h5>A.1.5　Zabbixインターナルのキー一覧</h5>
+<h5>A.1.6　アグリゲートのキー一覧</h5>
+
+<h4>A.2　トリガー条件式の関数と演算子</h4>
+
+
+<h5>A.2.1　トリガー関数</h5>
+<h5>A.2.2　トリガー演算子</h5>
+
+<h4>A.3　マクロ</h4>
+
+
+<h5>A.3.1　マクロ一覧</h5>
+<h5>A.3.2　ホストインベントリで利用できるマクロ一覧</h5>
+<h5>A.3.3　ユーザー定義マクロとローレベルディスカバリのマクロ</h5>
+
+<h4>A.4　コードページ</h4>
+
+
+<h5>A.4.1　コードページ一覧</h5>
+
+<h4>A.5　プロセスとキャッシュ</h4>
+
+
+<h5>A.5.1　プロセス</h5>
+<h5>A.5.2　キャッシュ</h5>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="errata">正誤表</h3>
+<p>本書の以下の部分に誤りがありました。ここに訂正するとともに，<wbr/>ご迷惑をおかけしたことを深くお詫び申し上げます。</p>
+<div align="right"><p>（2020年8月13日最終更新）</p></div>
+
+<!--
+※古い更新分はこの下に，<wbr/>追加分は上にもっていくようにする
+<div class="partition-block"><p>（以下2020年1月16日更新）</p></div>
+-->
+
+
+<h4>P.27　リスト2.2-1　/etc/my.cnf.d/server.cnf</h4>
+<table class="errataTable" cellspacing="0"><tbody><tr><th>誤</th><td><div class="preWrap"><pre><code>
+...
+# this is only for the mysqld standalone daemon
+[mysqld]
+innodb_file_per_table
+character-set-server=utf8
+collation-server=utf8_bin
+skip-character-set-client-handshake
+innodb_file_per_table
+innodb_buffer_pool_size=512M
+innodb_log_file_size=16M
+innodb_log_files_in_group=2
+</code></pre></div></td></tr><tr><th>正</th><td><div class="preWrap"><pre><code>
+...
+# this is only for the mysqld standalone daemon
+<strong>[mysqld]
+character-set-server=utf8</strong>
+collation-server=utf8_bin
+skip-character-set-client-handshake
+innodb_file_per_table
+innodb_buffer_pool_size=512M
+innodb_log_file_size=16M
+innodb_log_files_in_group=2
+</code></pre></div></td></tr></tbody></table>
+<p>「innodb_file_per_table」が重複していましたので片方を削除します。</p>
+
+
+
+
+
+
+<div class="partition-block"><p>（以下2019年12月11日更新）</p></div>
+
+<h4>P.53　「概要画面」の2段落2行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr><th>誤</th>
+<td>
+左上の［ホストの位置］ドロップダウンリスト
+</td></tr>
+<tr><th>正</th>
+<td>
+<strong>右上</strong>の［ホストの位置］ドロップダウンリスト
+</td></tr>
+</tbody></table>
+
+
+
+
+<div class="partition-block"><p>（以下2019年11月13日更新）</p></div>
+
+
+<h4>P.512</h4>
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr><th>誤</th>
+<td>
+<div class="preWrap">
+<pre><code>
+logrt&#91;file_format,&lt;regexp&gt;,&lt;encoding&gt;,&lt;maxlines&gt;,&lt;mode&gt;,&lt;outout&gt;,&lt;options&gt;&#93;
+</code>
+</pre></div>
+</td>
+</tr>
+<tr><th>正</th>
+<td>
+<div class="preWrap">
+<pre><code>
+logrt&#91;file_format,&lt;regexp&gt;,&lt;encoding&gt;,&lt;maxlines&gt;,&lt;mode&gt;,<strong>&lt;output&gt;,&lt;maxdelay&gt;</strong>,&lt;options&gt;&#93;
+</code>
+</pre></div>
+</td>
+</tr>
+</tbody></table>
+
+<div class="partition-block">
+<p>（以下2019年9月19日更新）</p></div>
+
+
+<h4>P.149</h4>
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr><th>誤</th>
+<td>copyruncate形式のログローテーション
+</td></tr>
+<tr><th>正</th>
+<td>copy<strong>t</strong>runcate形式のログローテーション
+</td></tr>
+</tbody></table>
+
+
+
+<div class="partition-block"><p>（以下2019年7月23日更新）</p></div>
+
+<h4>P.93　表4.3-11　 eth0ネットワークのIN側トラフィック（bps）を収集</h4>
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr><th rowspan="7">誤</th>
+<td>項目</td><td>設定値</td></tr>
+<tr><td>名前</td><td>Incoming traffic on interface eth0</td></tr>
+<tr><td>キー</td><td>net.if.in[eth0,bytes]</td></tr>
+<tr><td>データ型</td><td>数値( 浮動小数)</td></tr>
+<tr><td>単位</td><td>bps</td></tr>
+<tr><td>乗数を使用</td><td>8</td></tr>
+<tr><td>保存時の計算</td><td>差分/時間</td></tr>
+</tbody></table>
+<br />
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr><th rowspan="7">正</th>
+<td>項目</td><td>設定値</td></tr>
+<tr><td>名前</td><td>Incoming traffic on interface eth0</td></tr>
+<tr><td>キー</td><td>net.if.in[eth0,bytes]</td></tr>
+<tr><td>データ型</td><td>数値( 浮動小数)</td></tr>
+<tr><td>単位</td><td>bps</td></tr>
+<tr><td><strong>保存前処理</strong></td><td><strong>乗数：8<br />
+1秒あたりの差分</strong></td></tr>
+</tbody></table>
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2019\/978-4-297-10612-6","path":"\/dp\/ebook\/2019\/978-4-297-10612-6","targetId":"978-4-297-10612-6","parent":"\/dp\/genre\/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

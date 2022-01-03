@@ -1,0 +1,711 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>ディープラーニングを支える技術 ——「正解」を導くメカニズム［技術基礎］ | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="初学者の方々に向けた，ディープラーニングの技術解説書。2012年に一般画像分類コンテスト（ILSVRC）で衝撃的な性能を達成したAlexNetの登場以来，急速な進化を遂げているディープラーニング。現在の人工知能/AIの発展の中核を担っており，スマートフォンからIoT，クラウドに至るまで幅広い領域で，画像，音声，言語処理をはじめとした多くの対象分野に浸透し，目覚ましい進展をもたらしています。一方，その成長の過程は決して一筋縄ではなく，無数の試行錯誤がありました。本書では，ディープラーニングの「今」に焦点を当て，「基本機能」を中核に技術面から可能な限り正確にまとめ，どのようなしくみで動いているのか，どのような問題に使えるのか，何が難しいのかまで平易に解説。多くの問題を一つのアプローチ，アルゴリズムで解ける驚異的な技術。ディープラーニングが一段とパワーアップしていく将来につながる，長く役立つ原理，原則，考え方を平易に紐解く1冊です。"/>
+  <meta name="keywords" content="岡野原大輔電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="ディープラーニングを支える技術 ——「正解」を導くメカニズム［技術基礎］ | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="初学者の方々に向けた，ディープラーニングの技術解説書。2012年に一般画像分類コンテスト（ILSVRC）で衝撃的な性能を達成したAlexNetの登場以来，急速な進化を遂げているディープラーニング。現在の人工知能/AIの発展の中核を担っており，スマートフォンからIoT，クラウドに至るまで幅広い領域で，画像，音声，言語処理をはじめとした多くの対象分野に浸透し，目覚ましい進展をもたらしています。一方，その成長の過程は決して一筋縄ではなく，無数の試行錯誤がありました。本書では，ディープラーニングの「今」に焦点を当て，「基本機能」を中核に技術面から可能な限り正確にまとめ，どのようなしくみで動いているのか，どのような問題に使えるのか，何が難しいのかまで平易に解説。多くの問題を一つのアプローチ，アルゴリズムで解ける驚異的な技術。ディープラーニングが一段とパワーアップしていく将来につながる，長く役立つ原理，原則，考え方を平易に紐解く1冊です。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-12561-5"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-12561-5.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/Tech%20%C3%97%20Books%20plus">Tech × Books plus</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">ディープラーニングを支える技術<br><span class="sub">——<wbr>「正解」<wbr>を導くメカニズム［技術基礎］</span></span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-12561-5.jpg" alt="ディープラーニングを支える技術 ——「正解」を導くメカニズム［技術基礎］"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">岡野原大輔　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-12-24">2021年12月24日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-12-24">2021年12月24日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2022/978-4-297-12560-8" target="_blank">2022年1月8日に発売される書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,680円 <a id="pid403426" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">304</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-12561-5" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-12561-5" data-text="ディープラーニングを支える技術 ——「正解」を導くメカニズム［技術基礎］ #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-12561-5" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-12561-5" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>初学者の方々に向けた，<wbr/>ディープラーニングの技術解説書。<br />
+2012年に一般画像分類コンテスト（ILSVRC）で衝撃的な性能を達成したAlexNetの登場以来，<wbr/>急速な進化を遂げているディープラーニング。現在の人工知能/AIの発展の中核を担っており，<wbr/>スマートフォンからIoT，<wbr/>クラウドに至るまで幅広い領域で，<wbr/>画像，<wbr/>音声，<wbr/>言語処理をはじめとした多くの対象分野に浸透し，<wbr/>目覚ましい進展をもたらしています。一方，<wbr/>その成長の過程は決して一筋縄ではなく，<wbr/>無数の試行錯誤がありました。<br />
+本書では，<wbr/>ディープラーニングの「今」に焦点を当て，<wbr/>「基本機能」を中核に技術面から可能な限り正確にまとめ，<wbr/>どのようなしくみで動いているのか，<wbr/>どのような問題に使えるのか，<wbr/>何が難しいのかまで平易に解説。<br />
+多くの問題を一つのアプローチ，<wbr/>アルゴリズムで解ける驚異的な技術。ディープラーニングが一段とパワーアップしていく将来につながる，<wbr/>長く役立つ原理，<wbr/>原則，<wbr/>考え方を平易に紐解く1冊です。</p><h3>こんな方におすすめ</h3>
+<ul>
+<li>広くディープラーニング，<wbr/>人工知能を取り巻く技術に関心がある方々</li>
+<li>ディープラーニングとその周辺分野の研究に興味がある方</li>
+<li>ディープラーニングの今とこれからについて，<wbr/>知っておきたい方々</li>
+</ul>
+<p>知的好奇心から，<wbr/>なぜディープラーニングが成功しているのかを知りたいという方々も大歓迎です。</p><aside class="author"><h3>岡野原大輔（おかのはらだいすけ）</h3><p>2010年 東京大学情報理工学系研究科コンピュータ科学専攻博士課程修了（情報理工学博士）。在学中の2006年，<wbr/>友人らとPreferred Infrastructureを共同で創業，<wbr/>また2014年にPreferred Networksを創業。現在はPreferred Networksの代表取締役CERおよびPreferred Computational Chemistryの代表取締役CEOを務める。<br />
+・<wbr/>『深層学習 Deep Learning』（共著，<wbr/>近代科学社，<wbr/>2015）<br />
+・<wbr/>『オンライン機械学習』（共著，<wbr/>講談社，<wbr/>2015）<br />
+・<wbr/>『Learn or Die 死ぬ気で学べ プリファードネットワークの挑戦』（西川 徹との共著，<wbr/>2020）<br />
+・<wbr/>連載「AI最前線」（日経Robotics，<wbr/>本書発行時点で連載中）</p></aside><section id="sample"><h2>サンプル</h2><a href="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/9784297125608-01.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/thumb/TH400_9784297125608-01.png,https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/9784297125608-01.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/9784297125608-02.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/thumb/TH400_9784297125608-02.png,https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/9784297125608-02.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/9784297125608-03.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/thumb/TH400_9784297125608-03.png,https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/9784297125608-03.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/9784297125608-04.png"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/thumb/TH400_9784297125608-04.png,https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/9784297125608-04.png" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/9784297125608-05.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/thumb/TH400_9784297125608-05.jpg,https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12560-8/9784297125608-05.jpg" width="400" height="533" alt="sample"/></a></section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="44587">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>第1章  ディープラーニングと人工知能 ——なぜディープラーニングが成功しているのか</h3>
+
+<h4>1.1  ディープラーニング，知能，人工知能とは何か</h4>
+<ul class="toc">
+<li>多様な問題を一つのアプローチで解ける「ディープラーニング」</li>
+<li>ディープラーニングは「データ」から解法を学習する</li>
+<li>知能とは何か。人工知能とは何か。</li>
+<li>ポランニーのパラドックス</li>
+<li>人は無意識下で膨大かつ複雑な処理をしている</li>
+<li>システム1とシステム2</li>
+<li>コンピュータ上で実現可能な知能を求める</li>
+<li>人にとっての難しさと人工知能にとっての難しさは違う</li>
+<li>なぜ人工知能の実現が難しいか<ul class="toc">
+	<li>人は言語をどのように獲得しているか</li>
+	<li>人は画像をどのように認識しているか</li>
+	<li>人は画像を分解し，そこから3次元情報を復元する</li></ul></li>
+<li>人は経験を積むことで多くの機能を獲得できる</li>
+<li>意識下と無意識下の処理の融合</li>
+</ul>
+<h4>1.2  人工知能の歴史</h4>
+<ul class="toc">
+<li>ダートマス会議</li>
+<li>シンボリック，ノンシンボリック<ul class="toc">
+	<li>シンボリック派：記号処理によって問題解決を図る</li>
+	<li>ノンシンボリック派：パターン処理によって問題解決を図る</li>
+	<li>ノンシンボリック派の代表例：パーセプトロン</li></ul></li>
+<li>将来は，シンボリック派とノンシンボリック派の融合が必要となる</li>
+<li>AI楽観主義と現実との戦い</li>
+<li>第五世代コンピュータ：そして，AI冬の時代</li>
+<li>機械学習の時代</li>
+<li>機械学習はデータからルールや知識を獲得する<ul class="toc">
+	<li>機械学習はエキスパートを必要とせず，さまざまな問題にも適用できる</li>
+	<li>1990年代に多くの機械学習手法が登場する</li>
+	<li>機械学習の応用がビジネスにも大きなインパクトを与える</li></ul></li>
+<li>ディープラーニングの時代</li>
+<li>［基礎］ニューラルネットワーク：基本構造，勾配降下法，アーキテクチャ設計<ul class="toc">
+	<li>ニューラルネットワークは従来，注目を受けていなかった</li></ul></li>
+<li>驚異のディープラーニングの登場：AlexNetの衝撃<ul class="toc">
+	<li>ディープラーニングは，インターンをきっかけに広がった</li>
+	<li>ディープラーニングは，多くの問題で既存手法を凌駕する性能を達成した</li>
+	<li>ディープラーニングと強化学習の融合</li>
+	<li>研究分野への注目</li></ul></li>
+</ul>
+<h4>1.3  なぜディープラーニングは急速に発展したか</h4>
+<ul class="toc">
+<li>［急速な発展の背景❶］計算機の指数的な性能向上<ul class="toc">
+	<li>指数的な性能向上により，突然解けるようになる</li></ul></li>
+<li>GPUがディープラーニング発展の中心的な役割を果たした</li>
+<li>ディープラーニングに特化した専用チップも登場している</li>
+<li>スマートフォンのチップ</li>
+<li>ハードウェアの性能改善が人工知能の発展で重要</li>
+<li>［急速な発展の背景❷］データの爆発的な増加<ul class="toc">
+	<li>動画データとゲノムデータが急激に増える</li></ul></li>
+<li>巨大な学習データが最初に必要</li>
+<li>従来の機械学習からディープラーニングへと変わっていく</li>
+</ul>
+<h4>1.4  ディープラーニングと計算コスト</h4>
+<ul class="toc">
+<li>人の学習と，今の機械学習/ディープラーニングの学習</li>
+<li>なぜディープラーニングは大量のデータと計算リソースを必要とするのか<ul class="toc">
+	<li>［仮説❶］人は学習結果を応用し，再利用している</li>
+	<li>［仮説❷］人も膨大な量のデータを使って学習している</li>
+	<li>［仮説❸］人の脳は，省エネかつ高い計算能力を持つ</li></ul></li>
+</ul>
+<h4>1.5  ディープラーニングは今後どう使われるのか</h4>
+<ul class="toc">
+<li>自動運転，先進運転支援システム<ul class="toc">
+	<li>人の運転は高度な認識と予測を駆使している</li>
+	<li>センサーや認識技術の発展が進む</li></ul></li>
+<li>ロボット<ul class="toc">
+	<li>［タスクの例］説明書を読み，家具を組み立てるために必要なのは？</li>
+	<li>ディープラーニングは指示理解，認識，制御，プランニングで必要とされる</li></ul></li>
+<li>医療/ヘルスケア<ul class="toc">
+	<li>診断，医学の進歩に貢献する</li></ul></li>
+<li>人と人工知能の共存<ul class="toc">
+	<li>コンピュータにしかできないことを活かす</li>
+	<li>人の判断とコンピュータの判断を組み合わせる</li></ul></li>
+<li>［補足］数字で見るディープラーニングの今</li>
+</ul>
+<h4>1.6  本章のまとめ</h4>
+<ul class="toc">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h3>第2章  ［入門］機械学習 ——コンピュータの「学習」とは何か</h3>
+
+<h4>2.1  機械学習の背景</h4>
+<ul class="toc">
+<li>演繹的なアプローチと帰納的なアプローチ</li>
+<li>機械学習と従来のプログラミング</li>
+<li>機械学習の簡単な例：気温とアイスクリーム</li>
+</ul>
+<h4>2.2  モデル，パラメータ，データ</h4>
+<ul class="toc">
+<li>モデルとパラメータ：「状態」や「記憶」を持つことができる</li>
+<li>データ</li>
+<li>独立同分布（i.i.d.）</li>
+<li>データは同一分布から独立にサンプリングされるという仮定<ul class="toc">
+	<li>非i.i.d.環境</li></ul></li>
+<li>訓練データの偏りから誤った結論を導かないために</li>
+<li>データからモデルのパラメータを推定する：データから「学習」する<ul class="toc">
+	<li>パラメータ数とモデルの表現力</li></ul></li>
+</ul>
+<h4>2.3  汎化能力：未知のデータに対応できるか</h4>
+<ul class="toc">
+<li>データをすべて丸暗記<ul class="toc">
+	<li>世の中のデータは種類数が無数にあり，丸暗記できない</li></ul></li>
+<li>汎化能力：有限の訓練データから無限のデータを予測する</li>
+<li>過学習：汎化能力と迷信</li>
+<li>過学習はなぜ起こるのか：たまたま訓練事例を説明する間違ったモデルが見つかってしまう<ul class="toc">
+	<li>［過学習を防ぐ❶］訓練データを増やす</li>
+	<li>［過学習を防ぐ❷］仮説数を必要最低限に抑える</li></ul></li>
+<li>ニューラルネットワークはパラメータ数が多いが汎化する</li>
+</ul>
+<h4>2.4  問題設定：教師あり学習，教師なし学習，強化学習</h4>
+<ul class="toc">
+<li>［代表的な学習手法❶］教師あり学習<ul class="toc">
+	<li>教師あり学習のタスクの例</li></ul></li>
+<li>パラメトリックモデル</li>
+<li>学習と推論の2つのフェーズから成る</li>
+<li>［代表的な学習手法❷］教師なし学習<ul class="toc">
+	<li>教師なし学習でできること</li>
+	<li>教師なし学習の代表例：クラスリング，表現変換と次元削減，生成モデル</li></ul></li>
+<li>ディープラーニングによる「表現学習」：自己教師あり学習</li>
+<li>［代表的な学習手法❸］強化学習<ul class="toc">
+	<li>［ゲームの例］強化学習はどのような学習なのか</li>
+	<li>エージェントと環境</li>
+	<li>決定的な遷移と確率的な遷移</li>
+	<li>強化学習の「報酬」と「報酬仮説」</li></ul></li>
+<li>教師あり学習と強化学習は何か違うのか<ul class="toc">
+	<li>［違い❶］i.i.d.を仮定するか</li>
+	<li>［違い❷］受動的か，能動的か</li>
+	<li>［違い❸］フィードバックは直接的か，間接的か</li></ul></li>
+</ul>
+<h4>2.5  問題設定の分類学</h4>
+<ul class="toc">
+<li>学習問題設定の三つの軸</li>
+<li>［学習問題設定の基準❶］訓練データが網羅的か，サンプリングか<ul class="toc">
+	<li>訓練データが網羅的に列挙できる場合：三目並べ</li>
+	<li>訓練データが網羅的に列挙できない場合：囲碁</li></ul></li>
+<li>［学習問題設定の基準❷］ワンショットか，逐次的か<ul class="toc">
+	<li>問題の内部で逐次的な出力を順に求める場合</li></ul></li>
+<li>［学習問題設定の基準❸］学習フィードバックが教師的か，評価的か<ul class="toc">
+	<li>教師的なフィードバックの方が学習は簡単</li>
+	<li>評価的なフィードバックの方が設定しやすい</li></ul></li>
+<li>［三つの基準の活用術］学習手法の分類/整理<ul class="toc">
+	<li>バンデッド問題</li>
+	<li>構造出力の教師あり学習</li></ul></li>
+</ul>
+<h4>2.6  機械学習の基本：機械学習のさまざまな概念を知る</h4>
+<ul class="toc">
+<li>教師あり学習による画像分類</li>
+<li>機械学習による「学習」の実現：特徴抽出の重要性</li>
+<li>❶訓練データを用意する</li>
+<li>❷学習対象のモデルを用意する：要素，重み，バイアス<ul class="toc">
+	<li>内積を使う</li>
+	<li>入力と重みをスカラー値からベクトルに一般化</li>
+	<li>パラメータの表し方</li>
+	<li>線形モデル</li>
+	<li>スコアから分類結果に変換する：閾値関数</li></ul></li>
+<li>［小まとめ］❶入力〜❷学習モデルまで</li>
+<li>❸損失関数を設計する：モデルを学習させるための準備<ul class="toc">
+	<li>マージンと更新</li>
+	<li>損失関数の設計と損失関数の微分の形はとても重要</li></ul></li>
+<li>損失関数に用いられる関数の例<ul class="toc">
+	<li>0/1損失関数</li>
+	<li>クロスエントロピー損失関数</li>
+	<li>クロスエントロピー損失関数とシグモイド関数</li>
+	<li>二乗損失，絶対損失</li></ul></li>
+<li>❹目的関数を導出する：訓練誤差</li>
+<li>❺最適化問題を解く：勾配降下法，勾配<ul class="toc">
+	<li>勾配降下法と勾配の基本</li></ul></li>
+<li>勾配降下法：勾配の負の方向に向かってパラメータを逐次的に更新する</li>
+<li>確率的勾配降下法<ul class="toc">
+	<li>確率的勾配降下法の効果：高速化，正則化</li></ul></li>
+<li>正則化：汎化性能を改善する</li>
+<li>❻学習して得られたモデルを評価する：汎化誤差</li>
+<li>モデルの評価とデータ準備における注意点</li>
+</ul>
+<h4>2.7  確率モデルとしての機械学習</h4>
+<ul class="toc">
+<li>最尤推定，MAP推定，ベイズ推定</li>
+<li>学習問題を確率の枠組みでとらえるメリット：ベイジアンニューラルネットワーク</li>
+</ul>
+<h4>2.8  本章のまとめ</h4>
+<ul class="toc">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h3>第3章  ディープラーニングの技術基礎 ——データ変換の「層」を組み合わせて表現学習を実現する</h3>
+
+<h4>3.1  表現学習：「表現」の重要性と難題</h4>
+<ul class="toc">
+<li>情報をいかに表現するか：機械学習における重要な問題</li>
+<li>文書の表現問題<ul class="toc">
+	<li>BoW：「局所的な情報」である「単語の出現情報」で文書を表す</li>
+	<li>BoW表現の問題</li></ul></li>
+<li>画像の表現問題：BoVW</li>
+<li>従来の専門家による特徴設計/表現方法の設計</li>
+<li>ディープラーニングは表現学習を実現しているから高性能である</li>
+</ul>
+<h4>3.2  ディープラーニングの基礎知識</h4>
+<ul class="toc">
+<li>ディープラーニングとは何か</li>
+<li>ニューラルネットワークは「脳のしくみ」からスタートした<ul class="toc">
+	<li>強度に共通する重み（パラメータ）</li></ul></li>
+<li>ニューラルネットワークは挙動を望むように変えられる</li>
+<li>ニューラルネットワークで複雑な問題を扱う：大量の関数の組み合わせと学習データが必要</li>
+</ul>
+<h4>3.3  ニューラルネットワークはどのようなモデルなのか</h4>
+<ul class="toc">
+<li>単純な線形識別器の例</li>
+<li>線形識別器の拡張：複数の線形の関係を扱う</li>
+<li>線形識別器を重ねて多層のニューラルネットワークを作る</li>
+<li>モデルの表現力：そのモデルがどのくらい多くの関数を表現できるか</li>
+<li>非線形の活性化関数を挟むことでモデルの表現力を上げる<ul class="toc">
+	<li>活性化関数と万能近似定理</li></ul></li>
+<li>層とパラメータ</li>
+<li>ニューラルネットワークの別の見方<ul class="toc">
+	<li>神経回路網として見たニューラルネットワーク：基本構成，活性化，活性値</li>
+	<li>計算グラフとして見たニューラルネットワーク：分岐/合流/繰り返し，パラメータ共有</li></ul></li>
+</ul>
+<h4>3.4  ニューラルネットワークの学習</h4>
+<ul class="toc">
+<li>学習とは何か：「パラメータ調整」による挙動の修正</li>
+<li>ニューラルネットワークの「学習」の実現：最適化問題と目的関数</li>
+<li>学習を実現する最適化問題を解く：どのように最適化するか<ul class="toc">
+	<li>［最適化戦略❶］パラメータを1つずつ修正していく</li>
+	<li>［最適化戦略❷］パラメータをランダムにまとめて修正していく</li>
+	<li>［最適化戦略❸］パラメータを勾配を使ってまとめて修正していく戦略</li></ul></li>
+</ul>
+<h4>3.5  誤差逆伝播法：勾配を効率的に計算する</h4>
+<ul class="toc">
+<li>勾配の求め方：偏微分</li>
+<li>誤差逆伝播法による勾配の効率的な計算</li>
+<li>誤差逆伝播法の導入：大きなシステムにおける離れた変数間の相互作用</li>
+<li>合成関数の微分：構成する各関数の微分の積で全体の微分を計算する</li>
+<li>動的計画法による高速化：逆向きに微分を掛け合わせていくと効率が良い</li>
+<li>微分の共通部分</li>
+<li>ニューラルネットワークに誤差逆伝播法を適用する</li>
+<li>［小まとめ❶］学習と誤差逆伝播法：各変数についての偏微分を効率良く求める</li>
+<li>［小まとめ❷］たくさんの入力とパラメータが一つの出力につながる：共有化，高速化と計算コストの目安</li>
+<li>1層の隠れ層を持つニューラルネットワークに対する誤差逆伝播法</li>
+<li>ディープラーニングフレームワークは順計算さえ定義すれば，誤差逆伝播法は自動的に実現される<ul class="toc">
+	<li>ディープラーニングにおけるアーキテクチャ設計</li></ul></li>
+</ul>
+<h4>3.6  ニューラルネットワークの代表的な構成要素</h4>
+<ul class="toc">
+<li>ニューラルネットワークの構成要素：テンソル，接続層，活性化関数</li>
+<li>［主要な構成要素❶］テンソル：構造化されたデータ</li>
+<li>［主要な構成要素❷］接続層：ニューラルネットワークの挙動を特徴づける</li>
+<li>総結合層：Fully Connected Layer<ul class="toc">
+	<li>MLP：多層パーセプトロン</li></ul></li>
+<li>畳み込み層：Convolutional Layer<ul class="toc">
+	<li>画像とパターンが一致しているかは「内積の大きさ」で評価できる</li>
+	<li>画像中にパターンがどの位置で出現しているかを調べる：特徴マップ</li>
+	<li>特徴マップ</li>
+	<li>フルカラー画像中にパターンがどの位置で出現しているかを考える</li>
+	<li>複数のパターンがそれぞれどこに出現しているのかを調べる</li>
+	<li>パターン検出は「畳み込み操作」で実現される：カーネル，フィルタ，ストライド</li>
+	<li>パターン検出後の特徴マップからパターンを再度検出する</li></ul></li>
+<li>畳み込み層とCNN</li>
+<li>［畳み込み層と総結合層の違い❶］疎な結合</li>
+<li>［畳み込み層と総結合層の違い❷］重み共有</li>
+<li>パラメータ数の劇的削減</li>
+<li>可変サイズの画像や音声を扱える：FCN</li>
+<li>プーリング操作とプーリング層</li>
+<li>回帰結合層：Recurrent Layer<ul class="toc">
+	<li>回帰結合層は系列データ向けに作られている</li></ul></li>
+<li>RNNは任意長の入力を扱える状態機械<ul class="toc">
+	<li>ループがある場合，誤差逆伝播法はどのように計算するか</li>
+	<li>RNNは工夫しなければ，学習が難しい</li>
+	<li>RNNは状態を有限の値に収めることが難しい</li>
+	<li>勾配爆発/消失問題</li></ul></li>
+<li>ゲート機構<ul class="toc">
+	<li>代表的なゲート</li></ul></li>
+<li>LSTM：広く使われているゲート機構</li>
+<li>GRU</li>
+<li>［主要な構成要素❸］活性化関数：活性化関数に必要な3つの性質</li>
+<li>ReLU：スイッチのような活性化関数<ul class="toc">
+	<li>ReLUの優れた性質</li>
+	<li>ReLUはディープラーニングの「学習」における三大発明の一つ</li></ul></li>
+<li>シグモイド関数<ul class="toc">
+	<li>シグモイド関数の微分</li></ul></li>
+<li>Tanh関数<ul class="toc">
+	<li>シグモイド関数との関係</li></ul></li>
+<li>Hard Tanh関数</li>
+<li>LReLU<ul class="toc">
+	<li>PReLU</li></ul></li>
+<li>Softmax関数</li>
+<li>さまざまな活性化関数：ELU，SELU，Swishなど<ul class="toc">
+	<li>MaxOut</li>
+	<li>CReLU</li>
+	<li>Lifting Layer</li></ul></li>
+</ul>
+<h4>3.7  本章のまとめ</h4>
+<ul class="toc">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h3>第4章  ディープラーニングの発展 ——学習と予測を改善した正規化層/スキップ接続/注意機構</h3>
+
+<h4>4.1  学習を可能にした要素技術の一つ：ReLUのような活性化関数</h4>
+<ul class="toc">
+<li>［再入門］ReLUのような活性値，誤差を保つ活性化関数</li>
+</ul>
+<h4>4.2  正規化層</h4>
+<ul class="toc">
+<li>正規化関数と正規化層：活性値の正規化</li>
+<li>なぜ活性値を正規化するのが学習に大事なのか<ul class="toc">
+	<li>［活性値の正規化の重要性❶］非線形を生み出し，表現力を高く保つ</li>
+	<li>［活性値の正規化の重要性❷］学習の高速化と安定化</li>
+	<li>［活性値の正規化の重要性❸］汎化性能を改善する</li></ul></li>
+<li>バッチ正規化<ul class="toc">
+	<li>ミニバッチを使って全体の統計量を近似する</li>
+	<li>正規化後の分布を2つめのパラメータで制御する</li>
+	<li>「推論時」に使う統計量は「学習時」に推定しておく</li>
+	<li>バッチ正規化の適用</li>
+	<li>バッチ正規化は学習を劇的に安定化し，学習率を大きくできる</li>
+	<li>正規化後の分布を決めるβとγは挙動を変える重要な役割を持っている</li>
+	<li>バッチ正規化を使う際の注意点：スケール情報の消失，他データへの依存性</li>
+	<li>テンソルデータの正規化：チャンネルごとの正規化</li></ul></li>
+<li>層/サンプル/グループ正規化<ul class="toc">
+	<li>層正規化</li>
+	<li>サンプル正規化</li>
+	<li>グループ正規化</li></ul></li>
+<li>重み正規化</li>
+<li>重み標準化<ul class="toc">
+	<li>重み標準化の効果と使い方</li></ul></li>
+<li>［アドバンス解説］白色化<ul class="toc">
+	<li>共分散行列から固有値を求める</li>
+	<li>ZCA変換を使い，特徴を白色化する</li></ul></li>
+</ul>
+<h4>4.3  スキップ接続</h4>
+<ul class="toc">
+<li>スキップ接続のしくみ：変換をスキップして出力に接続</li>
+<li>勾配消失問題：なぜ誤差逆伝播時に誤差が途中で消失してしまうのか</li>
+<li>スキップ接続は高速道路のように情報や誤差をそのまま伝える</li>
+<li>スキップ接続は逐次的推論を実現する</li>
+<li>スキップ接続は情報を落とさず，ボトルネックを使える</li>
+<li>スキップ接続の変種<ul class="toc">
+	<li>［スキップ接続の変種❶］PreActivation</li>
+	<li>［スキップ接続の変種❷］Single ReLU</li></ul></li>
+</ul>
+<h4>4.4  注意機構：入力に応じて，データの流れ方を動的に変える</h4>
+<ul class="toc">
+<li>注意機構の基本</li>
+<li>「注意」の重要な役割と注意機構：選択/フィルタリング</li>
+<li>［注意機構の役割❶］表現力を改善できる<ul class="toc">
+	<li>データに応じて関数の形を変えられる能力</li></ul></li>
+<li>［注意機構の役割❷］学習効率を改善できる<ul class="toc">
+	<li>影響を与える範囲を限定的にするしくみ</li></ul></li>
+<li>［注意機構の役割❸］汎化能力を改善できる</li>
+<li>「時間スケール」の異なる記憶のしくみ</li>
+<li>ニューラルネットワークの記憶の方法<ul class="toc">
+	<li>［記憶のしくみ❶］活性値/内部状態：すぐアクセス，小容量</li>
+	<li>［記憶のしくみ❷］重み/パラメータ：過去と一致しているかを調べている</li>
+	<li>［記憶のしくみ❷'］Fast Weight</li>
+	<li>［記憶のしくみ❸］過去の内部状態を「注意機構」で読み出す</li></ul></li>
+<li>代表的な注意機構</li>
+<li>最初の注意機構<ul class="toc">
+	<li>遠距離の情報をどのように考慮するか</li>
+	<li>注意機構を使って，遠距離の情報を読み取る</li>
+	<li>注意機構は読み取る情報を選択できる</li>
+	<li>注意機構は「微分可能」で，「end-to-end」で学習できる</li>
+	<li>注意機構は遠く離れた情報を1ステップで読み込む</li>
+	<li>ソフト注意機構とハード注意機構</li></ul></li>
+<li>自己注意機構/Transformer<ul class="toc">
+	<li>スケール化内積注意機構</li>
+	<li>複数ヘッドを使った注意機構</li>
+	<li>要素ごとのMLPを使った変換</li></ul></li>
+<li>符号化と復号化から成る「Transformer」</li>
+<li>位置符号化</li>
+<li>効率的な自己注意機構へ：自己注意機構の致命的欠点<ul class="toc">
+	<li>Big Bird：線形の計算量で処理できる自己注意機構</li></ul></li>
+</ul>
+<h4>4.5  本章のまとめ</h4>
+<ul class="toc">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<h3>第5章  ディープラーニングを活用したアプリケーション ——大きな進化を遂げた画像認識，音声認識，自然言語処理</h3>
+
+<h4>5.1  画像認識</h4>
+<ul class="toc">
+<li>画像分類<ul class="toc">
+	<li>ニューラルネットワークによる画像処理</li>
+	<li>画像認識の基本的な処理の流れ</li></ul></li>
+<li>画像分類の発展の歴史</li>
+<li>AlexNet<ul class="toc">
+	<li>AlexNetの基本：画像認識の基本的なアイディアを導入した</li>
+	<li>AlexNetのパラメータ数と特徴マップ</li></ul></li>
+<li>VGGNet</li>
+<li>GoogleNet：Inceptionモジュール<ul class="toc">
+	<li>画像認識ではスケールが異なる対象の処理が必要</li>
+	<li>各層の結果を足す場合と結合する場合の違い</li></ul></li>
+<li>ResNet：スキップ接続の導入</li>
+<li>DenseNet</li>
+<li>SENet：注意機構の先駆け<ul class="toc">
+	<li>Squeeze操作とExcitation操作を組み合わせる</li>
+	<li>画像全体から求めた「注目すべきチャンネル」だけ残す</li></ul></li>
+<li>ILSVRCとその後</li>
+<li>ViT，MLP-Mixer</li>
+<li>［分類以外のタスク］検出，セグメンテーション</li>
+<li>検出</li>
+<li>セマンティックセグメンテーション<ul class="toc">
+	<li>U-Net</li>
+	<li>インスタンスセグメンテーション</li>
+	<li>パノプティックセグメンテーション</li></ul></li>
+<li>Mask R-CNN：検出とインスタンスセグメンテーションの実現例<ul class="toc">
+
+	<li>［Mask R-CNN❶］CNNを使った特徴抽出</li>
+	<li>［Mask R-CNN❷］検出候補の列挙</li>
+	<li>［Mask R-CNN❸］検出候補の推定</li>
+	<li>［Mask R-CNN❹］セグメンテーションの推定</li></ul></li>
+<li>画像認識の高速化<ul class="toc">
+	<li>グループ化畳み込み操作</li>
+	<li>チャンネルシャッフル：グループ化畳み込みの問題への対応</li>
+	<li>デプスワイズ畳み込み操作</li>
+	<li>シフト</li>
+	<li>その他の畳み込み操作：Dilated畳み込み操作，Deformable畳み込み操作</li></ul></li>
+</ul>
+<h4>5.2  音声認識</h4>
+<ul class="toc">
+<li>音声認識処理の三つのステップ<ul class="toc">
+	<li>［ステップ❶］フロントエンド</li>
+	<li>［ステップ❷］音響モデル</li>
+	<li>［ステップ❸］言語モデル</li></ul></li>
+<li>ニューラルネットワークと音声認識</li>
+<li>LASによる音声認識</li>
+<li>LASの基礎知識</li>
+<li>Listener</li>
+<li>Speller</li>
+<li>学習時と推論時の分布の違いに対応する</li>
+<li>推論</li>
+</ul>
+<h4>5.3  自然言語処理</h4>
+<ul class="toc">
+<li>言語理解：コーパスで「事前学習」する</li>
+<li>BERT：マスクされた単語を予測する<ul class="toc">
+	<li>BERTのモデルの学習</li>
+	<li>学習時と推論時の分布の不一致を学習する</li>
+	<li>多くのタスクに役立つBERT</li>
+	<li>［BERTの特徴❶］自己注意機構で表現力を大きく向上できる</li>
+	<li>［BERTの特徴❷］前後の文脈情報を見て文を深く理解する</li>
+	<li>［BERTの特徴❸］大量のコーパスを利用し事前学習させる</li></ul></li>
+<li>GPT-2/GPT-3</li>
+</ul>
+<h4>5.4  本章のまとめ</h4>
+<h3>Appendix  ［厳選基礎］機械学習＆ディープラーニングのための数学</h3>
+<ul class="toc">
+<li>A.1  線形代数</li>
+<li>A.2  微分</li>
+<li>A.3  確率</li>
+</ul>
+
+
+
+<!--
+<h3>Column</h3>
+
+<h4>モデルとは何か</h4>
+
+<h4>汎用人工知能：AGI</h4>
+
+<h4>ビッグデータと機械学習，ディープラーニング</h4>
+
+<h4>連続値のパラメータから成るモデルの仮説数</h4>
+
+<h4>仮説数，パラメータ数，モデル複雑度</h4>
+
+<h4>生成モデルと識別モデル</h4>
+
+<h4>ディープラーニングに登場する「関数」</h4>
+
+<h4>クロスエントロピーの導出</h4>
+
+<h4>なぜ勾配が，値を最も急速に下げる方向になるのか</h4>
+
+<h4>なぜ0/1損失関数は「学習」に使われないのか：サロゲート損失関数</h4>
+
+<h4>ニューラルアーキテクチャ探索：NAS</h4>
+
+<h4>tf-idfによる特徴抽出</h4>
+
+<h4>脳科学と人工知能の接点：脳を含む情報処理装置を理解するために</h4>
+
+<h4>線形モデルと非線形モデルと万能近似定理</h4>
+
+<h4>特異モデル</h4>
+
+<h4>帰納バイアス</h4>
+
+<h4>ディープラーニングフレームワークの基礎知識</h4>
+
+<h4>多くの分野で，誤差逆伝播法は再発見されている</h4>
+
+<h4>Fast Weight</h4>
+
+<h4>MLPと注意機構</h4>
+
+<h4>Geoffrey Hinton</h4>
+
+<h4>ヒートマップを使った検出手法：CornerNet，CenterNet</h4>
+
+<h4>音声認識の損失関数：CTC，RNN-T</h4>
+-->
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<p>現在サポート情報はありません。</p>
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-12561-5","path":"\/dp\/ebook\/2021\/978-4-297-12561-5","targetId":"978-4-297-12561-5","parent":"\/dp\/genre\/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

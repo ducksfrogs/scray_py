@@ -1,0 +1,660 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>TCP技術入門 ――進化を続ける基本プロトコル | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="5G（第5世代移動通信），IoT（Internet of Things），自動運転をはじめ，ネットワークにまつわるサービスは飛躍的な発展を遂げつつあります。通信の高速化，端末の爆発的な増加，クラウドによる遠隔送受信をはじめとした大きな変化のなか，通信の信頼性や効率性を担うTCPの存在感が増してきました。本書では，TCPの「今」に主眼を置き，TCP/IPの基礎からTCPの主要機能，歴史，プロトコル設計，最近のLinuxで主要な輻輳制御アルゴリズムCUBIC，新たに登場したBBR，そして各種応用技術の最新動向まで平易に解説。全体を通して，現在の主流となった無線通信を想定している点も特徴です。押さえておきたいツールWiresharkやns-3による解析やシミュレーションの基本も丁寧にカバー。広く初学者の方々に向けて具体例を豊富に盛り込み，現場で役立つ技術基礎を平易に解き明かしていきます。"/>
+  <meta name="keywords" content="安永遼真,中山悠,丸田一輝電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="TCP技術入門 ――進化を続ける基本プロトコル | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="5G（第5世代移動通信），IoT（Internet of Things），自動運転をはじめ，ネットワークにまつわるサービスは飛躍的な発展を遂げつつあります。通信の高速化，端末の爆発的な増加，クラウドによる遠隔送受信をはじめとした大きな変化のなか，通信の信頼性や効率性を担うTCPの存在感が増してきました。本書では，TCPの「今」に主眼を置き，TCP/IPの基礎からTCPの主要機能，歴史，プロトコル設計，最近のLinuxで主要な輻輳制御アルゴリズムCUBIC，新たに登場したBBR，そして各種応用技術の最新動向まで平易に解説。全体を通して，現在の主流となった無線通信を想定している点も特徴です。押さえておきたいツールWiresharkやns-3による解析やシミュレーションの基本も丁寧にカバー。広く初学者の方々に向けて具体例を豊富に盛り込み，現場で役立つ技術基礎を平易に解き明かしていきます。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2019/978-4-297-10624-9"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2019/978-4-297-10624-9.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+<h2 id="bookSeries"><a href="/dp/series/WEB%2BDB%20PRESS%20plus">WEB+DB PRESS plus</a></h2>
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">TCP<wbr>技術入門<br><span class="sub">――進化を続ける基本プロトコル</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2019/978-4-297-10624-9.jpg" alt="TCP技術入門 ――進化を続ける基本プロトコル"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">安永遼真，<wbr/>中山悠，<wbr/>丸田一輝　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2019-07-01">2019年7月1日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2020-07-08">2020年7月8日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2019/978-4-297-10623-2" target="_blank">2019年7月6日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">2,680円 <a id="pid402554" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">288</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2019/978-4-297-10624-9" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2019/978-4-297-10624-9" data-text="TCP技術入門 ――進化を続ける基本プロトコル #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2019/978-4-297-10624-9" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2019/978-4-297-10624-9" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>5G（第5世代移動通信），<wbr/>IoT（Internet of Things），<wbr/>自動運転をはじめ，<wbr/>ネットワークにまつわるサービスは飛躍的な発展を遂げつつあります。<br />
+通信の高速化，<wbr/>端末の爆発的な増加，<wbr/>クラウドによる遠隔送受信をはじめとした大きな変化のなか，<wbr/>通信の信頼性や効率性を担うTCPの存在感が増してきました。</p>
+
+<p>本書では，<wbr/>TCPの「今」に主眼を置き，<wbr/>TCP/IPの基礎からTCPの主要機能，<wbr/>歴史，<wbr/>プロトコル設計，<wbr/>最近のLinuxで主要な輻輳制御アルゴリズムCUBIC，<wbr/>新たに登場したBBR，<wbr/>そして各種応用技術の最新動向まで平易に解説。</p>
+
+<p>全体を通して，<wbr/>現在の主流となった無線通信を想定している点も特徴です。<br />
+押さえておきたいツールWiresharkやns-3による解析やシミュレーションの基本も丁寧にカバー。</p>
+
+<p>広く初学者の方々に向けて具体例を豊富に盛り込み，<wbr/>現場で役立つ技術基礎を平易に解き明かしていきます。</p><h3>こんな方におすすめ</h3>
+<ul><li>輻輳制御をはじめとしたTCP技術に関心をお持ちのアプリケーション開発者の方々</li><li>基本＆昨今の動向をおさらいしておきたいネットワークエンジニア，<wbr/>インフラエンジニアの方々</li><li>インターネット技術の今を押さえておきたい学生の方々</li></ul>
+<aside class="author"><h3>安永遼真（やすながりょうま）</h3><div class="image"><img src="https://image.gihyo.co.jp/assets/images/dummy.png" data-image="https://image.gihyo.co.jp/assets/images/author/2019/yasunaga.jpg"/></div><p>2011年東京大学工学部卒業，<wbr/>2013年東京大学大学院工学系研究科航空宇宙工学専攻修了，<wbr/>同年日本電信電話株式会社入社，<wbr/>2016年Nokia Bell Labs出向。おもにコンピューターネットワークの数理モデル化に関する研究に従事。2018年より都内マーケティング会社に勤務。現在は機械学習・<wbr/>統計解析を用いたマーケティング技術の研究に従事する傍ら，<wbr/>趣味でコンピューターネットワークの研究を続けている。</p>
+</aside><aside class="author"><h3>中山悠（なかやまゆう）</h3><div class="image"><img src="https://image.gihyo.co.jp/assets/images/dummy.png" data-image="https://image.gihyo.co.jp/assets/images/author/2019/nakayama.jpg"/></div><p>2006年東京大学農学部卒業，<wbr/>2008年東京大学大学院新領域創成科学研究科自然環境学専攻修了，<wbr/>同年日本電信電話株式会社入社。2018年東京大学大学院情報理工学系研究科電子情報学専攻博士課程修了。博士（情報理工学）。現在，<wbr/>東京農工大学工学研究院・<wbr/>准教授。モバイルコンピューティング，<wbr/>低遅延ネットワーク，<wbr/>IoT等の研究に取り組む。平成29年度東京大学大学院情報理工学系研究科長賞等。</p>
+</aside><aside class="author"><h3>丸田一輝（まるたかずき）</h3><div class="image"><img src="https://image.gihyo.co.jp/assets/images/dummy.png" data-image="https://image.gihyo.co.jp/assets/images/author/2019/maruta.jpg"/></div><p>2006年九州大学工学部卒業，<wbr/>2008年九州大学大学院システム情報科学府知能システム学専攻修了，<wbr/>同年日本電信電話株式会社入社。2016年九州大学大学院システム情報科学府情報知能工学専攻博士後期課程修了。博士（工学）。2017年3月より千葉大学大学院工学研究院・<wbr/>助教。無線ネットワークにおける干渉低減技術の研究に従事。2017年度電子情報通信学会論文賞，<wbr/>RCS研究会最優秀貢献賞等。</p>
+</aside><section id="sample"><h2>サンプル</h2><a href="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/9784297106232-01.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/thumb/TH400_9784297106232-01.jpg,https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/9784297106232-01.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/9784297106232-02.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/thumb/TH400_9784297106232-02.jpg,https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/9784297106232-02.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/9784297106232-03.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/thumb/TH400_9784297106232-03.jpg,https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/9784297106232-03.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/9784297106232-04.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/thumb/TH400_9784297106232-04.jpg,https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/9784297106232-04.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/9784297106232-05.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/thumb/TH400_9784297106232-05.jpg,https://image.gihyo.co.jp/assets/files/book/2019/978-4-297-10623-2/9784297106232-05.jpg" width="400" height="533" alt="sample"/></a></section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="39555">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>第1章　TCP入門　……通信の信頼性を保証する</h3>
+
+
+<h4>1.1　通信とプロトコル　……OSI参照モデル，TCP/IP，RFC</h4>
+<ul class="toc">
+<li>OSI参照モデル<ul class="toc">
+	<li>［第7層］アプリケーション層</li>
+	<li>［第6層］プレゼンテーション層</li>
+	<li>［第5層］セッション層</li>
+	<li>［第4層］トランスポート層</li>
+	<li>［第3層］ネットワーク層</li></ul></li>
+</ul>
+
+<h4>Column　IPアドレス</h4>
+<ul class="toc"><li><ul class="toc">
+	<li>［第2層］データリンク層</li>
+	<li>［第1層］物理層</li></ul></li>
+<li>TCP/IP　……実装や実用性を主眼に置いたモデル<ul class="toc">
+	<li>RFC</li></ul></li>
+<li>階層モデルにおけるデータのフォーマット</li>
+<li>プロトコル階層に基づく通信の手順</li>
+</ul>
+
+<h4>1.2　トランスポート層と通信の信頼性　……データを宛先まで順序誤りや消失なく転送する</h4>
+<ul class="toc">
+<li>通信の信頼性</li>
+<li>ネットワークの輻輳　……中の状況を外から見ることができない巨大なネットワークで起きる問題</li>
+<li>通信における要求条件　……Web，動画，ゲーム……。アプリケーションごとにまったく異なる要求</li>
+<li>トランスポート層の役割</li>
+</ul>
+
+<h4>1.3　UDPの基本　……コネクションレス型のシンプルな機構</h4>
+<ul class="toc">
+<li>UDPの基礎知識　……コネクションレス型</li>
+<li>ユニキャスト，マルチキャスト，ブロードキャスト<ul class="toc">
+	<li>UDPとアプリケーションプログラムにおける信頼性の確保　……RTP，RUDP</li></ul></li>
+<li>UDPに適したアプリケーション　……動画ストリーミング，VoIP，DNSなど</li>
+</ul>
+
+<h4>Column　QUIC　……UDPベースで信頼性の高い通信路を高速確立</h4>
+<ul class="toc">
+</ul>
+
+<h4>1.4　TCPの基本　……信頼性の保証とリアルタイム性</h4>
+<ul class="toc">
+<li>TCPの基礎知識　……コネクション型</li>
+<li>TCPとUDPの機能や特徴</li>
+<li>TCPに適したアプリケーション　……確実にデータを転送する</li>
+</ul>
+
+<h4>1.5　TCPの基本機能　……再送，順序制御，輻輳制御</h4>
+<ul class="toc">
+<li>コネクション管理</li>
+<li>シーケンス番号</li>
+<li>再送制御　……再送タイマー，RTT，ACKの利用</li>
+<li>順序制御</li>
+<li>ポート番号</li>
+<li>フロー制御　……ウィンドウ，ウィンドウサイズ</li>
+<li>輻輳制御と輻輳制御アルゴリズム　……Loss-based，Delay-based</li>
+<li>無線通信とTCP<ul class="toc">
+	<li>無線通信の基本　……最大の利点と限られた通信範囲，固定型と移動型</li>
+	<li>無線特有の難しさ　……TCPへの影響</li></ul></li>
+</ul>
+
+<h4>1.6　特定の用途向けのプロトコル　……RUDP，W-TCP，SCTP，DCCP</h4>
+<ul class="toc">
+<li>RUDP　……Reliable User Datagram Protocol</li>
+<li>W-TCP　……Wireless Profiled TCP</li>
+<li>SCTP　……Stream Control Transmission Protocol</li>
+<li>DCCP　……Datagram Congestion Control Protocol</li>
+</ul>
+
+<h4>1.7　まとめ</h4>
+<ul class="toc"><li><ul class="toc">
+	<li>参考文献</li></ul></li>
+</ul>
+
+
+<h3>第2章　TCP/IPの変遷　……インターネットの普及とともに，進化するプロトコル</h3>
+
+
+<h4>2.1　TCP黎明期　……1968～1980年</h4>
+<ul class="toc">
+<li>ARPANETプロジェクト発足（1968年）　……パケット交換の登場<ul class="toc">
+	<li>回線交換方式</li>
+	<li>パケット交換方式</li>
+	<li>ARPANET　……世界初のパケット交換によるネットワーク構築プロジェクト</li></ul></li>
+<li>UNIX開発（1969年）　……OSとTCP/IPの普及</li>
+<li>ALOHAnet構築（1970年）　……世界初の無線パケット交換ネットワーク，衝突回避の原型</li>
+<li>TCP誕生（1974年）　……一変したネットワークの基本的な考え方</li>
+<li>イーサネット規格公開（1980年）　……IEEE 802.3とCSMA/CD</li>
+</ul>
+
+<h4>2.2　TCP発展期　……1980～1995年</h4>
+<ul class="toc">
+<li>輻輳崩壊への懸念（1980年）　……トラフィック量の増加</li>
+<li>Nagleアルゴリズム（1984年）　……輻輳崩壊を防ぐ，輻輳制御関連手法の先駆け</li>
+<li>輻輳制御アルゴリズムの導入（1988年）　……状況に応じてデータ送出量を調整する</li>
+<li>インターネットへの移行とWWW誕生（1990年）　……アプリケーションによる牽引</li>
+</ul>
+
+<h4>2.3　TCP普及期　……1995年～</h4>
+<ul class="toc">
+<li>Windows 95発売（1995年）　……OSとともに普及するTCP/IP</li>
+<li>IPv6運用開始（1999年）　……徐々に進んでいるIPv6移行</li>
+<li>無線LAN登場（1999年）　……IEEE 802.11</li>
+<li>さまざまなインターネットサービス（2004～2006年）　……サービスごとに異なる特性</li>
+</ul>
+
+<h4>2.4　TCP拡充期　……2000年代後半～</h4>
+<ul class="toc">
+<li>スマートフォン普及（2007年～）　……モバイルネットワーク接続＆Wi-Fi接続</li>
+<li>クラウドコンピューティング登場（2006年～）　……遠距離の通信トラフィックの増大</li>
+<li>モバイルネットワークの高速化（2010年，2015年）　……無線の特性とTCPに求められる性能</li>
+<li>IoTの一般化（2015年）　……低消費電力＆長距離データ通信のサービス</li>
+</ul>
+
+<h4>2.5　まとめ</h4>
+<ul class="toc"><li><ul class="toc">
+	<li>参考文献</li></ul></li>
+</ul>
+
+
+<h3>第3章　［図解で見えてくる］TCPとデータ転送　……信頼性と効率の両立へ向けて</h3>
+
+
+<h4>3.1　TCPにおけるデータ構造　……パケットとヘッダーのフォーマット</h4>
+<ul class="toc">
+<li>パケットのフォーマット　……ヘッダー部とデータ部</li>
+<li>セグメント　……MTU，MSS，経路MTU探索，フラグメンテーション</li>
+<li>TCPヘッダーフォーマット</li>
+<li>UDPヘッダーフォーマット</li>
+</ul>
+
+<h4>3.2　コネクション管理　……3ウェイハンドシェイク</h4>
+<ul class="toc">
+<li>コネクションの確立　……3ウェイハンドシェイク</li>
+<li>コネクションの切断　……ハーフクローズ</li>
+<li>ポートとコネクション</li>
+</ul>
+
+<h4>3.3　フロー制御とウィンドウ制御　……多過ぎず少な過ぎず， 適切な転送量と受信側バッファ</h4>
+<ul class="toc">
+<li>フロー制御　……ウィンドウとウィンドウサイズ</li>
+<li>バッファリングと遅延</li>
+<li>ウィンドウ制御　……スライディングウィンドウ</li>
+<li>おさらい：フロー制御，ウィンドウ制御，輻輳制御</li>
+</ul>
+
+<h4>3.4　輻輳制御　……転送量と，中身が見えない自律的なネットワークの状況の推測</h4>
+<ul class="toc">
+<li>TCPの輻輳制御の基本コンセプト　……「ネットワークの状態はよくわからない」という前提</li>
+<li>スロースタート</li>
+<li>輻輳回避</li>
+<li>高速リカバリー</li>
+</ul>
+
+<h4>3.5　再送制御　……確実かつ効率的に，高信頼通信の要</h4>
+<ul class="toc">
+<li>高信頼通信に必須な再送制御</li>
+<li>［1］再送タイマーによるタイムアウト制御<ul class="toc">
+	<li>SRTTから求める従来からの手法　……RTO決定法①</li>
+	<li>Jacobsonによる新しいアルゴリズム　……RTO決定法②</li>
+	<li>RTTの変動例に対する振る舞いの違い</li></ul></li>
+<li>［2］重複ACKの利用　……高速再転送アルゴリズム</li>
+<li>輻輳回避アルゴリズムと再送制御の複合的な動作と輻輳ウィンドウの変化</li>
+</ul>
+
+<h4>3.6　TCP初期の代表的な輻輳制御アルゴリズム　……Tahoe，Reno，NewReno，Vegas</h4>
+<ul class="toc">
+<li>輻輳制御アルゴリズムの進化</li>
+<li>Tahoe　……初期のTCPアルゴリズム</li>
+<li>Reno　……高速リカバリー</li>
+<li>NewReno　……新たなパラメーター（recover）の導入</li>
+<li>Vegas　……Delay-basedの制御方式の登場</li>
+</ul>
+
+<h4>3.7　まとめ</h4>
+<ul class="toc"><li><ul class="toc">
+	<li>参考文献</li></ul></li>
+</ul>
+
+
+<h3>第4章［押さえておきたい］プログラマーのための輻輳制御アルゴリズム　……増え続ける通信量とネットワークの動き</h3>
+
+
+<h4>4.1　輻輳制御の基本の考え方　……目的と設計，更新式の基礎</h4>
+<ul class="toc">
+<li>輻輳制御の目的</li>
+<li>輻輳制御の基本設計</li>
+<li>輻輳制御の有限オートマトン<ul class="toc">
+	<li>5つの状態</li>
+	<li>状態遷移図　……遷移条件と遷移後の動作</li></ul></li>
+<li>輻輳制御アルゴリズムの例　……NewReno</li>
+</ul>
+
+<h4>Column　Linuxにおける輻輳制御アルゴリズムの実装</h4>
+<ul class="toc">
+</ul>
+
+<h4>4.2　輻輳制御アルゴリズム　……理論×シミュレーションで深まる理解</h4>
+<ul class="toc">
+<li>本書で紹介する輻輳制御アルゴリズム　……Loss-based，Delay-based，Hybrid</li>
+<li>NewReno　……輻輳制御アルゴリズムのリファレンスモデル<ul class="toc">
+	<li>AIMD</li>
+	<li>AIMDと更新式</li>
+	<li>ns-3によるシミュレーション結果　……NewReno</li></ul></li>
+<li>Vegas　……Delay-based型の代表的な輻輳制御アルゴリズム<ul class="toc">
+	<li>更新式　……Vegas</li>
+	<li>ns-3によるシミュレーション結果　……Vegas</li></ul></li>
+<li>Westwood　……無線通信向けHybrid型輻輳制御アルゴリズム<ul class="toc">
+	<li>更新式　……Westwood</li>
+	<li>ns-3によるシミュレーション結果　……Westwood</li></ul></li>
+<li>HighSpeed　……ロングファットパイプ向けLoss-based型の輻輳制御アルゴリズム［1］<ul class="toc">
+	<li>更新式　……HighSpeed</li>
+	<li>ns-3によるシミュレーション結果　……HighSpeed</li></ul></li>
+<li>Scalable　……ロングファットパイプ向けLoss-based型輻輳制御アルゴリズム［2］<ul class="toc">
+	<li>更新式　……Scalable</li>
+	<li>ns-3によるシミュレーション結果　……Scalable</li></ul></li>
+<li>Veno　……無線通信向けのHybrid型輻輳制御アルゴリズム<ul class="toc">
+	<li>更新式　……Veno</li>
+	<li>ns-3によるシミュレーション結果　……Veno</li></ul></li>
+<li>BIC　……ロングファットパイプ向けのLoss-based型輻輳制御アルゴリズム［3］<ul class="toc">
+	<li>更新式　……BIC</li>
+	<li>ns-3によるシミュレーション結果　……BIC</li></ul></li>
+<li>H-TCP　……ロングファットパイプ向けのHybrid型輻輳制御アルゴリズム<ul class="toc">
+	<li>更新式　……H-TCP</li>
+	<li>ns-3によるシミュレーション結果　……H-TCP</li></ul></li>
+<li>Hybla　……RTTが大きな通信路に対応するLoss-based型の輻輳制御アルゴリズム<ul class="toc">
+	<li>更新式　……Hybla</li>
+	<li>ns-3によるシミュレーション結果　……Hybla</li></ul></li>
+<li>Illinois　……BICと比較しておきたいHybrid型輻輳制御アルゴリズム<ul class="toc">
+	<li>更新式　……Illinois</li>
+	<li>ns-3によるシミュレーション結果　……Illinois</li></ul></li>
+<li>YeAH　……2つのモードを持つ，ロングファットパイプ向けのHybrid型輻輳制御アルゴリズム<ul class="toc">
+	<li>更新式　……YeAH</li>
+	<li>ns-3によるシミュレーション結果　……YeAH</li></ul></li>
+</ul>
+
+<h4>4.3　プロトコルアナライザー「Wireshark」実践入門　……輻輳制御アルゴリズムの観察❶</h4>
+<ul class="toc">
+<li>Wiresharkとは</li>
+<li>Wiresharkの環境構築<ul class="toc">
+	<li>ネットワーク構成</li>
+	<li>セットアップ</li>
+	<li>Wiresharkの起動＆停止</li></ul></li>
+<li>WiresharkによるTCPのヘッダー分析<ul class="toc">
+	<li>キャプチャーするインターフェースの選択とパケットの観察</li>
+	<li>パケットのTCPのヘッダー分析</li></ul></li>
+<li>Wiresharkによる輻輳制御アルゴリズムの観察<ul class="toc">
+	<li>採用している輻輳制御アルゴリズムの確認　……sysctlコマンド（Ubuntu）</li>
+	<li>インターフェースの選択とパケット送受状況の確認</li>
+	<li>輻輳制御アルゴリズムの挙動の観察　……TCP Stream Graphs機能</li>
+	<li>描画できる5種類のグラフ</li>
+	<li>輻輳制御アルゴリズムの切り替え　……sysctlコマンド（Ubuntu）</li></ul></li>
+</ul>
+
+<h4>4.4　より深い理解へ。ネットワークシミュレーター「ns-3」入門　……輻輳制御アルゴリズムの観察❷</h4>
+<ul class="toc">
+<li>ns-3の基本</li>
+<li>ns-3の環境構築</li>
+<li>ns-3によるネットワークシミュレーションのための基礎知識<ul class="toc">
+	<li>おもなディレクトリ構成</li>
+	<li>ns-3のコマンド</li></ul></li>
+<li>シナリオファイル「chapter4-base.cc」</li>
+<li>Pythonによるシミュレータ実行/分析/可視化<ul class="toc">
+	<li>scenario_4.pyの中身　……Python入門</li>
+	<li>挙動の確認　……IPython</li></ul></li>
+</ul>
+
+<h4>4.5　まとめ</h4>
+<ul class="toc"><li><ul class="toc">
+	<li>参考文献</li></ul></li>
+</ul>
+
+
+<h3>第5章　CUBIC　……3次関数でシンプルに問題解決する</h3>
+
+
+<h4>5.1　ネットワーク高速化とTCP輻輳制御　……ロングファットパイプがもたらした変化</h4>
+<ul class="toc">
+<li>Reno/NewReno　……広く利用されてきたアルゴリズム</li>
+<li>高速リカバリー　……NewRenoの特徴</li>
+<li>ネットワークの高速化とロングファットパイプ　……通信環境の変化の観点から<ul class="toc">
+	<li>end-to-endの三大遅延　……処理遅延，キューイング遅延，伝搬遅延</li></ul></li>
+<li>ロングファットパイプにおけるNewRenoの課題<ul class="toc">
+	<li>広帯域を有効活用できない</li>
+	<li>広帯域環境ではそもそも送信レートが不十分</li>
+	<li>高遅延環境になるほどスループットが低下</li></ul></li>
+</ul>
+
+<h4>5.2　Loss-based輻輳制御　……パケットロスの数を指標に用いる歴史ある手法</h4>
+<ul class="toc">
+<li>Loss-based輻輳制御の基本　……パケットロスの数，輻輳ウィンドウサイズ，AIMD</li>
+<li>AIMD制御　……加算的な増加，乗算的な減少</li>
+<li>［実測］NewRenoの輻輳ウィンドウサイズの振る舞い　……シミュレーション条件，測定項目の確認から<ul class="toc">
+	<li>シナリオ1の実行＆測定結果の保存場所</li>
+	<li>シミュレーション実行結果　……ロングファットパイプにおけるNewRenoの課題を確認</li></ul></li>
+<li>HighSpeedとScalable　……ロングファットパイプ向け輻輳制御<ul class="toc">
+	<li>HighSpeedとScalableのシミュレーション</li>
+	<li>シミュレーション実行結果　……HighSpeedとScalableの課題を確認</li></ul></li>
+<li>親和性　……HighSpeedとScalableの課題［1］<ul class="toc">
+	<li>親和性の課題を確認するシミュレーションの実行</li>
+	<li>シミュレーション実行結果　……アグレッシブ過ぎでNewRenoが追い出される…… 親和性に課題あり</li></ul></li>
+<li>RTT公平性　……HighSpeedとScalableの課題［2］<ul class="toc">
+	<li>RTT公平性の課題を確認するシミュレーションの実行</li>
+	<li>シミュレーション実行結果　……RTTが小さいフローが占有…… RTT公平性に課題あり</li></ul></li>
+</ul>
+
+<h4>5.3　BIC　……広帯域/高遅延環境を前提にしたアルゴリズム</h4>
+<ul class="toc">
+<li>BICとは</li>
+<li>輻輳ウィンドウサイズを増やす2つのフェーズ　……加算的な増加と二分探索</li>
+<li>BICの輻輳ウィンドウサイズの振る舞い</li>
+<li>BICの課題</li>
+</ul>
+
+<h4>5.4　CUBICの仕組み　……3次関数で複雑な輻輳ウィンドウサイズ制御手法を大幅に簡略化</h4>
+<ul class="toc">
+<li>CUBICの基本</li>
+<li>ウィンドウ制御アルゴリズムのポイント</li>
+<li>CUBICの輻輳ウィンドウサイズの振る舞い</li>
+<li>シミュレーションで確認する親和性の高さ</li>
+<li>シミュレーションで確認するRTT公平性</li>
+<li>狭帯域低遅延環境への適応性</li>
+<li>CUBICの課題</li>
+</ul>
+
+<h4>5.5　［疑似コードで見る］CUBICのアルゴリズム　……おもな動作と処理内容</h4>
+<ul class="toc">
+<li>初期化</li>
+<li>ACK受信時の動作</li>
+<li>パケットロス時の動作</li>
+<li>タイムアウト時の動作</li>
+<li>おもな関数と処理<ul class="toc">
+	<li>cubic_update()関数</li>
+	<li>cubic_tcp_friendliness()関数</li>
+	<li>cubic_reset()関数</li></ul></li>
+</ul>
+
+<h4>5.6　まとめ</h4>
+<ul class="toc"><li><ul class="toc">
+	<li>参考文献</li></ul></li>
+</ul>
+
+
+<h3>第6章　BBR　……スループットとRTTをモニタリングして，データ送出量を調節</h3>
+
+
+<h4>6.1　バッファサイズ増加とバッファ遅延増大　……メモリーの低価格化の影響</h4>
+<ul class="toc">
+<li>ネットワーク上のバッファサイズ増加</li>
+<li>バッファブロート　……バッファサイズの増加がもたらした「遅延増大」という弊害<ul class="toc">
+	<li>AQMと，REDアルゴリズム</li></ul></li>
+<li>Loss-based輻輳制御とバッファブロートの関係</li>
+<li>バッファサイズによるCUBICへの影響　……シミュレーションによる確認<ul class="toc">
+	<li>シミュレーション実行結果　……バッファサイズの増加に伴って，RTTが顕著に増大</li></ul></li>
+</ul>
+
+<h4>6.2　Delay-based輻輳制御　……RTTを指標にするアルゴリズムの基本とVegasの例</h4>
+<ul class="toc">
+<li>3種類の輻輳制御アルゴリズムと環境に合わせたアルゴリズムの選択</li>
+<li>Delay-based輻輳制御の基本となる考え方　……RTT増大とキューイング遅延の増大</li>
+<li>Vegasの輻輳ウィンドウサイズの振る舞い<ul class="toc">
+	<li>シミュレーション実行結果　……RTT，スループットともにバッファサイズに依存しない</li></ul></li>
+<li>従来のDelay-based制御の課題　……アグレッシブ性が非常に低く，追い出されやすい<ul class="toc">
+	<li>シミュレーション実行結果　……Loss-based輻輳制御との共存が難しい</li></ul></li>
+</ul>
+
+<h4>6.3　BBRの仕組み　……データ送出量とRTTの関係を把握し，最大スループットを目指す</h4>
+<ul class="toc">
+<li>BBRの基本的な考え方</li>
+<li>BBRの輻輳ウィンドウサイズ制御の仕組み　……RTprop，BtlBw<ul class="toc">
+	<li>グラフで見るBBR　……inflight，BtlBw，RTprop，BDP</li></ul></li>
+<li>RTpropの推定</li>
+<li>BtlBwの推定</li>
+</ul>
+
+<h4>6.4　［疑似コードで見る］BBRのアルゴリズム　……ACK受信時とデータ送信時</h4>
+<ul class="toc">
+<li>ACK受信時</li>
+<li>データ送信時</li>
+</ul>
+
+<h4>6.5　BBRの振る舞い　……シミュレーションで見えてくる各種挙動</h4>
+<ul class="toc">
+<li>BBRフローの単独での挙動<ul class="toc">
+	<li>シミュレーション実行結果　……バッファサイズの影響なし，probeRTT</li></ul></li>
+<li>複数のBBRフローが存在するとき<ul class="toc">
+	<li>シミュレーション実行結果　……ほぼ公平に近いスループットになっている</li></ul></li>
+<li>CUBICとの共存<ul class="toc">
+	<li>シミュレーション実行結果　……Loss-based輻輳制御との共存は？</li></ul></li>
+<li>ロングファットパイプにおける挙動<ul class="toc">
+	<li>シミュレーション実行結果　……（概ね）安定した，高いスループットを維持</li></ul></li>
+</ul>
+
+<h4>6.6　まとめ</h4>
+<ul class="toc"><li><ul class="toc">
+	<li>参考文献</li></ul></li>
+</ul>
+
+
+<h3>第7章　TCPの最新動向　……アプリケーションや通信環境が変われば，TCPも変わる</h3>
+
+
+<h4>7.1　TCPを取り巻く状況の変化　……3つの観点「通信方式」「通信端末」「接続先」</h4>
+<ul class="toc">
+<li>TCPのこれまでの発展　……本章までのおさらい</li>
+<li>通信環境の変化を捉える3つの観点　……通信方式，通信端末，接続先</li>
+<li>通信方式の変化　……イーサネット，モバイル，LWPA</li>
+<li>通信端末の多様化　……高性能化のみならず，制約のある環境下での通信という観点も</li>
+<li>接続先の変化　……クラウドコンピューティング，エッジコンピューティング</li>
+<li>本章で取り上げる事例について</li>
+</ul>
+
+<h4>7.2　5G（第5世代移動通信）　……モバイル通信の大容量化，多端末収容，高信頼/低遅延</h4>
+<ul class="toc">
+<li>［背景］5Gの適用シナリオと実用化までのスケジュール</li>
+<li>［課題］厳しい要求条件への対応</li>
+<li>［TCP関連動向❶］ミリ波帯への対応　……新規周波数資源の開拓</li>
+<li>［TCP関連動向❷］マルチパスTCP　……1つのTCPコネクションで，複数の経路を利用<ul class="toc">
+	<li>4Gと5Gの共存と，マルチパスTCP</li></ul></li>
+<li>高精細映像ストリーミング　……TCP関連動向❸</li>
+</ul>
+
+<h4>7.3　IoT　……多種多様なデバイスのインターネットを介した制御</h4>
+<ul class="toc">
+<li>［背景］多様な端末と通信方式<ul class="toc">
+	<li>センサーデバイスの例</li>
+	<li>IoTのコネクション数や通信方式</li></ul></li>
+<li>［課題］処理能力や通信環境の制約　……プロトコル，デバイスの多様性，低速，各種制限……</li>
+<li>［TCP関連動向］IoTへの最適化　……大きな制約条件の通信のもと，何ができるのか</li>
+</ul>
+
+<h4>7.4　データセンター　……大規模化とさまざまな要求条件の混在</h4>
+<ul class="toc">
+<li>［背景］クラウドサービスの普及とデータセンターの大規模化<ul class="toc">
+	<li>データセンター内のネットワーク構成</li></ul></li>
+<li>［課題］バッファに対する相反する要求条件</li>
+<li>［TCP関連動向］データセンター向けの輻輳制御</li>
+</ul>
+
+<h4>7.5　自動運転　……求められる高信頼/低遅延，大容量の通信性能</h4>
+<ul class="toc">
+<li>［背景］自動運転の普及に向けた取り組み<ul class="toc">
+	<li>自動運転レベル</li>
+	<li>無線通信が担う役割　……V2N，V2V，V2I，V2X，V2P</li>
+	<li>通信性能への要求　……高信頼，低遅延，大容量</li></ul></li>
+<li>［課題］高速移動時の高信頼通信　……自動運転実現の鍵を握る「信頼性」</li>
+<li>［TCPとの関係］信頼性保証に向けて　……規模に合わせて考えていく「遅延」や「輻輳制御」</li>
+</ul>
+
+<h4>7.6　まとめ</h4>
+<ul class="toc"><li><ul class="toc">
+	<li>参考文献</li></ul></li></ul></li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="supplement">補足情報</h3>
+<p>本書執筆陣によるサポートページ（GitHub）は，<wbr/>次のとおりです。</p>
+<ul>
+<li><a href="https://github.com/neko9laboratories/tcp-book">https://github.com/neko9laboratories/tcp-book</a></li>
+</ul>
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2019\/978-4-297-10624-9","path":"\/dp\/ebook\/2019\/978-4-297-10624-9","targetId":"978-4-297-10624-9","parent":"\/dp\/genre\/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

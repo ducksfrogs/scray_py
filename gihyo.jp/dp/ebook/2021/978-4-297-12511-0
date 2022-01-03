@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML＆CSSとWebデザインが1冊できちんと身につく本［増補改訂版］ | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="現在，EPUB準備中です。PDF版ご購入の方は，準備でき次第EPUB版もダウンロード可能となります。＜コンセプト＞PC＆モバイルサイトデザインの基礎力とHTML・CSSコーディングの知識が1冊で同時に身につく！ウェブ制作を仕事にするならHTMLとCSSを学ぶことから始めますが，本書は体系立てた文法学習よりも，まずは「コーディングとはどのような作業なのか」を理解できる初学者向け入門書です。架空のカフェのショップ紹介＆ネットショップサイトをチュートリアル形式で作成しながら，基本的なHTML要素／CSSの基本構造（セレクタ，プロパティ，値）を学ぶことができ，レイアウトのテクニックやデザイン（Webデザイン＆レスポンシブデザイン）の基本も身につきます。＜本書のポイント＞チュートリアル学習では，PC版だけでなくウェブ制作の現場でニーズの高いモバイルサイトのデザインがしっかり学べます定番となったflexbox，displayを使ったレイアウト手法の基礎から実践まで丁寧に解説します「フルスクリーン」「フレックスボックス」「シングルカラム」「2カラム」「グリッド」の5種類のレイアウトパターンを学習できます横スクロールするレイアウト，アニメーションで拡大するボタンなど動きのあるサイトづくりも体験できます「動画コンテンツページ」「ネットショップページ」も制作します＜綴じ込み特典つき＞付録①デザインのバリエーションが学べる！「レスポンシブデザインのネタ帖」付録②インターン，就転職に役立つ！「ポートフォリオ用アレンジのネタ帖」"/>
+  <meta name="keywords" content="服部雄樹電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="HTML＆CSSとWebデザインが1冊できちんと身につく本［増補改訂版］ | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="現在，EPUB準備中です。PDF版ご購入の方は，準備でき次第EPUB版もダウンロード可能となります。＜コンセプト＞PC＆モバイルサイトデザインの基礎力とHTML・CSSコーディングの知識が1冊で同時に身につく！ウェブ制作を仕事にするならHTMLとCSSを学ぶことから始めますが，本書は体系立てた文法学習よりも，まずは「コーディングとはどのような作業なのか」を理解できる初学者向け入門書です。架空のカフェのショップ紹介＆ネットショップサイトをチュートリアル形式で作成しながら，基本的なHTML要素／CSSの基本構造（セレクタ，プロパティ，値）を学ぶことができ，レイアウトのテクニックやデザイン（Webデザイン＆レスポンシブデザイン）の基本も身につきます。＜本書のポイント＞チュートリアル学習では，PC版だけでなくウェブ制作の現場でニーズの高いモバイルサイトのデザインがしっかり学べます定番となったflexbox，displayを使ったレイアウト手法の基礎から実践まで丁寧に解説します「フルスクリーン」「フレックスボックス」「シングルカラム」「2カラム」「グリッド」の5種類のレイアウトパターンを学習できます横スクロールするレイアウト，アニメーションで拡大するボタンなど動きのあるサイトづくりも体験できます「動画コンテンツページ」「ネットショップページ」も制作します＜綴じ込み特典つき＞付録①デザインのバリエーションが学べる！「レスポンシブデザインのネタ帖」付録②インターン，就転職に役立つ！「ポートフォリオ用アレンジのネタ帖」"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-12511-0"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-12511-0.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">HTML<wbr>＆<wbr>CSS<wbr>と<wbr>Web<wbr>デザインが<wbr>1<wbr>冊できちんと身につく本<br><span class="sub">［増補改訂版］</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-12511-0.jpg" alt="HTML＆CSSとWebデザインが1冊できちんと身につく本［増補改訂版］"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">服部雄樹　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-12-27">2021年12月27日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-12-27">2021年12月27日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2022/978-4-297-12510-3" target="_blank">2022年1月7日に発売される書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">PDF</span><span class="buy">2,600円 <a id="pid403428" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">384</span>ページ相当</span><span class="pdf">PDF</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-12511-0" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-12511-0" data-text="HTML＆CSSとWebデザインが1冊できちんと身につく本［増補改訂版］ #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-12511-0" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-12511-0" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<div style="border:1px solid #ccc;padding:1em;margin-bottom:1em"><p><strong>現在，<wbr/>EPUB準備中です。</strong></p>
+<p>PDF版ご購入の方は，<wbr/>準備でき次第EPUB版もダウンロード可能となります。</p></div>
+<h5>＜コンセプト＞PC＆モバイルサイトデザインの基礎力とHTML・<wbr/>CSSコーディングの知識が1冊で同時に身につく！</h5>
+<p>ウェブ制作を仕事にするならHTMLとCSSを学ぶことから始めますが，<wbr/>本書は体系立てた文法学習よりも，<wbr/>まずは「コーディングとはどのような作業なのか」を理解できる初学者向け入門書です。架空のカフェのショップ紹介＆ネットショップサイトをチュートリアル形式で作成しながら，<wbr/>基本的なHTML要素／<wbr/>CSSの基本構造（セレクタ，<wbr/>プロパティ，<wbr/>値）を学ぶことができ，<wbr/>レイアウトのテクニックやデザイン（Webデザイン＆レスポンシブデザイン）の基本も身につきます。</p>
+<h5>＜本書のポイント＞</h5>
+<ul>
+<li>チュートリアル学習では，<wbr/>PC版だけでなくウェブ制作の現場でニーズの高いモバイルサイトのデザインがしっかり学べます</li>
+<li>定番となったflexbox，<wbr/>displayを使ったレイアウト手法の基礎から実践まで丁寧に解説します</li>
+<li>「フルスクリーン」「フレックスボックス」「シングルカラム」「2カラム」「グリッド」の5種類のレイアウトパターンを学習できます</li>
+<li>横スクロールするレイアウト，<wbr/>アニメーションで拡大するボタンなど動きのあるサイトづくりも体験できます</li>
+<li>「動画コンテンツページ」「ネットショップページ」も制作します</li>
+</ul>
+<h5>＜綴じ込み特典つき＞</h5>
+<p>付録①デザインのバリエーションが学べる！「レスポンシブデザインのネタ帖」<br />
+付録②インターン，<wbr/>就転職に役立つ！「ポートフォリオ用アレンジのネタ帖」</p><h3>こんな方におすすめ</h3>
+<ul><li>はじめてHTMLやCSSを学び，<wbr/>これからサイト制作をはじめる方</li><li>超初心者ではないが未経験からウェブデザイナーを目指している方</li><li>モバイル用サイトの制作やデザインについても学びたい方</li></ul>
+<aside class="author"><h3>服部雄樹（はっとりゆうき）</h3><p>愛知県名古屋市出身。2014年までインドネシア・<wbr/>バリ島で活動し，<wbr/>世界各国のクリエイターと交流。多くの海外案件に携わる。帰国後，<wbr/>服部制作室を設立。2018年に法人化し「株式会社服部制作室」発足。ウェブサイトの制作だけでなく，<wbr/>各種ウェブサービスのテンプレートデザインやUI設計，<wbr/>セミナー登壇，<wbr/>書籍の執筆など精力的に活動中。“かっこいいを簡単に“をモットーに，<wbr/>海外のウェブデザインを日本向けにローカライズした新しいデザインを提案している。</p>
+
+<p>著書に<br />
+『HTML&CSSの基本がゼロから身につく! Webデザイン見るだけノート』（監修）宝島社刊<br />
+『ジンドゥークリエイター 仕事の現場で使える! カスタマイズとデザイン教科書』（共著）技術評論社刊<br />
+『いちばんやさしいHTML5&CSS3の教本 人気講師が教える本格Webサイトの書き方』（共著）インプレス刊</p></aside><section id="sample"><h2>サンプル</h2><ul class="pdf"><li><a href="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/9784297125103-01.pdf" target="_blank">サンプルPDFファイル1</a>（11,616KB）</li></ul>
+<a href="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/9784297125103-01.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/thumb/TH400_9784297125103-01.jpg,https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/9784297125103-01.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/9784297125103-02.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/thumb/TH400_9784297125103-02.jpg,https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/9784297125103-02.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/9784297125103-03.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/thumb/TH400_9784297125103-03.jpg,https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/9784297125103-03.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/9784297125103-04.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/thumb/TH400_9784297125103-04.jpg,https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/9784297125103-04.jpg" width="400" height="533" alt="sample"/></a><a href="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/9784297125103-05.jpg"><img src="https://image.gihyo.co.jp/assets/images/reading.gif" data-image="https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/thumb/TH400_9784297125103-05.jpg,https://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/9784297125103-05.jpg" width="400" height="533" alt="sample"/></a></section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="44521">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>Chapter 1　知っておきたいサイトとデザインのきほん知識</h3>
+<ul class="toc">
+<li>1-1　ウェブサイトのしくみについて知ろう</li>
+<li>1-2　サイト制作のフローとウェブデザイン</li>
+<li>1-3　コーディングについて知っておくべきこと</li>
+<li>1-4　ウェブページのパーツやレイアウトについて知ろう</li>
+<li>1-5　ウェブデザインで知っておくべきこと</li>
+
+</ul>
+<h3>Chapter 2　サイト制作の前に準備しておくこと</h3>
+<ul class="toc">
+<li>2-1　制作環境を整えよう</li>
+<li>2-2　Google Chromeのインストールと使い方</li>
+<li>2-3　Visual Studio Codeのインストールと使い方</li>
+<li>2-4　入力したコードをブラウザで確認する方法</li>
+<li>2-5　実習用サンプルサイトを見てみよう</li>
+
+</ul>
+<h3>Chapter 3　知っておきたいHTMLのきほんと書き方</h3>
+<ul class="toc">
+<li>3-1　HTMLのきほん知識</li>
+<li>3-2　サンプルサイト共通のHTMLを書いてみよう</li>
+<li>3-3　見やすいコードとコメントの書き方</li>
+
+</ul>
+<h3>Chapter 4　知っておきたいCSSのきほんと書き方</h3>
+<ul class="toc">
+<li>4-1　CSSのきほん知識</li>
+<li>4-2　CSSを書いてみよう＜ページの基本設定を記述する＞</li>
+<li>4-3　CSSを書いてみよう<レイアウトの詳細を記述する></li>
+<li>4-4　ウェブフォントを指定してみよう</li>
+
+</ul>
+<h3>Chapter 5　知っておきたいレスポンシブデザインのきほんと書き方</h3>
+<ul class="toc">
+<li>5-1　レスポンシブデザインのきほん知識</li>
+<li>5-2　モバイルサイト用のCSSを書いてみよう</li>
+<li>5-3　ハンバーガーメニューを作成しよう</li>
+<li>5-4　モバイル用フッターのレイアウトを調整しよう</li>
+
+</ul>
+<h3>Chapter 6　フルスクリーンレイアウトを制作する</h3>
+<ul class="toc">
+<li>6-1　フルスクリーンレイアウト制作で学ぶこと</li>
+<li>6-2　フルスクリーンレイアウトのHTMLを書いてみよう</li>
+<li>6-3　フルスクリーンレイアウトのCSSを書いてみよう</li>
+<li>6-4　フルスクリーンレイアウトのモバイル用CSSを書いてみよう</li>
+
+</ul>
+<h3>Chapter 7　フレックスボックスレイアウトを制作す</h3>
+<ul class="toc">
+<li>7-1　フレックスボックスレイアウト制作で学ぶこと</li>
+<li>7-2　フレックスボックスレイアウトのHTMLを書いてみよう</li>
+<li>7-3　フレックスボックスレイアウトのCSSを書いてみよう</li>
+<li>7-4　フレックスボックスレイアウトのモバイル用CSSを書いてみよう</li>
+
+</ul>
+<h3>Chapter 8　シングルカラムで動画コンテンツページを制作する</h3>
+<ul class="toc">
+<li>8-1　シングルカラムレイアウト制作で学で学ぶこと</li>
+<li>8-2　シングルカラムレイアウトのHTMLを書いてみよう</li>
+<li>8-3　シングルカラムレイアウトのCSSを書いてみよう</li>
+<li>8-4　シングルカラムレイアウトのモバイル用CSSを書いてみよう</li>
+
+</ul>
+<h3>Chapter 9　グリッドで格子状レイアウトを制作する</h3>
+<ul class="toc">
+<li>9-1　グリッドレイアウト制作で学ぶこと</li>
+<li>9-2　グリッドレイアウトのHTMLを書いてみよう</li>
+<li>9-3　グリッドレイアウトのCSSを書いてみよう</li>
+<li>9-4　グリッドレイアウトのモバイル用CSSを書いてみよう</li>
+
+</ul>
+<h3>Chapter 10　2カラムでショップページを制作する</h3>
+<ul class="toc">
+<li>10-1　2カラムレイアウト制作で学ぶこと</li>
+<li>10-2　2カラムレイアウトのHTMLを書いてみよう</li>
+<li>10-3　ECサイトへリンクするページのHTMLを書いてみよう</li>
+<li>10-4　2カラムレイアウトのCSSを書いてみよう</li>
+<li>10-5　2カラムレイアウトのモバイル用CSSを書いてみよう</li>
+
+</ul>
+<h3>Chapter 11　Googleマップ付きの問い合わせページを制作する</h3>
+<ul class="toc">
+<li>11-1　問い合わせページ制作で学ぶこと</li>
+<li>11-2　問い合わせページのHTMLを書いてみよう</li>
+<li>11-3　問い合わせページのCSSを書いてみよう</li>
+<li>11-4　問い合わせページのモバイル用CSSを書いてみよう</li>
+</ul>
+
+
+<h3>Appendix　オリジナルのポートフォリオサイトに改変してみよう</h3>
+<h3><綴じ込み特典></h3>
+<ul class="toc">
+<li>デザインのバリエーションが学べる！「レスポンシブデザインのネタ帖」</li>
+<li>インターン，就転職に役立つ！「ポートフォリオ用アレンジのネタ帖」</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="download">ダウンロード</h3>
+<h4>サンプルファイルダウンロード</h4>
+<p><div align="right">（2021年12月21日更新）</div></p>
+
+
+<p>本書のサンプルファイルをダウンロードできます。<br />
+
+<p>サンプルファイルのご利用方法は本書P.7「サンプルファイルのダウンロード」およびP.46「作業フォルダを作成する」をご覧ください。</p>
+
+
+<dl>
+<dt>ダウンロード</dt>
+<dd><a href="http://image.gihyo.co.jp/assets/files/book/2022/978-4-297-12510-3/download/HTML_CSS_WebDesign2.zip">ダウンロードサンプルファイル（HTML_<wbr>CSS_<wbr>WebDesign2.<wbr>zip）</a></dd>
+</dl>
+
+
+<h4>【電子版購入者対象】綴じ込み特典ダウンロード</h4>
+<p><a href="https://gihyo.jp/dp/ebook/2021/978-4-297-12511-0">電子版</a>購入者対象に「［綴じ込み特典］デザインのネタ帖（PDF）」を以下から入手できます。ダウンロードには電子版本紙に掲載されているIDとパスワードが必要です。</p>
+
+<style>p.error{color:red;font-weight:bold;position:absolute;margin-top:1em}.download-account{display:block;padding:1em;margin-top:1em;border:1px solid #E5E5E5;margin-bottom:1em}.download-account p{margin:5px 0}.download-account .filename{font-size:14px;color:#888;text-align:right;margin-bottom:-5px}.download-account label{display:block;text-indent:0;width:5em;float:left;margin-right:1em;vertical-align:middle}.download-account input{-webkit-appearance:none;border:1px solid #BBB;font-size:16px;padding:5px;border-radius:4px;width:10em}.download-account input[type="submit"]{display:block;width:10.5em;background:#08F;color:white;font-weight:bold;border:1px #04D solid;float:right;margin-top:-70px;line-height:53px;-webkit-box-sizing:border-box;box-sizing:border-box}.download-account input[type="submit"]:hover{background:#04D}.mobile .download-account label{float:none}.mobile .download-account input:not([type="submit"]){width:auto}.mobile .download-account input[type="submit"]{float:none;margin-top:15px}</style><form action="#support" method="post" class="download-account ukb082fb8d79fa791d0502963ea55a93a5"><p><label>ID</label><input type="text" name="u" required></p><p><label>パスワード</label><input type="password" name="p" required></p><p><input type="submit" value="ダウンロード"><input type="hidden" name="t" value="1641205741"></p><p class="filename">Tojikomi_netacho.pdf（2MB）</p><input type="hidden" name="fn" value="Tojikomi_netacho.pdf"></form><script defer>(function(){document.querySelector('.ukb082fb8d79fa791d0502963ea55a93a5 input[type="submit"]').addEventListener('click',function(e){document.querySelector('.ukb082fb8d79fa791d0502963ea55a93a5').submit();});}());</script>
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-12511-0","path":"\/dp\/ebook\/2021\/978-4-297-12511-0","targetId":"978-4-297-12511-0","parent":"\/dp\/genre\/Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>中小企業のIT担当者必携 本気のセキュリティ対策ガイド | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="東京五輪を控えてサイバーセキュリティ関連のニュースをよく耳にするようになりました。また，マイナンバー法の施行や個人情報保護法の改正で，中小企業でも法的・社会的責任を負うリスクが高まり，セキュリティ対策は優先課題の1つとなっています。しかし現実には，実業務だけで手一杯だし，ITに精通した社員もいないと後回しになったり，とにかくセキュリティ対策製品を導入しておけば大丈夫と勘違いしていませんか？本書ではセキュリティリスクを経営リスクとして捉え，正しく評価し，組織的に推進させるための手順やノウハウを，セキュリティコンサルタントである著者がわかりやすく解説します。無償で公開されているガイドラインをフルに活用しているので，ぜひ，あなたの会社の正しいセキュリティ対策に活用してください。"/>
+  <meta name="keywords" content="佐々木伸彦電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="中小企業のIT担当者必携 本気のセキュリティ対策ガイド | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="東京五輪を控えてサイバーセキュリティ関連のニュースをよく耳にするようになりました。また，マイナンバー法の施行や個人情報保護法の改正で，中小企業でも法的・社会的責任を負うリスクが高まり，セキュリティ対策は優先課題の1つとなっています。しかし現実には，実業務だけで手一杯だし，ITに精通した社員もいないと後回しになったり，とにかくセキュリティ対策製品を導入しておけば大丈夫と勘違いしていませんか？本書ではセキュリティリスクを経営リスクとして捉え，正しく評価し，組織的に推進させるための手順やノウハウを，セキュリティコンサルタントである著者がわかりやすく解説します。無償で公開されているガイドラインをフルに活用しているので，ぜひ，あなたの会社の正しいセキュリティ対策に活用してください。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2020/978-4-297-11150-2"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2020/978-4-297-11150-2.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">中小企業の<wbr>IT<wbr>担当者必携 本気のセキュリティ対策ガイド</h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2020/978-4-297-11150-2.jpg" alt="中小企業のIT担当者必携 本気のセキュリティ対策ガイド"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">佐々木伸彦　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2020-01-23">2020年1月23日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2020-01-23">2020年1月23日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2020/978-4-297-11149-6" target="_blank">2020年1月23日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">1,980円 <a id="pid402757" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">192</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2020/978-4-297-11150-2" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2020/978-4-297-11150-2" data-text="中小企業のIT担当者必携 本気のセキュリティ対策ガイド #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2020/978-4-297-11150-2" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2020/978-4-297-11150-2" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>東京五輪を控えてサイバーセキュリティ関連のニュースをよく耳にするようになりました。また，<wbr/>マイナンバー法の施行や個人情報保護法の改正で，<wbr/>中小企業でも法的・<wbr/>社会的責任を負うリスクが高まり，<wbr/>セキュリティ対策は優先課題の1つとなっています。しかし現実には，<wbr/>実業務だけで手一杯だし，<wbr/>ITに精通した社員もいないと後回しになったり，<wbr/>とにかくセキュリティ対策製品を導入しておけば大丈夫と勘違いしていませんか？<br />
+本書ではセキュリティリスクを経営リスクとして捉え，<wbr/>正しく評価し，<wbr/>組織的に推進させるための手順やノウハウを，<wbr/>セキュリティコンサルタントである著者がわかりやすく解説します。無償で公開されているガイドラインをフルに活用しているので，<wbr/>ぜひ，<wbr/>あなたの会社の正しいセキュリティ対策に活用してください。</p><h3>こんな方におすすめ</h3>
+<ul><li>情報セキュリティ担当の方（非IT系含む）</li><li>組織的なセキュリティ対策を推進したい方</li><li>情報セキュリティのリスクを可視化できていない組織</li></ul>
+<aside class="author"><h3>佐々木伸彦（ささきのぶひこ）</h3><p>1977年，<wbr/>東京都町田市生まれ，<wbr/>青山学院大学卒。B型。<br />
+ストーンビートセキュリティ株式会社，<wbr/>代表取締役。<br />
+国内大手SIer にて，<wbr/>セキュリティ技術を中心としたシステムの提案，<wbr/>設計，<wbr/>構築などに10年ほど従事。2010年に外資系セキュリティベンダーへ入社。セキュリティエバンジェリストとして脅威動向や攻撃手法の調査・<wbr/>研修，<wbr/>普及啓発に尽力したのち，<wbr/>2015年にストーンビートセキュリティを設立。2016年から外務省最高情報セキュリティ責任者（CISO）補佐官を務める。ストーンビートセキュリティを率いる経営者のかたわら，<wbr/>ペネトレーションテストやセキュリティコンサルティング，<wbr/>トレーニング講師など幅広く活躍中。国内で開催されたCTFでの優勝経験やペネトレーションテスト（侵入検査）のスキルを試すHack The BoxでHacker称号を持つ。CISSP，<wbr/>CISA，<wbr/>GCFA，<wbr/>LPIC-3 Security。著書に『【イラスト図解満載】情報セキュリティの基礎知識』（技術評論社）などがある。</p></aside><section id="sample"><h2>サンプル</h2><ul class="pdf"><li><a href="https://image.gihyo.co.jp/assets/files/book/2020/978-4-297-11149-6/9784297111496-01.pdf" target="_blank">サンプルPDFファイル1</a>（836KB）</li></ul>
+</section>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="40510">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><h3>Part 1：基礎編<br />
+第1章：今さら聞けない情報セキュリティの疑問</h3>
+<ul class="toc">
+<li>Q1．うちの会社にもサイバー攻撃ってくるの？<ul class="toc">
+	<li>サイバー攻撃の状況がわかるサイト</li>
+	<li>脆弱なシステムを探し回る行為とは</li>
+	<li>コラム：「情報セキュリティ」と「サイバーセキュリティ」</li></ul></li>
+<li>Q2．うちの会社を攻撃しても何の得もないと思うけど？<ul class="toc">
+	<li>踏み台サーバとは</li>
+	<li>価値のある情報がないとしても</li></ul></li>
+<li>Q3．ウイルス対策ソフトを導入しているけど，これだけじゃダメなの？<ul class="toc">
+	<li>きちんと更新しているウイルス対策ソフトでも検知できない場合とは</li></ul></li>
+<li>Q4．最新の対策製品を導入しているから，うちの会社は安心じゃないの？<ul class="toc">
+	<li>対策製品の機能を発揮するには</li></ul></li>
+<li>Q5．セキュリティ事故は一度も発生していないけど，それでも対策って必要？<ul class="toc">
+	<li>実は攻撃に遭っている場合も</li></ul></li>
+<li>Q6．そもそもサイバー攻撃って誰が何のためにやっているの？<ul class="toc">
+	<li>あらゆるものが売買されるダークウェブ</li>
+	<li>五輪開催を目前にした日本が狙われているってホント？</li></ul></li>
+<li>Q7．対策の必要性はわかったけど，具体的に何から始めればいいの？<ul class="toc">
+	<li>うちの会社は小さいので，セキュリティ対策に人もお金もかけられません</li></ul></li>
+<li>Q8．リスクの大小は何で判断するの？</li>
+
+</ul>
+
+<h3>第2章：情報セキュリティの基礎知識</h3>
+<ul class="toc">
+<li>2-1：情報セキュリティの必要性<ul class="toc">
+	<li>情報の適切な取り扱いは企業経営の重要課題</li></ul></li>
+<li>2-2：守るべき情報資産とは</li>
+<li>2-3：情報セキュリティの3要素<ul class="toc">
+	<li>情報セキュリティの目的</li>
+	<li>情報資産の価値を測る指標</li>
+	<li>情報セキュリティの3要素</li>
+	<li>情報資産の評価</li>
+	<li>コラム：データ／インフォメーション／インテリジェンス</li></ul></li>
+<li>2-4：脅威<ul class="toc">
+	<li>脅威の種類</li>
+	<li>脅威の動向を把握する</li></ul></li>
+<li>2-5：脆弱性<ul class="toc">
+	<li>脆弱性の種類</li></ul></li>
+<li>2-6：情報資産を守るための4つの視点<ul class="toc">
+	<li>技術的な対策</li>
+	<li>組織的な対策</li>
+	<li>人的な対策</li>
+	<li>物理的な対策</li></ul></li>
+
+</ul>
+
+<h3>第3章：情報資産とリスクの関係</h3>
+<ul class="toc">
+<li>3-1：情報資産の評価基準<ul class="toc">
+	<li>機密性の定義例</li>
+	<li>完全性の定義例</li>
+	<li>可用性の定義例</li>
+	<li>コラム：情報資産の機密性・完全性・可用性に基づく重要度の定義</li></ul></li>
+<li>3-2：情報資産の重要度<ul class="toc">
+	<li>社員名簿の重要度を考える</li>
+	<li>その他の情報資産の重要度を考える</li></ul></li>
+<li>3-3：情報資産のライフサイクル<ul class="toc">
+	<li>各フェーズに潜む脅威</li></ul></li>
+<li>3-4：情報セキュリティリスクとは～情報資産とリスクの関係性<ul class="toc">
+	<li>情報資産の保有によりリスクは発生</li>
+	<li>リスクを増大させる要因</li>
+	<li>リスクから導き出されるもの</li>
+	<li>リスク低減にやるべきこと</li></ul></li>
+
+</ul>
+
+<h3>第4章：企業におけるリスク管理</h3>
+<ul class="toc">
+<li>4-1：リスクアセスメントの基本的な流れ<ul class="toc">
+	<li>リスク特定</li>
+	<li>リスク分析</li>
+	<li>リスク評価</li></ul></li>
+<li>4-2：リスクアセスメントの手法<ul class="toc">
+	<li>非形式的アプローチ</li>
+	<li>ベースラインアプローチ</li>
+	<li>詳細リスク分析</li>
+	<li>組み合わせアプローチ</li></ul></li>
+<li>4-3：リスクアセスメントの活用方法<ul class="toc">
+	<li>リスクアセスメントの進め方</li>
+	<li>リスクアセスメント手法の組み合わせ方</li></ul></li>
+<li>4-4：リスク対応の考え方<ul class="toc">
+	<li>リスク回避【影響度：大，発生頻度：大】</li>
+	<li>リスク移転（転嫁）【影響度：大，発生頻度：低】</li>
+	<li>リスク保有（受容）【影響度：低，発生頻度：低】</li>
+	<li>リスク低減【上記3つ以外】</li></ul></li>
+</ul>
+
+
+<h3>Part 2：実践編<br />
+第5章：情報セキュリティ対策の全体像を理解しよう</h3>
+<ul class="toc">
+<li>5-1：対策を推進するために重要なこと</li>
+<li>5-2：情報セキュリティ対策の流れ</li>
+<li>5-3：①基本方針を作る（トップが宣言する）<ul class="toc">
+	<li>基本方針を宣言する意味</li></ul></li>
+<li>5-4：②体制を整備する（リソースを確保する）<ul class="toc">
+	<li>担当者を誰にするか</li></ul></li>
+<li>5-5：③現状を把握する（リスクを明確にする）<ul class="toc">
+	<li>リスクアセスメントを実施する</li></ul></li>
+<li>5-6：④PDCAを回す（計画を作る／推進する／点検する／改善する）<ul class="toc">
+	<li>情報セキュリティのPDCA</li></ul></li>
+<li>5-7：⑤インシデントに備える（備えあれば憂いなし）<ul class="toc">
+	<li>インシデントは完全にはなくせないことを前提とする</li>
+	<li>迅速にインシデントに備えるために</li></ul></li>
+
+</ul>
+
+<h3>第6章：基本方針と体制図を作成しよう</h3>
+<ul class="toc">
+<li>6-1：情報セキュリティポリシー<ul class="toc">
+	<li>情報セキュリティに関する管理文書</li>
+	<li>情報セキュリティポリシーの必要性と効果</li>
+	<li>情報セキュリティポリシーを周知して理解してもらう</li></ul></li>
+<li>6-2：基本方針書<ul class="toc">
+	<li>組織のトップの名前で策定する意味</li>
+	<li>基本方針書に記載する内容</li>
+	<li>基本方針書のサンプル</li></ul></li>
+<li>6-3：体制図／組織図<ul class="toc">
+	<li>どのような体制がよいのか</li>
+	<li>体制を構成する担当者の役割</li>
+	<li>情報セキュリティ委員会の委員長【経営層（社長，理事，取締役など）】</li>
+	<li>最高情報セキュリティ責任者（CISO）【情報セキュリティ部門の責任者】</li>
+	<li>情報セキュリティ推進担当者</li></ul></li>
+
+</ul>
+
+<h3>第7章：計画を立案しよう</h3>
+<ul class="toc">
+<li>7-1：ベースラインアプローチの進め方<ul class="toc">
+	<li>5分でできる！ 情報セキュリティ自社診断（IPA）</li></ul></li>
+<li>7-2：詳細リスク分析の進め方<ul class="toc">
+	<li>実施手順</li>
+	<li>①実施範囲（スコープ）の選定</li>
+	<li>②実施のための準備</li>
+	<li>③情報資産の洗い出し</li>
+	<li>④情報資産の評価</li>
+	<li>⑤情報資産に対するリスク評価</li>
+	<li>自前でできる詳細リスク分析</li></ul></li>
+<li>7-3：対応計画を作成しよう<ul class="toc">
+	<li>①リスクに対する実施事項の検討</li>
+	<li>②リスク対応計画書の作成</li>
+	<li>③承認および周知</li>
+	<li>④進捗管理および見直し</li>
+	<li>⑤実施事項の有効性評価</li></ul></li>
+
+</ul>
+
+<h3>第8章：情報資産を特定しよう（人事部の場合）</h3>
+<ul class="toc">
+<li>8-1：人事部の資産管理台帳（例）</li>
+<li>8-2：各項目を記入する際の注意点<ul class="toc">
+	<li>①管理部署，担当者名</li>
+	<li>②業務分類</li>
+	<li>③情報資産名称</li>
+	<li>④媒体</li>
+	<li>⑤保存先</li>
+	<li>⑥件数</li>
+	<li>⑦個人情報の有無</li>
+	<li>⑧保存期限</li>
+	<li>⑨利用範囲</li>
+	<li>⑩備考</li></ul></li>
+
+</ul>
+
+<h3>第9章：組織的にセキュリティ対策を推進するために</h3>
+<ul class="toc">
+<li>9-1：人や組織の意識がもっとも重要</li>
+<li>9-2：経営層から全社員に繰り返し伝えてもらう<ul class="toc">
+	<li>全社員が集まる機会があまりない場合</li></ul></li>
+<li>9-3：意識を向上するために実施すべきこと<ul class="toc">
+	<li>情報セキュリティポリシーを周知するために</li>
+	<li>情報セキュリティに関する社内研修を実施しよう</li>
+	<li>内部監査（自己点検）をしよう</li></ul></li>
+<li>9-4：定期的にセキュリティポリシーや規定を見直す</li>
+
+</ul>
+
+<h3>第10章：インシデントに備えるために</h3>
+<ul class="toc">
+<li>10-1：インシデント対応の基本<ul class="toc">
+	<li>対応次第で評価される場合もある</li></ul></li>
+<li>10-2：インシデントの対応力を確認する<ul class="toc">
+	<li>組織対応力ベンチマークチェックシート</li></ul></li>
+<li>10-3：関連するドキュメント（テンプレート）を準備する<ul class="toc">
+	<li>インシデント受付表（記録表）</li>
+	<li>インシデント発生報告書／経過報告書／最終報告書</li>
+	<li>インシデント対応フロー／対応手順書</li>
+	<li>インシデント発生時の確認事項</li></ul></li>
+
+</ul>
+<h3>エピローグ：経営者の方へお伝えしたいこと</h3>
+<ul class="toc">
+<li>11-1：セキュリティリスクは経営リスク<ul class="toc">
+	<li>保有する情報資産の価値が高いほどリスクが高くなる</li>
+	<li>情報セキュリティの推進は経営者の責務</li>
+	<li>情報セキュリティは投資</li></ul></li>
+<li>11-2：ビジネスで失うと一番こわいもの<ul class="toc">
+	<li>法的責任と社会的責任も問われる</li></ul></li>
+<li>11-3：直接被害よりも怖い間接被害<ul class="toc">
+	<li>間接被害とは</li></ul></li>
+<li>11-4：インシデントは必ず発生することを前提とする</li>
+<li>11-5：これだけはやっておいてください（経営者の責務）<ul class="toc">
+	<li>先頭に立つ！</li>
+	<li>リソースを確保する！ 体制を整備する！</li>
+	<li>サプライチェーンにも気を配る！</li>
+	<li>情報収集と積極的な交流！</li></ul></li>
+<li>11-6：サイバーセキュリティ経営ガイドライン<ul class="toc">
+	<li>サイバーセキュリティ経営ガイドライン V2.0（経産省）</li>
+	<li>その他の情報</li></ul></li>
+
+</ul>
+
+<h3>Appendix：参考資料</h3>
+<h4>Appendix 1：フレームワーク，ガイドライン</h4>
+<ul class="toc">
+<li>A1-1：CIS Critical Security Contro（l CSC）<ul class="toc">
+	<li>概要</li>
+	<li>活用が適している組織</li>
+	<li>実施担当者</li>
+	<li>活用方法</li>
+	<li>活用における留意点</li>
+	<li>参考情報</li></ul></li>
+<li>A1-2：Cyber Security Framework 1.1（重要インフラのサイバーセキュリティを改善するためのフレームワーク 1.1版）<ul class="toc">
+	<li>概要</li>
+	<li>対策項目</li>
+	<li>活用が適している組織</li>
+	<li>実施担当者</li>
+	<li>活用方法</li></ul></li>
+
+</ul>
+<h4>Appendix 2：クラウドサービスの情報セキュリティ</h4>
+<ul class="toc">
+<li>A2-1：クラウドサービスの3形態</li>
+<li>A2-2：クラウドサービスの情報セキュリティ<ul class="toc">
+	<li>クラウドサービスのセキュリティ事故は誰の責任？</li>
+	<li>参考にできる手引きやガイドライン</li>
+	<li>クラウドサービスのセキュリティ対策</li></ul></li>
+<li>A2-3：クラウドサービスの選択時に参考になる認証</li>
+
+</ul>
+<h4>Appendix 3：情報セキュリティの主な対策</h4>
+<ul class="toc">
+<li>A3-1：ネットワーク対策<ul class="toc">
+	<li>ファイアウォール（Firewall）</li>
+	<li>IDS（Intrusion Detection System；侵入検知システム）</li>
+	<li>IPS（Intrusion Prevention System；侵入防御システム）</li>
+	<li>WAF（Web Application Firewall）</li>
+	<li>URLフィルタリング</li>
+	<li>UTM（Unified Threat Management）</li>
+	<li>TLS/SSL</li></ul></li>
+<li>A3-2：コンテンツ保護<ul class="toc">
+	<li>ウイルス対策</li>
+	<li>サンドボックス／動的解析</li>
+	<li>メールフィルタリング</li>
+	<li>暗号化</li>
+	<li>DLP（Data Loss Prevention）</li></ul></li>
+<li>A3-3：システム対策<ul class="toc">
+	<li>主体認証</li>
+	<li>二要素認証／多要素認証</li>
+	<li>認可（権限管理，ロール管理）</li>
+	<li>証跡（ログ管理）</li>
+	<li>脆弱性診断／ペネトレーションテスト（侵入検査）</li></ul></li>
+<li>A3-4：運用管理・インシデント対応<ul class="toc">
+	<li>資産管理</li>
+	<li>SIEM（Security Information and Event Management）</li>
+	<li>システムの冗長化／バックアップ</li>
+	<li>デジタルフォレンジックス</li>
+	<li>EDR（Endpoint Detection and Response）</li></ul></li>
+
+</ul>
+<h4>Appendix 4：情報セキュリティに関するサービス・URL</h4>
+<ul class="toc">
+<li>A4-1：情報セキュリティサービスの利用<ul class="toc">
+	<li>情報セキュリティ教育</li>
+	<li>脆弱性診断／ペネトレーションテスト（侵入検査）</li>
+	<li>インシデント対応支援サービス（緊急対応支援サービス）</li>
+	<li>デジタルフォレンジック</li>
+	<li>情報セキュリティ監査</li>
+	<li>情報セキュリティ対策製品の導入支援，運用支援</li>
+	<li>情報セキュリティコンサルティング</li></ul></li>
+<li>A4-2：情報セキュリティ対策に役立つ情報<ul class="toc">
+	<li>中小企業の情報セキュリティ対策ガイドライン（IPA）</li>
+	<li>中小企業向けサイバーセキュリティ対策の極意（東京都産業労働局）</li>
+	<li>小さな中小企業とNPO向け情報セキュリティハンドブック</li>
+	<li>Ver.1.00（平成31年4月19日）</li>
+	<li>サイバーセキュリティ経営ガイドライン [Ver.2.0（] 経済産業省/IPA）</li>
+	<li>組織における内部不正防止ガイドライン（IPA）</li>
+	<li>情報セキュリティ対策ベンチマーク（IPA）</li>
+	<li>脆弱性対策情報ポータルサイト（IPA/JPCERTコーディネーションセンター）</li>
+	<li>情報セキュリティマネジメント試験（IPA）</li>
+	<li>SECURITY ACTION（IPA）</li>
+	<li>情報セキュリティ10大脅威（IPA）</li>
+	<li>映像で知る情報セキュリティ（IPA）</li></ul></li>
+
+</ul>
+<h4>Appendix 5：本書で使用する主な用語</h4>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<h3 id="errata">正誤表</h3>
+<p>本書の以下の部分に誤りがありました。ここに訂正するとともに，<wbr/>ご迷惑をおかけしたことを深くお詫び申し上げます。</p>
+<div align="right"><p>（2020年2月28日最終更新）</p></div>
+
+<h4>P.42　本文 下から4行目</h4>
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr><th>誤</th>
+<td>
+監視カメラの置
+</td></tr>
+<tr><th>正</th>
+<td>
+監視カメラの<strong>設</strong>置
+</td></tr>
+</tbody></table>
+
+
+
+
+<div class="partition-block"><p>（以下2020年2月20日更新）</p></div>
+
+<h4>P.52　図3-3中の説明（2カ所）</h4>
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr><th>誤</th>
+<td>
+試算
+</td></tr>
+<tr><th>正</th>
+<td>
+<strong>資産</strong>
+</td></tr>
+</tbody></table>
+　<br />
+<table class="errataTable" cellspacing="0">
+<tbody>
+<tr><th>誤</th>
+<td>
+用務
+</td></tr>
+<tr><th>正</th>
+<td>
+<strong>業務</strong>
+</td></tr>
+</tbody></table>
+
+
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2020\/978-4-297-11150-2","path":"\/dp\/ebook\/2020\/978-4-297-11150-2","targetId":"978-4-297-11150-2","parent":"\/dp\/genre\/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>

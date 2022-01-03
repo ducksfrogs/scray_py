@@ -1,0 +1,642 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="pc">
+<head>
+  <meta charset="UTF-8">
+  <title>RISC-VとChiselで学ぶ はじめてのCPU自作 ――オープンソース命令セットによるカスタムCPU実装への第一歩 | Gihyo Digital Publishing … 技術評論社の電子書籍</title>
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="application/javascript"/>
+  <meta name="description" content="本書では，UCバークレーで開発されたオープンソースの命令セット（ISA）「RISC-V」を用いて，CPUの作り方を解説します。コンピュータアーキテクチャ，ハードウェアに関する知識があまりない方にも理解できるように基礎からわかりやすく学んでいきます。CPUとコンピュータアーキテクチャのしくみを解説したうえで，基本整数命令の実装から，CPUの高速化で活躍するパイプラインの実装，スーパーコンピューターでも活躍するベクトル拡張命令(SIMD)，さらに，汎用CPUでは負荷の高い処理をより高速に実行するためにCPUへ追加可能なカスタム命令の実装までを行います。CPU設計に用いる基本言語としては，Velilogを抽象化したHDL（ハードウェア記述言語）であるChiselを利用しています。CPUの自作範囲に関して，手順が煩雑なFPGAでの動作確認は行わず，ソフトウェア上でエミュレーションをゴールとしているので，ソフトウェアエンジニアの方にも取っ付きやすいものとなっています。巻末には，昨今RISC-Vが注目されている理由を整理するため，RISC-Vのもたらす価値についてまとめています。"/>
+  <meta name="keywords" content="⻄⼭悠太朗,井⽥健太電子書籍,電子出版,EPUB,PDF,技術評論社"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="related" href="http://gihyo.jp/dp/catalogs.opds" type="application/atom+xml;profile=opds-catalog" title="Gihyo Digital Publishing OPDS Catalog"/>
+  <link rel="shortcut icon" href="/assets/templates/gdp/favicon.ico" type="image/vnd.microsoft.icon"/>
+  <link rel="apple-touch-icon-precomposed" href="/dp/assets/gdp-icon.png"/>
+  <!--[if lt IE 9]>
+    <script>var msie=8;</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dp/assets/js/html5shiv.min.js"></script>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="/dp/assets/js/selectivizr-min.js"></script>
+    <script src="/dp/assets/js/addEventListener.min.js"></script>
+    <script src="/dp/assets/js/textContent.min.js"></script>
+  <![endif]-->
+  <!--[if lte IE 9]>
+    <script src="/dp/assets/js/classList.min.js" defer></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dp/assets/style/store0902.css" type="text/css" media="all"/>
+  <script src="/dp/assets/js/gdpFunction0425.min.js" defer></script>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@gihyoDP"/>
+  <meta property="og:title" content="RISC-VとChiselで学ぶ はじめてのCPU自作 ――オープンソース命令セットによるカスタムCPU実装への第一歩 | Gihyo Digital Publishing … 技術評論社の電子書籍"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="本書では，UCバークレーで開発されたオープンソースの命令セット（ISA）「RISC-V」を用いて，CPUの作り方を解説します。コンピュータアーキテクチャ，ハードウェアに関する知識があまりない方にも理解できるように基礎からわかりやすく学んでいきます。CPUとコンピュータアーキテクチャのしくみを解説したうえで，基本整数命令の実装から，CPUの高速化で活躍するパイプラインの実装，スーパーコンピューターでも活躍するベクトル拡張命令(SIMD)，さらに，汎用CPUでは負荷の高い処理をより高速に実行するためにCPUへ追加可能なカスタム命令の実装までを行います。CPU設計に用いる基本言語としては，Velilogを抽象化したHDL（ハードウェア記述言語）であるChiselを利用しています。CPUの自作範囲に関して，手順が煩雑なFPGAでの動作確認は行わず，ソフトウェア上でエミュレーションをゴールとしているので，ソフトウェアエンジニアの方にも取っ付きやすいものとなっています。巻末には，昨今RISC-Vが注目されている理由を整理するため，RISC-Vのもたらす価値についてまとめています。"/>
+  <meta property="og:url" content="https://gihyo.jp/dp/ebook/2021/978-4-297-12306-2"/>
+  <meta property="og:image" content="https://image.gihyo.co.jp/assets/images/ogp/2021/978-4-297-12306-2.jpg"/>
+  <meta property="og:site_name" content="Gihyo Digital Publishing"/>
+  <meta property="fb:app_id" content="185201618169441"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL906V3TN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DL906V3TN7');
+  </script>
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="page-home">
+  <header id="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <h1 class="home-title">Gihyo Digital Publishing</h1>
+    <h2 class="home-subtitle">技術評論社の電子書籍サイト</h2>
+    <nav id="headerFunction">
+      <div id="login">
+        <a href="#login" title="ログイン・会員登録">ログイン</a>
+      </div>
+      <div id="cart">
+        <a href="/dp/cart" title="カートは空です">カート</a>
+      </div>
+    </nav>
+  </header>
+  <div id="main">
+    <noscript><div id="noscript">
+      <p>本サイトではJavaScriptを使用しております。JavaScriptが無効な状態ではご利用いただけません。</p>
+    </div></noscript>
+
+<div id="overlayWindow" class="book-infor" itemscope itemtype="http://schema.org/Book" typeof="product:Product" xmlns:product="http://search.yahoo.com/searchmonkey/product/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:media="http://search.yahoo.com/searchmonkey/media/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:currency="http://search.yahoo.com/searchmonkey-datatype/currency/" style="display:block;opacity:1">
+  <header id="overlayHeader">
+    <h1>書籍概要</h1>
+    <nav id="overlayFunction">
+      <p id="close"><a href="/dp/genre/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA" title="閉じる">閉じる</a></p>
+      <ul id="jump">
+        <li id="detailRef"><a href="#title" title="概要を見る">概要</a></li>
+        <li id="contentRef"><a href="#content" title="目次を見る">目次</a></li>
+        <li id="supportRef"><a href="#support" title="サポート情報を見る">サポート</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="bookInforMain">
+  <hgroup id="title">
+
+    <h1 id="bookTitle" property="rdfs:label" itemprop="name">RISC-V<wbr>と<wbr>Chisel<wbr>で学ぶ はじめての<wbr>CPU<wbr>自作<br><span class="sub">――オープンソース命令セットによるカスタム<wbr>CPU<wbr>実装への第一歩</span></h1>
+  </hgroup>
+  <aside id="bookCover" rel="rdfs:seeAlso media:image"><img src="https://image.gihyo.co.jp/assets/images/gdp/2021/978-4-297-12306-2.jpg" alt="RISC-VとChiselで学ぶ はじめてのCPU自作 ――オープンソース命令セットによるカスタムCPU実装への第一歩"/></aside>
+  <dl id="publicationData" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+    <dt>著者</dt>
+    <dd itemprop="author">⻄⼭悠太朗，<wbr/>井⽥健太　著</dd>
+    <dt>発売日</dt>
+    <dd><time datetime="2021-08-20">2021年8月20日</time></dd>
+    <dt>更新日</dt>
+    <dd><time datetime="2021-08-20">2021年8月20日</time></dd>
+  </dl>
+  <aside>
+    <ul class="information">
+      <li>本書は，<a href="https://gihyo.jp/book/2021/978-4-297-12305-5" target="_blank">2021年8月25日に発売された書籍</a>の電子版です。</li>
+      <li class="need-login">ご購入には会員登録・ログインが必要です</li>
+      <li class="corporate"><a href="/dp/help/buy/bulkpurchase">学校・法人等団体でのご利用について</a></li>
+    </ul>
+    <dl id="productPrice">
+<dt><span class="name">EPUB/PDFセット</span><span class="buy">3,200円 <a id="pid403311" href="#cartAdd" title="カートに入れる">カートに入れる<div class="option" title="購入オプション">▼<ul><li title="通常購入">自分用に購入する</li><li class="gift" title="ギフトコードを購入">ギフトとして購入する</li></ul></div></a></span></dt><dd><span class="page"><span itemprop="numberOfPages">336</span>ページ相当</span><span class="pdf">PDF</span> <span class="epub">EPUB：リフロー</span> </dd>
+
+    </dl>
+  </aside>
+  <aside id="social">
+    <ul>
+      <li class="twitter"><a href="https://twitter.com/search?q=https://gihyo.jp/dp/ebook/2021/978-4-297-12306-2" class="twitter--list">リスト</a><a href="http://twitter.com/share" class="twitter-share-button" data-url="https://gihyo.jp/dp/ebook/2021/978-4-297-12306-2" data-text="RISC-VとChiselで学ぶ はじめてのCPU自作 ――オープンソース命令セットによるカスタムCPU実装への第一歩 #gihyoDP" data-count="none" data-lang="ja">ツイート</a></li>
+      <li class="facebook"><div class="fb-like" data-href="https://gihyo.jp/dp/ebook/2021/978-4-297-12306-2" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-share="true"></div></li>
+      <li class="hatena"><a href="http://b.hatena.ne.jp/entry/https://gihyo.jp/dp/ebook/2021/978-4-297-12306-2" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a></li>
+    </ul>
+  </aside>
+  <div id="productDetail">
+    <section id="detail">
+      <h2>概要</h2>
+<p>本書では，<wbr/>UCバークレーで開発されたオープンソースの命令セット（ISA）「RISC-V」を用いて，<wbr/>CPUの作り方を解説します。コンピュータアーキテクチャ，<wbr/>ハードウェアに関する知識があまりない方にも理解できるように基礎からわかりやすく学んでいきます。CPUとコンピュータアーキテクチャのしくみを解説したうえで，<wbr/>基本整数命令の実装から，<wbr/>CPUの高速化で活躍するパイプラインの実装，<wbr/>スーパーコンピューターでも活躍するベクトル拡張命令(SIMD)，<wbr/>さらに，<wbr/>汎用CPUでは負荷の高い処理をより高速に実行するためにCPUへ追加可能なカスタム命令の実装までを行います。CPU設計に用いる基本言語としては，<wbr/>Velilogを抽象化したHDL（ハードウェア記述言語）であるChiselを利用しています。<br />
+CPUの自作範囲に関して，<wbr/>手順が煩雑なFPGAでの動作確認は行わず，<wbr/>ソフトウェア上でエミュレーションをゴールとしているので，<wbr/>ソフトウェアエンジニアの方にも取っ付きやすいものとなっています。<br />
+巻末には，<wbr/>昨今RISC-Vが注目されている理由を整理するため，<wbr/>RISC-Vのもたらす価値についてまとめています。</p><h3>こんな方におすすめ</h3>
+<ul><li>ソフトウェアエンジニアで，<wbr/>CPUや命令セットなどのローレイヤーを学びたい人</li><li>情報，<wbr/>コンピュータ関連学部へ通う学生</li><li>RISC-Vに興味がある人</li><li>カスタムCPU，<wbr/>DSA（Domain Specific Architecture）に興味がある人</li></ul>
+<aside class="author"><h3>⻄⼭悠太朗（にしやまゆうたろう）</h3><p>株式会社フィックスターズRISC-V研究所研究員。ウエストバーグ株式会社代表取締役。メディア事業や教育出版事業など複数の事業売却を経験。ビッグデータ解析，<wbr/>WEBマーケティングを軸に，<wbr/>⼀部上場企業からスタートアップまで幅広く業務⽀援を⾏う。また，<wbr/>⽴ち上げたD2C事業を1 年で年商5億円規模まで急成⻑させる等，<wbr/>toB/toC，<wbr/>有形/無形商材と幅広いビジネス経験を積む。PCメーカー経営をきっかけにコンピュータへの興味が膨らみ，<wbr/>現在はRISC-V 研究に携わる。著書に『現場のプロから学ぶSEO 技術バイブル』（マイナビ），<wbr/>『仕事の説明書〜あなたは今どんなゲームをしているのか〜』（土日出版）。</p>
+</aside><aside class="author"><h3>井⽥健太（いだけんた）</h3><p>株式会社フィックスターズRISC-V 研究所研究員。⼤学院修⼠課程修了後，<wbr/>半導体後⼯程の装置メーカーに就職し，<wbr/>装置⽤組み込みソフトウェアの開発を⾏う。その後転職を経て，<wbr/>株式会社フィックスターズにて主にFPGA の論理設計とFPGA を制御するためのソフトウェア開発を⾏う。趣味は電⼦⼯作とマイコンプログラミングで，<wbr/>それに関連して雑誌記事の執筆や同⼈誌の発⾏などを⾏っている。著書に『基礎から学ぶ 組込みRust』（C&R研究所）。</p></aside>
+    </section>
+    <section id="content">
+      <h2>目次</h2>
+<div id="bookSearch">
+<form id="bookSearchForm" action="search" method="post">
+  <input type="search" name="query" id="bookSearchText" title="本書内を検索するキーワードを入力" placeholder="本書内のキーワード" required="required" value="">
+  <input type="hidden" name="code" value="42824">
+  <input type="submit" id="bookSearchSubmit" value="検索" title="検索する">
+</form>
+</div><ul class="toc">
+<li>まえがき</li>
+</ul>
+<h3>第Ⅰ部　CPU自作のための基礎知識<br />第1章　CPUとは何か</h3>
+<ul class="toc">
+<li>1-1　電子回路が論理を表現できる理由<ul class="toc">
+	<li>1-1-1　デジタル信号への変換</li>
+	<li>1-1-2　論理演算を表現する回路</li>
+	<li>1-1-3　いかなる真理値表も表現できる基本論理回路</li></ul></li>
+<li>1-2　基本論理回路がCPUを実現できる理由<ul class="toc">
+	<li>1-2-1　順序論理回路：ラッチ回路</li>
+	<li>1-2-2　有限状態機械</li>
+	<li>1-2-3　クロック信号による同期</li></ul></li>
+<li>1-3　CPUの製造プロセス</li>
+<li>Column　バイポーラトランジスタとCMOS</li>
+
+</ul>
+<h3>第2章　コンピュータ・アーキテクチャ</h3>
+<ul class="toc">
+<li>2-1　メモリ<ul class="toc">
+	<li>2-1-1　レジスタ</li>
+	<li>2-1-2　メインメモリ</li></ul></li>
+<li>2-2　コンピュータの基本的な処理の流れ<ul class="toc">
+	<li>2-2-1　命令フェッチ（IF：Instruction Fetch）</li>
+	<li>2-2-2　命令デコード（ID：Instruction Decode）</li>
+	<li>2-2-3　演算（EX：Execution）</li>
+	<li>2-2-4　メモリアクセス（MEM：Memory Access）</li>
+	<li>2-2-5　ライトバック（WB：Write Back）</li></ul></li>
+<li>Column　デコード処理の簡略化</li>
+<li>Column　RISCとCISC</li>
+<li>Column　レジスタとメモリの扱い</li>
+
+</ul>
+<h3>第3章　ハードウェア記述言語Chiselの基本</h3>
+<ul class="toc">
+<li>3-1　Chiselとは</li>
+<li>3-2　オブジェクト指向とは<ul class="toc">
+	<li>3-2-1　クラスとインスタンス</li>
+	<li>3-2-2　継承</li></ul></li>
+<li>3-3　Scalaの基本文法<ul class="toc">
+	<li>3-3-1　変数varとval</li>
+	<li>3-3-2　メソッド：def</li>
+	<li>3-3-3　コレクション：Seq</li>
+	<li>3-3-4　for式</li>
+	<li>3-3-5　オブジェクト</li>
+	<li>3-3-6　名前空間</li></ul></li>
+<li>3-4　Chiselの基本文法<ul class="toc">
+	<li>3-4-1　bit値を表す基本型</li>
+	<li>3-4-2　演算子</li>
+	<li>3-4-3　Module</li>
+	<li>3-4-4　IO</li>
+	<li>3-4-5　Flippedオブジェクト</li>
+	<li>3-4-6　配線の接続</li>
+	<li>3-4-7　組み合わせ論理回路：Wire/WireDefault</li>
+	<li>3-4-8　順序論理回路：RegInit</li>
+	<li>3-4-9　Memによるレジスタファイル定義</li>
+	<li>3-4-10　制御回路</li>
+	<li>3-4-11　bit操作</li>
+	<li>3-4-12　printfによるデバッグ</li></ul></li>
+<li>Column　あらゆるものがオブジェクト</li>
+
+</ul>
+<h3>第Ⅱ部「簡単なCPUの実装」<br />第4章　環境構築</h3>
+<ul class="toc">
+<li>4-1　chisel-templateのダウンロード</li>
+<li>4-2　Dockerによる実行環境の構築<ul class="toc">
+	<li>4-2-1　Dockerのインストール</li>
+	<li>4-2-2　Dockerfileの作成</li>
+	<li>4-2-3　イメージの作成</li>
+	<li>4-2-4　コンテナの作成</li></ul></li>
+<li>4-3　命令bit列および定数ファイル<ul class="toc">
+	<li>4-3-1　Instructions.Scala</li>
+	<li>4-3-2　Consts.scala</li></ul></li>
+<li>4-4　第Ⅱ部で実装する命令とChiselコード全体</li>
+
+</ul>
+<h3>第5章　命令フェッチの実装</h3>
+<ul class="toc">
+<li>5-1　Chiselコードの概要</li>
+<li>5-2　Chiselの実装</li>
+
+</ul>
+<h3>第6章　ChiselTestによる命令フェッチテスト</h3>
+<ul class="toc">
+<li>6-1　ChiselTestのインストール</li>
+<li>6-2　テストの流れ</li>
+<li>6-3　Chiselテストコードの作成<ul class="toc">
+	<li>6-3-1　trait</li>
+	<li>6-3-2　peekメソッド</li>
+	<li>6-3-3　clock.stepメソッド</li></ul></li>
+<li>6-4　メモリ用hexファイルの作成</li>
+<li>6-5　printfを活用したデバッグ信号の出力</li>
+<li>6-6　テストの実行</li>
+<li>6-7　Dockerコンテナのcommit</li>
+
+</ul>
+<h3>第7章　命令デコーダの実装</h3>
+<ul class="toc">
+<li>7-1　Chiselの実装<ul class="toc">
+	<li>7-1-1　レジスタ番号の解読</li>
+	<li>7-1-2　レジスタデータの読み出し</li>
+	<li>7-1-3　デバッグ用信号の出力</li></ul></li>
+<li>7-2　テストの実行</li>
+
+</ul>
+<h3>第8章　LW命令の実装</h3>
+<ul class="toc">
+<li>8-1　RISC-VのLW命令定義</li>
+<li>8-2　Chiselの実装<ul class="toc">
+	<li>8-2-1　①命令bitパターンの定義</li>
+	<li>8-2-2　②CPUとメモリ間のポート定義</li>
+	<li>8-2-3　③CPU内の処理実装</li>
+	<li>8-2-4　④メモリのデータ読み込み実装</li></ul></li>
+<li>8-3　テストの実行<ul class="toc">
+	<li>8-3-1　命令ファイルlw.hexの作成</li>
+	<li>8-3-2　メモリにロードするファイル名の変更</li>
+	<li>8-3-3　テスト終了条件の変更</li>
+	<li>8-3-4　デバッグ信号の追加</li>
+	<li>8-3-5　テストの実行</li></ul></li>
+
+</ul>
+<h3>第9章　SW命令の実装</h3>
+<ul class="toc">
+<li>9-1　RISC-VのSW命令定義</li>
+<li>9-2　Chiselの実装<ul class="toc">
+	<li>9-2-1　①命令bitパターンの定義</li>
+	<li>9-2-2　②CPUとメモリ間のポート定義</li>
+	<li>9-2-3　③CPU内の処理実装</li>
+	<li>9-2-4　④メモリのデータ書き込み実装</li></ul></li>
+<li>9-3　テストの実行<ul class="toc">
+	<li>9-3-1　命令ファイルsw.hexの作成</li>
+	<li>9-3-2　メモリにロードするファイル名の変更</li>
+	<li>9-3-3　テスト終了条件の変更</li>
+	<li>9-3-4　デバッグ用信号の追加</li>
+	<li>9-3-5　テストの実行</li></ul></li>
+
+</ul>
+<h3>第10章　加減算命令の実装</h3>
+<ul class="toc">
+<li>10-1　RISC-Vの加減算命令定義</li>
+<li>10-2　Chiselの実装<ul class="toc">
+	<li>10-2-1　命令bitパターンの定義</li>
+	<li>10-2-2　加減算結果の接続@EXステージ</li>
+	<li>10-2-3　加減算結果のレジスタライトバック@WBステージ</li></ul></li>
+
+</ul>
+<h3>第11章　論理演算の実装</h3>
+<ul class="toc">
+<li>11-1　RISC-Vの論理演算命令定義</li>
+<li>11-2　Chiselの実装<ul class="toc">
+	<li>11-2-1　命令bitパターンの定義</li>
+	<li>11-2-2　論理演算結果の接続@EXステージ</li>
+	<li>11-2-3　論理演算結果のレジスタライトバック@WBステージ</li></ul></li>
+
+</ul>
+<h3>第12章　デコーダの強化</h3>
+<ul class="toc">
+<li>12-1　ALU用デコード<ul class="toc">
+	<li>12-1-1　デコーダの強化@IDステージ</li>
+	<li>12-1-2　デコード信号を活用したALU簡略化@EXステージ</li></ul></li>
+<li>12-2　MEM用デコード<ul class="toc">
+	<li>12-2-1　デコーダの強化@IDステージ</li>
+	<li>12-2-2　命令デコードの不要化@MEMステージ</li></ul></li>
+<li>12-3　WB用デコード<ul class="toc">
+	<li>12-3-1　デコーダの強化@IDステージ</li>
+	<li>12-3-2　命令デコードの不要化@WBステージ</li></ul></li>
+
+</ul>
+<h3>第13章　シフト演算の実装</h3>
+<ul class="toc">
+<li>13-1　RISC-Vのシフト演算命令定義</li>
+<li>13-2　Chiselの実装<ul class="toc">
+	<li>13-2-1　命令bitパターンの定義</li>
+	<li>13-2-2　デコード信号の生成@IDステージ</li>
+	<li>13-2-3　シフト演算結果の接続@EXステージ</li></ul></li>
+
+</ul>
+<h3>第14章　比較演算の実装</h3>
+<ul class="toc">
+<li>14-1　RISC-Vの比較演算命令定義</li>
+<li>14-2　Chiselの実装<ul class="toc">
+	<li>14-2-1　命令bitパターンの定義</li>
+	<li>14-2-2　デコード信号の生成@IDステージ</li>
+	<li>14-2-3　比較演算結果の接続@EXステージ</li></ul></li>
+
+</ul>
+<h3>第15章　分岐命令の実装</h3>
+<ul class="toc">
+<li>15-1　RISC-Vの分岐命令定義</li>
+<li>15-2　Chiselの実装<ul class="toc">
+	<li>15-2-1　命令bitパターンの定義</li>
+	<li>15-2-2　PCの制御@IFステージ</li>
+	<li>15-2-3　即値およびデコード信号の生成@IDステージ</li>
+	<li>15-2-4　分岐可否、ジャンプ先アドレスの計算@EXステージ</li></ul></li>
+
+</ul>
+<h3>第16章　ジャンプ命令の実装</h3>
+<ul class="toc">
+<li>16-1　RISC-Vのジャンプ命令定義</li>
+<li>16-2　Chiselの実装<ul class="toc">
+	<li>16-2-1　命令bitパターンの定義</li>
+	<li>16-2-2　デコードおよびオペランドデータの読み出し@IDステージ</li>
+	<li>16-2-3　JALR用演算の追加@EXステージ</li>
+	<li>16-2-4　PCの制御@IFステージ</li>
+	<li>16-2-5　raのライトバック@WBステージ</li></ul></li>
+
+</ul>
+<h3>第17章　即値ロード命令の実装</h3>
+<ul class="toc">
+<li>17-1　RISC-Vの即値ロード命令定義</li>
+<li>17-2　Chiselの実装<ul class="toc">
+	<li>17-2-1　命令bitパターンの定義</li>
+	<li>17-2-2　デコードおよびオペランドデータの読み出し@IDステージ</li></ul></li>
+<li>Column　LI（Load Immediate）命令</li>
+
+</ul>
+<h3>第18章　CSR命令の実装</h3>
+<ul class="toc">
+<li>18-1　RISC-VのCSR命令定義</li>
+<li>18-2　Chiselの実装<ul class="toc">
+	<li>18-2-1　命令bitパターンの定義</li>
+	<li>18-2-2　即値およびデコード信号の生成@IDステージ</li>
+	<li>18-2-3　op1_dataの接続@EXステージ</li>
+	<li>18-2-4　CSRの読み書き@MEMステージ</li>
+	<li>18-2-5　CSR読み出しデータのレジスタライトバック@WBステージ</li></ul></li>
+
+</ul>
+<h3>第19章　ECALLの実装</h3>
+<ul class="toc">
+<li>19-1　RISC-VのECALL命令定義</li>
+<li>19-2　Chiselの実装<ul class="toc">
+	<li>19-2-1　命令bitパターンの定義</li>
+	<li>19-2-2　PCの制御@IFステージ</li>
+	<li>19-2-3　デコード信号の生成@IDステージ</li>
+	<li>19-2-4　CSR書き込み@MEMステージ</li></ul></li>
+
+</ul>
+<h3>第20章　riscv-testsによるテスト</h3>
+<ul class="toc">
+<li>20-1　riscv-testsのビルド</li>
+<li>20-2　ELFファイルをBINファイルへ変換</li>
+<li>20-3　BINファイルのhex化</li>
+<li>20-4　riscv-testsのパス条件</li>
+<li>20-5　riscv-testsの実行<ul class="toc">
+	<li>20-5-1　Chiselの実装</li>
+	<li>20-5-2　テストの実行</li></ul></li>
+<li>20-6　一括テストスクリプト<ul class="toc">
+	<li>20-6-1　hexファイルの一括生成：tohex.sh</li>
+	<li>20-6-2　riscv-testsの一括実行：riscv_tests.sh</li></ul></li>
+
+</ul>
+<h3>第21章　Cプログラムを動かしてみよう</h3>
+<ul class="toc">
+<li>21-1　Cプログラム作成</li>
+<li>21-2　コンパイル</li>
+<li>21-3　リンク</li>
+<li>21-4　機械語のhex化とdumpファイルの生成</li>
+<li>21-5　テストの実行</li>
+<li>Column　コンパイルとアセンブル</li>
+
+</ul>
+<h3>第Ⅲ部　パイプラインの実装<br />第22章　パイプラインとは</h3>
+<ul class="toc">
+<li>22-1　パイプライン処理の意義</li>
+<li>22-2　CPU処理のパイプライン化</li>
+<li>22-3　第Ⅲ部で完成するChiselコード</li>
+
+</ul>
+<h3>第23章　パイプラインレジスタの実装</h3>
+<ul class="toc">
+<li>23-1　レジスタ定義</li>
+<li>23-2　IFステージ<ul class="toc">
+	<li>23-2-1　命令フェッチおよびPC制御</li>
+	<li>23-2-2　IF/IDレジスタへの書き込み</li></ul></li>
+<li>23-3　IDステージ<ul class="toc">
+	<li>23-3-1　①レジスタ番号のデコードおよびレジスタデータの読み出し</li>
+	<li>23-3-2　②即値のデコード</li>
+	<li>23-3-3　③csignalsのデコード</li>
+	<li>23-3-4　④オペランドデータの選択</li>
+	<li>23-3-5　⑤csr_addrの生成</li>
+	<li>23-3-6　⑥ID/EXレジスタへの書き込み</li></ul></li>
+<li>23-4　EXステージ<ul class="toc">
+	<li>23-4-1　①alu_outへの信号接続</li>
+	<li>23-4-2　②分岐命令の処理</li>
+	<li>23-4-3　③EX/MEMレジスタへの書き込み</li></ul></li>
+<li>23-5　MEMステージ<ul class="toc">
+	<li>23-5-1　①メモリアクセス</li>
+	<li>23-5-2　②CSR</li>
+	<li>23-5-3　③wb_data</li>
+	<li>23-5-4　④MEM/WBレジスタへの書き込み</li></ul></li>
+<li>23-6　WBステージ</li>
+
+</ul>
+<h3>第24章　分岐ハザード処理</h3>
+<ul class="toc">
+<li>24-1　分岐ハザードとは</li>
+<li>24-2　Chiselの実装<ul class="toc">
+	<li>24-2-1　IFステージの無効化</li>
+	<li>24-2-2　IDステージの無効化</li>
+	<li>24-2-3　デバッグ用信号の追加</li></ul></li>
+<li>24-3　分岐ハザードのテスト<ul class="toc">
+	<li>24-3-1　テスト用Cプログラムの作成</li>
+	<li>24-3-2　hexおよびdumpファイルの生成</li>
+	<li>24-3-3　分岐ハザード対応前CPUでのテスト</li>
+	<li>24-3-4　分岐ハザード対応後CPUでのテスト</li></ul></li>
+<li>Column　静的分岐予測と動的分岐予測</li>
+
+</ul>
+<h3>第25章　データハザード処理</h3>
+<ul class="toc">
+<li>25-1　データハザードとは</li>
+<li>25-2　フォワーディングのChisel実装</li>
+<li>25-3　ストールのChisel実装<ul class="toc">
+	<li>25-3-1　stall_flg信号の追加@IDステージ</li>
+	<li>25-3-2　ストール処理@IFステージ</li>
+	<li>25-3-3　BUBBLE化@IDステージ</li>
+	<li>25-3-4　デバッグ用信号の追加</li></ul></li>
+<li>25-4　データハザードのテスト<ul class="toc">
+	<li>25-4-1　①ID/WB間のデータハザードをフォワーディングするパターン</li>
+	<li>25-4-2　②ID/EX間のデータハザードによるストール→ID/MEM間でフォワーディングするパターン</li>
+	<li>25-4-3　riscv-testsテスト</li></ul></li>
+
+</ul>
+<h3>第Ⅳ部　ベクトル拡張命令の実装<br />第26章　ベクトル命令とは</h3>
+<ul class="toc">
+<li>26-1　SIMDとは</li>
+<li>26-2　既存のベクトルアーキテクチャ</li>
+<li>26-3　RISC-Vのベクトル命令とSIMD命令の相違点<ul class="toc">
+	<li>26-3-1　SIMD命令のベクトルレジスタ長</li>
+	<li>26-3-2　RVV命令のベクトルレジスタ長</li></ul></li>
+<li>26-4　第Ⅳ部で完成するChiselコード</li>
+<li>Column　スーパーコンピュータ「富岳」</li>
+
+</ul>
+<h3>第27章　VSETVLI命令の実装</h3>
+<ul class="toc">
+<li>27-1　RISC-VのVSETVLI命令定義</li>
+<li>27-2　VTYPE<ul class="toc">
+	<li>27-2-1　SEWとLMUL</li>
+	<li>27-2-2　vill、vta、vma</li></ul></li>
+<li>27-3　Chiselの実装<ul class="toc">
+	<li>27-3-1　命令bitパターンの定義</li>
+	<li>27-3-2　デコード信号の生成@IDステージ</li>
+	<li>27-3-3　ベクトルCSRへの書き込み@MEMステージ</li>
+	<li>27-3-4　VLのレジスタライトバック@WBステージ</li></ul></li>
+<li>27-4　テストの実行<ul class="toc">
+	<li>27-4-1　e32/m1テスト</li>
+	<li>27-4-2　e64/m1テスト</li>
+	<li>27-4-3　e32/m2テスト</li></ul></li>
+
+</ul>
+<h3>第28章　ベクトルロード命令の実装</h3>
+<ul class="toc">
+<li>28-1　unit-stride形式のベクトルロード命令定義<ul class="toc">
+	<li>28-1-1　SEWとEEW</li>
+	<li>28-1-2　bit配置</li></ul></li>
+<li>28-2　Chiselの実装<ul class="toc">
+	<li>28-2-1　命令bitパターンの定義</li>
+	<li>28-2-2　DmemPortIoの拡張</li>
+	<li>28-2-3　ベクトルレジスタの追加</li>
+	<li>28-2-4　デコード信号の生成@IDステージ</li>
+	<li>28-2-5　ベクトルロードデータのレジスタライトバック@WBステージ</li>
+	<li>28-2-6　メモリからベクトルデータの読み出し@Memoryクラス</li>
+	<li>28-2-7　デバッグ用信号の追加</li></ul></li>
+<li>28-3　テストの実行<ul class="toc">
+	<li>28-3-1　e32/m1テスト</li>
+	<li>28-3-2　e64/m1テスト</li>
+	<li>28-3-3　e32/m2テスト</li></ul></li>
+
+</ul>
+<h3>第29章　ベクトル加算命令VADD.VVの実装</h3>
+<ul class="toc">
+<li>29-1　RISC-VのVADD.VV命令定義</li>
+<li>29-2　Chiselの実装<ul class="toc">
+	<li>29-2-1　命令bitパターンの定義</li>
+	<li>29-2-2　ベクトルレジスタの読み出し@IDステージ</li>
+	<li>29-2-3　デコード信号の生成@IDステージ</li>
+	<li>29-2-4　ベクトル加算器の追加@EXステージ</li>
+	<li>29-2-5　加算結果のレジスタライトバック@WBステージ</li>
+	<li>29-2-6　デバッグ用信号の追加</li></ul></li>
+<li>29-3　テストの実行<ul class="toc">
+	<li>29-3-1　e32/m1テスト</li>
+	<li>29-3-2　e64/m1のテスト</li>
+	<li>29-3-3　e32/m2のテスト</li></ul></li>
+
+</ul>
+<h3>第30章　ベクトルストア命令の実装</h3>
+<ul class="toc">
+<li>30-1　unit-stride形式のベクトルストア命令定義</li>
+<li>30-2　Chiselの実装<ul class="toc">
+	<li>30-2-1　命令bitパターンの定義</li>
+	<li>30-2-2　DmemPortIoの拡張</li>
+	<li>30-2-3　デコード信号の生成、ストアデータの読み出し@IDステージ</li>
+	<li>30-2-4　ストアデータの接続@MEMステージ</li>
+	<li>30-2-5　ベクトルデータのメモリへの書き込み@Memoryクラス</li></ul></li>
+<li>30-3　テストの実行<ul class="toc">
+	<li>30-3-1　e32/m1テスト</li>
+	<li>30-3-2　e64/m1テスト</li>
+	<li>30-3-3　e32/m2テスト</li></ul></li>
+
+</ul>
+<h3>第Ⅴ部　カスタム命令の実装<br />第31章　カスタム命令の意義</h3>
+<ul class="toc">
+<li>31-1　シングルコアの性能向上と限界<ul class="toc">
+	<li>31-1-1　ムーアの法則</li>
+	<li>31-1-2　デナード則</li>
+	<li>31-1-3　デナード則の崩壊</li></ul></li>
+<li>31-2　マルチコアによる並列処理の効率化と限界<ul class="toc">
+	<li>31-2-1　マルチコアへの移行</li>
+	<li>31-2-2　並列処理の効率化の限界</li></ul></li>
+<li>31-3　DSAの可能性<ul class="toc">
+	<li>31-3-1　ASIC</li>
+	<li>31-3-2　FPGA</li>
+	<li>31-3-3　DSAのデメリット</li></ul></li>
+<li>31-4　DSAとRISC-V<ul class="toc">
+	<li>31-4-1　自由なアーキテクチャ設計</li>
+	<li>31-4-2　カスタム命令</li></ul></li>
+<li>Column　消費電力対策</li>
+<li>Column　アクセラレータ</li>
+
+</ul>
+<h3>第32章　ポピュレーションカウント命令の実装</h3>
+<ul class="toc">
+<li>32-1　ポピュレーションカウント命令とは</li>
+<li>32-2　カスタム命令を実装しない場合のポピュレーションカウントプログラム</li>
+<li>32-3　カスタム命令用のコンパイラ（アセンブラ）実装<ul class="toc">
+	<li>32-3-1　GNU Assemblerの概要</li>
+	<li>32-3-2　PCNT命令をGASへ追加</li>
+	<li>32-3-3　コンパイラの再ビルド</li>
+	<li>32-3-4　PCNT 命令のコンパイル</li></ul></li>
+<li>32-4　Chiselの実装<ul class="toc">
+	<li>32-4-1　命令列の定義</li>
+	<li>32-4-2　デコード信号の生成@IDステージ</li>
+	<li>32-4-3　ALUの追加@EXステージ</li></ul></li>
+<li>32-5　テストの実行</li>
+
+</ul>
+<h3>付録　RISC-Vの価値</h3>
+<ul class="toc">
+<li>A-1　オープンソースISAの必要性</li>
+<li>A-2　RISC-Vが実現するもの<ul class="toc">
+	<li>A-2-1　①高性能・低コストを両立するDSA</li>
+	<li>A-2-2　②安価な汎用CPU</li>
+	<li>A-2-3　③誰でも気軽に勉強・実装ができる教育環境</li></ul></li>
+<li>A-3　チップ製造コストの壁とその将来性</li>
+</ul>
+
+<ul class="toc">
+<li>もっと深く学びたい人へのお勧め書籍</li>
+</ul>
+    </section>
+    <section id="support">
+      <h2>サポート</h2>
+<p>現在サポート情報はありません。</p>
+    </section>
+  </div>
+  </div>
+<script defer="defer">try{twttr.widgets.load();FB.XFBML.parse();Hatena.Bookmark.BookmarkButton.setup();}catch(e){}</script>
+</div>    <div id="bookList">
+      <h2>商品一覧</h2>
+      <div id="topNavigation">
+        <div id="filter">
+          <form id="search" action="/dp" method="get">
+            <input type="search" name="query" id="searchText" title="検索する商品のキーワードを入力" placeholder="商品のキーワード" required="required" value=""/>
+            <input type="submit" id="searchSubmit" value="検索" title="検索する"/>
+          </form>
+          <div id="select">
+            <a href="" id="selectLabel" title="商品ジャンルを選択する"></a>
+            <div id="selectMenu">
+              <ul id="selectMenuBody"></ul>
+            </div>
+          </div>
+        </div>
+        <nav id="pagingTop">
+        </nav>
+      </div>
+      <ul itemprop="isPartOf" itemscope="itemscope" itemtype="http://www.schema.org/CollectionPage" id="listBook" class="list-book">
+      </ul>
+      <nav id="pagingBottom">
+      </nav>
+    </div>
+  </div>
+  <footer id="footer" itemscope="itemscope" itemtype="http://www.schema.org/WPFooter">
+    <div id="wait" class="hidden"></div>
+    <nav id="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+      <ul id="navigationLink">
+        <li id="navLinkHome" class="current"><a itemprop="url" href="/dp" title="ストア" class="home">ストア</a></li>
+        <li id="navLinkMyPage"><a itemprop="url" href="/dp/my-page" title="マイページ" class="mypage">マイページ</a></li>
+        <li id="navLinkInfor"><a itemprop="url" href="/dp/information" title="お知らせ" class="information">お知らせ</a></li>
+        <li id="navLinkHelp"><a itemprop="url" href="/dp/help" title="ヘルプ" class="help">ヘルプ</a></li>
+      </ul>
+    </nav>
+    <nav id="function" itemscope="itemscope" itemtype="http://www.schema.org/WPSideBar">
+      <div id="backgroundWrapper" style="display:block;opacity:0.4"></div>
+      <div id="navInfor"></div>
+    </nav>
+    <div id="storeInformation">
+      <ul id="footerLink">
+        <li>Twitter: <a href="https://twitter.com/gihyoDP">@gihyoDP</a></li>
+        <li><a href="/dp/help/about/site">このサイトについて</a></li>
+        <li><a href="/dp/help/about/terms">利用規約</a></li>
+        <li><a href="/dp/help/about/privacy">プライバシーポリシー</a></li>
+        <li><a href="/dp/help/about/law">特定商取引法に基づく表示</a></li>
+      </ul>
+      <p id="storeCopyright"><small>Copyright © 2022 <span class="reserved">All Rights Reserved by</span> <a href="/book">Gijutsu-Hyoron Co., Ltd.</a></small></p>
+    </div>
+  </footer>
+<script>var params={"url":"https:\/\/gihyo.jp\/dp\/ebook\/2021\/978-4-297-12306-2","path":"\/dp\/ebook\/2021\/978-4-297-12306-2","targetId":"978-4-297-12306-2","parent":"\/dp\/genre\/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E9%96%8B%E7%99%BA","overlay":true,"body":"    <div id=\"bookList\">\n      <h2>\u5546\u54c1\u4e00\u89a7<\/h2>\n      <div id=\"topNavigation\">\n        <div id=\"filter\">\n          <form id=\"search\" action=\"\/dp\" method=\"get\">\n            <input type=\"search\" name=\"query\" id=\"searchText\" title=\"\u691c\u7d22\u3059\u308b\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\" placeholder=\"\u5546\u54c1\u306e\u30ad\u30fc\u30ef\u30fc\u30c9\" required=\"required\" value=\"\"\/>\n            <input type=\"submit\" id=\"searchSubmit\" value=\"\u691c\u7d22\" title=\"\u691c\u7d22\u3059\u308b\"\/>\n          <\/form>\n          <div id=\"select\">\n            <a href=\"\" id=\"selectLabel\" title=\"\u5546\u54c1\u30b8\u30e3\u30f3\u30eb\u3092\u9078\u629e\u3059\u308b\"><\/a>\n            <div id=\"selectMenu\">\n              <ul id=\"selectMenuBody\"><\/ul>\n            <\/div>\n          <\/div>\n        <\/div>\n        <nav id=\"pagingTop\">\n        <\/nav>\n      <\/div>\n      <ul itemprop=\"isPartOf\" itemscope=\"itemscope\" itemtype=\"http:\/\/www.schema.org\/CollectionPage\" id=\"listBook\" class=\"list-book\">\n      <\/ul>\n      <nav id=\"pagingBottom\">\n      <\/nav>\n    <\/div>","isLogin":false,"dialog":"<aside id=\"dialog\" class=\"dialog-login\" style=\"opacity:0\">\n  <div id=\"dialogBody\">\n    <div id=\"gihyoAccount\">\n      <h2>\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <form action=\"?login\" method=\"post\">\n        <input type=\"hidden\" name=\"fid\" value=\"\"\/>\n        <dl>\n          <dt>\u30a2\u30ab\u30a6\u30f3\u30c8<\/dt>\n          <dd><input type=\"email\" name=\"account\" placeholder=\"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\"\/><\/dd>\n          <dt>\u30d1\u30b9\u30ef\u30fc\u30c9<\/dt>\n          <dd><input type=\"password\" name=\"password\" placeholder=\"\u30d1\u30b9\u30ef\u30fc\u30c9\" required=\"required\" title=\"\u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b\"\/><\/dd>\n        <\/dl>\n        <p id=\"loginButton\"><input type=\"submit\" value=\"\u30ed\u30b0\u30a4\u30f3\" title=\"\u30ed\u30b0\u30a4\u30f3\u3059\u308b\"\/><\/p>\n        <ul id=\"loginFunction\">\n          <li><a href=\"\/dp\/help\/buy\/forgot\">\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u304a\u5fd8\u308c\u306e\u65b9<\/a><\/li>\n          <li><a href=\"\/dp\/help\/buy\/account\">\u65b0\u898f\u767b\u9332\u3092\u3054\u5e0c\u671b\u306e\u65b9<\/a><\/li>\n        <\/ul>\n      <\/form>\n    <\/div>\n    <div id=\"externalSite\">\n      <h2>\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u30ed\u30b0\u30a4\u30f3<\/h2>\n      <ul>\n      <li class=\"google\"><a href=\"https:\/\/gihyo.jp\/auth\/google\">Google<\/a><\/li>\n      <li class=\"facebook\"><a href=\"https:\/\/gihyo.jp\/auth\/facebook\">Facebook<\/a><\/li>\n      <li class=\"yahoo\"><a href=\"https:\/\/gihyo.jp\/auth\/yahoojp\">Yahoo! JAPAN<\/a><\/li>\n      <\/ul>\n      <p><a href=\"\/dp\/help\/buy\/external\">\u5916\u90e8\u30b5\u30fc\u30d3\u30b9\u3067\u306e\u30ed\u30b0\u30a4\u30f3\u306b\u3064\u3044\u3066<\/a><\/p>\n    <\/div>\n    <p id=\"close\"><a href=\"#close\" title=\"\u9589\u3058\u308b\">\u9589\u3058\u308b<\/a><\/p>\n  <\/div>\n<\/aside>"}</script>
+  <script>var asyncCall=function(){var e=Array.prototype.slice,a=Function.prototype.bind||function(j){var a=this,b=e.call(arguments,1);return function(){var c=e.call(arguments);return a.apply(j,b.concat(c))}},f=a.call(a,Function.prototype.call),b=f(e),c=f(a),d=f(Function.prototype.apply);if("undefined"!==typeof process)a=function(){var a=b(arguments);process.nextTick(d(c,null,a))};else if("function"===typeof setImmediate)a=function(){var a=b(arguments);setImmediate(d(c,null,a))};else if("function"===typeof MessageChannel){var g=new MessageChannel,h=[];g.port1.onmessage=function(){h.shift()()};a=function(){var a=b(arguments);h.push(d(c,null,a));g.port2.postMessage(0)}}else a=function(){var a=b(arguments);setTimeout(d(c,null,a),0)};return a}();window.onerror=function(mes,fname,lnum){var erIgnore=['top.GLOBALS','originalCreateNotification','canvas.contentDocument','fb_xd_fragment','Script error.'];for(i=0;i<erIgnore.length;i++){if(mes.indexOf(erIgnore[i])>-1){return false;}};var mes='message:'+mes+', file:'+fname+', line:'+lnum+', href:'+location.href+', UA:'+window.navigator.userAgent;gtag('event','JSError',{'evetn_category':'Error','event_label':mes});};</script>
+  <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" async defer></script>
+  <script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=185201618169441&version=v2.8" id="facebook-jssdk" async defer></script>
+  <script src="//apis.google.com/js/platform.js" async defer></script>
+  <script src="//b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async defer></script>
+</body>
+</html>
