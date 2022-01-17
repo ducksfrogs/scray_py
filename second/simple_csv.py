@@ -1,0 +1,5 @@
+print("rank, city, population")
+print(",".join(["1", "Shanhai", "2415000"]))
+print(",".join(["2", "Karachi", "415000"]))
+print(",".join(["3", "Beigin", "115000"]))
+print(",".join(["4", "tenshin", "2415000"]))
